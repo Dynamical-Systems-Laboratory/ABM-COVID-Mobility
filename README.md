@@ -14,7 +14,7 @@ The directories are as follows:
 - `simulations` - simulations, specifically,
 	- `complete_var_reopening_study` - simulations with fixed vaccination rate and variable reopening rates
 	- `complete_two_rates_study` - parametric studies of a series of vaccination and reopening rates
-The simulation groups have three variants for different testing efficacies. These simulations are set up and ran automatically using welll-commented make_and_run.sh scripts in each subdirectory. 
+The simulation groups have three variants for different testing efficacies. These simulations are set up and ran automatically using welll-commented make_and_run.sh scripts in each subdirectory. Before running, adjust the number of simulations ran simultanously according to your own resources.
 
 ## Compiling and running
 
