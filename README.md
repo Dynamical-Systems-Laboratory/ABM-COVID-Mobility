@@ -1,5 +1,5 @@
 # ABM-COVID-DSL
-High-resolution agent-based model of COVID-19 with testing and treatment
+High-resolution agent-based model of COVID-19 with testing, treatment, and human mobility
 
 ## Code structure
 
@@ -12,10 +12,9 @@ The directories are as follows:
 - `tests` - tests developed for this code
 - `parameters` - data and scripts for fitting of some of the parameters
 - `simulations` - simulations, specifically,
-	- `NewRochelle_population` - model validation and optimization of testing prevalence
-	- `vaccination_study` - vaccination strategies without restrictions
-	- `code_complexity` - code for generating data for complexity estimates
-  Specific features of these simulation sets are available in their own `README` files.
+	- `complete_var_reopening_study` - simulations with fixed vaccination rate and variable reopening rates
+	- `complete_two_rates_study` - parametric studies of a series of vaccination and reopening rates
+The simulation groups have three variants for different testing efficacies. These simulations are set up and ran automatically using welll-commented make_and_run.sh scripts in each subdirectory. 
 
 ## Compiling and running
 
@@ -28,7 +27,7 @@ in the terminal.
 
 The code was developed and tested on MacOS and Linux, some of its parts may not be compatible with Windows.
 
-Compiler requirement is availability of the C++11 standard. Python version used througout the development was 3.6, other 3.X version should work as well. 
+Compiler requirement is availability of the C++11 standard. Python version used througout the development was 3.6 and 3.8, other 3.X version should work as well. 
 
 ## Tests
 
@@ -37,7 +36,7 @@ All the core and most of the side functionality of the code is extensively teste
 ```bash
 python3.X run_all_tests.py 
 ```
-in the `tests` directory. Some of the tests may at times fail due to insufficient statistical sampling (e.g. in distribution tests) or result precision (`contribution_class` tests on Linux platforms) 
+in the `tests` directory. Some of the tests may at times fail due to insufficient statistical sampling (e.g. in distribution tests).
 
 ## Documentation
 
@@ -46,8 +45,7 @@ The documentation is generated with [Doxygen](https://www.doxygen.nl/index.html)
 ## Notes
 
 - Current simulation wrappers and drivers are written in MATLAB. Python versions will soon be available.
-- Optimization framework in `simulations/NewRochelle_population` is hardcoded - careful examination recommended before repurposing
-- To run the optimization with MATLAB one needs to adjust the python path called to post-process an intermediate file. On older Linux systems one may also need to manually specify the location of `libstdc++` library. General instructions are available through [this post](https://stackoverflow.com/a/58219652/2763915). Specifically, on a `Red Hat Enterprise Linux Workstation release 7.3 (Maipo)` the command sequence was:
+- To run the wrappers with MATLAB on older Linux systems one may need to manually specify the location of `libstdc++` library. General instructions are available through [this post](https://stackoverflow.com/a/58219652/2763915). Specifically, on a `Red Hat Enterprise Linux Workstation release 7.3 (Maipo)` the command sequence was:
 
 ```bash
 locate libstdc++
