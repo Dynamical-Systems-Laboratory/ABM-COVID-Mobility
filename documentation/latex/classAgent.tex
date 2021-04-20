@@ -1,0 +1,1107 @@
+\hypertarget{classAgent}{}\section{Agent Class Reference}
+\label{classAgent}\index{Agent@{Agent}}
+
+
+{\ttfamily \#include $<$agent.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAgent_adbc1a27ec2c086160d3c28622ea02f3b}{Agent} ()=default
+\begin{DoxyCompactList}\small\item\em Creates an \hyperlink{classAgent}{Agent} object with default attributes. \end{DoxyCompactList}\item 
+\hyperlink{classAgent_a8b2a1eebca05ea3ac1a9b6dc1fc4681f}{Agent} (const bool \hyperlink{classAgent_aaafd3f91e823471cdfdcf4c31cdebd7d}{student}, const bool \hyperlink{classAgent_ab587c852bf9894f46b073f77fad42719}{works}, const int yrs, const double xi, const double yi, const int house\+ID, const bool is\+Patient, const int school\+ID, const bool lv\+RH, const bool wrk\+RH, const bool wrk\+Sch, const int work\+ID, const bool works\+Hospital, const int hospital\+ID, const bool \hyperlink{classAgent_abb85f9353fdaa27e69606b3c1e8fa364}{infected})
+\begin{DoxyCompactList}\small\item\em Creates an \hyperlink{classAgent}{Agent} object with custom attributes. \end{DoxyCompactList}\item 
+int \hyperlink{classAgent_a62a2d0e19950f7ae9552a3081ced2b29}{get\+\_\+\+ID} () const
+\begin{DoxyCompactList}\small\item\em Retrieve this agents ID. \end{DoxyCompactList}\item 
+int \hyperlink{classAgent_ada1fc5f6ea889ac641b3f373f47222e1}{get\+\_\+age} () const
+\begin{DoxyCompactList}\small\item\em Agents age. \end{DoxyCompactList}\item 
+int \hyperlink{classAgent_a67330abc8e8a042e538ee32fae1c5d1c}{get\+\_\+household\+\_\+\+ID} () const
+\begin{DoxyCompactList}\small\item\em House ID. \end{DoxyCompactList}\item 
+int \hyperlink{classAgent_a78c4d92a0f47c27a34f457f492746307}{get\+\_\+school\+\_\+\+ID} () const
+\begin{DoxyCompactList}\small\item\em \hyperlink{classSchool}{School} ID. \end{DoxyCompactList}\item 
+int \hyperlink{classAgent_a893d27a0906f9578c54fac02c8937e44}{get\+\_\+work\+\_\+\+ID} () const
+\begin{DoxyCompactList}\small\item\em Work ID. \end{DoxyCompactList}\item 
+int \hyperlink{classAgent_a4b265ac0693d1677fce44c7ace928f70}{get\+\_\+hospital\+\_\+\+ID} () const
+\begin{DoxyCompactList}\small\item\em \hyperlink{classHospital}{Hospital} ID if staff or patient. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_aa304e2bd2e7a9564bad10c52b16cef09}{get\+\_\+x\+\_\+location} () const
+\begin{DoxyCompactList}\small\item\em Location -\/ x coordinates. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_a6be70e1995c222467a192a90ed9ab7dd}{get\+\_\+y\+\_\+location} () const
+\begin{DoxyCompactList}\small\item\em Location -\/ y coordinates. \end{DoxyCompactList}\item 
+bool \hyperlink{classAgent_abb85f9353fdaa27e69606b3c1e8fa364}{infected} () const
+\begin{DoxyCompactList}\small\item\em True if infected. \end{DoxyCompactList}\item 
+bool \hyperlink{classAgent_aaafd3f91e823471cdfdcf4c31cdebd7d}{student} () const
+\begin{DoxyCompactList}\small\item\em True if student. \end{DoxyCompactList}\item 
+bool \hyperlink{classAgent_ab587c852bf9894f46b073f77fad42719}{works} () const
+\begin{DoxyCompactList}\small\item\em True if agent works. \end{DoxyCompactList}\item 
+bool \hyperlink{classAgent_a6a56ebd7762964bcfe5033aa03c519b7}{hospital\+\_\+employee} () const
+\begin{DoxyCompactList}\small\item\em True if agent works at a hospital. \end{DoxyCompactList}\item 
+bool \hyperlink{classAgent_a6ed91d3d0a946999ab67241776ff928f}{hospital\+\_\+non\+\_\+covid\+\_\+patient} () const
+\begin{DoxyCompactList}\small\item\em True if agent is a hospital patient with condition other than C\+O\+V\+ID. \end{DoxyCompactList}\item 
+bool \hyperlink{classAgent_a6283111c121ebf8985810b69a51eb951}{retirement\+\_\+home\+\_\+employee} () const
+\begin{DoxyCompactList}\small\item\em True if agent works in a retirement home. \end{DoxyCompactList}\item 
+bool \hyperlink{classAgent_a47890cf31361127f97856265d1ea0576}{school\+\_\+employee} () const
+\begin{DoxyCompactList}\small\item\em True if agent works at a school. \end{DoxyCompactList}\item 
+bool \hyperlink{classAgent_aa38f589ea0afe69b5079c559862bff19}{retirement\+\_\+home\+\_\+resident} () const
+\begin{DoxyCompactList}\small\item\em True if agent lives in a retirement home. \end{DoxyCompactList}\item 
+bool \hyperlink{classAgent_a17ab356b10fd5841a6678bd678d1f598}{exposed} () const
+\begin{DoxyCompactList}\small\item\em State getters. \end{DoxyCompactList}\item 
+bool \hyperlink{classAgent_a221f1afb3791e0f0fa9eaccaea2d00cb}{recovering\+\_\+exposed} () const
+\item 
+bool \hyperlink{classAgent_a427f98315b8d12694f1fccce03146861}{symptomatic} () const
+\item 
+bool \hyperlink{classAgent_ae8139e7f0ac3f2520c32e7f818d9ff98}{symptomatic\+\_\+non\+\_\+covid} () const
+\item 
+bool \hyperlink{classAgent_acc6bdb2ede4c49bc01165d5abe140ba1}{tested\+\_\+covid\+\_\+negative} () const
+\item 
+bool \hyperlink{classAgent_a0cb482555c25432c955ddceb0e62b22a}{tested\+\_\+false\+\_\+negative} () const
+\item 
+bool \hyperlink{classAgent_a89acf837bb933fa98d2809756d18725c}{tested\+\_\+false\+\_\+positive} () const
+\item 
+bool \hyperlink{classAgent_a85729b0c8074193bd08862a74eedfabf}{tested\+\_\+covid\+\_\+positive} () const
+\item 
+bool \hyperlink{classAgent_a8d923964a5c19abcddb6112d14eb9d1c}{tested} () const
+\item 
+bool \hyperlink{classAgent_aaeda593b535a41928499198c60bff028}{tested\+\_\+exposed} () const
+\item 
+bool \hyperlink{classAgent_a26b171ab3306fed7c3cbb620fba91417}{tested\+\_\+in\+\_\+car} () const
+\item 
+bool \hyperlink{classAgent_a753cbb74c489c5eadcec54b2a4f628a1}{tested\+\_\+in\+\_\+hospital} () const
+\item 
+bool \hyperlink{classAgent_a951c13f5e8e6ee90f0e6277a65c00c00}{tested\+\_\+awaiting\+\_\+results} () const
+\item 
+bool \hyperlink{classAgent_ad1c8a934667f5db54faa8505db10086d}{tested\+\_\+awaiting\+\_\+test} () const
+\item 
+double \hyperlink{classAgent_aa35e17354f856cd391d42e611619c0e6}{get\+\_\+time\+\_\+for\+\_\+flu\+\_\+isolation} ()
+\item 
+bool \hyperlink{classAgent_a05506fff0bf91da5ef02c899f3d53fda}{get\+\_\+testing\+\_\+since\+\_\+exposed} ()
+\item 
+bool \hyperlink{classAgent_ab13f3252bc27a334a9be7192c79a5b3d}{being\+\_\+treated} () const
+\item 
+bool \hyperlink{classAgent_a8447e6cb0bfcc4f31ad528da5ce166b1}{home\+\_\+isolated} () const
+\item 
+bool \hyperlink{classAgent_ad4253627a5c7f339f79617d9da7df34d}{hospitalized} () const
+\item 
+bool \hyperlink{classAgent_a25a7e8adabf00b2de152410b6293e767}{hospitalized\+\_\+\+I\+CU} () const
+\item 
+bool \hyperlink{classAgent_a1581a3db8ffd6a7a13d2387cf6345eb1}{get\+\_\+will\+\_\+be\+\_\+hospitalized} () const
+\item 
+bool \hyperlink{classAgent_a3c65c26bebfa4b16ad9882868a96bd30}{get\+\_\+will\+\_\+be\+\_\+hospitalized\+\_\+\+I\+CU} () const
+\item 
+bool \hyperlink{classAgent_a55650a1c926725d86789ee640268f02b}{get\+\_\+will\+\_\+be\+\_\+home\+\_\+isolated} () const
+\item 
+bool \hyperlink{classAgent_ad6e8e45da0353e051e9e2fcf68d36bb2}{dying} () const
+\item 
+bool \hyperlink{classAgent_adbe591f0156d55ec1eca37a7d9f75fe4}{recovering} () const
+\item 
+bool \hyperlink{classAgent_ab04af1e2f506d5b9b050dc132c474065}{removed} () const
+\item 
+bool \hyperlink{classAgent_a71bd83fd47b042333f9ae04a50b3eefe}{vaccinated} () const
+\item 
+double \hyperlink{classAgent_abf59cadd5a25de00fdcfd404cf6aba6d}{get\+\_\+inf\+\_\+variability\+\_\+factor} () const
+\begin{DoxyCompactList}\small\item\em Get infectiousness variability factor of an agent. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_a9e29f6f7aeea13a45c2161ebc208d263}{get\+\_\+latency\+\_\+end\+\_\+time} () const
+\begin{DoxyCompactList}\small\item\em Get latency end time. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_a5ca1201f213cfa77612b9ab63dbdf977}{get\+\_\+infectiousness\+\_\+start\+\_\+time} () const
+\begin{DoxyCompactList}\small\item\em Time when the latent-\/non infectious period ends. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_a8de09742703024f9974a3aaea17dc7ab}{get\+\_\+time\+\_\+of\+\_\+death} () const
+\begin{DoxyCompactList}\small\item\em Get time of death if not recovering. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_a16335c804f8fc6d5dbbfc45e3b1e8276}{get\+\_\+recovery\+\_\+time} () const
+\begin{DoxyCompactList}\small\item\em Get time of recovery. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_a7f6b8aca348488cb00b0b4a5356be717}{get\+\_\+time\+\_\+of\+\_\+test} () const
+\begin{DoxyCompactList}\small\item\em Time of testing. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_ae08afdbb10607a67d1b456e3660dc542}{get\+\_\+time\+\_\+of\+\_\+results} () const
+\begin{DoxyCompactList}\small\item\em Time when agent gets their testing results. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_a65a7778e48d9a031012bd5b2cbee785f}{get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu} () const
+\begin{DoxyCompactList}\small\item\em Time when dying agent is transferred from hospital to I\+CU. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_ae3b4045c981c44fb9eeed130246ea0a6}{get\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp} () const
+\begin{DoxyCompactList}\small\item\em Time when agent is transferred from I\+CU to hospital. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_a4dbb9d37122f7524d7122dab8cbe54b5}{get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih} () const
+\begin{DoxyCompactList}\small\item\em Time when recovering agent is transferred from hospital to home isolation. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_ac5987a030791b1d5dd9345cad1b21164}{get\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu} () const
+\begin{DoxyCompactList}\small\item\em Time when dying agent is transferred from home isolation to I\+CU. \end{DoxyCompactList}\item 
+double \hyperlink{classAgent_af2739d7acc0712cb090fff1d35f6169d}{get\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp} () const
+\begin{DoxyCompactList}\small\item\em Time when recovering agent is transferred from home isolation to hospital. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a2820049e7b8d498e5fb5047ca2a05d63}{set\+\_\+\+ID} (const int agent\+\_\+\+ID)
+\begin{DoxyCompactList}\small\item\em Assign ID to an agent. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_acd018fbc754c1a7a6b2a8cdf05455c6c}{set\+\_\+hospital\+\_\+\+ID} (const int ID)
+\begin{DoxyCompactList}\small\item\em Assign hospital ID for testing. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a2b889b74bbe8a1c8754c3211892a761b}{set\+\_\+household\+\_\+\+ID} (const int ID)
+\begin{DoxyCompactList}\small\item\em Assign household ID. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a97a65be4ac76ba2650f8e4ea136dc3d7}{set\+\_\+infected} (const bool \hyperlink{classAgent_abb85f9353fdaa27e69606b3c1e8fa364}{infected})
+\begin{DoxyCompactList}\small\item\em Change infection status. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a3f8ddc8e37400ca8f37705248e61d328}{set\+\_\+latency\+\_\+duration} (const double ltime)
+\begin{DoxyCompactList}\small\item\em Set latency duration time. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a0c99e711b0685c67da58a87556380931}{set\+\_\+latency\+\_\+end\+\_\+time} (const double cur\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Compute latency end from current time. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a151d7b2962d5238ff071c278455776e9}{set\+\_\+infectiousness\+\_\+start\+\_\+time} (const double cur\+\_\+time, const double dt)
+\begin{DoxyCompactList}\small\item\em Set tme when the pre-\/infectious period ends. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_aac1043948af7c46b29e2cc9e4e2d89ab}{set\+\_\+time\+\_\+to\+\_\+death} (const double dtime)
+\begin{DoxyCompactList}\small\item\em Set onset to death duration time. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a1df245aa715f81813b853931db39a398}{set\+\_\+death\+\_\+time} (const double cur\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Compute death time from current time. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a98b8e5692686d71e154c65eb9290ce4b}{set\+\_\+recovery\+\_\+duration} (const double rtime)
+\begin{DoxyCompactList}\small\item\em Set recovery duration time. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a451d3755209b898469cc459266b610a1}{set\+\_\+recovery\+\_\+time} (const double cur\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Compute recovery end from current time. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_acedabbad82e3e566d07cb0f4a743db12}{set\+\_\+time\+\_\+to\+\_\+test} (const double test\+\_\+time)
+\item 
+void \hyperlink{classAgent_aef9c72b5c984f9c89df6f8e1a0ad166d}{set\+\_\+time\+\_\+of\+\_\+test} (const double cur\+\_\+time)
+\item 
+void \hyperlink{classAgent_a8f56c1c255e7bb89da56a694942ba863}{set\+\_\+time\+\_\+until\+\_\+results} (const double test\+\_\+res\+\_\+time)
+\item 
+void \hyperlink{classAgent_a7d07d44ee7fd59ddf82a0be09b5dcdf9}{set\+\_\+time\+\_\+of\+\_\+results} (const double cur\+\_\+time)
+\item 
+void \hyperlink{classAgent_a9fb25871c67a9f095438fdb0409f84e1}{set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu} (const double t\+\_\+icu)
+\begin{DoxyCompactList}\small\item\em Transition from hospital to I\+CU. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_ab0459e0e04f77529740f38d4fc727adb}{set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih} (const double t\+\_\+ih)
+\begin{DoxyCompactList}\small\item\em Transition from hospital to home isolation. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_ada17009b6af62ef4f47322ebb4359182}{set\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp} (const double t\+\_\+icu)
+\begin{DoxyCompactList}\small\item\em Transition from I\+CU to hospital. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a3f52852fe867096f13ec980a67a62d16}{set\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu} (const double t\+\_\+icu)
+\begin{DoxyCompactList}\small\item\em Transition from home isolation to I\+CU. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a5967e9f87613fa235e22b5212d645960}{set\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp} (const double t\+\_\+hsp)
+\begin{DoxyCompactList}\small\item\em Transition from home isolation to hospital. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a33c15434f6aa6e70eaf80044caa16376}{set\+\_\+exposed} (const bool val)
+\begin{DoxyCompactList}\small\item\em State setters. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a8a0e23235990818d82c04485cb48b97d}{set\+\_\+recovering\+\_\+exposed} (const bool re)
+\item 
+void \hyperlink{classAgent_a4fe846deec4401a76f437c9b3276b9a2}{set\+\_\+symptomatic} (const bool val)
+\item 
+void \hyperlink{classAgent_a5d8cc1ff3240d83154cb0ec3ea1c65a1}{set\+\_\+symptomatic\+\_\+non\+\_\+covid} (const bool val)
+\item 
+void \hyperlink{classAgent_ab088831cd1e785e50aa2c6b49aac4b5f}{set\+\_\+tested\+\_\+covid\+\_\+negative} (const bool val)
+\item 
+void \hyperlink{classAgent_a50c49aa75d352945304c113a61c228c2}{set\+\_\+tested\+\_\+false\+\_\+negative} (const bool val)
+\item 
+void \hyperlink{classAgent_ad9b9ec740dbfec968b96cffc107429b6}{set\+\_\+tested\+\_\+false\+\_\+positive} (const bool val)
+\item 
+void \hyperlink{classAgent_a91e1958e695d18c520eb31180c89f303}{set\+\_\+tested\+\_\+covid\+\_\+positive} (const bool val)
+\item 
+void \hyperlink{classAgent_a4d7e1d046358653bf124fa4ca706de14}{set\+\_\+tested} (const bool val)
+\item 
+void \hyperlink{classAgent_ab77dec7b7506794e477113c27205d3ad}{set\+\_\+tested\+\_\+in\+\_\+car} (const bool val)
+\item 
+void \hyperlink{classAgent_a43eadb387fe119bbcb27b6a675179e43}{set\+\_\+tested\+\_\+in\+\_\+hospital} (const bool val)
+\item 
+void \hyperlink{classAgent_a1501d820a1f28294bbbaf20521775de3}{set\+\_\+tested\+\_\+awaiting\+\_\+results} (const bool val)
+\item 
+void \hyperlink{classAgent_a42e2c36cb50cb083d41133aad2cccff3}{set\+\_\+tested\+\_\+awaiting\+\_\+test} (const bool val)
+\item 
+void \hyperlink{classAgent_abda603a36472845e7aca1d584e6040a4}{set\+\_\+tested\+\_\+exposed} (const bool val)
+\item 
+void \hyperlink{classAgent_ae66fd7d3371a11c2bb235cf761ceac26}{set\+\_\+flu\+\_\+isolation} (const double val)
+\item 
+void \hyperlink{classAgent_a72d9ede5c5d13bf0b7c78358c88c5229}{set\+\_\+testing\+\_\+since\+\_\+exposed} (const bool val)
+\item 
+void \hyperlink{classAgent_a93847d02492d357ceb787aee6cfd0494}{set\+\_\+being\+\_\+treated} (const bool val)
+\item 
+void \hyperlink{classAgent_aee2da7db024cf43595e53431bd997b7b}{set\+\_\+home\+\_\+isolated} (const bool val)
+\item 
+void \hyperlink{classAgent_a6fadc5ac579265c35a344a7b718fff71}{set\+\_\+hospitalized} (const bool val)
+\item 
+void \hyperlink{classAgent_ad5f4b7735883e1145f95ebac41a6ff0c}{set\+\_\+hospitalized\+\_\+\+I\+CU} (const bool val)
+\item 
+void \hyperlink{classAgent_a0aebc28223173d54cf285de7705e6ff9}{set\+\_\+dying} (const bool val)
+\item 
+void \hyperlink{classAgent_a30f78d00b5e77545919f1045de389cc0}{set\+\_\+recovering} (const bool val)
+\item 
+void \hyperlink{classAgent_a9f817ef4dd7715e59da98956acb9803a}{set\+\_\+removed} (const bool val)
+\item 
+void \hyperlink{classAgent_adcdd68040573001d599a3163cafb6f3f}{set\+\_\+vaccinated} (const bool val)
+\item 
+void \hyperlink{classAgent_a5075fdcc53362b63931c5f8dd1e40a89}{to\+\_\+be\+\_\+hospitalized} (const bool val)
+\item 
+void \hyperlink{classAgent_a82cf089cd4bd5686670a5bd44be24a02}{to\+\_\+be\+\_\+in\+\_\+\+I\+CU} (const bool val)
+\item 
+void \hyperlink{classAgent_a875ad6702903a0ed7c8a7348a08b2f14}{to\+\_\+be\+\_\+home\+\_\+isolated} (const bool val)
+\item 
+void \hyperlink{classAgent_a8903c8e72857920e75be99f103b90ee5}{set\+\_\+inf\+\_\+variability\+\_\+factor} (const double var)
+\begin{DoxyCompactList}\small\item\em Set infectiousness variability factor of an agent. \end{DoxyCompactList}\item 
+void \hyperlink{classAgent_a2ea370bc4e0ea8338e95f3548c593c1f}{print\+\_\+basic} (std\+::ostream \&where) const
+\begin{DoxyCompactList}\small\item\em Print agent information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAgent_adbc1a27ec2c086160d3c28622ea02f3b}\label{classAgent_adbc1a27ec2c086160d3c28622ea02f3b}} 
+\index{Agent@{Agent}!Agent@{Agent}}
+\index{Agent@{Agent}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{Agent()}{Agent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Agent\+::\+Agent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates an \hyperlink{classAgent}{Agent} object with default attributes. 
+
+\mbox{\Hypertarget{classAgent_a8b2a1eebca05ea3ac1a9b6dc1fc4681f}\label{classAgent_a8b2a1eebca05ea3ac1a9b6dc1fc4681f}} 
+\index{Agent@{Agent}!Agent@{Agent}}
+\index{Agent@{Agent}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{Agent()}{Agent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Agent\+::\+Agent (\begin{DoxyParamCaption}\item[{const bool}]{student,  }\item[{const bool}]{works,  }\item[{const int}]{yrs,  }\item[{const double}]{xi,  }\item[{const double}]{yi,  }\item[{const int}]{house\+ID,  }\item[{const bool}]{is\+Patient,  }\item[{const int}]{school\+ID,  }\item[{const bool}]{lv\+RH,  }\item[{const bool}]{wrk\+RH,  }\item[{const bool}]{wrk\+Sch,  }\item[{const int}]{work\+ID,  }\item[{const bool}]{works\+Hospital,  }\item[{const int}]{hospital\+ID,  }\item[{const bool}]{infected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an \hyperlink{classAgent}{Agent} object with custom attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & -\/ true (marked as 1) if \hyperlink{classAgent}{Agent} is a student \\
+\hline
+{\em works} & -\/ true (marked as 1) if \hyperlink{classAgent}{Agent} works \\
+\hline
+{\em yrs} & -\/ age of the \hyperlink{classAgent}{Agent} \\
+\hline
+{\em xi} & -\/ x coordinate of the \hyperlink{classAgent}{Agent} \\
+\hline
+{\em yi} & -\/ y coordinate of the \hyperlink{classAgent}{Agent} \\
+\hline
+{\em house\+ID} & -\/ household ID \\
+\hline
+{\em is\+Patient} & -\/ true if hospitalized with a condition other than covid \\
+\hline
+{\em school\+ID} & -\/ ID of the school \hyperlink{classAgent}{Agent} attends \\
+\hline
+{\em lv\+RH} & -\/ true if agent lives at a retirement home \\
+\hline
+{\em wrk\+RH} & -\/ true if agent works at a retirement home \\
+\hline
+{\em wrk\+Sch} & -\/ true if agent works at a school \\
+\hline
+{\em work\+ID} & -\/ ID of the workplace \hyperlink{classAgent}{Agent} works at \\
+\hline
+{\em works\+Hospital} & -\/ true if agent works at a hospital \\
+\hline
+{\em Hospital\+ID} & -\/ ID of the hospital where agent is staff or patient \\
+\hline
+{\em infected} & -\/ true if \hyperlink{classAgent}{Agent} is infected \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAgent_ab13f3252bc27a334a9be7192c79a5b3d}\label{classAgent_ab13f3252bc27a334a9be7192c79a5b3d}} 
+\index{Agent@{Agent}!being\+\_\+treated@{being\+\_\+treated}}
+\index{being\+\_\+treated@{being\+\_\+treated}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{being\+\_\+treated()}{being\_treated()}}
+{\footnotesize\ttfamily bool Agent\+::being\+\_\+treated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_ad6e8e45da0353e051e9e2fcf68d36bb2}\label{classAgent_ad6e8e45da0353e051e9e2fcf68d36bb2}} 
+\index{Agent@{Agent}!dying@{dying}}
+\index{dying@{dying}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{dying()}{dying()}}
+{\footnotesize\ttfamily bool Agent\+::dying (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a17ab356b10fd5841a6678bd678d1f598}\label{classAgent_a17ab356b10fd5841a6678bd678d1f598}} 
+\index{Agent@{Agent}!exposed@{exposed}}
+\index{exposed@{exposed}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{exposed()}{exposed()}}
+{\footnotesize\ttfamily bool Agent\+::exposed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+State getters. 
+
+\mbox{\Hypertarget{classAgent_ada1fc5f6ea889ac641b3f373f47222e1}\label{classAgent_ada1fc5f6ea889ac641b3f373f47222e1}} 
+\index{Agent@{Agent}!get\+\_\+age@{get\+\_\+age}}
+\index{get\+\_\+age@{get\+\_\+age}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+age()}{get\_age()}}
+{\footnotesize\ttfamily int Agent\+::get\+\_\+age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Agents age. 
+
+\mbox{\Hypertarget{classAgent_a4b265ac0693d1677fce44c7ace928f70}\label{classAgent_a4b265ac0693d1677fce44c7ace928f70}} 
+\index{Agent@{Agent}!get\+\_\+hospital\+\_\+\+ID@{get\+\_\+hospital\+\_\+\+ID}}
+\index{get\+\_\+hospital\+\_\+\+ID@{get\+\_\+hospital\+\_\+\+ID}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+hospital\+\_\+\+I\+D()}{get\_hospital\_ID()}}
+{\footnotesize\ttfamily int Agent\+::get\+\_\+hospital\+\_\+\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\hyperlink{classHospital}{Hospital} ID if staff or patient. 
+
+\mbox{\Hypertarget{classAgent_a67330abc8e8a042e538ee32fae1c5d1c}\label{classAgent_a67330abc8e8a042e538ee32fae1c5d1c}} 
+\index{Agent@{Agent}!get\+\_\+household\+\_\+\+ID@{get\+\_\+household\+\_\+\+ID}}
+\index{get\+\_\+household\+\_\+\+ID@{get\+\_\+household\+\_\+\+ID}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+household\+\_\+\+I\+D()}{get\_household\_ID()}}
+{\footnotesize\ttfamily int Agent\+::get\+\_\+household\+\_\+\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+House ID. 
+
+\mbox{\Hypertarget{classAgent_a62a2d0e19950f7ae9552a3081ced2b29}\label{classAgent_a62a2d0e19950f7ae9552a3081ced2b29}} 
+\index{Agent@{Agent}!get\+\_\+\+ID@{get\+\_\+\+ID}}
+\index{get\+\_\+\+ID@{get\+\_\+\+ID}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+\+I\+D()}{get\_ID()}}
+{\footnotesize\ttfamily int Agent\+::get\+\_\+\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieve this agents ID. 
+
+\mbox{\Hypertarget{classAgent_abf59cadd5a25de00fdcfd404cf6aba6d}\label{classAgent_abf59cadd5a25de00fdcfd404cf6aba6d}} 
+\index{Agent@{Agent}!get\+\_\+inf\+\_\+variability\+\_\+factor@{get\+\_\+inf\+\_\+variability\+\_\+factor}}
+\index{get\+\_\+inf\+\_\+variability\+\_\+factor@{get\+\_\+inf\+\_\+variability\+\_\+factor}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+inf\+\_\+variability\+\_\+factor()}{get\_inf\_variability\_factor()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+inf\+\_\+variability\+\_\+factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get infectiousness variability factor of an agent. 
+
+\mbox{\Hypertarget{classAgent_a5ca1201f213cfa77612b9ab63dbdf977}\label{classAgent_a5ca1201f213cfa77612b9ab63dbdf977}} 
+\index{Agent@{Agent}!get\+\_\+infectiousness\+\_\+start\+\_\+time@{get\+\_\+infectiousness\+\_\+start\+\_\+time}}
+\index{get\+\_\+infectiousness\+\_\+start\+\_\+time@{get\+\_\+infectiousness\+\_\+start\+\_\+time}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+infectiousness\+\_\+start\+\_\+time()}{get\_infectiousness\_start\_time()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+infectiousness\+\_\+start\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Time when the latent-\/non infectious period ends. 
+
+\mbox{\Hypertarget{classAgent_a9e29f6f7aeea13a45c2161ebc208d263}\label{classAgent_a9e29f6f7aeea13a45c2161ebc208d263}} 
+\index{Agent@{Agent}!get\+\_\+latency\+\_\+end\+\_\+time@{get\+\_\+latency\+\_\+end\+\_\+time}}
+\index{get\+\_\+latency\+\_\+end\+\_\+time@{get\+\_\+latency\+\_\+end\+\_\+time}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+latency\+\_\+end\+\_\+time()}{get\_latency\_end\_time()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+latency\+\_\+end\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get latency end time. 
+
+\mbox{\Hypertarget{classAgent_a16335c804f8fc6d5dbbfc45e3b1e8276}\label{classAgent_a16335c804f8fc6d5dbbfc45e3b1e8276}} 
+\index{Agent@{Agent}!get\+\_\+recovery\+\_\+time@{get\+\_\+recovery\+\_\+time}}
+\index{get\+\_\+recovery\+\_\+time@{get\+\_\+recovery\+\_\+time}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+recovery\+\_\+time()}{get\_recovery\_time()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+recovery\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get time of recovery. 
+
+\mbox{\Hypertarget{classAgent_a78c4d92a0f47c27a34f457f492746307}\label{classAgent_a78c4d92a0f47c27a34f457f492746307}} 
+\index{Agent@{Agent}!get\+\_\+school\+\_\+\+ID@{get\+\_\+school\+\_\+\+ID}}
+\index{get\+\_\+school\+\_\+\+ID@{get\+\_\+school\+\_\+\+ID}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+school\+\_\+\+I\+D()}{get\_school\_ID()}}
+{\footnotesize\ttfamily int Agent\+::get\+\_\+school\+\_\+\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\hyperlink{classSchool}{School} ID. 
+
+\mbox{\Hypertarget{classAgent_a05506fff0bf91da5ef02c899f3d53fda}\label{classAgent_a05506fff0bf91da5ef02c899f3d53fda}} 
+\index{Agent@{Agent}!get\+\_\+testing\+\_\+since\+\_\+exposed@{get\+\_\+testing\+\_\+since\+\_\+exposed}}
+\index{get\+\_\+testing\+\_\+since\+\_\+exposed@{get\+\_\+testing\+\_\+since\+\_\+exposed}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+testing\+\_\+since\+\_\+exposed()}{get\_testing\_since\_exposed()}}
+{\footnotesize\ttfamily bool Agent\+::get\+\_\+testing\+\_\+since\+\_\+exposed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_aa35e17354f856cd391d42e611619c0e6}\label{classAgent_aa35e17354f856cd391d42e611619c0e6}} 
+\index{Agent@{Agent}!get\+\_\+time\+\_\+for\+\_\+flu\+\_\+isolation@{get\+\_\+time\+\_\+for\+\_\+flu\+\_\+isolation}}
+\index{get\+\_\+time\+\_\+for\+\_\+flu\+\_\+isolation@{get\+\_\+time\+\_\+for\+\_\+flu\+\_\+isolation}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+time\+\_\+for\+\_\+flu\+\_\+isolation()}{get\_time\_for\_flu\_isolation()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+time\+\_\+for\+\_\+flu\+\_\+isolation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a65a7778e48d9a031012bd5b2cbee785f}\label{classAgent_a65a7778e48d9a031012bd5b2cbee785f}} 
+\index{Agent@{Agent}!get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu@{get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu}}
+\index{get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu@{get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu()}{get\_time\_hsp\_to\_icu()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Time when dying agent is transferred from hospital to I\+CU. 
+
+\mbox{\Hypertarget{classAgent_a4dbb9d37122f7524d7122dab8cbe54b5}\label{classAgent_a4dbb9d37122f7524d7122dab8cbe54b5}} 
+\index{Agent@{Agent}!get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih@{get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih}}
+\index{get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih@{get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih()}{get\_time\_hsp\_to\_ih()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Time when recovering agent is transferred from hospital to home isolation. 
+
+\mbox{\Hypertarget{classAgent_ae3b4045c981c44fb9eeed130246ea0a6}\label{classAgent_ae3b4045c981c44fb9eeed130246ea0a6}} 
+\index{Agent@{Agent}!get\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp@{get\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp}}
+\index{get\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp@{get\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp()}{get\_time\_icu\_to\_hsp()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Time when agent is transferred from I\+CU to hospital. 
+
+\mbox{\Hypertarget{classAgent_af2739d7acc0712cb090fff1d35f6169d}\label{classAgent_af2739d7acc0712cb090fff1d35f6169d}} 
+\index{Agent@{Agent}!get\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp@{get\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp}}
+\index{get\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp@{get\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp()}{get\_time\_ih\_to\_hsp()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Time when recovering agent is transferred from home isolation to hospital. 
+
+\mbox{\Hypertarget{classAgent_ac5987a030791b1d5dd9345cad1b21164}\label{classAgent_ac5987a030791b1d5dd9345cad1b21164}} 
+\index{Agent@{Agent}!get\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu@{get\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu}}
+\index{get\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu@{get\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu()}{get\_time\_ih\_to\_icu()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Time when dying agent is transferred from home isolation to I\+CU. 
+
+\mbox{\Hypertarget{classAgent_a8de09742703024f9974a3aaea17dc7ab}\label{classAgent_a8de09742703024f9974a3aaea17dc7ab}} 
+\index{Agent@{Agent}!get\+\_\+time\+\_\+of\+\_\+death@{get\+\_\+time\+\_\+of\+\_\+death}}
+\index{get\+\_\+time\+\_\+of\+\_\+death@{get\+\_\+time\+\_\+of\+\_\+death}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+time\+\_\+of\+\_\+death()}{get\_time\_of\_death()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+time\+\_\+of\+\_\+death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get time of death if not recovering. 
+
+\mbox{\Hypertarget{classAgent_ae08afdbb10607a67d1b456e3660dc542}\label{classAgent_ae08afdbb10607a67d1b456e3660dc542}} 
+\index{Agent@{Agent}!get\+\_\+time\+\_\+of\+\_\+results@{get\+\_\+time\+\_\+of\+\_\+results}}
+\index{get\+\_\+time\+\_\+of\+\_\+results@{get\+\_\+time\+\_\+of\+\_\+results}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+time\+\_\+of\+\_\+results()}{get\_time\_of\_results()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+time\+\_\+of\+\_\+results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Time when agent gets their testing results. 
+
+\mbox{\Hypertarget{classAgent_a7f6b8aca348488cb00b0b4a5356be717}\label{classAgent_a7f6b8aca348488cb00b0b4a5356be717}} 
+\index{Agent@{Agent}!get\+\_\+time\+\_\+of\+\_\+test@{get\+\_\+time\+\_\+of\+\_\+test}}
+\index{get\+\_\+time\+\_\+of\+\_\+test@{get\+\_\+time\+\_\+of\+\_\+test}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+time\+\_\+of\+\_\+test()}{get\_time\_of\_test()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+time\+\_\+of\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Time of testing. 
+
+\mbox{\Hypertarget{classAgent_a55650a1c926725d86789ee640268f02b}\label{classAgent_a55650a1c926725d86789ee640268f02b}} 
+\index{Agent@{Agent}!get\+\_\+will\+\_\+be\+\_\+home\+\_\+isolated@{get\+\_\+will\+\_\+be\+\_\+home\+\_\+isolated}}
+\index{get\+\_\+will\+\_\+be\+\_\+home\+\_\+isolated@{get\+\_\+will\+\_\+be\+\_\+home\+\_\+isolated}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+will\+\_\+be\+\_\+home\+\_\+isolated()}{get\_will\_be\_home\_isolated()}}
+{\footnotesize\ttfamily bool Agent\+::get\+\_\+will\+\_\+be\+\_\+home\+\_\+isolated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a1581a3db8ffd6a7a13d2387cf6345eb1}\label{classAgent_a1581a3db8ffd6a7a13d2387cf6345eb1}} 
+\index{Agent@{Agent}!get\+\_\+will\+\_\+be\+\_\+hospitalized@{get\+\_\+will\+\_\+be\+\_\+hospitalized}}
+\index{get\+\_\+will\+\_\+be\+\_\+hospitalized@{get\+\_\+will\+\_\+be\+\_\+hospitalized}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+will\+\_\+be\+\_\+hospitalized()}{get\_will\_be\_hospitalized()}}
+{\footnotesize\ttfamily bool Agent\+::get\+\_\+will\+\_\+be\+\_\+hospitalized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a3c65c26bebfa4b16ad9882868a96bd30}\label{classAgent_a3c65c26bebfa4b16ad9882868a96bd30}} 
+\index{Agent@{Agent}!get\+\_\+will\+\_\+be\+\_\+hospitalized\+\_\+\+I\+CU@{get\+\_\+will\+\_\+be\+\_\+hospitalized\+\_\+\+I\+CU}}
+\index{get\+\_\+will\+\_\+be\+\_\+hospitalized\+\_\+\+I\+CU@{get\+\_\+will\+\_\+be\+\_\+hospitalized\+\_\+\+I\+CU}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+will\+\_\+be\+\_\+hospitalized\+\_\+\+I\+C\+U()}{get\_will\_be\_hospitalized\_ICU()}}
+{\footnotesize\ttfamily bool Agent\+::get\+\_\+will\+\_\+be\+\_\+hospitalized\+\_\+\+I\+CU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a893d27a0906f9578c54fac02c8937e44}\label{classAgent_a893d27a0906f9578c54fac02c8937e44}} 
+\index{Agent@{Agent}!get\+\_\+work\+\_\+\+ID@{get\+\_\+work\+\_\+\+ID}}
+\index{get\+\_\+work\+\_\+\+ID@{get\+\_\+work\+\_\+\+ID}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+work\+\_\+\+I\+D()}{get\_work\_ID()}}
+{\footnotesize\ttfamily int Agent\+::get\+\_\+work\+\_\+\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Work ID. 
+
+\mbox{\Hypertarget{classAgent_aa304e2bd2e7a9564bad10c52b16cef09}\label{classAgent_aa304e2bd2e7a9564bad10c52b16cef09}} 
+\index{Agent@{Agent}!get\+\_\+x\+\_\+location@{get\+\_\+x\+\_\+location}}
+\index{get\+\_\+x\+\_\+location@{get\+\_\+x\+\_\+location}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+x\+\_\+location()}{get\_x\_location()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+x\+\_\+location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Location -\/ x coordinates. 
+
+\mbox{\Hypertarget{classAgent_a6be70e1995c222467a192a90ed9ab7dd}\label{classAgent_a6be70e1995c222467a192a90ed9ab7dd}} 
+\index{Agent@{Agent}!get\+\_\+y\+\_\+location@{get\+\_\+y\+\_\+location}}
+\index{get\+\_\+y\+\_\+location@{get\+\_\+y\+\_\+location}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{get\+\_\+y\+\_\+location()}{get\_y\_location()}}
+{\footnotesize\ttfamily double Agent\+::get\+\_\+y\+\_\+location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Location -\/ y coordinates. 
+
+\mbox{\Hypertarget{classAgent_a8447e6cb0bfcc4f31ad528da5ce166b1}\label{classAgent_a8447e6cb0bfcc4f31ad528da5ce166b1}} 
+\index{Agent@{Agent}!home\+\_\+isolated@{home\+\_\+isolated}}
+\index{home\+\_\+isolated@{home\+\_\+isolated}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{home\+\_\+isolated()}{home\_isolated()}}
+{\footnotesize\ttfamily bool Agent\+::home\+\_\+isolated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a6a56ebd7762964bcfe5033aa03c519b7}\label{classAgent_a6a56ebd7762964bcfe5033aa03c519b7}} 
+\index{Agent@{Agent}!hospital\+\_\+employee@{hospital\+\_\+employee}}
+\index{hospital\+\_\+employee@{hospital\+\_\+employee}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{hospital\+\_\+employee()}{hospital\_employee()}}
+{\footnotesize\ttfamily bool Agent\+::hospital\+\_\+employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+True if agent works at a hospital. 
+
+\mbox{\Hypertarget{classAgent_a6ed91d3d0a946999ab67241776ff928f}\label{classAgent_a6ed91d3d0a946999ab67241776ff928f}} 
+\index{Agent@{Agent}!hospital\+\_\+non\+\_\+covid\+\_\+patient@{hospital\+\_\+non\+\_\+covid\+\_\+patient}}
+\index{hospital\+\_\+non\+\_\+covid\+\_\+patient@{hospital\+\_\+non\+\_\+covid\+\_\+patient}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{hospital\+\_\+non\+\_\+covid\+\_\+patient()}{hospital\_non\_covid\_patient()}}
+{\footnotesize\ttfamily bool Agent\+::hospital\+\_\+non\+\_\+covid\+\_\+patient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+True if agent is a hospital patient with condition other than C\+O\+V\+ID. 
+
+\mbox{\Hypertarget{classAgent_ad4253627a5c7f339f79617d9da7df34d}\label{classAgent_ad4253627a5c7f339f79617d9da7df34d}} 
+\index{Agent@{Agent}!hospitalized@{hospitalized}}
+\index{hospitalized@{hospitalized}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{hospitalized()}{hospitalized()}}
+{\footnotesize\ttfamily bool Agent\+::hospitalized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a25a7e8adabf00b2de152410b6293e767}\label{classAgent_a25a7e8adabf00b2de152410b6293e767}} 
+\index{Agent@{Agent}!hospitalized\+\_\+\+I\+CU@{hospitalized\+\_\+\+I\+CU}}
+\index{hospitalized\+\_\+\+I\+CU@{hospitalized\+\_\+\+I\+CU}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{hospitalized\+\_\+\+I\+C\+U()}{hospitalized\_ICU()}}
+{\footnotesize\ttfamily bool Agent\+::hospitalized\+\_\+\+I\+CU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_abb85f9353fdaa27e69606b3c1e8fa364}\label{classAgent_abb85f9353fdaa27e69606b3c1e8fa364}} 
+\index{Agent@{Agent}!infected@{infected}}
+\index{infected@{infected}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{infected()}{infected()}}
+{\footnotesize\ttfamily bool Agent\+::infected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+True if infected. 
+
+\mbox{\Hypertarget{classAgent_a2ea370bc4e0ea8338e95f3548c593c1f}\label{classAgent_a2ea370bc4e0ea8338e95f3548c593c1f}} 
+\index{Agent@{Agent}!print\+\_\+basic@{print\+\_\+basic}}
+\index{print\+\_\+basic@{print\+\_\+basic}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{print\+\_\+basic()}{print\_basic()}}
+{\footnotesize\ttfamily void Agent\+::print\+\_\+basic (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{where }\end{DoxyParamCaption}) const}
+
+
+
+Print agent information. 
+
+The information is in the same order as in the constructor, except that it is preceeded by agent ID set separately 
+\begin{DoxyParams}{Parameters}
+{\em where} & -\/ output stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAgent_adbe591f0156d55ec1eca37a7d9f75fe4}\label{classAgent_adbe591f0156d55ec1eca37a7d9f75fe4}} 
+\index{Agent@{Agent}!recovering@{recovering}}
+\index{recovering@{recovering}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{recovering()}{recovering()}}
+{\footnotesize\ttfamily bool Agent\+::recovering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a221f1afb3791e0f0fa9eaccaea2d00cb}\label{classAgent_a221f1afb3791e0f0fa9eaccaea2d00cb}} 
+\index{Agent@{Agent}!recovering\+\_\+exposed@{recovering\+\_\+exposed}}
+\index{recovering\+\_\+exposed@{recovering\+\_\+exposed}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{recovering\+\_\+exposed()}{recovering\_exposed()}}
+{\footnotesize\ttfamily bool Agent\+::recovering\+\_\+exposed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_ab04af1e2f506d5b9b050dc132c474065}\label{classAgent_ab04af1e2f506d5b9b050dc132c474065}} 
+\index{Agent@{Agent}!removed@{removed}}
+\index{removed@{removed}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{removed()}{removed()}}
+{\footnotesize\ttfamily bool Agent\+::removed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a6283111c121ebf8985810b69a51eb951}\label{classAgent_a6283111c121ebf8985810b69a51eb951}} 
+\index{Agent@{Agent}!retirement\+\_\+home\+\_\+employee@{retirement\+\_\+home\+\_\+employee}}
+\index{retirement\+\_\+home\+\_\+employee@{retirement\+\_\+home\+\_\+employee}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{retirement\+\_\+home\+\_\+employee()}{retirement\_home\_employee()}}
+{\footnotesize\ttfamily bool Agent\+::retirement\+\_\+home\+\_\+employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+True if agent works in a retirement home. 
+
+\mbox{\Hypertarget{classAgent_aa38f589ea0afe69b5079c559862bff19}\label{classAgent_aa38f589ea0afe69b5079c559862bff19}} 
+\index{Agent@{Agent}!retirement\+\_\+home\+\_\+resident@{retirement\+\_\+home\+\_\+resident}}
+\index{retirement\+\_\+home\+\_\+resident@{retirement\+\_\+home\+\_\+resident}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{retirement\+\_\+home\+\_\+resident()}{retirement\_home\_resident()}}
+{\footnotesize\ttfamily bool Agent\+::retirement\+\_\+home\+\_\+resident (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+True if agent lives in a retirement home. 
+
+\mbox{\Hypertarget{classAgent_a47890cf31361127f97856265d1ea0576}\label{classAgent_a47890cf31361127f97856265d1ea0576}} 
+\index{Agent@{Agent}!school\+\_\+employee@{school\+\_\+employee}}
+\index{school\+\_\+employee@{school\+\_\+employee}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{school\+\_\+employee()}{school\_employee()}}
+{\footnotesize\ttfamily bool Agent\+::school\+\_\+employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+True if agent works at a school. 
+
+\mbox{\Hypertarget{classAgent_a93847d02492d357ceb787aee6cfd0494}\label{classAgent_a93847d02492d357ceb787aee6cfd0494}} 
+\index{Agent@{Agent}!set\+\_\+being\+\_\+treated@{set\+\_\+being\+\_\+treated}}
+\index{set\+\_\+being\+\_\+treated@{set\+\_\+being\+\_\+treated}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+being\+\_\+treated()}{set\_being\_treated()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+being\+\_\+treated (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a1df245aa715f81813b853931db39a398}\label{classAgent_a1df245aa715f81813b853931db39a398}} 
+\index{Agent@{Agent}!set\+\_\+death\+\_\+time@{set\+\_\+death\+\_\+time}}
+\index{set\+\_\+death\+\_\+time@{set\+\_\+death\+\_\+time}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+death\+\_\+time()}{set\_death\_time()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+death\+\_\+time (\begin{DoxyParamCaption}\item[{const double}]{cur\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compute death time from current time. 
+
+\mbox{\Hypertarget{classAgent_a0aebc28223173d54cf285de7705e6ff9}\label{classAgent_a0aebc28223173d54cf285de7705e6ff9}} 
+\index{Agent@{Agent}!set\+\_\+dying@{set\+\_\+dying}}
+\index{set\+\_\+dying@{set\+\_\+dying}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+dying()}{set\_dying()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+dying (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a33c15434f6aa6e70eaf80044caa16376}\label{classAgent_a33c15434f6aa6e70eaf80044caa16376}} 
+\index{Agent@{Agent}!set\+\_\+exposed@{set\+\_\+exposed}}
+\index{set\+\_\+exposed@{set\+\_\+exposed}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+exposed()}{set\_exposed()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+exposed (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+State setters. 
+
+\mbox{\Hypertarget{classAgent_ae66fd7d3371a11c2bb235cf761ceac26}\label{classAgent_ae66fd7d3371a11c2bb235cf761ceac26}} 
+\index{Agent@{Agent}!set\+\_\+flu\+\_\+isolation@{set\+\_\+flu\+\_\+isolation}}
+\index{set\+\_\+flu\+\_\+isolation@{set\+\_\+flu\+\_\+isolation}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+flu\+\_\+isolation()}{set\_flu\_isolation()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+flu\+\_\+isolation (\begin{DoxyParamCaption}\item[{const double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_aee2da7db024cf43595e53431bd997b7b}\label{classAgent_aee2da7db024cf43595e53431bd997b7b}} 
+\index{Agent@{Agent}!set\+\_\+home\+\_\+isolated@{set\+\_\+home\+\_\+isolated}}
+\index{set\+\_\+home\+\_\+isolated@{set\+\_\+home\+\_\+isolated}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+home\+\_\+isolated()}{set\_home\_isolated()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+home\+\_\+isolated (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_acd018fbc754c1a7a6b2a8cdf05455c6c}\label{classAgent_acd018fbc754c1a7a6b2a8cdf05455c6c}} 
+\index{Agent@{Agent}!set\+\_\+hospital\+\_\+\+ID@{set\+\_\+hospital\+\_\+\+ID}}
+\index{set\+\_\+hospital\+\_\+\+ID@{set\+\_\+hospital\+\_\+\+ID}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+hospital\+\_\+\+I\+D()}{set\_hospital\_ID()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+hospital\+\_\+\+ID (\begin{DoxyParamCaption}\item[{const int}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assign hospital ID for testing. 
+
+\mbox{\Hypertarget{classAgent_a6fadc5ac579265c35a344a7b718fff71}\label{classAgent_a6fadc5ac579265c35a344a7b718fff71}} 
+\index{Agent@{Agent}!set\+\_\+hospitalized@{set\+\_\+hospitalized}}
+\index{set\+\_\+hospitalized@{set\+\_\+hospitalized}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+hospitalized()}{set\_hospitalized()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+hospitalized (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_ad5f4b7735883e1145f95ebac41a6ff0c}\label{classAgent_ad5f4b7735883e1145f95ebac41a6ff0c}} 
+\index{Agent@{Agent}!set\+\_\+hospitalized\+\_\+\+I\+CU@{set\+\_\+hospitalized\+\_\+\+I\+CU}}
+\index{set\+\_\+hospitalized\+\_\+\+I\+CU@{set\+\_\+hospitalized\+\_\+\+I\+CU}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+hospitalized\+\_\+\+I\+C\+U()}{set\_hospitalized\_ICU()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+hospitalized\+\_\+\+I\+CU (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a2b889b74bbe8a1c8754c3211892a761b}\label{classAgent_a2b889b74bbe8a1c8754c3211892a761b}} 
+\index{Agent@{Agent}!set\+\_\+household\+\_\+\+ID@{set\+\_\+household\+\_\+\+ID}}
+\index{set\+\_\+household\+\_\+\+ID@{set\+\_\+household\+\_\+\+ID}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+household\+\_\+\+I\+D()}{set\_household\_ID()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+household\+\_\+\+ID (\begin{DoxyParamCaption}\item[{const int}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assign household ID. 
+
+\mbox{\Hypertarget{classAgent_a2820049e7b8d498e5fb5047ca2a05d63}\label{classAgent_a2820049e7b8d498e5fb5047ca2a05d63}} 
+\index{Agent@{Agent}!set\+\_\+\+ID@{set\+\_\+\+ID}}
+\index{set\+\_\+\+ID@{set\+\_\+\+ID}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+\+I\+D()}{set\_ID()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+\+ID (\begin{DoxyParamCaption}\item[{const int}]{agent\+\_\+\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assign ID to an agent. 
+
+\mbox{\Hypertarget{classAgent_a8903c8e72857920e75be99f103b90ee5}\label{classAgent_a8903c8e72857920e75be99f103b90ee5}} 
+\index{Agent@{Agent}!set\+\_\+inf\+\_\+variability\+\_\+factor@{set\+\_\+inf\+\_\+variability\+\_\+factor}}
+\index{set\+\_\+inf\+\_\+variability\+\_\+factor@{set\+\_\+inf\+\_\+variability\+\_\+factor}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+inf\+\_\+variability\+\_\+factor()}{set\_inf\_variability\_factor()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+inf\+\_\+variability\+\_\+factor (\begin{DoxyParamCaption}\item[{const double}]{var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set infectiousness variability factor of an agent. 
+
+\mbox{\Hypertarget{classAgent_a97a65be4ac76ba2650f8e4ea136dc3d7}\label{classAgent_a97a65be4ac76ba2650f8e4ea136dc3d7}} 
+\index{Agent@{Agent}!set\+\_\+infected@{set\+\_\+infected}}
+\index{set\+\_\+infected@{set\+\_\+infected}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+infected()}{set\_infected()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+infected (\begin{DoxyParamCaption}\item[{const bool}]{infected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Change infection status. 
+
+\mbox{\Hypertarget{classAgent_a151d7b2962d5238ff071c278455776e9}\label{classAgent_a151d7b2962d5238ff071c278455776e9}} 
+\index{Agent@{Agent}!set\+\_\+infectiousness\+\_\+start\+\_\+time@{set\+\_\+infectiousness\+\_\+start\+\_\+time}}
+\index{set\+\_\+infectiousness\+\_\+start\+\_\+time@{set\+\_\+infectiousness\+\_\+start\+\_\+time}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+infectiousness\+\_\+start\+\_\+time()}{set\_infectiousness\_start\_time()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+infectiousness\+\_\+start\+\_\+time (\begin{DoxyParamCaption}\item[{const double}]{cur\+\_\+time,  }\item[{const double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set tme when the pre-\/infectious period ends. 
+
+\mbox{\Hypertarget{classAgent_a3f8ddc8e37400ca8f37705248e61d328}\label{classAgent_a3f8ddc8e37400ca8f37705248e61d328}} 
+\index{Agent@{Agent}!set\+\_\+latency\+\_\+duration@{set\+\_\+latency\+\_\+duration}}
+\index{set\+\_\+latency\+\_\+duration@{set\+\_\+latency\+\_\+duration}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+latency\+\_\+duration()}{set\_latency\_duration()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+latency\+\_\+duration (\begin{DoxyParamCaption}\item[{const double}]{ltime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set latency duration time. 
+
+\mbox{\Hypertarget{classAgent_a0c99e711b0685c67da58a87556380931}\label{classAgent_a0c99e711b0685c67da58a87556380931}} 
+\index{Agent@{Agent}!set\+\_\+latency\+\_\+end\+\_\+time@{set\+\_\+latency\+\_\+end\+\_\+time}}
+\index{set\+\_\+latency\+\_\+end\+\_\+time@{set\+\_\+latency\+\_\+end\+\_\+time}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+latency\+\_\+end\+\_\+time()}{set\_latency\_end\_time()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+latency\+\_\+end\+\_\+time (\begin{DoxyParamCaption}\item[{const double}]{cur\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compute latency end from current time. 
+
+\mbox{\Hypertarget{classAgent_a30f78d00b5e77545919f1045de389cc0}\label{classAgent_a30f78d00b5e77545919f1045de389cc0}} 
+\index{Agent@{Agent}!set\+\_\+recovering@{set\+\_\+recovering}}
+\index{set\+\_\+recovering@{set\+\_\+recovering}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+recovering()}{set\_recovering()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+recovering (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a8a0e23235990818d82c04485cb48b97d}\label{classAgent_a8a0e23235990818d82c04485cb48b97d}} 
+\index{Agent@{Agent}!set\+\_\+recovering\+\_\+exposed@{set\+\_\+recovering\+\_\+exposed}}
+\index{set\+\_\+recovering\+\_\+exposed@{set\+\_\+recovering\+\_\+exposed}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+recovering\+\_\+exposed()}{set\_recovering\_exposed()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+recovering\+\_\+exposed (\begin{DoxyParamCaption}\item[{const bool}]{re }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a98b8e5692686d71e154c65eb9290ce4b}\label{classAgent_a98b8e5692686d71e154c65eb9290ce4b}} 
+\index{Agent@{Agent}!set\+\_\+recovery\+\_\+duration@{set\+\_\+recovery\+\_\+duration}}
+\index{set\+\_\+recovery\+\_\+duration@{set\+\_\+recovery\+\_\+duration}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+recovery\+\_\+duration()}{set\_recovery\_duration()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+recovery\+\_\+duration (\begin{DoxyParamCaption}\item[{const double}]{rtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set recovery duration time. 
+
+\mbox{\Hypertarget{classAgent_a451d3755209b898469cc459266b610a1}\label{classAgent_a451d3755209b898469cc459266b610a1}} 
+\index{Agent@{Agent}!set\+\_\+recovery\+\_\+time@{set\+\_\+recovery\+\_\+time}}
+\index{set\+\_\+recovery\+\_\+time@{set\+\_\+recovery\+\_\+time}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+recovery\+\_\+time()}{set\_recovery\_time()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+recovery\+\_\+time (\begin{DoxyParamCaption}\item[{const double}]{cur\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compute recovery end from current time. 
+
+\mbox{\Hypertarget{classAgent_a9f817ef4dd7715e59da98956acb9803a}\label{classAgent_a9f817ef4dd7715e59da98956acb9803a}} 
+\index{Agent@{Agent}!set\+\_\+removed@{set\+\_\+removed}}
+\index{set\+\_\+removed@{set\+\_\+removed}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+removed()}{set\_removed()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+removed (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a4fe846deec4401a76f437c9b3276b9a2}\label{classAgent_a4fe846deec4401a76f437c9b3276b9a2}} 
+\index{Agent@{Agent}!set\+\_\+symptomatic@{set\+\_\+symptomatic}}
+\index{set\+\_\+symptomatic@{set\+\_\+symptomatic}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+symptomatic()}{set\_symptomatic()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a5d8cc1ff3240d83154cb0ec3ea1c65a1}\label{classAgent_a5d8cc1ff3240d83154cb0ec3ea1c65a1}} 
+\index{Agent@{Agent}!set\+\_\+symptomatic\+\_\+non\+\_\+covid@{set\+\_\+symptomatic\+\_\+non\+\_\+covid}}
+\index{set\+\_\+symptomatic\+\_\+non\+\_\+covid@{set\+\_\+symptomatic\+\_\+non\+\_\+covid}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+symptomatic\+\_\+non\+\_\+covid()}{set\_symptomatic\_non\_covid()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+symptomatic\+\_\+non\+\_\+covid (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a4d7e1d046358653bf124fa4ca706de14}\label{classAgent_a4d7e1d046358653bf124fa4ca706de14}} 
+\index{Agent@{Agent}!set\+\_\+tested@{set\+\_\+tested}}
+\index{set\+\_\+tested@{set\+\_\+tested}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+tested()}{set\_tested()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+tested (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a1501d820a1f28294bbbaf20521775de3}\label{classAgent_a1501d820a1f28294bbbaf20521775de3}} 
+\index{Agent@{Agent}!set\+\_\+tested\+\_\+awaiting\+\_\+results@{set\+\_\+tested\+\_\+awaiting\+\_\+results}}
+\index{set\+\_\+tested\+\_\+awaiting\+\_\+results@{set\+\_\+tested\+\_\+awaiting\+\_\+results}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+awaiting\+\_\+results()}{set\_tested\_awaiting\_results()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+tested\+\_\+awaiting\+\_\+results (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a42e2c36cb50cb083d41133aad2cccff3}\label{classAgent_a42e2c36cb50cb083d41133aad2cccff3}} 
+\index{Agent@{Agent}!set\+\_\+tested\+\_\+awaiting\+\_\+test@{set\+\_\+tested\+\_\+awaiting\+\_\+test}}
+\index{set\+\_\+tested\+\_\+awaiting\+\_\+test@{set\+\_\+tested\+\_\+awaiting\+\_\+test}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+awaiting\+\_\+test()}{set\_tested\_awaiting\_test()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+tested\+\_\+awaiting\+\_\+test (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_ab088831cd1e785e50aa2c6b49aac4b5f}\label{classAgent_ab088831cd1e785e50aa2c6b49aac4b5f}} 
+\index{Agent@{Agent}!set\+\_\+tested\+\_\+covid\+\_\+negative@{set\+\_\+tested\+\_\+covid\+\_\+negative}}
+\index{set\+\_\+tested\+\_\+covid\+\_\+negative@{set\+\_\+tested\+\_\+covid\+\_\+negative}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+covid\+\_\+negative()}{set\_tested\_covid\_negative()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+tested\+\_\+covid\+\_\+negative (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a91e1958e695d18c520eb31180c89f303}\label{classAgent_a91e1958e695d18c520eb31180c89f303}} 
+\index{Agent@{Agent}!set\+\_\+tested\+\_\+covid\+\_\+positive@{set\+\_\+tested\+\_\+covid\+\_\+positive}}
+\index{set\+\_\+tested\+\_\+covid\+\_\+positive@{set\+\_\+tested\+\_\+covid\+\_\+positive}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+covid\+\_\+positive()}{set\_tested\_covid\_positive()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+tested\+\_\+covid\+\_\+positive (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_abda603a36472845e7aca1d584e6040a4}\label{classAgent_abda603a36472845e7aca1d584e6040a4}} 
+\index{Agent@{Agent}!set\+\_\+tested\+\_\+exposed@{set\+\_\+tested\+\_\+exposed}}
+\index{set\+\_\+tested\+\_\+exposed@{set\+\_\+tested\+\_\+exposed}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+exposed()}{set\_tested\_exposed()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+tested\+\_\+exposed (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a50c49aa75d352945304c113a61c228c2}\label{classAgent_a50c49aa75d352945304c113a61c228c2}} 
+\index{Agent@{Agent}!set\+\_\+tested\+\_\+false\+\_\+negative@{set\+\_\+tested\+\_\+false\+\_\+negative}}
+\index{set\+\_\+tested\+\_\+false\+\_\+negative@{set\+\_\+tested\+\_\+false\+\_\+negative}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+false\+\_\+negative()}{set\_tested\_false\_negative()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+tested\+\_\+false\+\_\+negative (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_ad9b9ec740dbfec968b96cffc107429b6}\label{classAgent_ad9b9ec740dbfec968b96cffc107429b6}} 
+\index{Agent@{Agent}!set\+\_\+tested\+\_\+false\+\_\+positive@{set\+\_\+tested\+\_\+false\+\_\+positive}}
+\index{set\+\_\+tested\+\_\+false\+\_\+positive@{set\+\_\+tested\+\_\+false\+\_\+positive}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+false\+\_\+positive()}{set\_tested\_false\_positive()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+tested\+\_\+false\+\_\+positive (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_ab77dec7b7506794e477113c27205d3ad}\label{classAgent_ab77dec7b7506794e477113c27205d3ad}} 
+\index{Agent@{Agent}!set\+\_\+tested\+\_\+in\+\_\+car@{set\+\_\+tested\+\_\+in\+\_\+car}}
+\index{set\+\_\+tested\+\_\+in\+\_\+car@{set\+\_\+tested\+\_\+in\+\_\+car}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+in\+\_\+car()}{set\_tested\_in\_car()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+tested\+\_\+in\+\_\+car (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a43eadb387fe119bbcb27b6a675179e43}\label{classAgent_a43eadb387fe119bbcb27b6a675179e43}} 
+\index{Agent@{Agent}!set\+\_\+tested\+\_\+in\+\_\+hospital@{set\+\_\+tested\+\_\+in\+\_\+hospital}}
+\index{set\+\_\+tested\+\_\+in\+\_\+hospital@{set\+\_\+tested\+\_\+in\+\_\+hospital}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+in\+\_\+hospital()}{set\_tested\_in\_hospital()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+tested\+\_\+in\+\_\+hospital (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a72d9ede5c5d13bf0b7c78358c88c5229}\label{classAgent_a72d9ede5c5d13bf0b7c78358c88c5229}} 
+\index{Agent@{Agent}!set\+\_\+testing\+\_\+since\+\_\+exposed@{set\+\_\+testing\+\_\+since\+\_\+exposed}}
+\index{set\+\_\+testing\+\_\+since\+\_\+exposed@{set\+\_\+testing\+\_\+since\+\_\+exposed}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+testing\+\_\+since\+\_\+exposed()}{set\_testing\_since\_exposed()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+testing\+\_\+since\+\_\+exposed (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a9fb25871c67a9f095438fdb0409f84e1}\label{classAgent_a9fb25871c67a9f095438fdb0409f84e1}} 
+\index{Agent@{Agent}!set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu@{set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu}}
+\index{set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu@{set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu()}{set\_time\_hsp\_to\_icu()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+icu (\begin{DoxyParamCaption}\item[{const double}]{t\+\_\+icu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transition from hospital to I\+CU. 
+
+\mbox{\Hypertarget{classAgent_ab0459e0e04f77529740f38d4fc727adb}\label{classAgent_ab0459e0e04f77529740f38d4fc727adb}} 
+\index{Agent@{Agent}!set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih@{set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih}}
+\index{set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih@{set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih()}{set\_time\_hsp\_to\_ih()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+time\+\_\+hsp\+\_\+to\+\_\+ih (\begin{DoxyParamCaption}\item[{const double}]{t\+\_\+ih }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transition from hospital to home isolation. 
+
+\mbox{\Hypertarget{classAgent_ada17009b6af62ef4f47322ebb4359182}\label{classAgent_ada17009b6af62ef4f47322ebb4359182}} 
+\index{Agent@{Agent}!set\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp@{set\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp}}
+\index{set\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp@{set\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp()}{set\_time\_icu\_to\_hsp()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+time\+\_\+icu\+\_\+to\+\_\+hsp (\begin{DoxyParamCaption}\item[{const double}]{t\+\_\+icu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transition from I\+CU to hospital. 
+
+\mbox{\Hypertarget{classAgent_a5967e9f87613fa235e22b5212d645960}\label{classAgent_a5967e9f87613fa235e22b5212d645960}} 
+\index{Agent@{Agent}!set\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp@{set\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp}}
+\index{set\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp@{set\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp()}{set\_time\_ih\_to\_hsp()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+time\+\_\+ih\+\_\+to\+\_\+hsp (\begin{DoxyParamCaption}\item[{const double}]{t\+\_\+hsp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transition from home isolation to hospital. 
+
+\mbox{\Hypertarget{classAgent_a3f52852fe867096f13ec980a67a62d16}\label{classAgent_a3f52852fe867096f13ec980a67a62d16}} 
+\index{Agent@{Agent}!set\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu@{set\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu}}
+\index{set\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu@{set\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu()}{set\_time\_ih\_to\_icu()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+time\+\_\+ih\+\_\+to\+\_\+icu (\begin{DoxyParamCaption}\item[{const double}]{t\+\_\+icu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transition from home isolation to I\+CU. 
+
+\mbox{\Hypertarget{classAgent_a7d07d44ee7fd59ddf82a0be09b5dcdf9}\label{classAgent_a7d07d44ee7fd59ddf82a0be09b5dcdf9}} 
+\index{Agent@{Agent}!set\+\_\+time\+\_\+of\+\_\+results@{set\+\_\+time\+\_\+of\+\_\+results}}
+\index{set\+\_\+time\+\_\+of\+\_\+results@{set\+\_\+time\+\_\+of\+\_\+results}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+of\+\_\+results()}{set\_time\_of\_results()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+time\+\_\+of\+\_\+results (\begin{DoxyParamCaption}\item[{const double}]{cur\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_aef9c72b5c984f9c89df6f8e1a0ad166d}\label{classAgent_aef9c72b5c984f9c89df6f8e1a0ad166d}} 
+\index{Agent@{Agent}!set\+\_\+time\+\_\+of\+\_\+test@{set\+\_\+time\+\_\+of\+\_\+test}}
+\index{set\+\_\+time\+\_\+of\+\_\+test@{set\+\_\+time\+\_\+of\+\_\+test}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+of\+\_\+test()}{set\_time\_of\_test()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+time\+\_\+of\+\_\+test (\begin{DoxyParamCaption}\item[{const double}]{cur\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_aac1043948af7c46b29e2cc9e4e2d89ab}\label{classAgent_aac1043948af7c46b29e2cc9e4e2d89ab}} 
+\index{Agent@{Agent}!set\+\_\+time\+\_\+to\+\_\+death@{set\+\_\+time\+\_\+to\+\_\+death}}
+\index{set\+\_\+time\+\_\+to\+\_\+death@{set\+\_\+time\+\_\+to\+\_\+death}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+to\+\_\+death()}{set\_time\_to\_death()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+time\+\_\+to\+\_\+death (\begin{DoxyParamCaption}\item[{const double}]{dtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set onset to death duration time. 
+
+\mbox{\Hypertarget{classAgent_acedabbad82e3e566d07cb0f4a743db12}\label{classAgent_acedabbad82e3e566d07cb0f4a743db12}} 
+\index{Agent@{Agent}!set\+\_\+time\+\_\+to\+\_\+test@{set\+\_\+time\+\_\+to\+\_\+test}}
+\index{set\+\_\+time\+\_\+to\+\_\+test@{set\+\_\+time\+\_\+to\+\_\+test}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+to\+\_\+test()}{set\_time\_to\_test()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+time\+\_\+to\+\_\+test (\begin{DoxyParamCaption}\item[{const double}]{test\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a8f56c1c255e7bb89da56a694942ba863}\label{classAgent_a8f56c1c255e7bb89da56a694942ba863}} 
+\index{Agent@{Agent}!set\+\_\+time\+\_\+until\+\_\+results@{set\+\_\+time\+\_\+until\+\_\+results}}
+\index{set\+\_\+time\+\_\+until\+\_\+results@{set\+\_\+time\+\_\+until\+\_\+results}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+until\+\_\+results()}{set\_time\_until\_results()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+time\+\_\+until\+\_\+results (\begin{DoxyParamCaption}\item[{const double}]{test\+\_\+res\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_adcdd68040573001d599a3163cafb6f3f}\label{classAgent_adcdd68040573001d599a3163cafb6f3f}} 
+\index{Agent@{Agent}!set\+\_\+vaccinated@{set\+\_\+vaccinated}}
+\index{set\+\_\+vaccinated@{set\+\_\+vaccinated}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{set\+\_\+vaccinated()}{set\_vaccinated()}}
+{\footnotesize\ttfamily void Agent\+::set\+\_\+vaccinated (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_aaafd3f91e823471cdfdcf4c31cdebd7d}\label{classAgent_aaafd3f91e823471cdfdcf4c31cdebd7d}} 
+\index{Agent@{Agent}!student@{student}}
+\index{student@{student}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{student()}{student()}}
+{\footnotesize\ttfamily bool Agent\+::student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+True if student. 
+
+\mbox{\Hypertarget{classAgent_a427f98315b8d12694f1fccce03146861}\label{classAgent_a427f98315b8d12694f1fccce03146861}} 
+\index{Agent@{Agent}!symptomatic@{symptomatic}}
+\index{symptomatic@{symptomatic}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{symptomatic()}{symptomatic()}}
+{\footnotesize\ttfamily bool Agent\+::symptomatic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_ae8139e7f0ac3f2520c32e7f818d9ff98}\label{classAgent_ae8139e7f0ac3f2520c32e7f818d9ff98}} 
+\index{Agent@{Agent}!symptomatic\+\_\+non\+\_\+covid@{symptomatic\+\_\+non\+\_\+covid}}
+\index{symptomatic\+\_\+non\+\_\+covid@{symptomatic\+\_\+non\+\_\+covid}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{symptomatic\+\_\+non\+\_\+covid()}{symptomatic\_non\_covid()}}
+{\footnotesize\ttfamily bool Agent\+::symptomatic\+\_\+non\+\_\+covid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a8d923964a5c19abcddb6112d14eb9d1c}\label{classAgent_a8d923964a5c19abcddb6112d14eb9d1c}} 
+\index{Agent@{Agent}!tested@{tested}}
+\index{tested@{tested}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{tested()}{tested()}}
+{\footnotesize\ttfamily bool Agent\+::tested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a951c13f5e8e6ee90f0e6277a65c00c00}\label{classAgent_a951c13f5e8e6ee90f0e6277a65c00c00}} 
+\index{Agent@{Agent}!tested\+\_\+awaiting\+\_\+results@{tested\+\_\+awaiting\+\_\+results}}
+\index{tested\+\_\+awaiting\+\_\+results@{tested\+\_\+awaiting\+\_\+results}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{tested\+\_\+awaiting\+\_\+results()}{tested\_awaiting\_results()}}
+{\footnotesize\ttfamily bool Agent\+::tested\+\_\+awaiting\+\_\+results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_ad1c8a934667f5db54faa8505db10086d}\label{classAgent_ad1c8a934667f5db54faa8505db10086d}} 
+\index{Agent@{Agent}!tested\+\_\+awaiting\+\_\+test@{tested\+\_\+awaiting\+\_\+test}}
+\index{tested\+\_\+awaiting\+\_\+test@{tested\+\_\+awaiting\+\_\+test}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{tested\+\_\+awaiting\+\_\+test()}{tested\_awaiting\_test()}}
+{\footnotesize\ttfamily bool Agent\+::tested\+\_\+awaiting\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_acc6bdb2ede4c49bc01165d5abe140ba1}\label{classAgent_acc6bdb2ede4c49bc01165d5abe140ba1}} 
+\index{Agent@{Agent}!tested\+\_\+covid\+\_\+negative@{tested\+\_\+covid\+\_\+negative}}
+\index{tested\+\_\+covid\+\_\+negative@{tested\+\_\+covid\+\_\+negative}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{tested\+\_\+covid\+\_\+negative()}{tested\_covid\_negative()}}
+{\footnotesize\ttfamily bool Agent\+::tested\+\_\+covid\+\_\+negative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a85729b0c8074193bd08862a74eedfabf}\label{classAgent_a85729b0c8074193bd08862a74eedfabf}} 
+\index{Agent@{Agent}!tested\+\_\+covid\+\_\+positive@{tested\+\_\+covid\+\_\+positive}}
+\index{tested\+\_\+covid\+\_\+positive@{tested\+\_\+covid\+\_\+positive}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{tested\+\_\+covid\+\_\+positive()}{tested\_covid\_positive()}}
+{\footnotesize\ttfamily bool Agent\+::tested\+\_\+covid\+\_\+positive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_aaeda593b535a41928499198c60bff028}\label{classAgent_aaeda593b535a41928499198c60bff028}} 
+\index{Agent@{Agent}!tested\+\_\+exposed@{tested\+\_\+exposed}}
+\index{tested\+\_\+exposed@{tested\+\_\+exposed}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{tested\+\_\+exposed()}{tested\_exposed()}}
+{\footnotesize\ttfamily bool Agent\+::tested\+\_\+exposed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a0cb482555c25432c955ddceb0e62b22a}\label{classAgent_a0cb482555c25432c955ddceb0e62b22a}} 
+\index{Agent@{Agent}!tested\+\_\+false\+\_\+negative@{tested\+\_\+false\+\_\+negative}}
+\index{tested\+\_\+false\+\_\+negative@{tested\+\_\+false\+\_\+negative}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{tested\+\_\+false\+\_\+negative()}{tested\_false\_negative()}}
+{\footnotesize\ttfamily bool Agent\+::tested\+\_\+false\+\_\+negative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a89acf837bb933fa98d2809756d18725c}\label{classAgent_a89acf837bb933fa98d2809756d18725c}} 
+\index{Agent@{Agent}!tested\+\_\+false\+\_\+positive@{tested\+\_\+false\+\_\+positive}}
+\index{tested\+\_\+false\+\_\+positive@{tested\+\_\+false\+\_\+positive}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{tested\+\_\+false\+\_\+positive()}{tested\_false\_positive()}}
+{\footnotesize\ttfamily bool Agent\+::tested\+\_\+false\+\_\+positive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a26b171ab3306fed7c3cbb620fba91417}\label{classAgent_a26b171ab3306fed7c3cbb620fba91417}} 
+\index{Agent@{Agent}!tested\+\_\+in\+\_\+car@{tested\+\_\+in\+\_\+car}}
+\index{tested\+\_\+in\+\_\+car@{tested\+\_\+in\+\_\+car}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{tested\+\_\+in\+\_\+car()}{tested\_in\_car()}}
+{\footnotesize\ttfamily bool Agent\+::tested\+\_\+in\+\_\+car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a753cbb74c489c5eadcec54b2a4f628a1}\label{classAgent_a753cbb74c489c5eadcec54b2a4f628a1}} 
+\index{Agent@{Agent}!tested\+\_\+in\+\_\+hospital@{tested\+\_\+in\+\_\+hospital}}
+\index{tested\+\_\+in\+\_\+hospital@{tested\+\_\+in\+\_\+hospital}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{tested\+\_\+in\+\_\+hospital()}{tested\_in\_hospital()}}
+{\footnotesize\ttfamily bool Agent\+::tested\+\_\+in\+\_\+hospital (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a875ad6702903a0ed7c8a7348a08b2f14}\label{classAgent_a875ad6702903a0ed7c8a7348a08b2f14}} 
+\index{Agent@{Agent}!to\+\_\+be\+\_\+home\+\_\+isolated@{to\+\_\+be\+\_\+home\+\_\+isolated}}
+\index{to\+\_\+be\+\_\+home\+\_\+isolated@{to\+\_\+be\+\_\+home\+\_\+isolated}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{to\+\_\+be\+\_\+home\+\_\+isolated()}{to\_be\_home\_isolated()}}
+{\footnotesize\ttfamily void Agent\+::to\+\_\+be\+\_\+home\+\_\+isolated (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a5075fdcc53362b63931c5f8dd1e40a89}\label{classAgent_a5075fdcc53362b63931c5f8dd1e40a89}} 
+\index{Agent@{Agent}!to\+\_\+be\+\_\+hospitalized@{to\+\_\+be\+\_\+hospitalized}}
+\index{to\+\_\+be\+\_\+hospitalized@{to\+\_\+be\+\_\+hospitalized}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{to\+\_\+be\+\_\+hospitalized()}{to\_be\_hospitalized()}}
+{\footnotesize\ttfamily void Agent\+::to\+\_\+be\+\_\+hospitalized (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a82cf089cd4bd5686670a5bd44be24a02}\label{classAgent_a82cf089cd4bd5686670a5bd44be24a02}} 
+\index{Agent@{Agent}!to\+\_\+be\+\_\+in\+\_\+\+I\+CU@{to\+\_\+be\+\_\+in\+\_\+\+I\+CU}}
+\index{to\+\_\+be\+\_\+in\+\_\+\+I\+CU@{to\+\_\+be\+\_\+in\+\_\+\+I\+CU}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{to\+\_\+be\+\_\+in\+\_\+\+I\+C\+U()}{to\_be\_in\_ICU()}}
+{\footnotesize\ttfamily void Agent\+::to\+\_\+be\+\_\+in\+\_\+\+I\+CU (\begin{DoxyParamCaption}\item[{const bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_a71bd83fd47b042333f9ae04a50b3eefe}\label{classAgent_a71bd83fd47b042333f9ae04a50b3eefe}} 
+\index{Agent@{Agent}!vaccinated@{vaccinated}}
+\index{vaccinated@{vaccinated}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{vaccinated()}{vaccinated()}}
+{\footnotesize\ttfamily bool Agent\+::vaccinated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAgent_ab587c852bf9894f46b073f77fad42719}\label{classAgent_ab587c852bf9894f46b073f77fad42719}} 
+\index{Agent@{Agent}!works@{works}}
+\index{works@{works}!Agent@{Agent}}
+\subsubsection{\texorpdfstring{works()}{works()}}
+{\footnotesize\ttfamily bool Agent\+::works (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+True if agent works. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{agent_8h}{agent.\+h}\item 
+src/\hyperlink{agent_8cpp}{agent.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,1020 @@
+\hypertarget{classABM}{}\section{A\+BM Class Reference}
+\label{classABM}\index{A\+BM@{A\+BM}}
+
+
+{\ttfamily \#include $<$abm.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classABM_aaa90efc4e3d4c52fac43c09b9cf1dd5b}{A\+BM} ()=default
+\begin{DoxyCompactList}\small\item\em Creates an \hyperlink{classABM}{A\+BM} object with default attributes. \end{DoxyCompactList}\item 
+\hyperlink{classABM_afc21cb6c6320c2d1197293fc176aabdc}{A\+BM} (double del\+\_\+t, const std\+::string infile, const std\+::map$<$ std\+::string, std\+::string $>$ dist\+\_\+files, const std\+::string tfile)
+\begin{DoxyCompactList}\small\item\em Creates an \hyperlink{classABM}{A\+BM} object with custom attributes. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_ad0aa7567bd46beee2233c4e5a3758fef}{create\+\_\+households} (const std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Create households based on information in a file. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_afdc04bbe24f059dc3fa22d3d88276db5}{create\+\_\+retirement\+\_\+homes} (const std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Create retirement homes based on information in a file. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_af980cd2052f2fb883d5873da8c004070}{create\+\_\+schools} (const std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Create schools based on information in a file. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_abe3f8db8d70dbbaa40815515f4057ced}{create\+\_\+workplaces} (const std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Create workplaces based on information in a file. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_a3f0199d0d954cf0b3ecffc8a82c3c958}{create\+\_\+hospitals} (const std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Create hospitals based on information in a file. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_a5ed9bcec2972c5e6967dbec30947c94c}{create\+\_\+agents} (const std\+::string filename, const int ninf0=0)
+\begin{DoxyCompactList}\small\item\em Create agents based on information in a file. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_af80a8ff3dbbd2e64693c127702c0b64e}{set\+\_\+random\+\_\+vaccination} (int nv)
+\begin{DoxyCompactList}\small\item\em Set up vaccination of nv members of the random population members activated with testing. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_ab9fbab941825f16e4bce0fdb4b27363c}{set\+\_\+group\+\_\+vaccination} (std\+::string group\+\_\+name, bool verbose=false)
+\item 
+void \hyperlink{classABM_a532b704843314423cc3ffc4e2ed66f1a}{transmit\+\_\+infection} ()
+\begin{DoxyCompactList}\small\item\em Transmit infection according to \hyperlink{classInfection}{Infection} model. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_a9f2c80f84bf116c3444df95f34ead1dc}{compute\+\_\+place\+\_\+contributions} ()
+\begin{DoxyCompactList}\small\item\em Count contributions of all infectious agents in each place. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_ad1e04b146d0c55ee36449def71bb0e51}{compute\+\_\+state\+\_\+transitions} ()
+\begin{DoxyCompactList}\small\item\em Propagate infection and determine state transitions. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_aa379d58dc83b31ad00ec57a1756fefd5}{reset\+\_\+contributions} ()
+\begin{DoxyCompactList}\small\item\em Set the lambda factors to 0.\+0. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_a2462506d7cedd3bde106726e99f9ced6}{advance\+\_\+in\+\_\+time} ()
+\item 
+void \hyperlink{classABM_a29f628a1b72cab12a2e5d6ebe7f4c6c8}{check\+\_\+events} (std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Verify if anything that requires parameter changes happens at this step. \end{DoxyCompactList}\item 
+int \hyperlink{classABM_a706d258fe6b07f554703d8eceeda4479}{get\+\_\+num\+\_\+infected} () const
+\begin{DoxyCompactList}\small\item\em Retrieve number of infected agents at this time step. \end{DoxyCompactList}\item 
+int \hyperlink{classABM_aeb5f873f0938afa13c28ff4cbfa9c07a}{get\+\_\+num\+\_\+exposed} () const
+\begin{DoxyCompactList}\small\item\em Retrieve number of exposed. \end{DoxyCompactList}\item 
+int \hyperlink{classABM_a90555a3d3f12fbd59449d1bd97325caf}{get\+\_\+num\+\_\+active\+\_\+cases} () const
+\begin{DoxyCompactList}\small\item\em Number of infected -\/ confirmed. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \hyperlink{classABM_a54ff2561e36985f63ebc0020993f9a8e}{get\+\_\+treatment\+\_\+data} () const
+\item 
+double \hyperlink{classABM_a8a409f2ed07df42b316bcc2d4bb37340}{get\+\_\+time} () const
+\begin{DoxyCompactList}\small\item\em Current simulation time. \end{DoxyCompactList}\item 
+int \hyperlink{classABM_ade59d69b32a0a57c0e0c1e48c95a7524}{get\+\_\+total\+\_\+infected} () const
+\begin{DoxyCompactList}\small\item\em Retrieve number of total infected. \end{DoxyCompactList}\item 
+int \hyperlink{classABM_ad6d901acab9e9b92a0c992009ec51680}{get\+\_\+total\+\_\+dead} () const
+\begin{DoxyCompactList}\small\item\em Retrieve number of total dead. \end{DoxyCompactList}\item 
+int \hyperlink{classABM_a5eb770b49361e9d689bdcc9bdb2a28c0}{get\+\_\+tested\+\_\+dead} () const
+\begin{DoxyCompactList}\small\item\em Retrieve number of dead that were tested. \end{DoxyCompactList}\item 
+int \hyperlink{classABM_a0de2ff0011fffdfdd78c7a3fa7bdda8e}{get\+\_\+not\+\_\+tested\+\_\+dead} () const
+\begin{DoxyCompactList}\small\item\em Retrieve number of dead that were not tested. \end{DoxyCompactList}\item 
+int \hyperlink{classABM_a8fbf62a7df14f4ca34a69394d31834ed}{get\+\_\+total\+\_\+recovered} () const
+\begin{DoxyCompactList}\small\item\em Retrieve number of total recovered. \end{DoxyCompactList}\item 
+int \hyperlink{classABM_ae43e8808cb028d7a18841a66a9070937}{get\+\_\+tot\+\_\+recovering\+\_\+exposed} ()
+\begin{DoxyCompactList}\small\item\em Retrieve cumulative number of exposed that never developed symptoms. \end{DoxyCompactList}\item 
+int \hyperlink{classABM_af04a4eb713648b9a938d5b773a0b0ff5}{get\+\_\+total\+\_\+tested} () const
+\item 
+int \hyperlink{classABM_a2e4900dde8bc3287cff70bbd335fde8a}{get\+\_\+total\+\_\+tested\+\_\+positive} () const
+\item 
+int \hyperlink{classABM_a28b749db2b2d70f05c45f5327a95d4f7}{get\+\_\+total\+\_\+tested\+\_\+negative} () const
+\item 
+int \hyperlink{classABM_aa51a827c335bf4d7195883af88168367}{get\+\_\+total\+\_\+tested\+\_\+false\+\_\+positive} () const
+\item 
+int \hyperlink{classABM_a04318c25d252c8c4a94dfda962de35a4}{get\+\_\+total\+\_\+tested\+\_\+false\+\_\+negative} () const
+\item 
+const std\+::vector$<$ int $>$ \hyperlink{classABM_a21d391848b789516cf518abaff719bbc}{get\+\_\+infected\+\_\+day} () const
+\item 
+const std\+::vector$<$ int $>$ \hyperlink{classABM_aacf1095e585bcdeedbd637f1462fced9}{get\+\_\+dead\+\_\+day} () const
+\item 
+const std\+::vector$<$ int $>$ \hyperlink{classABM_af50856608f9c917c49e01ea86f4a6046}{get\+\_\+recovered\+\_\+day} () const
+\item 
+const std\+::vector$<$ int $>$ \hyperlink{classABM_ae2cf88fd41cb86336057e20206ac63c2}{get\+\_\+tested\+\_\+day} () const
+\item 
+const std\+::vector$<$ int $>$ \hyperlink{classABM_a4f716f9354ccd5be741d09d051c5364e}{get\+\_\+tested\+\_\+positive\+\_\+day} () const
+\item 
+const std\+::vector$<$ int $>$ \hyperlink{classABM_aa022bf85aeb80e7a454d2ed32b11badd}{get\+\_\+tested\+\_\+negative\+\_\+day} () const
+\item 
+const std\+::vector$<$ int $>$ \hyperlink{classABM_a245bef82eed1615d87588643115ae672}{get\+\_\+tested\+\_\+false\+\_\+positive\+\_\+day} () const
+\item 
+const std\+::vector$<$ int $>$ \hyperlink{classABM_a4bee67e458d0c13fa32bb1e4ffac01cf}{get\+\_\+tested\+\_\+false\+\_\+negative\+\_\+day} () const
+\item 
+void \hyperlink{classABM_a41144391129c6ba85305ccceff148e20}{print\+\_\+infection\+\_\+parameters} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save infection parameter information. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_affafd1d079fd013bbef399fb7224f569}{print\+\_\+age\+\_\+dependent\+\_\+distributions} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save age-\/dependent distributions. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_a5d0d2b32a368c082d8217f2d3a22b832}{print\+\_\+households} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save current household information. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_afaddfd46a69c396b8e9648041e014c86}{print\+\_\+retirement\+\_\+home} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save current retirement home information. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_a9363f01996ce065a1e3009f3c1d43126}{print\+\_\+schools} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save current school information. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_a72f37504297bcc5392f68e002c4bc380}{print\+\_\+workplaces} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save current workplace information. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_a7ac686e0d4771009ab25cfbdc33749ea}{print\+\_\+hospitals} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save current hospital information. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_a8f94332461f1b9494481c1213eb9f3d2}{print\+\_\+agents\+\_\+in\+\_\+households} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save I\+Ds of all agents in all households. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_ab1b1192eff4a2e10f4a05d87c6e3d896}{print\+\_\+agents\+\_\+in\+\_\+retirement\+\_\+homes} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save I\+Ds of all agents in all retirement homes. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_ab3acbd3d496e2994367a0cfb0bdd7984}{print\+\_\+agents\+\_\+in\+\_\+schools} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save I\+Ds of all agents in all schools. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_a60163307e6a7b6461bde10d86f6ccbca}{print\+\_\+agents\+\_\+in\+\_\+workplaces} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save I\+Ds of all agents in all workplaces. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_adf2f12e0f3d1f134f553869e4e318765}{print\+\_\+agents\+\_\+in\+\_\+hospitals} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save I\+Ds of all agents in all hospitals. \end{DoxyCompactList}\item 
+void \hyperlink{classABM_a736b8a17c8198534c58d9a36b35bb5cd}{print\+\_\+agents} (const std\+::string filename) const
+\begin{DoxyCompactList}\small\item\em Save current agent information. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \& \hyperlink{classABM_aa5cb222cd922ca221e063a840dc52aa1}{get\+\_\+vector\+\_\+of\+\_\+households} () const
+\begin{DoxyCompactList}\small\item\em Return a const reference to a House object vector. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \& \hyperlink{classABM_a1265f522554b325c1495bfb1e5a2e921}{get\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes} () const
+\begin{DoxyCompactList}\small\item\em Return a const reference to a \hyperlink{classRetirementHome}{Retirement\+Home} object vector. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \& \hyperlink{classABM_a6b2883283dd859e05b9c00c5939076a1}{get\+\_\+vector\+\_\+of\+\_\+schools} () const
+\begin{DoxyCompactList}\small\item\em Return a const reference to a \hyperlink{classSchool}{School} object vector. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \& \hyperlink{classABM_a04c29c9054c1c1dfbfb45f0af85a5a7f}{get\+\_\+vector\+\_\+of\+\_\+workplaces} () const
+\begin{DoxyCompactList}\small\item\em Return a const reference to a \hyperlink{classWorkplace}{Workplace} object vector. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \& \hyperlink{classABM_a16e9e7297235fa57b1b65b9340af49ad}{get\+\_\+vector\+\_\+of\+\_\+hospitals} () const
+\begin{DoxyCompactList}\small\item\em Return a const reference to a \hyperlink{classHospital}{Hospital} object vector. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classAgent}{Agent} $>$ \& \hyperlink{classABM_a57429e18dccc3f7060dd6212125c97ee}{get\+\_\+vector\+\_\+of\+\_\+agents} () const
+\begin{DoxyCompactList}\small\item\em Return a const reference to an \hyperlink{classAgent}{Agent} object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classAgent}{Agent} $>$ \& \hyperlink{classABM_a58d45195b1ab07fadd7f4a23adc8b18a}{vector\+\_\+of\+\_\+agents} ()
+\begin{DoxyCompactList}\small\item\em Return a non-\/const reference to an \hyperlink{classAgent}{Agent} object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \& \hyperlink{classABM_ad51360c08ebbbc18a574078901f6c82a}{vector\+\_\+of\+\_\+hospitals} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to a \hyperlink{classHospital}{Hospital} object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \& \hyperlink{classABM_ab8340f988fa5a0bbfad783b04b2f86cf}{vector\+\_\+of\+\_\+households} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to a \hyperlink{classHousehold}{Household} object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \& \hyperlink{classABM_a8bcde147b1d1fbb81edcc0e9f7c717ae}{vector\+\_\+of\+\_\+retirement\+\_\+homes} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to a \hyperlink{classRetirementHome}{Retirement\+Home} object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \& \hyperlink{classABM_a2a30709478a547ede2207ffd51070fff}{vector\+\_\+of\+\_\+schools} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to a \hyperlink{classSchool}{School} object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \& \hyperlink{classABM_a3ae1ff992b82308e3b1ea5a0372f4d96}{vector\+\_\+of\+\_\+workplaces} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to a \hyperlink{classWorkplace}{Workplace} object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classAgent}{Agent} $>$ \& \hyperlink{classABM_a5a58ed2717810317bc8fe8df841dcf08}{get\+\_\+vector\+\_\+of\+\_\+agents\+\_\+non\+\_\+const} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to an \hyperlink{classAgent}{Agent} object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \hyperlink{classABM_a6f87856440b00d062ff33c80ff40717b}{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+households} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of a House object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \hyperlink{classABM_abe2b2a6cef7427b941f6e5244e6737d4}{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of a \hyperlink{classRetirementHome}{Retirement\+Home} object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \hyperlink{classABM_aa1c0bb9d97d823fb5c33b5d8ab2615b4}{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+schools} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of a \hyperlink{classSchool}{School} object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \hyperlink{classABM_a8e52715d31aebbd85ea022510a0b654a}{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+workplaces} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of a \hyperlink{classWorkplace}{Workplace} object vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \hyperlink{classABM_ab07282ad3610001a8e7e3b1cd5929748}{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+hospitals} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of a \hyperlink{classHospital}{Hospital} object vector. \end{DoxyCompactList}\item 
+\hyperlink{classInfection}{Infection} \hyperlink{classABM_af1ae91cc0294e370e6a686e80e6594f8}{get\+\_\+copied\+\_\+infection\+\_\+object} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of \hyperlink{classInfection}{Infection} object. \end{DoxyCompactList}\item 
+\hyperlink{classInfection}{Infection} \& \hyperlink{classABM_a8857eef9de00abd42ce805befd03d3f0}{get\+\_\+infection\+\_\+object} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to an \hyperlink{classInfection}{Infection} object. \end{DoxyCompactList}\item 
+const std\+::map$<$ std\+::string, double $>$ \hyperlink{classABM_a9d47abd943b465dfbcd0d5502cadc125}{get\+\_\+infection\+\_\+parameters} () const
+\begin{DoxyCompactList}\small\item\em Return a const reference to parameter map. \end{DoxyCompactList}\item 
+\hyperlink{classFlu}{Flu} \hyperlink{classABM_acb7023998f3b647d4dd8d095992d5dab}{get\+\_\+flu\+\_\+object} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of the \hyperlink{classFlu}{Flu} object. \end{DoxyCompactList}\item 
+\hyperlink{classFlu}{Flu} \& \hyperlink{classABM_a66f5f10a0e0eb62e13226298ce518dd9}{get\+\_\+flu\+\_\+object} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to \hyperlink{classFlu}{Flu} object. \end{DoxyCompactList}\item 
+\hyperlink{classTesting}{Testing} \hyperlink{classABM_adc6c1467a7b40acfa82e653874514190}{get\+\_\+testing\+\_\+object} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of the \hyperlink{classTesting}{Testing} object. \end{DoxyCompactList}\item 
+\hyperlink{classTesting}{Testing} \& \hyperlink{classABM_a3e26915cf8a4cf763599d4a8ad352d5e}{get\+\_\+testing\+\_\+object} ()
+\begin{DoxyCompactList}\small\item\em Return the \hyperlink{classTesting}{Testing} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classABM_aaa90efc4e3d4c52fac43c09b9cf1dd5b}\label{classABM_aaa90efc4e3d4c52fac43c09b9cf1dd5b}} 
+\index{A\+BM@{A\+BM}!A\+BM@{A\+BM}}
+\index{A\+BM@{A\+BM}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{A\+B\+M()}{ABM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily A\+B\+M\+::\+A\+BM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates an \hyperlink{classABM}{A\+BM} object with default attributes. 
+
+\mbox{\Hypertarget{classABM_afc21cb6c6320c2d1197293fc176aabdc}\label{classABM_afc21cb6c6320c2d1197293fc176aabdc}} 
+\index{A\+BM@{A\+BM}!A\+BM@{A\+BM}}
+\index{A\+BM@{A\+BM}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{A\+B\+M()}{ABM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily A\+B\+M\+::\+A\+BM (\begin{DoxyParamCaption}\item[{double}]{del\+\_\+t,  }\item[{const std\+::string}]{infile,  }\item[{const std\+::map$<$ std\+::string, std\+::string $>$}]{dist\+\_\+files,  }\item[{const std\+::string}]{tfile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an \hyperlink{classABM}{A\+BM} object with custom attributes. 
+
+Reads the infection parameters from the provided file and initializes \hyperlink{classInfection}{Infection} object; The map key represents a tag to recognize which dataset in question is it. Tags are currently\+: hospitalization, I\+CU, mortality All 3 are required.
+
+
+\begin{DoxyParams}{Parameters}
+{\em del\+\_\+t} & -\/ time step, days \\
+\hline
+{\em infile} & -\/ name of the file with the input parameters \\
+\hline
+{\em dist\+\_\+files} & -\/ map of keys-\/tags and file names where different distribution files are stored \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classABM_a2462506d7cedd3bde106726e99f9ced6}\label{classABM_a2462506d7cedd3bde106726e99f9ced6}} 
+\index{A\+BM@{A\+BM}!advance\+\_\+in\+\_\+time@{advance\+\_\+in\+\_\+time}}
+\index{advance\+\_\+in\+\_\+time@{advance\+\_\+in\+\_\+time}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{advance\+\_\+in\+\_\+time()}{advance\_in\_time()}}
+{\footnotesize\ttfamily void A\+B\+M\+::advance\+\_\+in\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_a29f628a1b72cab12a2e5d6ebe7f4c6c8}\label{classABM_a29f628a1b72cab12a2e5d6ebe7f4c6c8}} 
+\index{A\+BM@{A\+BM}!check\+\_\+events@{check\+\_\+events}}
+\index{check\+\_\+events@{check\+\_\+events}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{check\+\_\+events()}{check\_events()}}
+{\footnotesize\ttfamily void A\+B\+M\+::check\+\_\+events (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces }\end{DoxyParamCaption})}
+
+
+
+Verify if anything that requires parameter changes happens at this step. 
+
+\mbox{\Hypertarget{classABM_a9f2c80f84bf116c3444df95f34ead1dc}\label{classABM_a9f2c80f84bf116c3444df95f34ead1dc}} 
+\index{A\+BM@{A\+BM}!compute\+\_\+place\+\_\+contributions@{compute\+\_\+place\+\_\+contributions}}
+\index{compute\+\_\+place\+\_\+contributions@{compute\+\_\+place\+\_\+contributions}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{compute\+\_\+place\+\_\+contributions()}{compute\_place\_contributions()}}
+{\footnotesize\ttfamily void A\+B\+M\+::compute\+\_\+place\+\_\+contributions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Count contributions of all infectious agents in each place. 
+
+\mbox{\Hypertarget{classABM_ad1e04b146d0c55ee36449def71bb0e51}\label{classABM_ad1e04b146d0c55ee36449def71bb0e51}} 
+\index{A\+BM@{A\+BM}!compute\+\_\+state\+\_\+transitions@{compute\+\_\+state\+\_\+transitions}}
+\index{compute\+\_\+state\+\_\+transitions@{compute\+\_\+state\+\_\+transitions}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{compute\+\_\+state\+\_\+transitions()}{compute\_state\_transitions()}}
+{\footnotesize\ttfamily void A\+B\+M\+::compute\+\_\+state\+\_\+transitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Propagate infection and determine state transitions. 
+
+\mbox{\Hypertarget{classABM_a5ed9bcec2972c5e6967dbec30947c94c}\label{classABM_a5ed9bcec2972c5e6967dbec30947c94c}} 
+\index{A\+BM@{A\+BM}!create\+\_\+agents@{create\+\_\+agents}}
+\index{create\+\_\+agents@{create\+\_\+agents}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{create\+\_\+agents()}{create\_agents()}}
+{\footnotesize\ttfamily void A\+B\+M\+::create\+\_\+agents (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename,  }\item[{const int}]{ninf0 = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Create agents based on information in a file. 
+
+Constructs agents from demographic information in a file with agent per row, columns being the information as it currently appears in the \hyperlink{classAgent}{Agent} constructor; assigns agents to households, schools, workplaces, and hospitals -\/ needs to be called A\+F\+T\+ER creating those places; Optionally it can randomly choose initially infected as specified by the input parameter;
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file with input information \\
+\hline
+{\em ninf0} & -\/ number of initially infected -\/ overwriting input file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_a3f0199d0d954cf0b3ecffc8a82c3c958}\label{classABM_a3f0199d0d954cf0b3ecffc8a82c3c958}} 
+\index{A\+BM@{A\+BM}!create\+\_\+hospitals@{create\+\_\+hospitals}}
+\index{create\+\_\+hospitals@{create\+\_\+hospitals}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{create\+\_\+hospitals()}{create\_hospitals()}}
+{\footnotesize\ttfamily void A\+B\+M\+::create\+\_\+hospitals (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Create hospitals based on information in a file. 
+
+Constructs hospitals based on the ID and locations as defined in the file; One line in the file defines one hospital
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file with input information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_ad0aa7567bd46beee2233c4e5a3758fef}\label{classABM_ad0aa7567bd46beee2233c4e5a3758fef}} 
+\index{A\+BM@{A\+BM}!create\+\_\+households@{create\+\_\+households}}
+\index{create\+\_\+households@{create\+\_\+households}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{create\+\_\+households()}{create\_households()}}
+{\footnotesize\ttfamily void A\+B\+M\+::create\+\_\+households (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Create households based on information in a file. 
+
+Constructs households based on the ID and locations as defined in the file; One line in the file defines one household
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file with input information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_afdc04bbe24f059dc3fa22d3d88276db5}\label{classABM_afdc04bbe24f059dc3fa22d3d88276db5}} 
+\index{A\+BM@{A\+BM}!create\+\_\+retirement\+\_\+homes@{create\+\_\+retirement\+\_\+homes}}
+\index{create\+\_\+retirement\+\_\+homes@{create\+\_\+retirement\+\_\+homes}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{create\+\_\+retirement\+\_\+homes()}{create\_retirement\_homes()}}
+{\footnotesize\ttfamily void A\+B\+M\+::create\+\_\+retirement\+\_\+homes (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Create retirement homes based on information in a file. 
+
+Constructs retirement homes based on the ID and locations as defined in the file; One line in the file defines one household
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file with input information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_af980cd2052f2fb883d5873da8c004070}\label{classABM_af980cd2052f2fb883d5873da8c004070}} 
+\index{A\+BM@{A\+BM}!create\+\_\+schools@{create\+\_\+schools}}
+\index{create\+\_\+schools@{create\+\_\+schools}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{create\+\_\+schools()}{create\_schools()}}
+{\footnotesize\ttfamily void A\+B\+M\+::create\+\_\+schools (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Create schools based on information in a file. 
+
+Constructs schools based on the ID, locations, and school type as defined in the file; One line in the file defines one school; \hyperlink{classSchool}{School} types are \char`\"{}daycare\char`\"{}, \char`\"{}primary\char`\"{}, \char`\"{}middle\char`\"{}, \char`\"{}high\char`\"{}, and \char`\"{}college\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file with input information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_abe3f8db8d70dbbaa40815515f4057ced}\label{classABM_abe3f8db8d70dbbaa40815515f4057ced}} 
+\index{A\+BM@{A\+BM}!create\+\_\+workplaces@{create\+\_\+workplaces}}
+\index{create\+\_\+workplaces@{create\+\_\+workplaces}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{create\+\_\+workplaces()}{create\_workplaces()}}
+{\footnotesize\ttfamily void A\+B\+M\+::create\+\_\+workplaces (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Create workplaces based on information in a file. 
+
+Constructs workplaces based on the ID and locations as defined in the file; One line in the file defines one workplace
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file with input information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_af1ae91cc0294e370e6a686e80e6594f8}\label{classABM_af1ae91cc0294e370e6a686e80e6594f8}} 
+\index{A\+BM@{A\+BM}!get\+\_\+copied\+\_\+infection\+\_\+object@{get\+\_\+copied\+\_\+infection\+\_\+object}}
+\index{get\+\_\+copied\+\_\+infection\+\_\+object@{get\+\_\+copied\+\_\+infection\+\_\+object}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+copied\+\_\+infection\+\_\+object()}{get\_copied\_infection\_object()}}
+{\footnotesize\ttfamily \hyperlink{classInfection}{Infection} A\+B\+M\+::get\+\_\+copied\+\_\+infection\+\_\+object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a copy of \hyperlink{classInfection}{Infection} object. 
+
+\mbox{\Hypertarget{classABM_ab07282ad3610001a8e7e3b1cd5929748}\label{classABM_ab07282ad3610001a8e7e3b1cd5929748}} 
+\index{A\+BM@{A\+BM}!get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+hospitals@{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+hospitals}}
+\index{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+hospitals@{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+hospitals}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+hospitals()}{get\_copied\_vector\_of\_hospitals()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classHospital}{Hospital}$>$ A\+B\+M\+::get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+hospitals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a copy of a \hyperlink{classHospital}{Hospital} object vector. 
+
+\mbox{\Hypertarget{classABM_a6f87856440b00d062ff33c80ff40717b}\label{classABM_a6f87856440b00d062ff33c80ff40717b}} 
+\index{A\+BM@{A\+BM}!get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+households@{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+households}}
+\index{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+households@{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+households}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+households()}{get\_copied\_vector\_of\_households()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classHousehold}{Household}$>$ A\+B\+M\+::get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+households (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a copy of a House object vector. 
+
+\mbox{\Hypertarget{classABM_abe2b2a6cef7427b941f6e5244e6737d4}\label{classABM_abe2b2a6cef7427b941f6e5244e6737d4}} 
+\index{A\+BM@{A\+BM}!get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes@{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes}}
+\index{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes@{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes()}{get\_copied\_vector\_of\_retirement\_homes()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classRetirementHome}{Retirement\+Home}$>$ A\+B\+M\+::get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a copy of a \hyperlink{classRetirementHome}{Retirement\+Home} object vector. 
+
+\mbox{\Hypertarget{classABM_aa1c0bb9d97d823fb5c33b5d8ab2615b4}\label{classABM_aa1c0bb9d97d823fb5c33b5d8ab2615b4}} 
+\index{A\+BM@{A\+BM}!get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+schools@{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+schools}}
+\index{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+schools@{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+schools}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+schools()}{get\_copied\_vector\_of\_schools()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classSchool}{School}$>$ A\+B\+M\+::get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+schools (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a copy of a \hyperlink{classSchool}{School} object vector. 
+
+\mbox{\Hypertarget{classABM_a8e52715d31aebbd85ea022510a0b654a}\label{classABM_a8e52715d31aebbd85ea022510a0b654a}} 
+\index{A\+BM@{A\+BM}!get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+workplaces@{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+workplaces}}
+\index{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+workplaces@{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+workplaces}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+workplaces()}{get\_copied\_vector\_of\_workplaces()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classWorkplace}{Workplace}$>$ A\+B\+M\+::get\+\_\+copied\+\_\+vector\+\_\+of\+\_\+workplaces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a copy of a \hyperlink{classWorkplace}{Workplace} object vector. 
+
+\mbox{\Hypertarget{classABM_aacf1095e585bcdeedbd637f1462fced9}\label{classABM_aacf1095e585bcdeedbd637f1462fced9}} 
+\index{A\+BM@{A\+BM}!get\+\_\+dead\+\_\+day@{get\+\_\+dead\+\_\+day}}
+\index{get\+\_\+dead\+\_\+day@{get\+\_\+dead\+\_\+day}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+dead\+\_\+day()}{get\_dead\_day()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$ A\+B\+M\+::get\+\_\+dead\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_acb7023998f3b647d4dd8d095992d5dab}\label{classABM_acb7023998f3b647d4dd8d095992d5dab}} 
+\index{A\+BM@{A\+BM}!get\+\_\+flu\+\_\+object@{get\+\_\+flu\+\_\+object}}
+\index{get\+\_\+flu\+\_\+object@{get\+\_\+flu\+\_\+object}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+flu\+\_\+object()}{get\_flu\_object()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classFlu}{Flu} A\+B\+M\+::get\+\_\+flu\+\_\+object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a copy of the \hyperlink{classFlu}{Flu} object. 
+
+\mbox{\Hypertarget{classABM_a66f5f10a0e0eb62e13226298ce518dd9}\label{classABM_a66f5f10a0e0eb62e13226298ce518dd9}} 
+\index{A\+BM@{A\+BM}!get\+\_\+flu\+\_\+object@{get\+\_\+flu\+\_\+object}}
+\index{get\+\_\+flu\+\_\+object@{get\+\_\+flu\+\_\+object}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+flu\+\_\+object()}{get\_flu\_object()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classFlu}{Flu}\& A\+B\+M\+::get\+\_\+flu\+\_\+object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a reference to \hyperlink{classFlu}{Flu} object. 
+
+\mbox{\Hypertarget{classABM_a21d391848b789516cf518abaff719bbc}\label{classABM_a21d391848b789516cf518abaff719bbc}} 
+\index{A\+BM@{A\+BM}!get\+\_\+infected\+\_\+day@{get\+\_\+infected\+\_\+day}}
+\index{get\+\_\+infected\+\_\+day@{get\+\_\+infected\+\_\+day}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+infected\+\_\+day()}{get\_infected\_day()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$ A\+B\+M\+::get\+\_\+infected\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_a8857eef9de00abd42ce805befd03d3f0}\label{classABM_a8857eef9de00abd42ce805befd03d3f0}} 
+\index{A\+BM@{A\+BM}!get\+\_\+infection\+\_\+object@{get\+\_\+infection\+\_\+object}}
+\index{get\+\_\+infection\+\_\+object@{get\+\_\+infection\+\_\+object}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+infection\+\_\+object()}{get\_infection\_object()}}
+{\footnotesize\ttfamily \hyperlink{classInfection}{Infection}\& A\+B\+M\+::get\+\_\+infection\+\_\+object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a reference to an \hyperlink{classInfection}{Infection} object. 
+
+\mbox{\Hypertarget{classABM_a9d47abd943b465dfbcd0d5502cadc125}\label{classABM_a9d47abd943b465dfbcd0d5502cadc125}} 
+\index{A\+BM@{A\+BM}!get\+\_\+infection\+\_\+parameters@{get\+\_\+infection\+\_\+parameters}}
+\index{get\+\_\+infection\+\_\+parameters@{get\+\_\+infection\+\_\+parameters}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+infection\+\_\+parameters()}{get\_infection\_parameters()}}
+{\footnotesize\ttfamily const std\+::map$<$std\+::string, double$>$ A\+B\+M\+::get\+\_\+infection\+\_\+parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a const reference to parameter map. 
+
+\mbox{\Hypertarget{classABM_a0de2ff0011fffdfdd78c7a3fa7bdda8e}\label{classABM_a0de2ff0011fffdfdd78c7a3fa7bdda8e}} 
+\index{A\+BM@{A\+BM}!get\+\_\+not\+\_\+tested\+\_\+dead@{get\+\_\+not\+\_\+tested\+\_\+dead}}
+\index{get\+\_\+not\+\_\+tested\+\_\+dead@{get\+\_\+not\+\_\+tested\+\_\+dead}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+not\+\_\+tested\+\_\+dead()}{get\_not\_tested\_dead()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+not\+\_\+tested\+\_\+dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieve number of dead that were not tested. 
+
+\mbox{\Hypertarget{classABM_a90555a3d3f12fbd59449d1bd97325caf}\label{classABM_a90555a3d3f12fbd59449d1bd97325caf}} 
+\index{A\+BM@{A\+BM}!get\+\_\+num\+\_\+active\+\_\+cases@{get\+\_\+num\+\_\+active\+\_\+cases}}
+\index{get\+\_\+num\+\_\+active\+\_\+cases@{get\+\_\+num\+\_\+active\+\_\+cases}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+num\+\_\+active\+\_\+cases()}{get\_num\_active\_cases()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+num\+\_\+active\+\_\+cases (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Number of infected -\/ confirmed. 
+
+\mbox{\Hypertarget{classABM_aeb5f873f0938afa13c28ff4cbfa9c07a}\label{classABM_aeb5f873f0938afa13c28ff4cbfa9c07a}} 
+\index{A\+BM@{A\+BM}!get\+\_\+num\+\_\+exposed@{get\+\_\+num\+\_\+exposed}}
+\index{get\+\_\+num\+\_\+exposed@{get\+\_\+num\+\_\+exposed}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+num\+\_\+exposed()}{get\_num\_exposed()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+num\+\_\+exposed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieve number of exposed. 
+
+\mbox{\Hypertarget{classABM_a706d258fe6b07f554703d8eceeda4479}\label{classABM_a706d258fe6b07f554703d8eceeda4479}} 
+\index{A\+BM@{A\+BM}!get\+\_\+num\+\_\+infected@{get\+\_\+num\+\_\+infected}}
+\index{get\+\_\+num\+\_\+infected@{get\+\_\+num\+\_\+infected}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+num\+\_\+infected()}{get\_num\_infected()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+num\+\_\+infected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieve number of infected agents at this time step. 
+
+\mbox{\Hypertarget{classABM_af50856608f9c917c49e01ea86f4a6046}\label{classABM_af50856608f9c917c49e01ea86f4a6046}} 
+\index{A\+BM@{A\+BM}!get\+\_\+recovered\+\_\+day@{get\+\_\+recovered\+\_\+day}}
+\index{get\+\_\+recovered\+\_\+day@{get\+\_\+recovered\+\_\+day}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+recovered\+\_\+day()}{get\_recovered\_day()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$ A\+B\+M\+::get\+\_\+recovered\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_ae2cf88fd41cb86336057e20206ac63c2}\label{classABM_ae2cf88fd41cb86336057e20206ac63c2}} 
+\index{A\+BM@{A\+BM}!get\+\_\+tested\+\_\+day@{get\+\_\+tested\+\_\+day}}
+\index{get\+\_\+tested\+\_\+day@{get\+\_\+tested\+\_\+day}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+tested\+\_\+day()}{get\_tested\_day()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$ A\+B\+M\+::get\+\_\+tested\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_a5eb770b49361e9d689bdcc9bdb2a28c0}\label{classABM_a5eb770b49361e9d689bdcc9bdb2a28c0}} 
+\index{A\+BM@{A\+BM}!get\+\_\+tested\+\_\+dead@{get\+\_\+tested\+\_\+dead}}
+\index{get\+\_\+tested\+\_\+dead@{get\+\_\+tested\+\_\+dead}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+tested\+\_\+dead()}{get\_tested\_dead()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+tested\+\_\+dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieve number of dead that were tested. 
+
+\mbox{\Hypertarget{classABM_a4bee67e458d0c13fa32bb1e4ffac01cf}\label{classABM_a4bee67e458d0c13fa32bb1e4ffac01cf}} 
+\index{A\+BM@{A\+BM}!get\+\_\+tested\+\_\+false\+\_\+negative\+\_\+day@{get\+\_\+tested\+\_\+false\+\_\+negative\+\_\+day}}
+\index{get\+\_\+tested\+\_\+false\+\_\+negative\+\_\+day@{get\+\_\+tested\+\_\+false\+\_\+negative\+\_\+day}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+tested\+\_\+false\+\_\+negative\+\_\+day()}{get\_tested\_false\_negative\_day()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$ A\+B\+M\+::get\+\_\+tested\+\_\+false\+\_\+negative\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_a245bef82eed1615d87588643115ae672}\label{classABM_a245bef82eed1615d87588643115ae672}} 
+\index{A\+BM@{A\+BM}!get\+\_\+tested\+\_\+false\+\_\+positive\+\_\+day@{get\+\_\+tested\+\_\+false\+\_\+positive\+\_\+day}}
+\index{get\+\_\+tested\+\_\+false\+\_\+positive\+\_\+day@{get\+\_\+tested\+\_\+false\+\_\+positive\+\_\+day}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+tested\+\_\+false\+\_\+positive\+\_\+day()}{get\_tested\_false\_positive\_day()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$ A\+B\+M\+::get\+\_\+tested\+\_\+false\+\_\+positive\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_aa022bf85aeb80e7a454d2ed32b11badd}\label{classABM_aa022bf85aeb80e7a454d2ed32b11badd}} 
+\index{A\+BM@{A\+BM}!get\+\_\+tested\+\_\+negative\+\_\+day@{get\+\_\+tested\+\_\+negative\+\_\+day}}
+\index{get\+\_\+tested\+\_\+negative\+\_\+day@{get\+\_\+tested\+\_\+negative\+\_\+day}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+tested\+\_\+negative\+\_\+day()}{get\_tested\_negative\_day()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$ A\+B\+M\+::get\+\_\+tested\+\_\+negative\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_a4f716f9354ccd5be741d09d051c5364e}\label{classABM_a4f716f9354ccd5be741d09d051c5364e}} 
+\index{A\+BM@{A\+BM}!get\+\_\+tested\+\_\+positive\+\_\+day@{get\+\_\+tested\+\_\+positive\+\_\+day}}
+\index{get\+\_\+tested\+\_\+positive\+\_\+day@{get\+\_\+tested\+\_\+positive\+\_\+day}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+tested\+\_\+positive\+\_\+day()}{get\_tested\_positive\_day()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$ A\+B\+M\+::get\+\_\+tested\+\_\+positive\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_adc6c1467a7b40acfa82e653874514190}\label{classABM_adc6c1467a7b40acfa82e653874514190}} 
+\index{A\+BM@{A\+BM}!get\+\_\+testing\+\_\+object@{get\+\_\+testing\+\_\+object}}
+\index{get\+\_\+testing\+\_\+object@{get\+\_\+testing\+\_\+object}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+testing\+\_\+object()}{get\_testing\_object()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classTesting}{Testing} A\+B\+M\+::get\+\_\+testing\+\_\+object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a copy of the \hyperlink{classTesting}{Testing} object. 
+
+\mbox{\Hypertarget{classABM_a3e26915cf8a4cf763599d4a8ad352d5e}\label{classABM_a3e26915cf8a4cf763599d4a8ad352d5e}} 
+\index{A\+BM@{A\+BM}!get\+\_\+testing\+\_\+object@{get\+\_\+testing\+\_\+object}}
+\index{get\+\_\+testing\+\_\+object@{get\+\_\+testing\+\_\+object}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+testing\+\_\+object()}{get\_testing\_object()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classTesting}{Testing}\& A\+B\+M\+::get\+\_\+testing\+\_\+object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the \hyperlink{classTesting}{Testing} object. 
+
+\mbox{\Hypertarget{classABM_a8a409f2ed07df42b316bcc2d4bb37340}\label{classABM_a8a409f2ed07df42b316bcc2d4bb37340}} 
+\index{A\+BM@{A\+BM}!get\+\_\+time@{get\+\_\+time}}
+\index{get\+\_\+time@{get\+\_\+time}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+time()}{get\_time()}}
+{\footnotesize\ttfamily double A\+B\+M\+::get\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Current simulation time. 
+
+\mbox{\Hypertarget{classABM_ae43e8808cb028d7a18841a66a9070937}\label{classABM_ae43e8808cb028d7a18841a66a9070937}} 
+\index{A\+BM@{A\+BM}!get\+\_\+tot\+\_\+recovering\+\_\+exposed@{get\+\_\+tot\+\_\+recovering\+\_\+exposed}}
+\index{get\+\_\+tot\+\_\+recovering\+\_\+exposed@{get\+\_\+tot\+\_\+recovering\+\_\+exposed}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+tot\+\_\+recovering\+\_\+exposed()}{get\_tot\_recovering\_exposed()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+tot\+\_\+recovering\+\_\+exposed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieve cumulative number of exposed that never developed symptoms. 
+
+\mbox{\Hypertarget{classABM_ad6d901acab9e9b92a0c992009ec51680}\label{classABM_ad6d901acab9e9b92a0c992009ec51680}} 
+\index{A\+BM@{A\+BM}!get\+\_\+total\+\_\+dead@{get\+\_\+total\+\_\+dead}}
+\index{get\+\_\+total\+\_\+dead@{get\+\_\+total\+\_\+dead}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+total\+\_\+dead()}{get\_total\_dead()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+total\+\_\+dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieve number of total dead. 
+
+\mbox{\Hypertarget{classABM_ade59d69b32a0a57c0e0c1e48c95a7524}\label{classABM_ade59d69b32a0a57c0e0c1e48c95a7524}} 
+\index{A\+BM@{A\+BM}!get\+\_\+total\+\_\+infected@{get\+\_\+total\+\_\+infected}}
+\index{get\+\_\+total\+\_\+infected@{get\+\_\+total\+\_\+infected}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+total\+\_\+infected()}{get\_total\_infected()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+total\+\_\+infected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieve number of total infected. 
+
+\mbox{\Hypertarget{classABM_a8fbf62a7df14f4ca34a69394d31834ed}\label{classABM_a8fbf62a7df14f4ca34a69394d31834ed}} 
+\index{A\+BM@{A\+BM}!get\+\_\+total\+\_\+recovered@{get\+\_\+total\+\_\+recovered}}
+\index{get\+\_\+total\+\_\+recovered@{get\+\_\+total\+\_\+recovered}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+total\+\_\+recovered()}{get\_total\_recovered()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+total\+\_\+recovered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieve number of total recovered. 
+
+\mbox{\Hypertarget{classABM_af04a4eb713648b9a938d5b773a0b0ff5}\label{classABM_af04a4eb713648b9a938d5b773a0b0ff5}} 
+\index{A\+BM@{A\+BM}!get\+\_\+total\+\_\+tested@{get\+\_\+total\+\_\+tested}}
+\index{get\+\_\+total\+\_\+tested@{get\+\_\+total\+\_\+tested}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+total\+\_\+tested()}{get\_total\_tested()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+total\+\_\+tested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_a04318c25d252c8c4a94dfda962de35a4}\label{classABM_a04318c25d252c8c4a94dfda962de35a4}} 
+\index{A\+BM@{A\+BM}!get\+\_\+total\+\_\+tested\+\_\+false\+\_\+negative@{get\+\_\+total\+\_\+tested\+\_\+false\+\_\+negative}}
+\index{get\+\_\+total\+\_\+tested\+\_\+false\+\_\+negative@{get\+\_\+total\+\_\+tested\+\_\+false\+\_\+negative}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+total\+\_\+tested\+\_\+false\+\_\+negative()}{get\_total\_tested\_false\_negative()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+total\+\_\+tested\+\_\+false\+\_\+negative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_aa51a827c335bf4d7195883af88168367}\label{classABM_aa51a827c335bf4d7195883af88168367}} 
+\index{A\+BM@{A\+BM}!get\+\_\+total\+\_\+tested\+\_\+false\+\_\+positive@{get\+\_\+total\+\_\+tested\+\_\+false\+\_\+positive}}
+\index{get\+\_\+total\+\_\+tested\+\_\+false\+\_\+positive@{get\+\_\+total\+\_\+tested\+\_\+false\+\_\+positive}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+total\+\_\+tested\+\_\+false\+\_\+positive()}{get\_total\_tested\_false\_positive()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+total\+\_\+tested\+\_\+false\+\_\+positive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_a28b749db2b2d70f05c45f5327a95d4f7}\label{classABM_a28b749db2b2d70f05c45f5327a95d4f7}} 
+\index{A\+BM@{A\+BM}!get\+\_\+total\+\_\+tested\+\_\+negative@{get\+\_\+total\+\_\+tested\+\_\+negative}}
+\index{get\+\_\+total\+\_\+tested\+\_\+negative@{get\+\_\+total\+\_\+tested\+\_\+negative}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+total\+\_\+tested\+\_\+negative()}{get\_total\_tested\_negative()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+total\+\_\+tested\+\_\+negative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_a2e4900dde8bc3287cff70bbd335fde8a}\label{classABM_a2e4900dde8bc3287cff70bbd335fde8a}} 
+\index{A\+BM@{A\+BM}!get\+\_\+total\+\_\+tested\+\_\+positive@{get\+\_\+total\+\_\+tested\+\_\+positive}}
+\index{get\+\_\+total\+\_\+tested\+\_\+positive@{get\+\_\+total\+\_\+tested\+\_\+positive}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+total\+\_\+tested\+\_\+positive()}{get\_total\_tested\_positive()}}
+{\footnotesize\ttfamily int A\+B\+M\+::get\+\_\+total\+\_\+tested\+\_\+positive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classABM_a54ff2561e36985f63ebc0020993f9a8e}\label{classABM_a54ff2561e36985f63ebc0020993f9a8e}} 
+\index{A\+BM@{A\+BM}!get\+\_\+treatment\+\_\+data@{get\+\_\+treatment\+\_\+data}}
+\index{get\+\_\+treatment\+\_\+data@{get\+\_\+treatment\+\_\+data}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+treatment\+\_\+data()}{get\_treatment\_data()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ A\+B\+M\+::get\+\_\+treatment\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classABM_a57429e18dccc3f7060dd6212125c97ee}\label{classABM_a57429e18dccc3f7060dd6212125c97ee}} 
+\index{A\+BM@{A\+BM}!get\+\_\+vector\+\_\+of\+\_\+agents@{get\+\_\+vector\+\_\+of\+\_\+agents}}
+\index{get\+\_\+vector\+\_\+of\+\_\+agents@{get\+\_\+vector\+\_\+of\+\_\+agents}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+vector\+\_\+of\+\_\+agents()}{get\_vector\_of\_agents()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classAgent}{Agent}$>$\& A\+B\+M\+::get\+\_\+vector\+\_\+of\+\_\+agents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a const reference to an \hyperlink{classAgent}{Agent} object vector. 
+
+\mbox{\Hypertarget{classABM_a5a58ed2717810317bc8fe8df841dcf08}\label{classABM_a5a58ed2717810317bc8fe8df841dcf08}} 
+\index{A\+BM@{A\+BM}!get\+\_\+vector\+\_\+of\+\_\+agents\+\_\+non\+\_\+const@{get\+\_\+vector\+\_\+of\+\_\+agents\+\_\+non\+\_\+const}}
+\index{get\+\_\+vector\+\_\+of\+\_\+agents\+\_\+non\+\_\+const@{get\+\_\+vector\+\_\+of\+\_\+agents\+\_\+non\+\_\+const}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+vector\+\_\+of\+\_\+agents\+\_\+non\+\_\+const()}{get\_vector\_of\_agents\_non\_const()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classAgent}{Agent}$>$\& A\+B\+M\+::get\+\_\+vector\+\_\+of\+\_\+agents\+\_\+non\+\_\+const (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a reference to an \hyperlink{classAgent}{Agent} object vector. 
+
+\mbox{\Hypertarget{classABM_a16e9e7297235fa57b1b65b9340af49ad}\label{classABM_a16e9e7297235fa57b1b65b9340af49ad}} 
+\index{A\+BM@{A\+BM}!get\+\_\+vector\+\_\+of\+\_\+hospitals@{get\+\_\+vector\+\_\+of\+\_\+hospitals}}
+\index{get\+\_\+vector\+\_\+of\+\_\+hospitals@{get\+\_\+vector\+\_\+of\+\_\+hospitals}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+vector\+\_\+of\+\_\+hospitals()}{get\_vector\_of\_hospitals()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classHospital}{Hospital}$>$\& A\+B\+M\+::get\+\_\+vector\+\_\+of\+\_\+hospitals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a const reference to a \hyperlink{classHospital}{Hospital} object vector. 
+
+\mbox{\Hypertarget{classABM_aa5cb222cd922ca221e063a840dc52aa1}\label{classABM_aa5cb222cd922ca221e063a840dc52aa1}} 
+\index{A\+BM@{A\+BM}!get\+\_\+vector\+\_\+of\+\_\+households@{get\+\_\+vector\+\_\+of\+\_\+households}}
+\index{get\+\_\+vector\+\_\+of\+\_\+households@{get\+\_\+vector\+\_\+of\+\_\+households}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+vector\+\_\+of\+\_\+households()}{get\_vector\_of\_households()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classHousehold}{Household}$>$\& A\+B\+M\+::get\+\_\+vector\+\_\+of\+\_\+households (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a const reference to a House object vector. 
+
+\mbox{\Hypertarget{classABM_a1265f522554b325c1495bfb1e5a2e921}\label{classABM_a1265f522554b325c1495bfb1e5a2e921}} 
+\index{A\+BM@{A\+BM}!get\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes@{get\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes}}
+\index{get\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes@{get\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes()}{get\_vector\_of\_retirement\_homes()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classRetirementHome}{Retirement\+Home}$>$\& A\+B\+M\+::get\+\_\+vector\+\_\+of\+\_\+retirement\+\_\+homes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a const reference to a \hyperlink{classRetirementHome}{Retirement\+Home} object vector. 
+
+\mbox{\Hypertarget{classABM_a6b2883283dd859e05b9c00c5939076a1}\label{classABM_a6b2883283dd859e05b9c00c5939076a1}} 
+\index{A\+BM@{A\+BM}!get\+\_\+vector\+\_\+of\+\_\+schools@{get\+\_\+vector\+\_\+of\+\_\+schools}}
+\index{get\+\_\+vector\+\_\+of\+\_\+schools@{get\+\_\+vector\+\_\+of\+\_\+schools}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+vector\+\_\+of\+\_\+schools()}{get\_vector\_of\_schools()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classSchool}{School}$>$\& A\+B\+M\+::get\+\_\+vector\+\_\+of\+\_\+schools (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a const reference to a \hyperlink{classSchool}{School} object vector. 
+
+\mbox{\Hypertarget{classABM_a04c29c9054c1c1dfbfb45f0af85a5a7f}\label{classABM_a04c29c9054c1c1dfbfb45f0af85a5a7f}} 
+\index{A\+BM@{A\+BM}!get\+\_\+vector\+\_\+of\+\_\+workplaces@{get\+\_\+vector\+\_\+of\+\_\+workplaces}}
+\index{get\+\_\+vector\+\_\+of\+\_\+workplaces@{get\+\_\+vector\+\_\+of\+\_\+workplaces}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{get\+\_\+vector\+\_\+of\+\_\+workplaces()}{get\_vector\_of\_workplaces()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classWorkplace}{Workplace}$>$\& A\+B\+M\+::get\+\_\+vector\+\_\+of\+\_\+workplaces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a const reference to a \hyperlink{classWorkplace}{Workplace} object vector. 
+
+\mbox{\Hypertarget{classABM_affafd1d079fd013bbef399fb7224f569}\label{classABM_affafd1d079fd013bbef399fb7224f569}} 
+\index{A\+BM@{A\+BM}!print\+\_\+age\+\_\+dependent\+\_\+distributions@{print\+\_\+age\+\_\+dependent\+\_\+distributions}}
+\index{print\+\_\+age\+\_\+dependent\+\_\+distributions@{print\+\_\+age\+\_\+dependent\+\_\+distributions}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+age\+\_\+dependent\+\_\+distributions()}{print\_age\_dependent\_distributions()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+age\+\_\+dependent\+\_\+distributions (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save age-\/dependent distributions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to print to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_a736b8a17c8198534c58d9a36b35bb5cd}\label{classABM_a736b8a17c8198534c58d9a36b35bb5cd}} 
+\index{A\+BM@{A\+BM}!print\+\_\+agents@{print\+\_\+agents}}
+\index{print\+\_\+agents@{print\+\_\+agents}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+agents()}{print\_agents()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+agents (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save current agent information. 
+
+Outputs agent information as indicated in \hyperlink{classAgent}{Agent} constructor One line per agent 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to print to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_adf2f12e0f3d1f134f553869e4e318765}\label{classABM_adf2f12e0f3d1f134f553869e4e318765}} 
+\index{A\+BM@{A\+BM}!print\+\_\+agents\+\_\+in\+\_\+hospitals@{print\+\_\+agents\+\_\+in\+\_\+hospitals}}
+\index{print\+\_\+agents\+\_\+in\+\_\+hospitals@{print\+\_\+agents\+\_\+in\+\_\+hospitals}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+agents\+\_\+in\+\_\+hospitals()}{print\_agents\_in\_hospitals()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+agents\+\_\+in\+\_\+hospitals (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save I\+Ds of all agents in all hospitals. 
+
+One line per hospital, 0 if no agents present 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to save to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_a8f94332461f1b9494481c1213eb9f3d2}\label{classABM_a8f94332461f1b9494481c1213eb9f3d2}} 
+\index{A\+BM@{A\+BM}!print\+\_\+agents\+\_\+in\+\_\+households@{print\+\_\+agents\+\_\+in\+\_\+households}}
+\index{print\+\_\+agents\+\_\+in\+\_\+households@{print\+\_\+agents\+\_\+in\+\_\+households}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+agents\+\_\+in\+\_\+households()}{print\_agents\_in\_households()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+agents\+\_\+in\+\_\+households (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save I\+Ds of all agents in all households. 
+
+One line per household, 0 if no agents present 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to save to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_ab1b1192eff4a2e10f4a05d87c6e3d896}\label{classABM_ab1b1192eff4a2e10f4a05d87c6e3d896}} 
+\index{A\+BM@{A\+BM}!print\+\_\+agents\+\_\+in\+\_\+retirement\+\_\+homes@{print\+\_\+agents\+\_\+in\+\_\+retirement\+\_\+homes}}
+\index{print\+\_\+agents\+\_\+in\+\_\+retirement\+\_\+homes@{print\+\_\+agents\+\_\+in\+\_\+retirement\+\_\+homes}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+agents\+\_\+in\+\_\+retirement\+\_\+homes()}{print\_agents\_in\_retirement\_homes()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+agents\+\_\+in\+\_\+retirement\+\_\+homes (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save I\+Ds of all agents in all retirement homes. 
+
+One line per retirement home, 0 if no agents present 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to save to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_ab3acbd3d496e2994367a0cfb0bdd7984}\label{classABM_ab3acbd3d496e2994367a0cfb0bdd7984}} 
+\index{A\+BM@{A\+BM}!print\+\_\+agents\+\_\+in\+\_\+schools@{print\+\_\+agents\+\_\+in\+\_\+schools}}
+\index{print\+\_\+agents\+\_\+in\+\_\+schools@{print\+\_\+agents\+\_\+in\+\_\+schools}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+agents\+\_\+in\+\_\+schools()}{print\_agents\_in\_schools()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+agents\+\_\+in\+\_\+schools (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save I\+Ds of all agents in all schools. 
+
+One line per school, 0 if no agents present 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to save to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_a60163307e6a7b6461bde10d86f6ccbca}\label{classABM_a60163307e6a7b6461bde10d86f6ccbca}} 
+\index{A\+BM@{A\+BM}!print\+\_\+agents\+\_\+in\+\_\+workplaces@{print\+\_\+agents\+\_\+in\+\_\+workplaces}}
+\index{print\+\_\+agents\+\_\+in\+\_\+workplaces@{print\+\_\+agents\+\_\+in\+\_\+workplaces}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+agents\+\_\+in\+\_\+workplaces()}{print\_agents\_in\_workplaces()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+agents\+\_\+in\+\_\+workplaces (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save I\+Ds of all agents in all workplaces. 
+
+One line per workplace, 0 if no agents present 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to save to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_a7ac686e0d4771009ab25cfbdc33749ea}\label{classABM_a7ac686e0d4771009ab25cfbdc33749ea}} 
+\index{A\+BM@{A\+BM}!print\+\_\+hospitals@{print\+\_\+hospitals}}
+\index{print\+\_\+hospitals@{print\+\_\+hospitals}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+hospitals()}{print\_hospitals()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+hospitals (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save current hospital information. 
+
+Outputs hospital information as hospital ID, x and y location, total number of agents, number of infected agents, ck, betas One line per hospital 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to print to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_a5d0d2b32a368c082d8217f2d3a22b832}\label{classABM_a5d0d2b32a368c082d8217f2d3a22b832}} 
+\index{A\+BM@{A\+BM}!print\+\_\+households@{print\+\_\+households}}
+\index{print\+\_\+households@{print\+\_\+households}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+households()}{print\_households()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+households (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save current household information. 
+
+Outputs household information as household ID, x and y location, total number of agents, number of infected agents One line per household 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to print to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_a41144391129c6ba85305ccceff148e20}\label{classABM_a41144391129c6ba85305ccceff148e20}} 
+\index{A\+BM@{A\+BM}!print\+\_\+infection\+\_\+parameters@{print\+\_\+infection\+\_\+parameters}}
+\index{print\+\_\+infection\+\_\+parameters@{print\+\_\+infection\+\_\+parameters}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+infection\+\_\+parameters()}{print\_infection\_parameters()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+infection\+\_\+parameters (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save infection parameter information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to print to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_afaddfd46a69c396b8e9648041e014c86}\label{classABM_afaddfd46a69c396b8e9648041e014c86}} 
+\index{A\+BM@{A\+BM}!print\+\_\+retirement\+\_\+home@{print\+\_\+retirement\+\_\+home}}
+\index{print\+\_\+retirement\+\_\+home@{print\+\_\+retirement\+\_\+home}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+retirement\+\_\+home()}{print\_retirement\_home()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+retirement\+\_\+home (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save current retirement home information. 
+
+Outputs retirement home information as school ID, x and y location, total number of agents, number of infected agents One line per institution 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to print to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_a9363f01996ce065a1e3009f3c1d43126}\label{classABM_a9363f01996ce065a1e3009f3c1d43126}} 
+\index{A\+BM@{A\+BM}!print\+\_\+schools@{print\+\_\+schools}}
+\index{print\+\_\+schools@{print\+\_\+schools}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+schools()}{print\_schools()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+schools (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save current school information. 
+
+Outputs school information as school ID, x and y location, total number of agents, number of infected agents One line per school 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to print to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_a72f37504297bcc5392f68e002c4bc380}\label{classABM_a72f37504297bcc5392f68e002c4bc380}} 
+\index{A\+BM@{A\+BM}!print\+\_\+workplaces@{print\+\_\+workplaces}}
+\index{print\+\_\+workplaces@{print\+\_\+workplaces}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{print\+\_\+workplaces()}{print\_workplaces()}}
+{\footnotesize\ttfamily void A\+B\+M\+::print\+\_\+workplaces (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Save current workplace information. 
+
+Outputs workplace information as workplace ID, x and y location, total number of agents, number of infected agents, ck, beta, psi One line per workplace 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ path of the file to print to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_aa379d58dc83b31ad00ec57a1756fefd5}\label{classABM_aa379d58dc83b31ad00ec57a1756fefd5}} 
+\index{A\+BM@{A\+BM}!reset\+\_\+contributions@{reset\+\_\+contributions}}
+\index{reset\+\_\+contributions@{reset\+\_\+contributions}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{reset\+\_\+contributions()}{reset\_contributions()}}
+{\footnotesize\ttfamily void A\+B\+M\+::reset\+\_\+contributions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the lambda factors to 0.\+0. 
+
+\mbox{\Hypertarget{classABM_ab9fbab941825f16e4bce0fdb4b27363c}\label{classABM_ab9fbab941825f16e4bce0fdb4b27363c}} 
+\index{A\+BM@{A\+BM}!set\+\_\+group\+\_\+vaccination@{set\+\_\+group\+\_\+vaccination}}
+\index{set\+\_\+group\+\_\+vaccination@{set\+\_\+group\+\_\+vaccination}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{set\+\_\+group\+\_\+vaccination()}{set\_group\_vaccination()}}
+{\footnotesize\ttfamily void A\+B\+M\+::set\+\_\+group\+\_\+vaccination (\begin{DoxyParamCaption}\item[{std\+::string}]{group\+\_\+name,  }\item[{bool}]{verbose = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set up vaccination of specific population group activated with testing 
+\begin{DoxyParams}{Parameters}
+{\em vaccine\+\_\+group\+\_\+name} & -\/ recognizable name of the group (see manual) \\
+\hline
+{\em verbose} & -\/ print the final number of vaccinated individuals \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classABM_af80a8ff3dbbd2e64693c127702c0b64e}\label{classABM_af80a8ff3dbbd2e64693c127702c0b64e}} 
+\index{A\+BM@{A\+BM}!set\+\_\+random\+\_\+vaccination@{set\+\_\+random\+\_\+vaccination}}
+\index{set\+\_\+random\+\_\+vaccination@{set\+\_\+random\+\_\+vaccination}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{set\+\_\+random\+\_\+vaccination()}{set\_random\_vaccination()}}
+{\footnotesize\ttfamily void A\+B\+M\+::set\+\_\+random\+\_\+vaccination (\begin{DoxyParamCaption}\item[{int}]{nv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set up vaccination of nv members of the random population members activated with testing. 
+
+\mbox{\Hypertarget{classABM_a532b704843314423cc3ffc4e2ed66f1a}\label{classABM_a532b704843314423cc3ffc4e2ed66f1a}} 
+\index{A\+BM@{A\+BM}!transmit\+\_\+infection@{transmit\+\_\+infection}}
+\index{transmit\+\_\+infection@{transmit\+\_\+infection}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{transmit\+\_\+infection()}{transmit\_infection()}}
+{\footnotesize\ttfamily void A\+B\+M\+::transmit\+\_\+infection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Transmit infection according to \hyperlink{classInfection}{Infection} model. 
+
+\mbox{\Hypertarget{classABM_a58d45195b1ab07fadd7f4a23adc8b18a}\label{classABM_a58d45195b1ab07fadd7f4a23adc8b18a}} 
+\index{A\+BM@{A\+BM}!vector\+\_\+of\+\_\+agents@{vector\+\_\+of\+\_\+agents}}
+\index{vector\+\_\+of\+\_\+agents@{vector\+\_\+of\+\_\+agents}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{vector\+\_\+of\+\_\+agents()}{vector\_of\_agents()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classAgent}{Agent}$>$\& A\+B\+M\+::vector\+\_\+of\+\_\+agents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a non-\/const reference to an \hyperlink{classAgent}{Agent} object vector. 
+
+\mbox{\Hypertarget{classABM_ad51360c08ebbbc18a574078901f6c82a}\label{classABM_ad51360c08ebbbc18a574078901f6c82a}} 
+\index{A\+BM@{A\+BM}!vector\+\_\+of\+\_\+hospitals@{vector\+\_\+of\+\_\+hospitals}}
+\index{vector\+\_\+of\+\_\+hospitals@{vector\+\_\+of\+\_\+hospitals}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{vector\+\_\+of\+\_\+hospitals()}{vector\_of\_hospitals()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classHospital}{Hospital}$>$\& A\+B\+M\+::vector\+\_\+of\+\_\+hospitals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a reference to a \hyperlink{classHospital}{Hospital} object vector. 
+
+\mbox{\Hypertarget{classABM_ab8340f988fa5a0bbfad783b04b2f86cf}\label{classABM_ab8340f988fa5a0bbfad783b04b2f86cf}} 
+\index{A\+BM@{A\+BM}!vector\+\_\+of\+\_\+households@{vector\+\_\+of\+\_\+households}}
+\index{vector\+\_\+of\+\_\+households@{vector\+\_\+of\+\_\+households}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{vector\+\_\+of\+\_\+households()}{vector\_of\_households()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classHousehold}{Household}$>$\& A\+B\+M\+::vector\+\_\+of\+\_\+households (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a reference to a \hyperlink{classHousehold}{Household} object vector. 
+
+\mbox{\Hypertarget{classABM_a8bcde147b1d1fbb81edcc0e9f7c717ae}\label{classABM_a8bcde147b1d1fbb81edcc0e9f7c717ae}} 
+\index{A\+BM@{A\+BM}!vector\+\_\+of\+\_\+retirement\+\_\+homes@{vector\+\_\+of\+\_\+retirement\+\_\+homes}}
+\index{vector\+\_\+of\+\_\+retirement\+\_\+homes@{vector\+\_\+of\+\_\+retirement\+\_\+homes}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{vector\+\_\+of\+\_\+retirement\+\_\+homes()}{vector\_of\_retirement\_homes()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classRetirementHome}{Retirement\+Home}$>$\& A\+B\+M\+::vector\+\_\+of\+\_\+retirement\+\_\+homes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a reference to a \hyperlink{classRetirementHome}{Retirement\+Home} object vector. 
+
+\mbox{\Hypertarget{classABM_a2a30709478a547ede2207ffd51070fff}\label{classABM_a2a30709478a547ede2207ffd51070fff}} 
+\index{A\+BM@{A\+BM}!vector\+\_\+of\+\_\+schools@{vector\+\_\+of\+\_\+schools}}
+\index{vector\+\_\+of\+\_\+schools@{vector\+\_\+of\+\_\+schools}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{vector\+\_\+of\+\_\+schools()}{vector\_of\_schools()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classSchool}{School}$>$\& A\+B\+M\+::vector\+\_\+of\+\_\+schools (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a reference to a \hyperlink{classSchool}{School} object vector. 
+
+\mbox{\Hypertarget{classABM_a3ae1ff992b82308e3b1ea5a0372f4d96}\label{classABM_a3ae1ff992b82308e3b1ea5a0372f4d96}} 
+\index{A\+BM@{A\+BM}!vector\+\_\+of\+\_\+workplaces@{vector\+\_\+of\+\_\+workplaces}}
+\index{vector\+\_\+of\+\_\+workplaces@{vector\+\_\+of\+\_\+workplaces}!A\+BM@{A\+BM}}
+\subsubsection{\texorpdfstring{vector\+\_\+of\+\_\+workplaces()}{vector\_of\_workplaces()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classWorkplace}{Workplace}$>$\& A\+B\+M\+::vector\+\_\+of\+\_\+workplaces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a reference to a \hyperlink{classWorkplace}{Workplace} object vector. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{abm_8h}{abm.\+h}\item 
+src/\hyperlink{abm_8cpp}{abm.\+cpp}\end{DoxyCompactItemize}

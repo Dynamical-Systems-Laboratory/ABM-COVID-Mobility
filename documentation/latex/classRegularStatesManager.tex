@@ -1,0 +1,281 @@
+\hypertarget{classRegularStatesManager}{}\section{Regular\+States\+Manager Class Reference}
+\label{classRegularStatesManager}\index{Regular\+States\+Manager@{Regular\+States\+Manager}}
+
+
+{\ttfamily \#include $<$regular\+\_\+states\+\_\+manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRegularStatesManager_a05c6533bf5e460afef3e89d75413a510}{Regular\+States\+Manager} ()=default
+\item 
+void \hyperlink{classRegularStatesManager_a123ac58f69fd27b51fbb6068755b61aa}{set\+\_\+susceptible\+\_\+to\+\_\+exposed} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from susceptible to exposed. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a3a1ad21ed23f705b9d35ab1b5ed74d06}{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from susceptible to exposed that will never become symptomatic. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a1378bb9ee86f261d5bf7c66c7798e1b4}{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set exposed that never developed symptoms to removed. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a943fe599632b05929f56353471423955}{set\+\_\+exposed\+\_\+to\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from exposed to general symptomatic. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a7ebe37dca3740a25fa0682eb471be976}{set\+\_\+dying\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states relevant to agent that will die. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a2c1745d45af0aeaf11b5b6718ab8c2d1}{set\+\_\+recovering\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states relevant to agent that will recover. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_adfe4e02af0388ceb0adba80867079ca7}{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set testing in hospital, initial state. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_aac23ea794e2797e61648e3826a9f8eac}{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set testing in hospital, initial state. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_abbb119bf6ac68db9594fda91be9b2ee4}{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set testing in a car, initial state. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a89a7a051bd5b196dc8db2b1343f62f04}{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set testing in a car, initial state. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a65490a9d9e523ed87acb5b36444ccbba}{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for just tested. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a82b160b267cc70b5c599119fd278936d}{set\+\_\+tested\+\_\+false\+\_\+negative} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from tested to false negative. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_af04422e175919ff93d09f19832fc122c}{set\+\_\+icu\+\_\+dying} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for hospitalized, I\+CU -\/ dying. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a34094d08eb2378f7e02d73da4599fab7}{set\+\_\+icu\+\_\+recovering} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for hospitalized, I\+CU -\/ recovering. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_aba141d47c1bf1e7de90a5d12d6cbcb65}{set\+\_\+hospitalized} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for hospitalized. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a1be9c0452ba637272cf12ceeec82eda7}{set\+\_\+home\+\_\+isolation} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for isolated at home. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a3f6d863ccc2712cc6b742369e8903d3f}{set\+\_\+any\+\_\+to\+\_\+removed} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all removed related states. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a061efc051ba2c64a02a2ce66d915a610}{set\+\_\+former\+\_\+flu} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Reset all flu related flags to false. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_a7bdff7e59ae0d521f32ec1a33d7c2c41}{set\+\_\+tested\+\_\+false\+\_\+positive} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for false positive, isolated at home. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_af336981bd4dfe51eaca43262b89632d3}{set\+\_\+tested\+\_\+negative} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for negative. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularStatesManager_ab225ce7069cd51e2c451ac8fbd28c3e3}{reset\+\_\+returning\+\_\+flu} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Reset flags for flu that is back to susceptible from IH. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRegularStatesManager_a05c6533bf5e460afef3e89d75413a510}\label{classRegularStatesManager_a05c6533bf5e460afef3e89d75413a510}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{Regular\+States\+Manager()}{RegularStatesManager()}}
+{\footnotesize\ttfamily Regular\+States\+Manager\+::\+Regular\+States\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRegularStatesManager_ab225ce7069cd51e2c451ac8fbd28c3e3}\label{classRegularStatesManager_ab225ce7069cd51e2c451ac8fbd28c3e3}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!reset\+\_\+returning\+\_\+flu@{reset\+\_\+returning\+\_\+flu}}
+\index{reset\+\_\+returning\+\_\+flu@{reset\+\_\+returning\+\_\+flu}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{reset\+\_\+returning\+\_\+flu()}{reset\_returning\_flu()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::reset\+\_\+returning\+\_\+flu (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Reset flags for flu that is back to susceptible from IH. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a3f6d863ccc2712cc6b742369e8903d3f}\label{classRegularStatesManager_a3f6d863ccc2712cc6b742369e8903d3f}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+any\+\_\+to\+\_\+removed@{set\+\_\+any\+\_\+to\+\_\+removed}}
+\index{set\+\_\+any\+\_\+to\+\_\+removed@{set\+\_\+any\+\_\+to\+\_\+removed}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+any\+\_\+to\+\_\+removed()}{set\_any\_to\_removed()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+any\+\_\+to\+\_\+removed (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all removed related states. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a7ebe37dca3740a25fa0682eb471be976}\label{classRegularStatesManager_a7ebe37dca3740a25fa0682eb471be976}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+dying\+\_\+symptomatic@{set\+\_\+dying\+\_\+symptomatic}}
+\index{set\+\_\+dying\+\_\+symptomatic@{set\+\_\+dying\+\_\+symptomatic}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+dying\+\_\+symptomatic()}{set\_dying\_symptomatic()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+dying\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states relevant to agent that will die. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a1378bb9ee86f261d5bf7c66c7798e1b4}\label{classRegularStatesManager_a1378bb9ee86f261d5bf7c66c7798e1b4}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed@{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed}}
+\index{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed@{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed()}{set\_exposed\_never\_symptomatic\_to\_removed()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set exposed that never developed symptoms to removed. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a943fe599632b05929f56353471423955}\label{classRegularStatesManager_a943fe599632b05929f56353471423955}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+exposed\+\_\+to\+\_\+symptomatic@{set\+\_\+exposed\+\_\+to\+\_\+symptomatic}}
+\index{set\+\_\+exposed\+\_\+to\+\_\+symptomatic@{set\+\_\+exposed\+\_\+to\+\_\+symptomatic}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+exposed\+\_\+to\+\_\+symptomatic()}{set\_exposed\_to\_symptomatic()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+exposed\+\_\+to\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from exposed to general symptomatic. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a89a7a051bd5b196dc8db2b1343f62f04}\label{classRegularStatesManager_a89a7a051bd5b196dc8db2b1343f62f04}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car@{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car}}
+\index{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car@{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car()}{set\_exposed\_waiting\_for\_test\_in\_car()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set testing in a car, initial state. 
+
+\mbox{\Hypertarget{classRegularStatesManager_aac23ea794e2797e61648e3826a9f8eac}\label{classRegularStatesManager_aac23ea794e2797e61648e3826a9f8eac}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital@{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital}}
+\index{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital@{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital()}{set\_exposed\_waiting\_for\_test\_in\_hospital()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set testing in hospital, initial state. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a061efc051ba2c64a02a2ce66d915a610}\label{classRegularStatesManager_a061efc051ba2c64a02a2ce66d915a610}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+former\+\_\+flu@{set\+\_\+former\+\_\+flu}}
+\index{set\+\_\+former\+\_\+flu@{set\+\_\+former\+\_\+flu}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+former\+\_\+flu()}{set\_former\_flu()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+former\+\_\+flu (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Reset all flu related flags to false. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a1be9c0452ba637272cf12ceeec82eda7}\label{classRegularStatesManager_a1be9c0452ba637272cf12ceeec82eda7}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+home\+\_\+isolation@{set\+\_\+home\+\_\+isolation}}
+\index{set\+\_\+home\+\_\+isolation@{set\+\_\+home\+\_\+isolation}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+home\+\_\+isolation()}{set\_home\_isolation()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+home\+\_\+isolation (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for isolated at home. 
+
+\mbox{\Hypertarget{classRegularStatesManager_aba141d47c1bf1e7de90a5d12d6cbcb65}\label{classRegularStatesManager_aba141d47c1bf1e7de90a5d12d6cbcb65}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+hospitalized@{set\+\_\+hospitalized}}
+\index{set\+\_\+hospitalized@{set\+\_\+hospitalized}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+hospitalized()}{set\_hospitalized()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+hospitalized (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for hospitalized. 
+
+\mbox{\Hypertarget{classRegularStatesManager_af04422e175919ff93d09f19832fc122c}\label{classRegularStatesManager_af04422e175919ff93d09f19832fc122c}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+icu\+\_\+dying@{set\+\_\+icu\+\_\+dying}}
+\index{set\+\_\+icu\+\_\+dying@{set\+\_\+icu\+\_\+dying}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+icu\+\_\+dying()}{set\_icu\_dying()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+icu\+\_\+dying (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for hospitalized, I\+CU -\/ dying. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a34094d08eb2378f7e02d73da4599fab7}\label{classRegularStatesManager_a34094d08eb2378f7e02d73da4599fab7}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+icu\+\_\+recovering@{set\+\_\+icu\+\_\+recovering}}
+\index{set\+\_\+icu\+\_\+recovering@{set\+\_\+icu\+\_\+recovering}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+icu\+\_\+recovering()}{set\_icu\_recovering()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+icu\+\_\+recovering (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for hospitalized, I\+CU -\/ recovering. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a2c1745d45af0aeaf11b5b6718ab8c2d1}\label{classRegularStatesManager_a2c1745d45af0aeaf11b5b6718ab8c2d1}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+recovering\+\_\+symptomatic@{set\+\_\+recovering\+\_\+symptomatic}}
+\index{set\+\_\+recovering\+\_\+symptomatic@{set\+\_\+recovering\+\_\+symptomatic}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+recovering\+\_\+symptomatic()}{set\_recovering\_symptomatic()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+recovering\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states relevant to agent that will recover. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a123ac58f69fd27b51fbb6068755b61aa}\label{classRegularStatesManager_a123ac58f69fd27b51fbb6068755b61aa}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+susceptible\+\_\+to\+\_\+exposed@{set\+\_\+susceptible\+\_\+to\+\_\+exposed}}
+\index{set\+\_\+susceptible\+\_\+to\+\_\+exposed@{set\+\_\+susceptible\+\_\+to\+\_\+exposed}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+susceptible\+\_\+to\+\_\+exposed()}{set\_susceptible\_to\_exposed()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+susceptible\+\_\+to\+\_\+exposed (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from susceptible to exposed. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a3a1ad21ed23f705b9d35ab1b5ed74d06}\label{classRegularStatesManager_a3a1ad21ed23f705b9d35ab1b5ed74d06}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic@{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic}}
+\index{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic@{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic()}{set\_susceptible\_to\_exposed\_never\_symptomatic()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from susceptible to exposed that will never become symptomatic. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a82b160b267cc70b5c599119fd278936d}\label{classRegularStatesManager_a82b160b267cc70b5c599119fd278936d}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+tested\+\_\+false\+\_\+negative@{set\+\_\+tested\+\_\+false\+\_\+negative}}
+\index{set\+\_\+tested\+\_\+false\+\_\+negative@{set\+\_\+tested\+\_\+false\+\_\+negative}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+false\+\_\+negative()}{set\_tested\_false\_negative()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+tested\+\_\+false\+\_\+negative (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from tested to false negative. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a7bdff7e59ae0d521f32ec1a33d7c2c41}\label{classRegularStatesManager_a7bdff7e59ae0d521f32ec1a33d7c2c41}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+tested\+\_\+false\+\_\+positive@{set\+\_\+tested\+\_\+false\+\_\+positive}}
+\index{set\+\_\+tested\+\_\+false\+\_\+positive@{set\+\_\+tested\+\_\+false\+\_\+positive}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+false\+\_\+positive()}{set\_tested\_false\_positive()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+tested\+\_\+false\+\_\+positive (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for false positive, isolated at home. 
+
+\mbox{\Hypertarget{classRegularStatesManager_af336981bd4dfe51eaca43262b89632d3}\label{classRegularStatesManager_af336981bd4dfe51eaca43262b89632d3}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+tested\+\_\+negative@{set\+\_\+tested\+\_\+negative}}
+\index{set\+\_\+tested\+\_\+negative@{set\+\_\+tested\+\_\+negative}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+negative()}{set\_tested\_negative()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+tested\+\_\+negative (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for negative. 
+
+\mbox{\Hypertarget{classRegularStatesManager_a65490a9d9e523ed87acb5b36444ccbba}\label{classRegularStatesManager_a65490a9d9e523ed87acb5b36444ccbba}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results@{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results}}
+\index{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results@{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results()}{set\_tested\_to\_awaiting\_results()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for just tested. 
+
+\mbox{\Hypertarget{classRegularStatesManager_abbb119bf6ac68db9594fda91be9b2ee4}\label{classRegularStatesManager_abbb119bf6ac68db9594fda91be9b2ee4}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car@{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car}}
+\index{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car@{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car()}{set\_waiting\_for\_test\_in\_car()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set testing in a car, initial state. 
+
+\mbox{\Hypertarget{classRegularStatesManager_adfe4e02af0388ceb0adba80867079ca7}\label{classRegularStatesManager_adfe4e02af0388ceb0adba80867079ca7}} 
+\index{Regular\+States\+Manager@{Regular\+States\+Manager}!set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital@{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital}}
+\index{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital@{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital}!Regular\+States\+Manager@{Regular\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital()}{set\_waiting\_for\_test\_in\_hospital()}}
+{\footnotesize\ttfamily void Regular\+States\+Manager\+::set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set testing in hospital, initial state. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/states\+\_\+manager/\hyperlink{regular__states__manager_8h}{regular\+\_\+states\+\_\+manager.\+h}\item 
+src/states\+\_\+manager/\hyperlink{regular__states__manager_8cpp}{regular\+\_\+states\+\_\+manager.\+cpp}\end{DoxyCompactItemize}

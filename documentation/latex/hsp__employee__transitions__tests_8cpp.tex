@@ -1,0 +1,138 @@
+\hypertarget{hsp__employee__transitions__tests_8cpp}{}\section{tests/transitions/hsp\+\_\+employee\+\_\+transitions/hsp\+\_\+employee\+\_\+transitions\+\_\+tests.cpp File Reference}
+\label{hsp__employee__transitions__tests_8cpp}\index{tests/transitions/hsp\+\_\+employee\+\_\+transitions/hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{tests/transitions/hsp\+\_\+employee\+\_\+transitions/hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+{\ttfamily \#include \char`\"{}hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{hsp__employee__transitions__tests_8cpp_ab4b945f5cdae6e6d48661cc40e6268eb}{test\+\_\+susceptible\+\_\+transitions} ()
+\begin{DoxyCompactList}\small\item\em Series of tests for transitions of a susceptible hospital employee. \end{DoxyCompactList}\item 
+bool \hyperlink{hsp__employee__transitions__tests_8cpp_a47087aa929ae32e4c4278a489c0098fe}{test\+\_\+exposed\+\_\+transitions} ()
+\begin{DoxyCompactList}\small\item\em Series of tests for transitions of an exposed agent that is a hospital employee. \end{DoxyCompactList}\item 
+bool \hyperlink{hsp__employee__transitions__tests_8cpp_aa1251d5e58541403d420411109e2cbfc}{test\+\_\+symptomatic\+\_\+transitions} ()
+\begin{DoxyCompactList}\small\item\em Series of tests for transitions of a symptomatic hospital employee. \end{DoxyCompactList}\item 
+\hyperlink{classABM}{A\+BM} \hyperlink{hsp__employee__transitions__tests_8cpp_a11ffb5bd58c2b9dcad49bc52f95b69d6}{create\+\_\+abm} (const double dt, int i0)
+\item 
+bool \hyperlink{hsp__employee__transitions__tests_8cpp_a3111a6f8b13af72e9d46be6bbabb2c69}{check\+\_\+isolation} (const \hyperlink{classAgent}{Agent} \&agent, const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, const std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, bool check\+\_\+in\+\_\+isolation)
+\begin{DoxyCompactList}\small\item\em Check if agent is checked out from all the public places. \end{DoxyCompactList}\item 
+bool \hyperlink{hsp__employee__transitions__tests_8cpp_a598aac827094449aefc3f348abd30daf}{check\+\_\+testing\+\_\+transitions} (const \hyperlink{classAgent}{Agent} \&agent, const std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, const std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ int $>$ \&state\+\_\+changes, int \&n\+\_\+tested\+\_\+exposed, int \&n\+\_\+tested\+\_\+sy, int \&n\+\_\+waiting\+\_\+for\+\_\+res, int \&n\+\_\+positive, int \&n\+\_\+false\+\_\+neg, int \&n\+\_\+hsp, int \&n\+\_\+hsp\+\_\+icu, int \&n\+\_\+ih, double time, double dt)
+\begin{DoxyCompactList}\small\item\em Tests for exposed agent that is undergoing testing or gets the results. \end{DoxyCompactList}\item 
+bool \hyperlink{hsp__employee__transitions__tests_8cpp_a5d6c9408c2eb4bd32429aff2b5eb64f4}{check\+\_\+treatment\+\_\+setup} (const \hyperlink{classAgent}{Agent} \&agent, const std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, const std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, int \&n\+\_\+hsp, int \&n\+\_\+hsp\+\_\+icu, int \&n\+\_\+ih, double time, double dt)
+\begin{DoxyCompactList}\small\item\em Verification of initial treatment. \end{DoxyCompactList}\item 
+bool \hyperlink{hsp__employee__transitions__tests_8cpp_ab1085878de5247ec60bc423b4242192d}{check\+\_\+fractions} (int num1, int num2, double fr\+\_\+expected, std\+::string msg)
+\begin{DoxyCompactList}\small\item\em Check if num1/num2 is roughly equal to expected. \end{DoxyCompactList}\item 
+bool \hyperlink{hsp__employee__transitions__tests_8cpp_a08804103b8dc7c5983ac94034bd79d98}{check\+\_\+hospitalized\+\_\+isolation} (const \hyperlink{classAgent}{Agent} \&agent, const std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, const std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals)
+\begin{DoxyCompactList}\small\item\em Verification of isolation and placement of a hospitalized agent. \end{DoxyCompactList}\item 
+bool \hyperlink{hsp__employee__transitions__tests_8cpp_a3615cd3b620aee70df8b71fc0b32b969}{check\+\_\+symptomatic\+\_\+agent\+\_\+removal} (const \hyperlink{classAgent}{Agent} \&agent, const std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, const std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ int $>$ \&state\+\_\+changes, int \&n\+\_\+rh, int \&n\+\_\+rd, double time, double dt)
+\begin{DoxyCompactList}\small\item\em Test for properties related to removal of a symptomatic agent. \end{DoxyCompactList}\item 
+int \hyperlink{hsp__employee__transitions__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{hsp__employee__transitions__tests_8cpp_ab1085878de5247ec60bc423b4242192d}\label{hsp__employee__transitions__tests_8cpp_ab1085878de5247ec60bc423b4242192d}} 
+\index{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}!check\+\_\+fractions@{check\+\_\+fractions}}
+\index{check\+\_\+fractions@{check\+\_\+fractions}!hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+fractions()}{check\_fractions()}}
+{\footnotesize\ttfamily bool check\+\_\+fractions (\begin{DoxyParamCaption}\item[{int}]{num1,  }\item[{int}]{num2,  }\item[{double}]{fr\+\_\+expected,  }\item[{std\+::string}]{msg }\end{DoxyParamCaption})}
+
+
+
+Check if num1/num2 is roughly equal to expected. 
+
+\mbox{\Hypertarget{hsp__employee__transitions__tests_8cpp_a08804103b8dc7c5983ac94034bd79d98}\label{hsp__employee__transitions__tests_8cpp_a08804103b8dc7c5983ac94034bd79d98}} 
+\index{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}!check\+\_\+hospitalized\+\_\+isolation@{check\+\_\+hospitalized\+\_\+isolation}}
+\index{check\+\_\+hospitalized\+\_\+isolation@{check\+\_\+hospitalized\+\_\+isolation}!hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+hospitalized\+\_\+isolation()}{check\_hospitalized\_isolation()}}
+{\footnotesize\ttfamily bool check\+\_\+hospitalized\+\_\+isolation (\begin{DoxyParamCaption}\item[{const \hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{const std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals }\end{DoxyParamCaption})}
+
+
+
+Verification of isolation and placement of a hospitalized agent. 
+
+\mbox{\Hypertarget{hsp__employee__transitions__tests_8cpp_a3111a6f8b13af72e9d46be6bbabb2c69}\label{hsp__employee__transitions__tests_8cpp_a3111a6f8b13af72e9d46be6bbabb2c69}} 
+\index{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}!check\+\_\+isolation@{check\+\_\+isolation}}
+\index{check\+\_\+isolation@{check\+\_\+isolation}!hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+isolation()}{check\_isolation()}}
+{\footnotesize\ttfamily bool check\+\_\+isolation (\begin{DoxyParamCaption}\item[{const \hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{const std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{bool}]{check\+\_\+in\+\_\+isolation = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Check if agent is checked out from all the public places. 
+
+\mbox{\Hypertarget{hsp__employee__transitions__tests_8cpp_a3615cd3b620aee70df8b71fc0b32b969}\label{hsp__employee__transitions__tests_8cpp_a3615cd3b620aee70df8b71fc0b32b969}} 
+\index{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}!check\+\_\+symptomatic\+\_\+agent\+\_\+removal@{check\+\_\+symptomatic\+\_\+agent\+\_\+removal}}
+\index{check\+\_\+symptomatic\+\_\+agent\+\_\+removal@{check\+\_\+symptomatic\+\_\+agent\+\_\+removal}!hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+symptomatic\+\_\+agent\+\_\+removal()}{check\_symptomatic\_agent\_removal()}}
+{\footnotesize\ttfamily bool check\+\_\+symptomatic\+\_\+agent\+\_\+removal (\begin{DoxyParamCaption}\item[{const \hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{const std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ int $>$ \&}]{state\+\_\+changes,  }\item[{int \&}]{n\+\_\+rh,  }\item[{int \&}]{n\+\_\+rd,  }\item[{double}]{time,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Test for properties related to removal of a symptomatic agent. 
+
+\mbox{\Hypertarget{hsp__employee__transitions__tests_8cpp_a598aac827094449aefc3f348abd30daf}\label{hsp__employee__transitions__tests_8cpp_a598aac827094449aefc3f348abd30daf}} 
+\index{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}!check\+\_\+testing\+\_\+transitions@{check\+\_\+testing\+\_\+transitions}}
+\index{check\+\_\+testing\+\_\+transitions@{check\+\_\+testing\+\_\+transitions}!hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+testing\+\_\+transitions()}{check\_testing\_transitions()}}
+{\footnotesize\ttfamily bool check\+\_\+testing\+\_\+transitions (\begin{DoxyParamCaption}\item[{const \hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{const std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ int $>$ \&}]{state\+\_\+changes,  }\item[{int \&}]{n\+\_\+tested\+\_\+exposed,  }\item[{int \&}]{n\+\_\+tested\+\_\+sy,  }\item[{int \&}]{n\+\_\+waiting\+\_\+for\+\_\+res,  }\item[{int \&}]{n\+\_\+positive,  }\item[{int \&}]{n\+\_\+false\+\_\+neg,  }\item[{int \&}]{n\+\_\+hsp,  }\item[{int \&}]{n\+\_\+hsp\+\_\+icu,  }\item[{int \&}]{n\+\_\+ih,  }\item[{double}]{time,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Tests for exposed agent that is undergoing testing or gets the results. 
+
+\mbox{\Hypertarget{hsp__employee__transitions__tests_8cpp_a5d6c9408c2eb4bd32429aff2b5eb64f4}\label{hsp__employee__transitions__tests_8cpp_a5d6c9408c2eb4bd32429aff2b5eb64f4}} 
+\index{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}!check\+\_\+treatment\+\_\+setup@{check\+\_\+treatment\+\_\+setup}}
+\index{check\+\_\+treatment\+\_\+setup@{check\+\_\+treatment\+\_\+setup}!hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+treatment\+\_\+setup()}{check\_treatment\_setup()}}
+{\footnotesize\ttfamily bool check\+\_\+treatment\+\_\+setup (\begin{DoxyParamCaption}\item[{const \hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{const std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{int \&}]{n\+\_\+hsp,  }\item[{int \&}]{n\+\_\+hsp\+\_\+icu,  }\item[{int \&}]{n\+\_\+ih,  }\item[{double}]{time,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Verification of initial treatment. 
+
+\mbox{\Hypertarget{hsp__employee__transitions__tests_8cpp_a11ffb5bd58c2b9dcad49bc52f95b69d6}\label{hsp__employee__transitions__tests_8cpp_a11ffb5bd58c2b9dcad49bc52f95b69d6}} 
+\index{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}!create\+\_\+abm@{create\+\_\+abm}}
+\index{create\+\_\+abm@{create\+\_\+abm}!hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+abm()}{create\_abm()}}
+{\footnotesize\ttfamily \hyperlink{classABM}{A\+BM} create\+\_\+abm (\begin{DoxyParamCaption}\item[{const double}]{dt,  }\item[{int}]{i0 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hsp__employee__transitions__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{hsp__employee__transitions__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}!main@{main}}
+\index{main@{main}!hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{hsp__employee__transitions__tests_8cpp_a47087aa929ae32e4c4278a489c0098fe}\label{hsp__employee__transitions__tests_8cpp_a47087aa929ae32e4c4278a489c0098fe}} 
+\index{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}!test\+\_\+exposed\+\_\+transitions@{test\+\_\+exposed\+\_\+transitions}}
+\index{test\+\_\+exposed\+\_\+transitions@{test\+\_\+exposed\+\_\+transitions}!hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{test\+\_\+exposed\+\_\+transitions()}{test\_exposed\_transitions()}}
+{\footnotesize\ttfamily bool test\+\_\+exposed\+\_\+transitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Series of tests for transitions of an exposed agent that is a hospital employee. 
+
+Series of tests for transitions of a regular exposed agent.
+
+Series of tests for transitions of an exposed non-\/\+C\+O\+V\+ID hospital patient. \mbox{\Hypertarget{hsp__employee__transitions__tests_8cpp_ab4b945f5cdae6e6d48661cc40e6268eb}\label{hsp__employee__transitions__tests_8cpp_ab4b945f5cdae6e6d48661cc40e6268eb}} 
+\index{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}!test\+\_\+susceptible\+\_\+transitions@{test\+\_\+susceptible\+\_\+transitions}}
+\index{test\+\_\+susceptible\+\_\+transitions@{test\+\_\+susceptible\+\_\+transitions}!hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{test\+\_\+susceptible\+\_\+transitions()}{test\_susceptible\_transitions()}}
+{\footnotesize\ttfamily bool test\+\_\+susceptible\+\_\+transitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Series of tests for transitions of a susceptible hospital employee. 
+
+\mbox{\Hypertarget{hsp__employee__transitions__tests_8cpp_aa1251d5e58541403d420411109e2cbfc}\label{hsp__employee__transitions__tests_8cpp_aa1251d5e58541403d420411109e2cbfc}} 
+\index{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}!test\+\_\+symptomatic\+\_\+transitions@{test\+\_\+symptomatic\+\_\+transitions}}
+\index{test\+\_\+symptomatic\+\_\+transitions@{test\+\_\+symptomatic\+\_\+transitions}!hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp@{hsp\+\_\+employee\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{test\+\_\+symptomatic\+\_\+transitions()}{test\_symptomatic\_transitions()}}
+{\footnotesize\ttfamily bool test\+\_\+symptomatic\+\_\+transitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Series of tests for transitions of a symptomatic hospital employee. 
+
+Series of tests for transitions of a regular symptomatic agent.
+
+Series of tests for transitions of a symptomatic non-\/\+C\+O\+V\+ID hospital patient. 

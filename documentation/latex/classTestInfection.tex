@@ -1,0 +1,97 @@
+\hypertarget{classTestInfection}{}\section{Test\+Infection Class Reference}
+\label{classTestInfection}\index{Test\+Infection@{Test\+Infection}}
+
+
+{\ttfamily \#include $<$test\+\_\+infection.\+h$>$}
+
+Inheritance diagram for Test\+Infection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTestInfection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTestInfection_abda0511d1b6a0b63d7dec65857201c7a}{Test\+Infection} ()=default
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classTestInfection}{Test\+Infection} object with default attributes. \end{DoxyCompactList}\item 
+\hyperlink{classTestInfection_a95e12afdd2b23350b7453c5b81d63720}{Test\+Infection} (const double del\+\_\+t, const double bh, const double bs, const double bw, const double bu, const double fa, const double fb, const double alph, const double rec)
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classTestInfection}{Test\+Infection} object with custom attributes. \end{DoxyCompactList}\item 
+void \hyperlink{classTestInfection_a78821345a56ae8821615a8b1ac1f3dec}{transmit\+\_\+infection} (std\+::vector$<$ \hyperlink{classAgent}{Agent} $>$ \&agents, std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&workplaces)
+\begin{DoxyCompactList}\small\item\em Computes infection and recovery of agents in this step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTestInfection_abda0511d1b6a0b63d7dec65857201c7a}\label{classTestInfection_abda0511d1b6a0b63d7dec65857201c7a}} 
+\index{Test\+Infection@{Test\+Infection}!Test\+Infection@{Test\+Infection}}
+\index{Test\+Infection@{Test\+Infection}!Test\+Infection@{Test\+Infection}}
+\subsubsection{\texorpdfstring{Test\+Infection()}{TestInfection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Test\+Infection\+::\+Test\+Infection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates a \hyperlink{classTestInfection}{Test\+Infection} object with default attributes. 
+
+\mbox{\Hypertarget{classTestInfection_a95e12afdd2b23350b7453c5b81d63720}\label{classTestInfection_a95e12afdd2b23350b7453c5b81d63720}} 
+\index{Test\+Infection@{Test\+Infection}!Test\+Infection@{Test\+Infection}}
+\index{Test\+Infection@{Test\+Infection}!Test\+Infection@{Test\+Infection}}
+\subsubsection{\texorpdfstring{Test\+Infection()}{TestInfection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Test\+Infection\+::\+Test\+Infection (\begin{DoxyParamCaption}\item[{const double}]{del\+\_\+t,  }\item[{const double}]{bh,  }\item[{const double}]{bs,  }\item[{const double}]{bw,  }\item[{const double}]{bu,  }\item[{const double}]{fa,  }\item[{const double}]{fb,  }\item[{const double}]{alph,  }\item[{const double}]{rec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \hyperlink{classTestInfection}{Test\+Infection} object with custom attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em del\+\_\+t} & -\/ time step \\
+\hline
+{\em bh} & -\/ within-\/household transmission rate \\
+\hline
+{\em bs} & -\/ within-\/school transmission rate \\
+\hline
+{\em bw} & -\/ within-\/workplace transmission rate \\
+\hline
+{\em bu} & -\/ transmission rate in general community \\
+\hline
+{\em fa} & -\/ parameters for scaling with distance, distance units \\
+\hline
+{\em fb} & -\/ parameters for scaling with distance, unitless \\
+\hline
+{\em alph} & -\/ parameter for scaling of household transmission rates with household size \\
+\hline
+{\em rec} & -\/ average infectious period, units of time \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTestInfection_a78821345a56ae8821615a8b1ac1f3dec}\label{classTestInfection_a78821345a56ae8821615a8b1ac1f3dec}} 
+\index{Test\+Infection@{Test\+Infection}!transmit\+\_\+infection@{transmit\+\_\+infection}}
+\index{transmit\+\_\+infection@{transmit\+\_\+infection}!Test\+Infection@{Test\+Infection}}
+\subsubsection{\texorpdfstring{transmit\+\_\+infection()}{transmit\_infection()}}
+{\footnotesize\ttfamily void Test\+Infection\+::transmit\+\_\+infection (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classAgent}{Agent} $>$ \&}]{agents,  }\item[{std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces }\end{DoxyParamCaption})}
+
+
+
+Computes infection and recovery of agents in this step. 
+
+This is exactly the same as in the \hyperlink{classInfection}{Infection} class
+
+
+\begin{DoxyParams}{Parameters}
+{\em agents} & -\/ vector of all the agents \\
+\hline
+{\em households} & -\/ vector of all the households \\
+\hline
+{\em schools} & -\/ vector of all the schools \\
+\hline
+{\em workplaces} & -\/ vector of all the workplaces \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+tests/deterministic\+\_\+test/\hyperlink{test__infection_8h}{test\+\_\+infection.\+h}\item 
+tests/deterministic\+\_\+test/\hyperlink{test__infection_8cpp}{test\+\_\+infection.\+cpp}\end{DoxyCompactItemize}

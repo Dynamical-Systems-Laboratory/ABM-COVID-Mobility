@@ -1,0 +1,162 @@
+\hypertarget{classRetirementHome}{}\section{Retirement\+Home Class Reference}
+\label{classRetirementHome}\index{Retirement\+Home@{Retirement\+Home}}
+
+
+{\ttfamily \#include $<$retirement\+\_\+home.\+h$>$}
+
+Inheritance diagram for Retirement\+Home\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRetirementHome}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRetirementHome_a9161850a079e6f54e129eeceb5fedf37}{Retirement\+Home} ()=default
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classRetirementHome}{Retirement\+Home} object with default attributes. \end{DoxyCompactList}\item 
+\hyperlink{classRetirementHome_a31e01ecb1d6a99468939ed75090803ef}{Retirement\+Home} (const int rh\+\_\+\+ID, const double xi, const double yi, const double severity\+\_\+cor, const double psi\+\_\+e, const double beta\+\_\+e, const double beta\+\_\+r, const double betaih)
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classRetirementHome}{Retirement\+Home} object. \end{DoxyCompactList}\item 
+void \hyperlink{classRetirementHome_a7b2c07f448001eff03b70fc460701fbd}{add\+\_\+exposed\+\_\+employee} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include exposed employee contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classRetirementHome_ab2a24b8583ae1e34cc8baf2d04c27116}{add\+\_\+symptomatic\+\_\+employee} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include symptomatic employee contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classRetirementHome_a8c7f00431e809d16b335d18daf512df1}{add\+\_\+symptomatic\+\_\+home\+\_\+isolated} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include contribution of a symptomatic, home isolated agent in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classRetirementHome_aaa3cd3799f2c48c92d5265bcfe514640}{add\+\_\+exposed\+\_\+home\+\_\+isolated} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include contribution of an exposed, home isolated agent in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classRetirementHome_aafab41675600b03fdffcf11db1a07ec7}{print\+\_\+basic} (std\+::ostream \&where) const override
+\begin{DoxyCompactList}\small\item\em Save information about a \hyperlink{classRetirementHome}{Retirement\+Home} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRetirementHome_a9161850a079e6f54e129eeceb5fedf37}\label{classRetirementHome_a9161850a079e6f54e129eeceb5fedf37}} 
+\index{Retirement\+Home@{Retirement\+Home}!Retirement\+Home@{Retirement\+Home}}
+\index{Retirement\+Home@{Retirement\+Home}!Retirement\+Home@{Retirement\+Home}}
+\subsubsection{\texorpdfstring{Retirement\+Home()}{RetirementHome()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Retirement\+Home\+::\+Retirement\+Home (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates a \hyperlink{classRetirementHome}{Retirement\+Home} object with default attributes. 
+
+\mbox{\Hypertarget{classRetirementHome_a31e01ecb1d6a99468939ed75090803ef}\label{classRetirementHome_a31e01ecb1d6a99468939ed75090803ef}} 
+\index{Retirement\+Home@{Retirement\+Home}!Retirement\+Home@{Retirement\+Home}}
+\index{Retirement\+Home@{Retirement\+Home}!Retirement\+Home@{Retirement\+Home}}
+\subsubsection{\texorpdfstring{Retirement\+Home()}{RetirementHome()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Retirement\+Home\+::\+Retirement\+Home (\begin{DoxyParamCaption}\item[{const int}]{rh\+\_\+\+ID,  }\item[{const double}]{xi,  }\item[{const double}]{yi,  }\item[{const double}]{severity\+\_\+cor,  }\item[{const double}]{psi\+\_\+e,  }\item[{const double}]{beta\+\_\+e,  }\item[{const double}]{beta\+\_\+r,  }\item[{const double}]{betaih }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \hyperlink{classRetirementHome}{Retirement\+Home} object. 
+
+Retirement home with custom ID, location, and infection parameters
+
+
+\begin{DoxyParams}{Parameters}
+{\em rh\+\_\+\+ID} & -\/ ID of the home \\
+\hline
+{\em xi} & -\/ x coordinate of the home \\
+\hline
+{\em yi} & -\/ y coordinate of the home \\
+\hline
+{\em severity\+\_\+cor} & -\/ severity correction for symptomatic \\
+\hline
+{\em psi\+\_\+e} & -\/ employee absenteeism correction \\
+\hline
+{\em beta\+\_\+e} & -\/ employee infection transmission rate, 1/time \\
+\hline
+{\em beta\+\_\+r} & -\/ resident infection transmission rate, 1/time \\
+\hline
+{\em betaih} & -\/ infection transmission rate for home isolated, 1/time \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRetirementHome_a7b2c07f448001eff03b70fc460701fbd}\label{classRetirementHome_a7b2c07f448001eff03b70fc460701fbd}} 
+\index{Retirement\+Home@{Retirement\+Home}!add\+\_\+exposed\+\_\+employee@{add\+\_\+exposed\+\_\+employee}}
+\index{add\+\_\+exposed\+\_\+employee@{add\+\_\+exposed\+\_\+employee}!Retirement\+Home@{Retirement\+Home}}
+\subsubsection{\texorpdfstring{add\+\_\+exposed\+\_\+employee()}{add\_exposed\_employee()}}
+{\footnotesize\ttfamily void Retirement\+Home\+::add\+\_\+exposed\+\_\+employee (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include exposed employee contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRetirementHome_aaa3cd3799f2c48c92d5265bcfe514640}\label{classRetirementHome_aaa3cd3799f2c48c92d5265bcfe514640}} 
+\index{Retirement\+Home@{Retirement\+Home}!add\+\_\+exposed\+\_\+home\+\_\+isolated@{add\+\_\+exposed\+\_\+home\+\_\+isolated}}
+\index{add\+\_\+exposed\+\_\+home\+\_\+isolated@{add\+\_\+exposed\+\_\+home\+\_\+isolated}!Retirement\+Home@{Retirement\+Home}}
+\subsubsection{\texorpdfstring{add\+\_\+exposed\+\_\+home\+\_\+isolated()}{add\_exposed\_home\_isolated()}}
+{\footnotesize\ttfamily void Retirement\+Home\+::add\+\_\+exposed\+\_\+home\+\_\+isolated (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include contribution of an exposed, home isolated agent in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRetirementHome_ab2a24b8583ae1e34cc8baf2d04c27116}\label{classRetirementHome_ab2a24b8583ae1e34cc8baf2d04c27116}} 
+\index{Retirement\+Home@{Retirement\+Home}!add\+\_\+symptomatic\+\_\+employee@{add\+\_\+symptomatic\+\_\+employee}}
+\index{add\+\_\+symptomatic\+\_\+employee@{add\+\_\+symptomatic\+\_\+employee}!Retirement\+Home@{Retirement\+Home}}
+\subsubsection{\texorpdfstring{add\+\_\+symptomatic\+\_\+employee()}{add\_symptomatic\_employee()}}
+{\footnotesize\ttfamily void Retirement\+Home\+::add\+\_\+symptomatic\+\_\+employee (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include symptomatic employee contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRetirementHome_a8c7f00431e809d16b335d18daf512df1}\label{classRetirementHome_a8c7f00431e809d16b335d18daf512df1}} 
+\index{Retirement\+Home@{Retirement\+Home}!add\+\_\+symptomatic\+\_\+home\+\_\+isolated@{add\+\_\+symptomatic\+\_\+home\+\_\+isolated}}
+\index{add\+\_\+symptomatic\+\_\+home\+\_\+isolated@{add\+\_\+symptomatic\+\_\+home\+\_\+isolated}!Retirement\+Home@{Retirement\+Home}}
+\subsubsection{\texorpdfstring{add\+\_\+symptomatic\+\_\+home\+\_\+isolated()}{add\_symptomatic\_home\_isolated()}}
+{\footnotesize\ttfamily void Retirement\+Home\+::add\+\_\+symptomatic\+\_\+home\+\_\+isolated (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include contribution of a symptomatic, home isolated agent in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRetirementHome_aafab41675600b03fdffcf11db1a07ec7}\label{classRetirementHome_aafab41675600b03fdffcf11db1a07ec7}} 
+\index{Retirement\+Home@{Retirement\+Home}!print\+\_\+basic@{print\+\_\+basic}}
+\index{print\+\_\+basic@{print\+\_\+basic}!Retirement\+Home@{Retirement\+Home}}
+\subsubsection{\texorpdfstring{print\+\_\+basic()}{print\_basic()}}
+{\footnotesize\ttfamily void Retirement\+Home\+::print\+\_\+basic (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{where }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Save information about a \hyperlink{classRetirementHome}{Retirement\+Home} object. 
+
+Saves to a file, everything but detailed agent information; order is ID $\vert$ x $\vert$ y $\vert$ number of agents $\vert$ number of infected agents $\vert$ ck $\vert$ betas $\vert$ psis Delimiter is a space. 
+\begin{DoxyParams}{Parameters}
+{\em where} & -\/ output stream \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classPlace_a9aa7649e0b91c5f61a5f71e9ca808fe1}{Place}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/places/\hyperlink{retirement__home_8h}{retirement\+\_\+home.\+h}\item 
+src/places/\hyperlink{retirement__home_8cpp}{retirement\+\_\+home.\+cpp}\end{DoxyCompactItemize}

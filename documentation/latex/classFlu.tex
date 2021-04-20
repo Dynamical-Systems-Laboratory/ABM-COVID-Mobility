@@ -1,0 +1,199 @@
+\hypertarget{classFlu}{}\section{Flu Class Reference}
+\label{classFlu}\index{Flu@{Flu}}
+
+
+{\ttfamily \#include $<$flu.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFlu_a3714dffff12b88b76547388c14c72ea4}{Flu} ()=default
+\item 
+void \hyperlink{classFlu_af4537e15218d60518ccb9de9df2aa69c}{set\+\_\+fraction} (const double flu\+\_\+frac)
+\begin{DoxyCompactList}\small\item\em Fraction of susceptible population with flu. \end{DoxyCompactList}\item 
+void \hyperlink{classFlu_ad2f9eaba0cde52dc931fd37fe8158165}{set\+\_\+fraction\+\_\+tested\+\_\+false\+\_\+positive} (const double flu\+\_\+fp\+\_\+tested)
+\begin{DoxyCompactList}\small\item\em Set portion to be tested false positive. \end{DoxyCompactList}\item 
+void \hyperlink{classFlu_af84acec1b3a8cfee13cba841bd6b6914}{set\+\_\+testing\+\_\+duration} (const double dt)
+\begin{DoxyCompactList}\small\item\em Specifies the offset in days for the time \hyperlink{classFlu}{Flu} agents can be tested. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \hyperlink{classFlu_a86d9c227590e493eb7ecb26e55b2a1eb}{generate\+\_\+flu} ()
+\begin{DoxyCompactList}\small\item\em Initial generation of flu population. \end{DoxyCompactList}\item 
+void \hyperlink{classFlu_a8ec452eddf296a91812b3eaa29183958}{add\+\_\+susceptible\+\_\+agent} (const int index)
+\begin{DoxyCompactList}\small\item\em Add a susceptible agent. \end{DoxyCompactList}\item 
+void \hyperlink{classFlu_ace749e39454ab8afd3fda5de94b9ff98}{remove\+\_\+susceptible\+\_\+agent} (const int index)
+\begin{DoxyCompactList}\small\item\em Remove a susceptible agent. \end{DoxyCompactList}\item 
+void \hyperlink{classFlu_a0106ecf7ba7e6db8f2b3cd5b5715537f}{remove\+\_\+flu\+\_\+agent} (const int index)
+\begin{DoxyCompactList}\small\item\em Remove a flu agent. \end{DoxyCompactList}\item 
+int \hyperlink{classFlu_a98293f770a941b92441d0db70fd97fb6}{swap\+\_\+flu\+\_\+agent} (const int index)
+\begin{DoxyCompactList}\small\item\em Remove recovered from flu, add new chosen randomly. \end{DoxyCompactList}\item 
+bool \hyperlink{classFlu_ab3eb12e70200001b11df26362206fbff}{getting\+\_\+tested} (const \hyperlink{classTesting}{Testing} \&testing)
+\begin{DoxyCompactList}\small\item\em True if agent will get tested. \end{DoxyCompactList}\item 
+bool \hyperlink{classFlu_ad5a3f4a140a364c4367063ba919af7b1}{tested\+\_\+false\+\_\+positive} ()
+\begin{DoxyCompactList}\small\item\em True if agent will get tested false positive. \end{DoxyCompactList}\item 
+const std\+::vector$<$ int $>$ \& \hyperlink{classFlu_ad635a41f158bb3941636059cf9eb911e}{get\+\_\+susceptible\+\_\+\+I\+Ds} () const
+\begin{DoxyCompactList}\small\item\em Const reference to susceptible I\+Ds vector. \end{DoxyCompactList}\item 
+const std\+::vector$<$ int $>$ \& \hyperlink{classFlu_a0e3acb295714b07d612580b7e7c8091c}{get\+\_\+flu\+\_\+\+I\+Ds} () const
+\begin{DoxyCompactList}\small\item\em Const reference to I\+Ds of agents with flu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFlu_a3714dffff12b88b76547388c14c72ea4}\label{classFlu_a3714dffff12b88b76547388c14c72ea4}} 
+\index{Flu@{Flu}!Flu@{Flu}}
+\index{Flu@{Flu}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{Flu()}{Flu()}}
+{\footnotesize\ttfamily Flu\+::\+Flu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFlu_a8ec452eddf296a91812b3eaa29183958}\label{classFlu_a8ec452eddf296a91812b3eaa29183958}} 
+\index{Flu@{Flu}!add\+\_\+susceptible\+\_\+agent@{add\+\_\+susceptible\+\_\+agent}}
+\index{add\+\_\+susceptible\+\_\+agent@{add\+\_\+susceptible\+\_\+agent}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{add\+\_\+susceptible\+\_\+agent()}{add\_susceptible\_agent()}}
+{\footnotesize\ttfamily void Flu\+::add\+\_\+susceptible\+\_\+agent (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a susceptible agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ agent ID (starts with 1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlu_a86d9c227590e493eb7ecb26e55b2a1eb}\label{classFlu_a86d9c227590e493eb7ecb26e55b2a1eb}} 
+\index{Flu@{Flu}!generate\+\_\+flu@{generate\+\_\+flu}}
+\index{generate\+\_\+flu@{generate\+\_\+flu}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{generate\+\_\+flu()}{generate\_flu()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Flu\+::generate\+\_\+flu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initial generation of flu population. 
+
+\begin{DoxyReturn}{Returns}
+Vector of I\+Ds of agents that have flu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlu_a0e3acb295714b07d612580b7e7c8091c}\label{classFlu_a0e3acb295714b07d612580b7e7c8091c}} 
+\index{Flu@{Flu}!get\+\_\+flu\+\_\+\+I\+Ds@{get\+\_\+flu\+\_\+\+I\+Ds}}
+\index{get\+\_\+flu\+\_\+\+I\+Ds@{get\+\_\+flu\+\_\+\+I\+Ds}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{get\+\_\+flu\+\_\+\+I\+Ds()}{get\_flu\_IDs()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$\& Flu\+::get\+\_\+flu\+\_\+\+I\+Ds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Const reference to I\+Ds of agents with flu. 
+
+\mbox{\Hypertarget{classFlu_ad635a41f158bb3941636059cf9eb911e}\label{classFlu_ad635a41f158bb3941636059cf9eb911e}} 
+\index{Flu@{Flu}!get\+\_\+susceptible\+\_\+\+I\+Ds@{get\+\_\+susceptible\+\_\+\+I\+Ds}}
+\index{get\+\_\+susceptible\+\_\+\+I\+Ds@{get\+\_\+susceptible\+\_\+\+I\+Ds}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{get\+\_\+susceptible\+\_\+\+I\+Ds()}{get\_susceptible\_IDs()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$\& Flu\+::get\+\_\+susceptible\+\_\+\+I\+Ds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Const reference to susceptible I\+Ds vector. 
+
+\mbox{\Hypertarget{classFlu_ab3eb12e70200001b11df26362206fbff}\label{classFlu_ab3eb12e70200001b11df26362206fbff}} 
+\index{Flu@{Flu}!getting\+\_\+tested@{getting\+\_\+tested}}
+\index{getting\+\_\+tested@{getting\+\_\+tested}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{getting\+\_\+tested()}{getting\_tested()}}
+{\footnotesize\ttfamily bool Flu\+::getting\+\_\+tested (\begin{DoxyParamCaption}\item[{const \hyperlink{classTesting}{Testing} \&}]{testing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+True if agent will get tested. 
+
+\mbox{\Hypertarget{classFlu_a0106ecf7ba7e6db8f2b3cd5b5715537f}\label{classFlu_a0106ecf7ba7e6db8f2b3cd5b5715537f}} 
+\index{Flu@{Flu}!remove\+\_\+flu\+\_\+agent@{remove\+\_\+flu\+\_\+agent}}
+\index{remove\+\_\+flu\+\_\+agent@{remove\+\_\+flu\+\_\+agent}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{remove\+\_\+flu\+\_\+agent()}{remove\_flu\_agent()}}
+{\footnotesize\ttfamily void Flu\+::remove\+\_\+flu\+\_\+agent (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})}
+
+
+
+Remove a flu agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ agent ID (starts with 1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlu_ace749e39454ab8afd3fda5de94b9ff98}\label{classFlu_ace749e39454ab8afd3fda5de94b9ff98}} 
+\index{Flu@{Flu}!remove\+\_\+susceptible\+\_\+agent@{remove\+\_\+susceptible\+\_\+agent}}
+\index{remove\+\_\+susceptible\+\_\+agent@{remove\+\_\+susceptible\+\_\+agent}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{remove\+\_\+susceptible\+\_\+agent()}{remove\_susceptible\_agent()}}
+{\footnotesize\ttfamily void Flu\+::remove\+\_\+susceptible\+\_\+agent (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})}
+
+
+
+Remove a susceptible agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ agent ID (starts with 1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlu_af4537e15218d60518ccb9de9df2aa69c}\label{classFlu_af4537e15218d60518ccb9de9df2aa69c}} 
+\index{Flu@{Flu}!set\+\_\+fraction@{set\+\_\+fraction}}
+\index{set\+\_\+fraction@{set\+\_\+fraction}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{set\+\_\+fraction()}{set\_fraction()}}
+{\footnotesize\ttfamily void Flu\+::set\+\_\+fraction (\begin{DoxyParamCaption}\item[{const double}]{flu\+\_\+frac }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fraction of susceptible population with flu. 
+
+\mbox{\Hypertarget{classFlu_ad2f9eaba0cde52dc931fd37fe8158165}\label{classFlu_ad2f9eaba0cde52dc931fd37fe8158165}} 
+\index{Flu@{Flu}!set\+\_\+fraction\+\_\+tested\+\_\+false\+\_\+positive@{set\+\_\+fraction\+\_\+tested\+\_\+false\+\_\+positive}}
+\index{set\+\_\+fraction\+\_\+tested\+\_\+false\+\_\+positive@{set\+\_\+fraction\+\_\+tested\+\_\+false\+\_\+positive}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{set\+\_\+fraction\+\_\+tested\+\_\+false\+\_\+positive()}{set\_fraction\_tested\_false\_positive()}}
+{\footnotesize\ttfamily void Flu\+::set\+\_\+fraction\+\_\+tested\+\_\+false\+\_\+positive (\begin{DoxyParamCaption}\item[{const double}]{flu\+\_\+fp\+\_\+tested }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set portion to be tested false positive. 
+
+\mbox{\Hypertarget{classFlu_af84acec1b3a8cfee13cba841bd6b6914}\label{classFlu_af84acec1b3a8cfee13cba841bd6b6914}} 
+\index{Flu@{Flu}!set\+\_\+testing\+\_\+duration@{set\+\_\+testing\+\_\+duration}}
+\index{set\+\_\+testing\+\_\+duration@{set\+\_\+testing\+\_\+duration}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{set\+\_\+testing\+\_\+duration()}{set\_testing\_duration()}}
+{\footnotesize\ttfamily void Flu\+::set\+\_\+testing\+\_\+duration (\begin{DoxyParamCaption}\item[{const double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Specifies the offset in days for the time \hyperlink{classFlu}{Flu} agents can be tested. 
+
+\mbox{\Hypertarget{classFlu_a98293f770a941b92441d0db70fd97fb6}\label{classFlu_a98293f770a941b92441d0db70fd97fb6}} 
+\index{Flu@{Flu}!swap\+\_\+flu\+\_\+agent@{swap\+\_\+flu\+\_\+agent}}
+\index{swap\+\_\+flu\+\_\+agent@{swap\+\_\+flu\+\_\+agent}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{swap\+\_\+flu\+\_\+agent()}{swap\_flu\_agent()}}
+{\footnotesize\ttfamily int Flu\+::swap\+\_\+flu\+\_\+agent (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})}
+
+
+
+Remove recovered from flu, add new chosen randomly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ agent to be removed from flu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ID of the agent that now has flu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlu_ad5a3f4a140a364c4367063ba919af7b1}\label{classFlu_ad5a3f4a140a364c4367063ba919af7b1}} 
+\index{Flu@{Flu}!tested\+\_\+false\+\_\+positive@{tested\+\_\+false\+\_\+positive}}
+\index{tested\+\_\+false\+\_\+positive@{tested\+\_\+false\+\_\+positive}!Flu@{Flu}}
+\subsubsection{\texorpdfstring{tested\+\_\+false\+\_\+positive()}{tested\_false\_positive()}}
+{\footnotesize\ttfamily bool Flu\+::tested\+\_\+false\+\_\+positive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+True if agent will get tested false positive. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{flu_8h}{flu.\+h}\item 
+src/\hyperlink{flu_8cpp}{flu.\+cpp}\end{DoxyCompactItemize}

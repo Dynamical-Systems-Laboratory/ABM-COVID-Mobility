@@ -1,0 +1,92 @@
+\hypertarget{rng__tests_8cpp}{}\section{tests/rng/rng\+\_\+tests.cpp File Reference}
+\label{rng__tests_8cpp}\index{tests/rng/rng\+\_\+tests.\+cpp@{tests/rng/rng\+\_\+tests.\+cpp}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include \char`\"{}../common/test\+\_\+utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../include/rng.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{rng__tests_8cpp_abd3a918ac9ef4a6eb7bbbaccd837d6a9}{uniform\+\_\+real\+\_\+test} (double a, double b)
+\begin{DoxyCompactList}\small\item\em Test if the uniform distribution generation is correct. \end{DoxyCompactList}\item 
+bool \hyperlink{rng__tests_8cpp_a284c2f0766b816655b163a094ff279df}{uniform\+\_\+int\+\_\+test} (double a, double b)
+\begin{DoxyCompactList}\small\item\em Test if the uniform integer distribution generation is correct. \end{DoxyCompactList}\item 
+bool \hyperlink{rng__tests_8cpp_aa2a5e2d30cee7c328b8008ce8af5ad95}{gamma\+\_\+test} (double shape, double scale, double exp\+\_\+mean)
+\begin{DoxyCompactList}\small\item\em Test if the gamma distribution generation is correct. \end{DoxyCompactList}\item 
+bool \hyperlink{rng__tests_8cpp_adf64b071f98965029e6076e1645c0ff8}{lognormal\+\_\+test} (double meanx, double stx, double exp\+\_\+mean)
+\begin{DoxyCompactList}\small\item\em Test if the lognormal distribution generation is correct. \end{DoxyCompactList}\item 
+bool \hyperlink{rng__tests_8cpp_aa930f8f1eeb2f61428f8c06389fd0b68}{weibull\+\_\+test} (double shape, double scale, double exp\+\_\+mean)
+\begin{DoxyCompactList}\small\item\em Test if the Weibull distribution generation is correct. \end{DoxyCompactList}\item 
+bool \hyperlink{rng__tests_8cpp_a953257cf2e2fcd0d3cdf7973ddb6a7ba}{random\+\_\+shuffle\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Test of random shuffling functionality. \end{DoxyCompactList}\item 
+int \hyperlink{rng__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{rng__tests_8cpp_aa2a5e2d30cee7c328b8008ce8af5ad95}\label{rng__tests_8cpp_aa2a5e2d30cee7c328b8008ce8af5ad95}} 
+\index{rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}!gamma\+\_\+test@{gamma\+\_\+test}}
+\index{gamma\+\_\+test@{gamma\+\_\+test}!rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{gamma\+\_\+test()}{gamma\_test()}}
+{\footnotesize\ttfamily bool gamma\+\_\+test (\begin{DoxyParamCaption}\item[{double}]{shape,  }\item[{double}]{scale,  }\item[{double}]{exp\+\_\+mean }\end{DoxyParamCaption})}
+
+
+
+Test if the gamma distribution generation is correct. 
+
+Checks the mean and saves the generated data \mbox{\Hypertarget{rng__tests_8cpp_adf64b071f98965029e6076e1645c0ff8}\label{rng__tests_8cpp_adf64b071f98965029e6076e1645c0ff8}} 
+\index{rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}!lognormal\+\_\+test@{lognormal\+\_\+test}}
+\index{lognormal\+\_\+test@{lognormal\+\_\+test}!rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{lognormal\+\_\+test()}{lognormal\_test()}}
+{\footnotesize\ttfamily bool lognormal\+\_\+test (\begin{DoxyParamCaption}\item[{double}]{meanx,  }\item[{double}]{stx,  }\item[{double}]{exp\+\_\+mean }\end{DoxyParamCaption})}
+
+
+
+Test if the lognormal distribution generation is correct. 
+
+Checks the mean and saves the generated data \mbox{\Hypertarget{rng__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{rng__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}!main@{main}}
+\index{main@{main}!rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{rng__tests_8cpp_a953257cf2e2fcd0d3cdf7973ddb6a7ba}\label{rng__tests_8cpp_a953257cf2e2fcd0d3cdf7973ddb6a7ba}} 
+\index{rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}!random\+\_\+shuffle\+\_\+test@{random\+\_\+shuffle\+\_\+test}}
+\index{random\+\_\+shuffle\+\_\+test@{random\+\_\+shuffle\+\_\+test}!rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{random\+\_\+shuffle\+\_\+test()}{random\_shuffle\_test()}}
+{\footnotesize\ttfamily bool random\+\_\+shuffle\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test of random shuffling functionality. 
+
+\mbox{\Hypertarget{rng__tests_8cpp_a284c2f0766b816655b163a094ff279df}\label{rng__tests_8cpp_a284c2f0766b816655b163a094ff279df}} 
+\index{rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}!uniform\+\_\+int\+\_\+test@{uniform\+\_\+int\+\_\+test}}
+\index{uniform\+\_\+int\+\_\+test@{uniform\+\_\+int\+\_\+test}!rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{uniform\+\_\+int\+\_\+test()}{uniform\_int\_test()}}
+{\footnotesize\ttfamily bool uniform\+\_\+int\+\_\+test (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})}
+
+
+
+Test if the uniform integer distribution generation is correct. 
+
+\mbox{\Hypertarget{rng__tests_8cpp_abd3a918ac9ef4a6eb7bbbaccd837d6a9}\label{rng__tests_8cpp_abd3a918ac9ef4a6eb7bbbaccd837d6a9}} 
+\index{rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}!uniform\+\_\+real\+\_\+test@{uniform\+\_\+real\+\_\+test}}
+\index{uniform\+\_\+real\+\_\+test@{uniform\+\_\+real\+\_\+test}!rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{uniform\+\_\+real\+\_\+test()}{uniform\_real\_test()}}
+{\footnotesize\ttfamily bool uniform\+\_\+real\+\_\+test (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})}
+
+
+
+Test if the uniform distribution generation is correct. 
+
+\mbox{\Hypertarget{rng__tests_8cpp_aa930f8f1eeb2f61428f8c06389fd0b68}\label{rng__tests_8cpp_aa930f8f1eeb2f61428f8c06389fd0b68}} 
+\index{rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}!weibull\+\_\+test@{weibull\+\_\+test}}
+\index{weibull\+\_\+test@{weibull\+\_\+test}!rng\+\_\+tests.\+cpp@{rng\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{weibull\+\_\+test()}{weibull\_test()}}
+{\footnotesize\ttfamily bool weibull\+\_\+test (\begin{DoxyParamCaption}\item[{double}]{shape,  }\item[{double}]{scale,  }\item[{double}]{exp\+\_\+mean }\end{DoxyParamCaption})}
+
+
+
+Test if the Weibull distribution generation is correct. 
+
+Checks the mean and saves the generated data 

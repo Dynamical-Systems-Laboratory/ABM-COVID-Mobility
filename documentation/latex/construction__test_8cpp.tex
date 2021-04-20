@@ -1,0 +1,154 @@
+\hypertarget{construction__test_8cpp}{}\section{tests/abm/construction\+\_\+test.cpp File Reference}
+\label{construction__test_8cpp}\index{tests/abm/construction\+\_\+test.\+cpp@{tests/abm/construction\+\_\+test.\+cpp}}
+{\ttfamily \#include \char`\"{}abm\+\_\+tests.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{construction__test_8cpp_a146fd092628c9df17711fed30dbf5562}{create\+\_\+households\+\_\+test} ()
+\item 
+bool \hyperlink{construction__test_8cpp_ae629ae9a978309c351c5029df3d7adaf}{create\+\_\+schools\+\_\+test} ()
+\item 
+bool \hyperlink{construction__test_8cpp_a696dd035273c980269b880dd7bc1b3c7}{wrong\+\_\+school\+\_\+type\+\_\+test} ()
+\item 
+bool \hyperlink{construction__test_8cpp_addcdfb8c2115e23b0de0d84e07c9f90c}{create\+\_\+workplaces\+\_\+test} ()
+\item 
+bool \hyperlink{construction__test_8cpp_ab69a4320b5ad88031d8d05c33636eb7d}{create\+\_\+hospitals\+\_\+test} ()
+\item 
+bool \hyperlink{construction__test_8cpp_adc627676249638af1efe5fb59a5a6e1f}{create\+\_\+retirement\+\_\+homes\+\_\+test} ()
+\item 
+bool \hyperlink{construction__test_8cpp_ad3943be0cdb09bee8f3c4a8980832558}{create\+\_\+agents\+\_\+test} ()
+\item 
+bool \hyperlink{construction__test_8cpp_a9bb7cbd5e4efb39c41542cd39b6d45f9}{create\+\_\+agents\+\_\+file\+\_\+test} ()
+\item 
+bool \hyperlink{construction__test_8cpp_a4cab83e7fb71a6b264cd375c2417d562}{compare\+\_\+places\+\_\+files} (std\+::string fname\+\_\+in, std\+::string fname\+\_\+out, const std\+::vector$<$ double $>$ infection\+\_\+parameters, const bool has\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Compare input places file with output from a \hyperlink{classPlace}{Place} object. \end{DoxyCompactList}\item 
+bool \hyperlink{construction__test_8cpp_a10c96ed74d256222724e476217c0d32d}{compare\+\_\+agents\+\_\+files} (std\+::string fname\+\_\+in, std\+::string fname\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Compare input agent file with output from an \hyperlink{classAgent}{Agent} object. \end{DoxyCompactList}\item 
+bool \hyperlink{construction__test_8cpp_aeaa790aced30436c7d88a68d5b13b3f3}{correctly\+\_\+registered} (const \hyperlink{classABM}{A\+BM} abm, const std\+::vector$<$ std\+::vector$<$ int $>$$>$ place\+\_\+info, const std\+::vector$<$ std\+::vector$<$ int $>$$>$ place\+\_\+agents, std\+::string place\+\_\+type, const std\+::string info\+\_\+file, const std\+::string agent\+\_\+file, const int num\+\_\+red\+\_\+args)
+\begin{DoxyCompactList}\small\item\em Check if agents registered correctly in a given \hyperlink{classPlace}{Place}. \end{DoxyCompactList}\item 
+bool \hyperlink{construction__test_8cpp_a43108d47daae333d11451615aedcd612}{check\+\_\+initially\+\_\+infected} (const \hyperlink{classAgent}{Agent} \&agent, const \hyperlink{classFlu}{Flu} \&flu, int \&n\+\_\+exposed\+\_\+never\+\_\+sy, const std\+::map$<$ std\+::string, double $>$ infection\+\_\+parameters)
+\item 
+bool \hyperlink{construction__test_8cpp_ab1085878de5247ec60bc423b4242192d}{check\+\_\+fractions} (int num1, int num2, double fr\+\_\+expected, std\+::string msg)
+\begin{DoxyCompactList}\small\item\em Check if num1/num2 is roughly equal to expected. \end{DoxyCompactList}\item 
+int \hyperlink{construction__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{construction__test_8cpp_ab1085878de5247ec60bc423b4242192d}\label{construction__test_8cpp_ab1085878de5247ec60bc423b4242192d}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!check\+\_\+fractions@{check\+\_\+fractions}}
+\index{check\+\_\+fractions@{check\+\_\+fractions}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+fractions()}{check\_fractions()}}
+{\footnotesize\ttfamily bool check\+\_\+fractions (\begin{DoxyParamCaption}\item[{int}]{num1,  }\item[{int}]{num2,  }\item[{double}]{fr\+\_\+expected,  }\item[{std\+::string}]{msg }\end{DoxyParamCaption})}
+
+
+
+Check if num1/num2 is roughly equal to expected. 
+
+\mbox{\Hypertarget{construction__test_8cpp_a43108d47daae333d11451615aedcd612}\label{construction__test_8cpp_a43108d47daae333d11451615aedcd612}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!check\+\_\+initially\+\_\+infected@{check\+\_\+initially\+\_\+infected}}
+\index{check\+\_\+initially\+\_\+infected@{check\+\_\+initially\+\_\+infected}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+initially\+\_\+infected()}{check\_initially\_infected()}}
+{\footnotesize\ttfamily bool check\+\_\+initially\+\_\+infected (\begin{DoxyParamCaption}\item[{const \hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const \hyperlink{classFlu}{Flu} \&}]{flu,  }\item[{int \&}]{n\+\_\+exposed\+\_\+never\+\_\+sy,  }\item[{const std\+::map$<$ std\+::string, double $>$}]{infection\+\_\+parameters }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{construction__test_8cpp_a10c96ed74d256222724e476217c0d32d}\label{construction__test_8cpp_a10c96ed74d256222724e476217c0d32d}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!compare\+\_\+agents\+\_\+files@{compare\+\_\+agents\+\_\+files}}
+\index{compare\+\_\+agents\+\_\+files@{compare\+\_\+agents\+\_\+files}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{compare\+\_\+agents\+\_\+files()}{compare\_agents\_files()}}
+{\footnotesize\ttfamily bool compare\+\_\+agents\+\_\+files (\begin{DoxyParamCaption}\item[{std\+::string}]{fname\+\_\+in,  }\item[{std\+::string}]{fname\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Compare input agent file with output from an \hyperlink{classAgent}{Agent} object. 
+
+\mbox{\Hypertarget{construction__test_8cpp_a4cab83e7fb71a6b264cd375c2417d562}\label{construction__test_8cpp_a4cab83e7fb71a6b264cd375c2417d562}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!compare\+\_\+places\+\_\+files@{compare\+\_\+places\+\_\+files}}
+\index{compare\+\_\+places\+\_\+files@{compare\+\_\+places\+\_\+files}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{compare\+\_\+places\+\_\+files()}{compare\_places\_files()}}
+{\footnotesize\ttfamily bool compare\+\_\+places\+\_\+files (\begin{DoxyParamCaption}\item[{std\+::string}]{fname\+\_\+in,  }\item[{std\+::string}]{fname\+\_\+out,  }\item[{const std\+::vector$<$ double $>$}]{infection\+\_\+parameters,  }\item[{const bool}]{has\+\_\+type = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Compare input places file with output from a \hyperlink{classPlace}{Place} object. 
+
+\mbox{\Hypertarget{construction__test_8cpp_aeaa790aced30436c7d88a68d5b13b3f3}\label{construction__test_8cpp_aeaa790aced30436c7d88a68d5b13b3f3}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!correctly\+\_\+registered@{correctly\+\_\+registered}}
+\index{correctly\+\_\+registered@{correctly\+\_\+registered}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{correctly\+\_\+registered()}{correctly\_registered()}}
+{\footnotesize\ttfamily bool correctly\+\_\+registered (\begin{DoxyParamCaption}\item[{const \hyperlink{classABM}{A\+BM}}]{abm,  }\item[{const std\+::vector$<$ std\+::vector$<$ int $>$$>$}]{place\+\_\+info,  }\item[{const std\+::vector$<$ std\+::vector$<$ int $>$$>$}]{place\+\_\+agents,  }\item[{std\+::string}]{place\+\_\+type,  }\item[{const std\+::string}]{info\+\_\+file,  }\item[{const std\+::string}]{agent\+\_\+file,  }\item[{const int}]{num\+\_\+red\+\_\+args }\end{DoxyParamCaption})}
+
+
+
+Check if agents registered correctly in a given \hyperlink{classPlace}{Place}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em abm} & -\/ an \hyperlink{classABM}{A\+BM} object \\
+\hline
+{\em place\+\_\+info} & -\/ vector of expected total number of agents in each place and total infected \\
+\hline
+{\em place\+\_\+agents} & -\/ vector with I\+Ds of agents in each place \\
+\hline
+{\em place\+\_\+type} & -\/ type of place (house, school or work), case independent \\
+\hline
+{\em info\+\_\+file} & -\/ name of the file to save basic info output to \\
+\hline
+{\em agent\+\_\+file} & -\/ name of the file to save agent I\+Ds to \\
+\hline
+{\em num\+\_\+red\+\_\+args} & -\/ number of redundant arguments (i.\+e. infection paramters) in printed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{construction__test_8cpp_a9bb7cbd5e4efb39c41542cd39b6d45f9}\label{construction__test_8cpp_a9bb7cbd5e4efb39c41542cd39b6d45f9}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!create\+\_\+agents\+\_\+file\+\_\+test@{create\+\_\+agents\+\_\+file\+\_\+test}}
+\index{create\+\_\+agents\+\_\+file\+\_\+test@{create\+\_\+agents\+\_\+file\+\_\+test}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+agents\+\_\+file\+\_\+test()}{create\_agents\_file\_test()}}
+{\footnotesize\ttfamily bool create\+\_\+agents\+\_\+file\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{construction__test_8cpp_ad3943be0cdb09bee8f3c4a8980832558}\label{construction__test_8cpp_ad3943be0cdb09bee8f3c4a8980832558}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!create\+\_\+agents\+\_\+test@{create\+\_\+agents\+\_\+test}}
+\index{create\+\_\+agents\+\_\+test@{create\+\_\+agents\+\_\+test}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+agents\+\_\+test()}{create\_agents\_test()}}
+{\footnotesize\ttfamily bool create\+\_\+agents\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{construction__test_8cpp_ab69a4320b5ad88031d8d05c33636eb7d}\label{construction__test_8cpp_ab69a4320b5ad88031d8d05c33636eb7d}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!create\+\_\+hospitals\+\_\+test@{create\+\_\+hospitals\+\_\+test}}
+\index{create\+\_\+hospitals\+\_\+test@{create\+\_\+hospitals\+\_\+test}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+hospitals\+\_\+test()}{create\_hospitals\_test()}}
+{\footnotesize\ttfamily bool create\+\_\+hospitals\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{construction__test_8cpp_a146fd092628c9df17711fed30dbf5562}\label{construction__test_8cpp_a146fd092628c9df17711fed30dbf5562}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!create\+\_\+households\+\_\+test@{create\+\_\+households\+\_\+test}}
+\index{create\+\_\+households\+\_\+test@{create\+\_\+households\+\_\+test}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+households\+\_\+test()}{create\_households\_test()}}
+{\footnotesize\ttfamily bool create\+\_\+households\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{construction__test_8cpp_adc627676249638af1efe5fb59a5a6e1f}\label{construction__test_8cpp_adc627676249638af1efe5fb59a5a6e1f}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!create\+\_\+retirement\+\_\+homes\+\_\+test@{create\+\_\+retirement\+\_\+homes\+\_\+test}}
+\index{create\+\_\+retirement\+\_\+homes\+\_\+test@{create\+\_\+retirement\+\_\+homes\+\_\+test}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+retirement\+\_\+homes\+\_\+test()}{create\_retirement\_homes\_test()}}
+{\footnotesize\ttfamily bool create\+\_\+retirement\+\_\+homes\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{construction__test_8cpp_ae629ae9a978309c351c5029df3d7adaf}\label{construction__test_8cpp_ae629ae9a978309c351c5029df3d7adaf}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!create\+\_\+schools\+\_\+test@{create\+\_\+schools\+\_\+test}}
+\index{create\+\_\+schools\+\_\+test@{create\+\_\+schools\+\_\+test}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+schools\+\_\+test()}{create\_schools\_test()}}
+{\footnotesize\ttfamily bool create\+\_\+schools\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{construction__test_8cpp_addcdfb8c2115e23b0de0d84e07c9f90c}\label{construction__test_8cpp_addcdfb8c2115e23b0de0d84e07c9f90c}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!create\+\_\+workplaces\+\_\+test@{create\+\_\+workplaces\+\_\+test}}
+\index{create\+\_\+workplaces\+\_\+test@{create\+\_\+workplaces\+\_\+test}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+workplaces\+\_\+test()}{create\_workplaces\_test()}}
+{\footnotesize\ttfamily bool create\+\_\+workplaces\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{construction__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{construction__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!main@{main}}
+\index{main@{main}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{construction__test_8cpp_a696dd035273c980269b880dd7bc1b3c7}\label{construction__test_8cpp_a696dd035273c980269b880dd7bc1b3c7}} 
+\index{construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}!wrong\+\_\+school\+\_\+type\+\_\+test@{wrong\+\_\+school\+\_\+type\+\_\+test}}
+\index{wrong\+\_\+school\+\_\+type\+\_\+test@{wrong\+\_\+school\+\_\+type\+\_\+test}!construction\+\_\+test.\+cpp@{construction\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{wrong\+\_\+school\+\_\+type\+\_\+test()}{wrong\_school\_type\_test()}}
+{\footnotesize\ttfamily bool wrong\+\_\+school\+\_\+type\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

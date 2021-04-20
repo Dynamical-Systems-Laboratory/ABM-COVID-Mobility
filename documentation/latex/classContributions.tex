@@ -1,0 +1,99 @@
+\hypertarget{classContributions}{}\section{Contributions Class Reference}
+\label{classContributions}\index{Contributions@{Contributions}}
+
+
+{\ttfamily \#include $<$contributions.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classContributions_ad6dd08ef9fd6147958ff9bd01acd9ffe}{Contributions} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor only. \end{DoxyCompactList}\item 
+void \hyperlink{classContributions_a4c4171fd8bca6bec6b82fff01c0546b9}{compute\+\_\+exposed\+\_\+contributions} (const \hyperlink{classAgent}{Agent} \&agent, const double time, std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&workplaces, std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&retirement\+\_\+homes)
+\begin{DoxyCompactList}\small\item\em Count contributions of an exposed agent. \end{DoxyCompactList}\item 
+void \hyperlink{classContributions_a35e17543a6643e69d8b6eda090a8ff90}{compute\+\_\+symptomatic\+\_\+contributions} (const \hyperlink{classAgent}{Agent} \&agent, const double time, std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&workplaces, std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&retirement\+\_\+homes)
+\begin{DoxyCompactList}\small\item\em Count contributions of a symptomatic agent. \end{DoxyCompactList}\item 
+void \hyperlink{classContributions_a6312bd1753a80b88d91c6f94fb581eb2}{total\+\_\+place\+\_\+contributions} (std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&workplaces, std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&retirement\+\_\+homes)
+\begin{DoxyCompactList}\small\item\em Compute the total contribution to infection probability at every place. \end{DoxyCompactList}\item 
+void \hyperlink{classContributions_a3910b40d45a0d57fc8d082a2158ee2aa}{reset\+\_\+sums} (std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&workplaces, std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&retirement\+\_\+homes)
+\begin{DoxyCompactList}\small\item\em Set contributions/sums from all agents in places to 0.\+0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classContributions_ad6dd08ef9fd6147958ff9bd01acd9ffe}\label{classContributions_ad6dd08ef9fd6147958ff9bd01acd9ffe}} 
+\index{Contributions@{Contributions}!Contributions@{Contributions}}
+\index{Contributions@{Contributions}!Contributions@{Contributions}}
+\subsubsection{\texorpdfstring{Contributions()}{Contributions()}}
+{\footnotesize\ttfamily Contributions\+::\+Contributions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor only. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classContributions_a4c4171fd8bca6bec6b82fff01c0546b9}\label{classContributions_a4c4171fd8bca6bec6b82fff01c0546b9}} 
+\index{Contributions@{Contributions}!compute\+\_\+exposed\+\_\+contributions@{compute\+\_\+exposed\+\_\+contributions}}
+\index{compute\+\_\+exposed\+\_\+contributions@{compute\+\_\+exposed\+\_\+contributions}!Contributions@{Contributions}}
+\subsubsection{\texorpdfstring{compute\+\_\+exposed\+\_\+contributions()}{compute\_exposed\_contributions()}}
+{\footnotesize\ttfamily void Contributions\+::compute\+\_\+exposed\+\_\+contributions (\begin{DoxyParamCaption}\item[{const \hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const double}]{time,  }\item[{std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces,  }\item[{std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&}]{retirement\+\_\+homes }\end{DoxyParamCaption})}
+
+
+
+Count contributions of an exposed agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & -\/ reference to \hyperlink{classAgent}{Agent} object \\
+\hline
+{\em time} & -\/ current time \\
+\hline
+{\em households...} & -\/ references to vectors of places \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classContributions_a35e17543a6643e69d8b6eda090a8ff90}\label{classContributions_a35e17543a6643e69d8b6eda090a8ff90}} 
+\index{Contributions@{Contributions}!compute\+\_\+symptomatic\+\_\+contributions@{compute\+\_\+symptomatic\+\_\+contributions}}
+\index{compute\+\_\+symptomatic\+\_\+contributions@{compute\+\_\+symptomatic\+\_\+contributions}!Contributions@{Contributions}}
+\subsubsection{\texorpdfstring{compute\+\_\+symptomatic\+\_\+contributions()}{compute\_symptomatic\_contributions()}}
+{\footnotesize\ttfamily void Contributions\+::compute\+\_\+symptomatic\+\_\+contributions (\begin{DoxyParamCaption}\item[{const \hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const double}]{time,  }\item[{std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces,  }\item[{std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&}]{retirement\+\_\+homes }\end{DoxyParamCaption})}
+
+
+
+Count contributions of a symptomatic agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & -\/ reference to \hyperlink{classAgent}{Agent} object \\
+\hline
+{\em time} & -\/ current time \\
+\hline
+{\em households...} & -\/ references to vectors of places \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classContributions_a3910b40d45a0d57fc8d082a2158ee2aa}\label{classContributions_a3910b40d45a0d57fc8d082a2158ee2aa}} 
+\index{Contributions@{Contributions}!reset\+\_\+sums@{reset\+\_\+sums}}
+\index{reset\+\_\+sums@{reset\+\_\+sums}!Contributions@{Contributions}}
+\subsubsection{\texorpdfstring{reset\+\_\+sums()}{reset\_sums()}}
+{\footnotesize\ttfamily void Contributions\+::reset\+\_\+sums (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces,  }\item[{std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&}]{retirement\+\_\+homes }\end{DoxyParamCaption})}
+
+
+
+Set contributions/sums from all agents in places to 0.\+0. 
+
+\mbox{\Hypertarget{classContributions_a6312bd1753a80b88d91c6f94fb581eb2}\label{classContributions_a6312bd1753a80b88d91c6f94fb581eb2}} 
+\index{Contributions@{Contributions}!total\+\_\+place\+\_\+contributions@{total\+\_\+place\+\_\+contributions}}
+\index{total\+\_\+place\+\_\+contributions@{total\+\_\+place\+\_\+contributions}!Contributions@{Contributions}}
+\subsubsection{\texorpdfstring{total\+\_\+place\+\_\+contributions()}{total\_place\_contributions()}}
+{\footnotesize\ttfamily void Contributions\+::total\+\_\+place\+\_\+contributions (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces,  }\item[{std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&}]{retirement\+\_\+homes }\end{DoxyParamCaption})}
+
+
+
+Compute the total contribution to infection probability at every place. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{contributions_8h}{contributions.\+h}\item 
+src/\hyperlink{contributions_8cpp}{contributions.\+cpp}\end{DoxyCompactItemize}

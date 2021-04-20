@@ -1,0 +1,140 @@
+\hypertarget{namespacecompilation}{}\section{compilation Namespace Reference}
+\label{namespacecompilation}\index{compilation@{compilation}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacecompilation_a3e72f84f29fb2f8b2a01891b25334512}{path} = \textquotesingle{}../../src/\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Input Path to the main directory. \end{DoxyCompactList}\item 
+string \hyperlink{namespacecompilation_ad0f846bbbc95dcce53b9f00d8c807571}{cx} = \textquotesingle{}g++\textquotesingle{}
+\item 
+string \hyperlink{namespacecompilation_a762bca1fba31c18bcb62094e66cd2aa2}{std} = \textquotesingle{}-\/std=c++11\textquotesingle{}
+\item 
+string \hyperlink{namespacecompilation_a57efc23010b24292a9208b55ff35c3e8}{opt} = \textquotesingle{}-\/O0\textquotesingle{}
+\item 
+string \hyperlink{namespacecompilation_a10d70893afdbc9620e6bd6d4b65b263c}{src\+\_\+files} = \hyperlink{namespacecompilation_a3e72f84f29fb2f8b2a01891b25334512}{path} + \textquotesingle{}abm.\+cpp\textquotesingle{}
+\item 
+string \hyperlink{namespacecompilation_afc391618d31035167addaa7c490b4b83}{tst\+\_\+files} = \textquotesingle{}../common/test\+\_\+utils.\+cpp\textquotesingle{}
+\item 
+string \hyperlink{namespacecompilation_a9a1debd6f944e917f85b5a30295869e0}{data\+\_\+dir} = \textquotesingle{}./test\+\_\+data/\textquotesingle{}
+\item 
+list \hyperlink{namespacecompilation_a8cabbc261586d969f95f53439b9c7f06}{const\+\_\+files} = \mbox{[}\textquotesingle{}houses\+\_\+out.\+txt\textquotesingle{}, \textquotesingle{}schools\+\_\+out.\+txt\textquotesingle{}, \textquotesingle{}workplaces\+\_\+out.\+txt\textquotesingle{}, \textquotesingle{}hospitals\+\_\+out.\+txt\textquotesingle{}\mbox{]}
+\item 
+string \hyperlink{namespacecompilation_afbfcd1e8d9e1c7a3d1bed4a27abe8b72}{exe\+\_\+name} = \textquotesingle{}con\+\_\+test\textquotesingle{}
+\item 
+string \hyperlink{namespacecompilation_a7870c1a877bc1c9cb395aa9fb1c25982}{spec\+\_\+files} = \textquotesingle{}construction\+\_\+test.\+cpp \textquotesingle{}
+\item 
+string \hyperlink{namespacecompilation_acc06f7d6e6ac81f21bc105c13d08a576}{compile\+\_\+com} = \textquotesingle{} \textquotesingle{}.join(\mbox{[}\hyperlink{namespacecompilation_ad0f846bbbc95dcce53b9f00d8c807571}{cx}, \hyperlink{namespacecompilation_a762bca1fba31c18bcb62094e66cd2aa2}{std}, \hyperlink{namespacecompilation_a57efc23010b24292a9208b55ff35c3e8}{opt}, \textquotesingle{}-\/o\textquotesingle{}, \hyperlink{namespacecompilation_afbfcd1e8d9e1c7a3d1bed4a27abe8b72}{exe\+\_\+name}, \hyperlink{namespacecompilation_a7870c1a877bc1c9cb395aa9fb1c25982}{spec\+\_\+files}, \hyperlink{namespacecompilation_afc391618d31035167addaa7c490b4b83}{tst\+\_\+files}, \hyperlink{namespacecompilation_a10d70893afdbc9620e6bd6d4b65b263c}{src\+\_\+files}\mbox{]})
+\item 
+\hyperlink{namespacecompilation_af931e0fad7111cfe4093d1e7910c9047}{shell}
+\item 
+string \hyperlink{namespacecompilation_af5b96eb6fff973f2670825ebd43d0f99}{test\+\_\+files} = \textquotesingle{}../common/test\+\_\+utils.\+cpp\textquotesingle{}
+\item 
+string \hyperlink{namespacecompilation_aa526330f451b511fd70aac0c57cb3b73}{f\+\_\+app} = \textquotesingle{}./test\+\_\+data/custom\+\_\+mode.\+txt\textquotesingle{}
+\item 
+string \hyperlink{namespacecompilation_adacd7e1df33e91957d93e318c212565a}{f\+\_\+path} = \textquotesingle{}./test\+\_\+data/\textquotesingle{}
+\item 
+list \hyperlink{namespacecompilation_a73c7f1a5fdfc4f66cba04fc73114a988}{files\+\_\+rm} = \mbox{[}\textquotesingle{}wr\+\_\+bool.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+int.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+string.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+double.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+bool\+\_\+1\+D.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+int\+\_\+1\+D.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+string\+\_\+1\+D.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+double\+\_\+1\+D.\+txt\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecompilation_acc06f7d6e6ac81f21bc105c13d08a576}\label{namespacecompilation_acc06f7d6e6ac81f21bc105c13d08a576}} 
+\index{compilation@{compilation}!compile\+\_\+com@{compile\+\_\+com}}
+\index{compile\+\_\+com@{compile\+\_\+com}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{compile\+\_\+com}{compile\_com}}
+{\footnotesize\ttfamily string compilation.\+compile\+\_\+com = \textquotesingle{} \textquotesingle{}.join(\mbox{[}\hyperlink{namespacecompilation_ad0f846bbbc95dcce53b9f00d8c807571}{cx}, \hyperlink{namespacecompilation_a762bca1fba31c18bcb62094e66cd2aa2}{std}, \hyperlink{namespacecompilation_a57efc23010b24292a9208b55ff35c3e8}{opt}, \textquotesingle{}-\/o\textquotesingle{}, \hyperlink{namespacecompilation_afbfcd1e8d9e1c7a3d1bed4a27abe8b72}{exe\+\_\+name}, \hyperlink{namespacecompilation_a7870c1a877bc1c9cb395aa9fb1c25982}{spec\+\_\+files}, \hyperlink{namespacecompilation_afc391618d31035167addaa7c490b4b83}{tst\+\_\+files}, \hyperlink{namespacecompilation_a10d70893afdbc9620e6bd6d4b65b263c}{src\+\_\+files}\mbox{]})}
+
+\mbox{\Hypertarget{namespacecompilation_a8cabbc261586d969f95f53439b9c7f06}\label{namespacecompilation_a8cabbc261586d969f95f53439b9c7f06}} 
+\index{compilation@{compilation}!const\+\_\+files@{const\+\_\+files}}
+\index{const\+\_\+files@{const\+\_\+files}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{const\+\_\+files}{const\_files}}
+{\footnotesize\ttfamily list compilation.\+const\+\_\+files = \mbox{[}\textquotesingle{}houses\+\_\+out.\+txt\textquotesingle{}, \textquotesingle{}schools\+\_\+out.\+txt\textquotesingle{}, \textquotesingle{}workplaces\+\_\+out.\+txt\textquotesingle{}, \textquotesingle{}hospitals\+\_\+out.\+txt\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespacecompilation_ad0f846bbbc95dcce53b9f00d8c807571}\label{namespacecompilation_ad0f846bbbc95dcce53b9f00d8c807571}} 
+\index{compilation@{compilation}!cx@{cx}}
+\index{cx@{cx}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{cx}{cx}}
+{\footnotesize\ttfamily string compilation.\+cx = \textquotesingle{}g++\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacecompilation_a9a1debd6f944e917f85b5a30295869e0}\label{namespacecompilation_a9a1debd6f944e917f85b5a30295869e0}} 
+\index{compilation@{compilation}!data\+\_\+dir@{data\+\_\+dir}}
+\index{data\+\_\+dir@{data\+\_\+dir}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{data\+\_\+dir}{data\_dir}}
+{\footnotesize\ttfamily string compilation.\+data\+\_\+dir = \textquotesingle{}./test\+\_\+data/\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacecompilation_afbfcd1e8d9e1c7a3d1bed4a27abe8b72}\label{namespacecompilation_afbfcd1e8d9e1c7a3d1bed4a27abe8b72}} 
+\index{compilation@{compilation}!exe\+\_\+name@{exe\+\_\+name}}
+\index{exe\+\_\+name@{exe\+\_\+name}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{exe\+\_\+name}{exe\_name}}
+{\footnotesize\ttfamily string compilation.\+exe\+\_\+name = \textquotesingle{}con\+\_\+test\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacecompilation_aa526330f451b511fd70aac0c57cb3b73}\label{namespacecompilation_aa526330f451b511fd70aac0c57cb3b73}} 
+\index{compilation@{compilation}!f\+\_\+app@{f\+\_\+app}}
+\index{f\+\_\+app@{f\+\_\+app}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{f\+\_\+app}{f\_app}}
+{\footnotesize\ttfamily string compilation.\+f\+\_\+app = \textquotesingle{}./test\+\_\+data/custom\+\_\+mode.\+txt\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacecompilation_adacd7e1df33e91957d93e318c212565a}\label{namespacecompilation_adacd7e1df33e91957d93e318c212565a}} 
+\index{compilation@{compilation}!f\+\_\+path@{f\+\_\+path}}
+\index{f\+\_\+path@{f\+\_\+path}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{f\+\_\+path}{f\_path}}
+{\footnotesize\ttfamily string compilation.\+f\+\_\+path = \textquotesingle{}./test\+\_\+data/\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacecompilation_a73c7f1a5fdfc4f66cba04fc73114a988}\label{namespacecompilation_a73c7f1a5fdfc4f66cba04fc73114a988}} 
+\index{compilation@{compilation}!files\+\_\+rm@{files\+\_\+rm}}
+\index{files\+\_\+rm@{files\+\_\+rm}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{files\+\_\+rm}{files\_rm}}
+{\footnotesize\ttfamily list compilation.\+files\+\_\+rm = \mbox{[}\textquotesingle{}wr\+\_\+bool.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+int.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+string.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+double.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+bool\+\_\+1\+D.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+int\+\_\+1\+D.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+string\+\_\+1\+D.\+txt\textquotesingle{}, \textquotesingle{}wr\+\_\+double\+\_\+1\+D.\+txt\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespacecompilation_a57efc23010b24292a9208b55ff35c3e8}\label{namespacecompilation_a57efc23010b24292a9208b55ff35c3e8}} 
+\index{compilation@{compilation}!opt@{opt}}
+\index{opt@{opt}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{opt}{opt}}
+{\footnotesize\ttfamily string compilation.\+opt = \textquotesingle{}-\/O0\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacecompilation_a3e72f84f29fb2f8b2a01891b25334512}\label{namespacecompilation_a3e72f84f29fb2f8b2a01891b25334512}} 
+\index{compilation@{compilation}!path@{path}}
+\index{path@{path}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily string compilation.\+path = \textquotesingle{}../../src/\textquotesingle{}}
+
+
+
+Input Path to the main directory. 
+
+\mbox{\Hypertarget{namespacecompilation_af931e0fad7111cfe4093d1e7910c9047}\label{namespacecompilation_af931e0fad7111cfe4093d1e7910c9047}} 
+\index{compilation@{compilation}!shell@{shell}}
+\index{shell@{shell}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{shell}{shell}}
+{\footnotesize\ttfamily compilation.\+shell}
+
+\mbox{\Hypertarget{namespacecompilation_a7870c1a877bc1c9cb395aa9fb1c25982}\label{namespacecompilation_a7870c1a877bc1c9cb395aa9fb1c25982}} 
+\index{compilation@{compilation}!spec\+\_\+files@{spec\+\_\+files}}
+\index{spec\+\_\+files@{spec\+\_\+files}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{spec\+\_\+files}{spec\_files}}
+{\footnotesize\ttfamily string compilation.\+spec\+\_\+files = \textquotesingle{}construction\+\_\+test.\+cpp \textquotesingle{}}
+
+\mbox{\Hypertarget{namespacecompilation_a10d70893afdbc9620e6bd6d4b65b263c}\label{namespacecompilation_a10d70893afdbc9620e6bd6d4b65b263c}} 
+\index{compilation@{compilation}!src\+\_\+files@{src\+\_\+files}}
+\index{src\+\_\+files@{src\+\_\+files}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{src\+\_\+files}{src\_files}}
+{\footnotesize\ttfamily string compilation.\+src\+\_\+files = \hyperlink{namespacecompilation_a3e72f84f29fb2f8b2a01891b25334512}{path} + \textquotesingle{}abm.\+cpp\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacecompilation_a762bca1fba31c18bcb62094e66cd2aa2}\label{namespacecompilation_a762bca1fba31c18bcb62094e66cd2aa2}} 
+\index{compilation@{compilation}!std@{std}}
+\index{std@{std}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{std}{std}}
+{\footnotesize\ttfamily string compilation.\+std = \textquotesingle{}-\/std=c++11\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacecompilation_af5b96eb6fff973f2670825ebd43d0f99}\label{namespacecompilation_af5b96eb6fff973f2670825ebd43d0f99}} 
+\index{compilation@{compilation}!test\+\_\+files@{test\+\_\+files}}
+\index{test\+\_\+files@{test\+\_\+files}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{test\+\_\+files}{test\_files}}
+{\footnotesize\ttfamily string compilation.\+test\+\_\+files = \textquotesingle{}../common/test\+\_\+utils.\+cpp\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacecompilation_afc391618d31035167addaa7c490b4b83}\label{namespacecompilation_afc391618d31035167addaa7c490b4b83}} 
+\index{compilation@{compilation}!tst\+\_\+files@{tst\+\_\+files}}
+\index{tst\+\_\+files@{tst\+\_\+files}!compilation@{compilation}}
+\subsubsection{\texorpdfstring{tst\+\_\+files}{tst\_files}}
+{\footnotesize\ttfamily string compilation.\+tst\+\_\+files = \textquotesingle{}../common/test\+\_\+utils.\+cpp\textquotesingle{}}
+

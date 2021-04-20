@@ -1,0 +1,161 @@
+\hypertarget{classSchool}{}\section{School Class Reference}
+\label{classSchool}\index{School@{School}}
+
+
+{\ttfamily \#include $<$school.\+h$>$}
+
+Inheritance diagram for School\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSchool}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSchool_a18efa7137fe6c142ababf7d4ed838a07}{School} ()=default
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classSchool}{School} object with default attributes. \end{DoxyCompactList}\item 
+\hyperlink{classSchool_a4f9cd6dacc298715885c917b8a14e4ca}{School} (const int school\+\_\+\+ID, const double xi, const double yi, const double severity\+\_\+cor, const double psi\+\_\+e, const double psi, const double beta\+\_\+e, const double beta\+\_\+s)
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classSchool}{School} object. \end{DoxyCompactList}\item 
+void \hyperlink{classSchool_aa3d7bde17fc920efc33f3152f3df5671}{add\+\_\+exposed\+\_\+employee} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include exposed employee contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classSchool_aaa75cfbde33ca728de63c9d6f72b1ff8}{add\+\_\+symptomatic\+\_\+employee} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include symptomatic employee contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classSchool_ac5457e1834cbf399c4c9ad8a6971673f}{add\+\_\+symptomatic\+\_\+student} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include symptomatic student contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classSchool_aba41cef9af3f2cb98bf1075c289baf84}{change\+\_\+employee\+\_\+transmission\+\_\+rate} (const double new\+\_\+rate)
+\item 
+double \hyperlink{classSchool_a7cc6659bce874d0cc56ed45972c7d842}{get\+\_\+employee\+\_\+transmission\+\_\+rate} () const
+\item 
+void \hyperlink{classSchool_ade1610f7c072eb041f6d8b0e157e1cc8}{print\+\_\+basic} (std\+::ostream \&where) const override
+\begin{DoxyCompactList}\small\item\em Save information about a \hyperlink{classSchool}{School} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSchool_a18efa7137fe6c142ababf7d4ed838a07}\label{classSchool_a18efa7137fe6c142ababf7d4ed838a07}} 
+\index{School@{School}!School@{School}}
+\index{School@{School}!School@{School}}
+\subsubsection{\texorpdfstring{School()}{School()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily School\+::\+School (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates a \hyperlink{classSchool}{School} object with default attributes. 
+
+\mbox{\Hypertarget{classSchool_a4f9cd6dacc298715885c917b8a14e4ca}\label{classSchool_a4f9cd6dacc298715885c917b8a14e4ca}} 
+\index{School@{School}!School@{School}}
+\index{School@{School}!School@{School}}
+\subsubsection{\texorpdfstring{School()}{School()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily School\+::\+School (\begin{DoxyParamCaption}\item[{const int}]{school\+\_\+\+ID,  }\item[{const double}]{xi,  }\item[{const double}]{yi,  }\item[{const double}]{severity\+\_\+cor,  }\item[{const double}]{psi\+\_\+e,  }\item[{const double}]{psi,  }\item[{const double}]{beta\+\_\+e,  }\item[{const double}]{beta\+\_\+s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \hyperlink{classSchool}{School} object. 
+
+\hyperlink{classSchool}{School} with custom ID, location, and infection parameters
+
+
+\begin{DoxyParams}{Parameters}
+{\em school\+\_\+\+ID} & -\/ ID of the school \\
+\hline
+{\em xi} & -\/ x coordinate of the school \\
+\hline
+{\em yi} & -\/ y coordinate of the school \\
+\hline
+{\em severity\+\_\+cor} & -\/ severity correction for symptomatic \\
+\hline
+{\em psi\+\_\+e} & -\/ employee absenteeism correction \\
+\hline
+{\em psi} & -\/ student absenteeism correction \\
+\hline
+{\em beta\+\_\+e} & -\/ employee infection transmission rate, 1/time \\
+\hline
+{\em beta\+\_\+s} & -\/ student infection transmission rate, 1/time \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSchool_aa3d7bde17fc920efc33f3152f3df5671}\label{classSchool_aa3d7bde17fc920efc33f3152f3df5671}} 
+\index{School@{School}!add\+\_\+exposed\+\_\+employee@{add\+\_\+exposed\+\_\+employee}}
+\index{add\+\_\+exposed\+\_\+employee@{add\+\_\+exposed\+\_\+employee}!School@{School}}
+\subsubsection{\texorpdfstring{add\+\_\+exposed\+\_\+employee()}{add\_exposed\_employee()}}
+{\footnotesize\ttfamily void School\+::add\+\_\+exposed\+\_\+employee (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include exposed employee contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSchool_aaa75cfbde33ca728de63c9d6f72b1ff8}\label{classSchool_aaa75cfbde33ca728de63c9d6f72b1ff8}} 
+\index{School@{School}!add\+\_\+symptomatic\+\_\+employee@{add\+\_\+symptomatic\+\_\+employee}}
+\index{add\+\_\+symptomatic\+\_\+employee@{add\+\_\+symptomatic\+\_\+employee}!School@{School}}
+\subsubsection{\texorpdfstring{add\+\_\+symptomatic\+\_\+employee()}{add\_symptomatic\_employee()}}
+{\footnotesize\ttfamily void School\+::add\+\_\+symptomatic\+\_\+employee (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include symptomatic employee contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSchool_ac5457e1834cbf399c4c9ad8a6971673f}\label{classSchool_ac5457e1834cbf399c4c9ad8a6971673f}} 
+\index{School@{School}!add\+\_\+symptomatic\+\_\+student@{add\+\_\+symptomatic\+\_\+student}}
+\index{add\+\_\+symptomatic\+\_\+student@{add\+\_\+symptomatic\+\_\+student}!School@{School}}
+\subsubsection{\texorpdfstring{add\+\_\+symptomatic\+\_\+student()}{add\_symptomatic\_student()}}
+{\footnotesize\ttfamily void School\+::add\+\_\+symptomatic\+\_\+student (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include symptomatic student contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSchool_aba41cef9af3f2cb98bf1075c289baf84}\label{classSchool_aba41cef9af3f2cb98bf1075c289baf84}} 
+\index{School@{School}!change\+\_\+employee\+\_\+transmission\+\_\+rate@{change\+\_\+employee\+\_\+transmission\+\_\+rate}}
+\index{change\+\_\+employee\+\_\+transmission\+\_\+rate@{change\+\_\+employee\+\_\+transmission\+\_\+rate}!School@{School}}
+\subsubsection{\texorpdfstring{change\+\_\+employee\+\_\+transmission\+\_\+rate()}{change\_employee\_transmission\_rate()}}
+{\footnotesize\ttfamily void School\+::change\+\_\+employee\+\_\+transmission\+\_\+rate (\begin{DoxyParamCaption}\item[{const double}]{new\+\_\+rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchool_a7cc6659bce874d0cc56ed45972c7d842}\label{classSchool_a7cc6659bce874d0cc56ed45972c7d842}} 
+\index{School@{School}!get\+\_\+employee\+\_\+transmission\+\_\+rate@{get\+\_\+employee\+\_\+transmission\+\_\+rate}}
+\index{get\+\_\+employee\+\_\+transmission\+\_\+rate@{get\+\_\+employee\+\_\+transmission\+\_\+rate}!School@{School}}
+\subsubsection{\texorpdfstring{get\+\_\+employee\+\_\+transmission\+\_\+rate()}{get\_employee\_transmission\_rate()}}
+{\footnotesize\ttfamily double School\+::get\+\_\+employee\+\_\+transmission\+\_\+rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchool_ade1610f7c072eb041f6d8b0e157e1cc8}\label{classSchool_ade1610f7c072eb041f6d8b0e157e1cc8}} 
+\index{School@{School}!print\+\_\+basic@{print\+\_\+basic}}
+\index{print\+\_\+basic@{print\+\_\+basic}!School@{School}}
+\subsubsection{\texorpdfstring{print\+\_\+basic()}{print\_basic()}}
+{\footnotesize\ttfamily void School\+::print\+\_\+basic (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{where }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Save information about a \hyperlink{classSchool}{School} object. 
+
+Saves to a file, everything but detailed agent information; order is ID $\vert$ x $\vert$ y $\vert$ number of agents $\vert$ number of infected agents $\vert$ ck $\vert$ betas $\vert$ psis Delimiter is a space. 
+\begin{DoxyParams}{Parameters}
+{\em where} & -\/ output stream \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classPlace_a9aa7649e0b91c5f61a5f71e9ca808fe1}{Place}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/places/\hyperlink{school_8h}{school.\+h}\item 
+src/places/\hyperlink{school_8cpp}{school.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{flu__transitions__tests_8cpp}{}\section{tests/transitions/flu\+\_\+transitions/flu\+\_\+transitions\+\_\+tests.cpp File Reference}
+\label{flu__transitions__tests_8cpp}\index{tests/transitions/flu\+\_\+transitions/flu\+\_\+transitions\+\_\+tests.\+cpp@{tests/transitions/flu\+\_\+transitions/flu\+\_\+transitions\+\_\+tests.\+cpp}}
+{\ttfamily \#include \char`\"{}flu\+\_\+transitions\+\_\+tests.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{flu__transitions__tests_8cpp_ab4b945f5cdae6e6d48661cc40e6268eb}{test\+\_\+susceptible\+\_\+transitions} ()
+\begin{DoxyCompactList}\small\item\em Series of tests for transitions of a regular susceptible agent. \end{DoxyCompactList}\item 
+\hyperlink{classABM}{A\+BM} \hyperlink{flu__transitions__tests_8cpp_a11ffb5bd58c2b9dcad49bc52f95b69d6}{create\+\_\+abm} (const double dt, int i0)
+\item 
+bool \hyperlink{flu__transitions__tests_8cpp_aea4cda6e5dd7ffb1d92cdf9f3d328695}{check\+\_\+isolation} (const \hyperlink{classAgent}{Agent} \&agent, const std\+::vector$<$ \hyperlink{classSchool}{School} $>$ schools, const std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ retirement\+\_\+homes, const std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ workplaces, bool check\+\_\+in\+\_\+isolation)
+\begin{DoxyCompactList}\small\item\em Check if agent is checked out from all the public places. \end{DoxyCompactList}\item 
+bool \hyperlink{flu__transitions__tests_8cpp_ab1085878de5247ec60bc423b4242192d}{check\+\_\+fractions} (int num1, int num2, double fr\+\_\+expected, std\+::string msg)
+\begin{DoxyCompactList}\small\item\em Check if num1/num2 is roughly equal to expected. \end{DoxyCompactList}\item 
+int \hyperlink{flu__transitions__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{flu__transitions__tests_8cpp_ab1085878de5247ec60bc423b4242192d}\label{flu__transitions__tests_8cpp_ab1085878de5247ec60bc423b4242192d}} 
+\index{flu\+\_\+transitions\+\_\+tests.\+cpp@{flu\+\_\+transitions\+\_\+tests.\+cpp}!check\+\_\+fractions@{check\+\_\+fractions}}
+\index{check\+\_\+fractions@{check\+\_\+fractions}!flu\+\_\+transitions\+\_\+tests.\+cpp@{flu\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+fractions()}{check\_fractions()}}
+{\footnotesize\ttfamily bool check\+\_\+fractions (\begin{DoxyParamCaption}\item[{int}]{num1,  }\item[{int}]{num2,  }\item[{double}]{fr\+\_\+expected,  }\item[{std\+::string}]{msg }\end{DoxyParamCaption})}
+
+
+
+Check if num1/num2 is roughly equal to expected. 
+
+\mbox{\Hypertarget{flu__transitions__tests_8cpp_aea4cda6e5dd7ffb1d92cdf9f3d328695}\label{flu__transitions__tests_8cpp_aea4cda6e5dd7ffb1d92cdf9f3d328695}} 
+\index{flu\+\_\+transitions\+\_\+tests.\+cpp@{flu\+\_\+transitions\+\_\+tests.\+cpp}!check\+\_\+isolation@{check\+\_\+isolation}}
+\index{check\+\_\+isolation@{check\+\_\+isolation}!flu\+\_\+transitions\+\_\+tests.\+cpp@{flu\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+isolation()}{check\_isolation()}}
+{\footnotesize\ttfamily bool check\+\_\+isolation (\begin{DoxyParamCaption}\item[{const \hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const std\+::vector$<$ \hyperlink{classSchool}{School} $>$}]{schools,  }\item[{const std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$}]{retirement\+\_\+homes,  }\item[{const std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$}]{workplaces,  }\item[{bool}]{check\+\_\+in\+\_\+isolation = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Check if agent is checked out from all the public places. 
+
+\mbox{\Hypertarget{flu__transitions__tests_8cpp_a11ffb5bd58c2b9dcad49bc52f95b69d6}\label{flu__transitions__tests_8cpp_a11ffb5bd58c2b9dcad49bc52f95b69d6}} 
+\index{flu\+\_\+transitions\+\_\+tests.\+cpp@{flu\+\_\+transitions\+\_\+tests.\+cpp}!create\+\_\+abm@{create\+\_\+abm}}
+\index{create\+\_\+abm@{create\+\_\+abm}!flu\+\_\+transitions\+\_\+tests.\+cpp@{flu\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+abm()}{create\_abm()}}
+{\footnotesize\ttfamily \hyperlink{classABM}{A\+BM} create\+\_\+abm (\begin{DoxyParamCaption}\item[{const double}]{dt,  }\item[{int}]{i0 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flu__transitions__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{flu__transitions__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{flu\+\_\+transitions\+\_\+tests.\+cpp@{flu\+\_\+transitions\+\_\+tests.\+cpp}!main@{main}}
+\index{main@{main}!flu\+\_\+transitions\+\_\+tests.\+cpp@{flu\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{flu__transitions__tests_8cpp_ab4b945f5cdae6e6d48661cc40e6268eb}\label{flu__transitions__tests_8cpp_ab4b945f5cdae6e6d48661cc40e6268eb}} 
+\index{flu\+\_\+transitions\+\_\+tests.\+cpp@{flu\+\_\+transitions\+\_\+tests.\+cpp}!test\+\_\+susceptible\+\_\+transitions@{test\+\_\+susceptible\+\_\+transitions}}
+\index{test\+\_\+susceptible\+\_\+transitions@{test\+\_\+susceptible\+\_\+transitions}!flu\+\_\+transitions\+\_\+tests.\+cpp@{flu\+\_\+transitions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{test\+\_\+susceptible\+\_\+transitions()}{test\_susceptible\_transitions()}}
+{\footnotesize\ttfamily bool test\+\_\+susceptible\+\_\+transitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Series of tests for transitions of a regular susceptible agent. 
+
+Series of tests for transitions of a susceptible non-\/\+C\+O\+V\+ID hospital patient.
+
+Series of tests for transitions of a susceptible hospital employee. 

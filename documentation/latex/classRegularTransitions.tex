@@ -1,0 +1,120 @@
+\hypertarget{classRegularTransitions}{}\section{Regular\+Transitions Class Reference}
+\label{classRegularTransitions}\index{Regular\+Transitions@{Regular\+Transitions}}
+
+
+{\ttfamily \#include $<$regular\+\_\+transitions.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRegularTransitions_aa9908666aa96fd2ddcbe787da091dd7c}{Regular\+Transitions} ()=default
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classRegularTransitions}{Regular\+Transitions} object with default attributes. \end{DoxyCompactList}\item 
+int \hyperlink{classRegularTransitions_a81fdcd87f0c66b867eefb351484a6852}{susceptible\+\_\+transitions} (\hyperlink{classAgent}{Agent} \&agent, const double time, \hyperlink{classInfection}{Infection} \&infection, std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&workplaces, std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&retirement\+\_\+homes, const std\+::map$<$ std\+::string, double $>$ \&infection\+\_\+parameters, std\+::vector$<$ \hyperlink{classAgent}{Agent} $>$ \&agents, \hyperlink{classFlu}{Flu} \&flu, const \hyperlink{classTesting}{Testing} \&testing)
+\begin{DoxyCompactList}\small\item\em Implement transitions relevant to susceptible. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \hyperlink{classRegularTransitions_a7ca3a68bfecd66d831b9daf9e467b930}{exposed\+\_\+transitions} (\hyperlink{classAgent}{Agent} \&agent, \hyperlink{classInfection}{Infection} \&infection, const double time, const double dt, std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&workplaces, std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&retirement\+\_\+homes, const std\+::map$<$ std\+::string, double $>$ \&infection\+\_\+parameters, const \hyperlink{classTesting}{Testing} \&testing)
+\begin{DoxyCompactList}\small\item\em Implement transitions relevant to exposed. \end{DoxyCompactList}\item 
+bool \hyperlink{classRegularTransitions_a56dfcdad1824424a61177af9cfc71774}{set\+\_\+testing\+\_\+status} (\hyperlink{classAgent}{Agent} \&agent, \hyperlink{classInfection}{Infection} \&infection, const double time, std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&workplaces, std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&retirement\+\_\+homes, const std\+::map$<$ std\+::string, double $>$ \&infection\+\_\+parameters, const \hyperlink{classTesting}{Testing} \&testing)
+\begin{DoxyCompactList}\small\item\em Determine any testing related properties. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \hyperlink{classRegularTransitions_ae207e3f62417ace774bd2f8e043a14de}{symptomatic\+\_\+transitions} (\hyperlink{classAgent}{Agent} \&agent, const double time, const double dt, \hyperlink{classInfection}{Infection} \&infection, std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&workplaces, std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&retirement\+\_\+homes, const std\+::map$<$ std\+::string, double $>$ \&infection\+\_\+parameters)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classTransitions}{Transitions} of a symptomatic agent. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularTransitions_a509724bc00971b19a8ac9569cbc84de2}{testing\+\_\+transitions} (\hyperlink{classAgent}{Agent} \&agent, const double time, const std\+::map$<$ std\+::string, double $>$ \&infection\+\_\+parameters)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classAgent}{Agent} transitions related to testing time. \end{DoxyCompactList}\item 
+int \hyperlink{classRegularTransitions_aaa59782e3ac59d84006dc32ac783824c}{testing\+\_\+results\+\_\+transitions} (\hyperlink{classAgent}{Agent} \&agent, const double time, const double dt, \hyperlink{classInfection}{Infection} \&infection, std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&workplaces, std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&retirement\+\_\+homes, const std\+::map$<$ std\+::string, double $>$ \&infection\+\_\+parameters)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classAgent}{Agent} transitions upon receiving test results. \end{DoxyCompactList}\item 
+void \hyperlink{classRegularTransitions_a6e0b4dd6c6fa8b9e252951f794d46302}{treatment\+\_\+transitions} (\hyperlink{classAgent}{Agent} \&agent, const double time, const double dt, \hyperlink{classInfection}{Infection} \&infection, std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&households, std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals, std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&retirement\+\_\+homes, const std\+::map$<$ std\+::string, double $>$ \&infection\+\_\+parameters)
+\begin{DoxyCompactList}\small\item\em Determine treatment changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRegularTransitions_aa9908666aa96fd2ddcbe787da091dd7c}\label{classRegularTransitions_aa9908666aa96fd2ddcbe787da091dd7c}} 
+\index{Regular\+Transitions@{Regular\+Transitions}!Regular\+Transitions@{Regular\+Transitions}}
+\index{Regular\+Transitions@{Regular\+Transitions}!Regular\+Transitions@{Regular\+Transitions}}
+\subsubsection{\texorpdfstring{Regular\+Transitions()}{RegularTransitions()}}
+{\footnotesize\ttfamily Regular\+Transitions\+::\+Regular\+Transitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates a \hyperlink{classRegularTransitions}{Regular\+Transitions} object with default attributes. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRegularTransitions_a7ca3a68bfecd66d831b9daf9e467b930}\label{classRegularTransitions_a7ca3a68bfecd66d831b9daf9e467b930}} 
+\index{Regular\+Transitions@{Regular\+Transitions}!exposed\+\_\+transitions@{exposed\+\_\+transitions}}
+\index{exposed\+\_\+transitions@{exposed\+\_\+transitions}!Regular\+Transitions@{Regular\+Transitions}}
+\subsubsection{\texorpdfstring{exposed\+\_\+transitions()}{exposed\_transitions()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Regular\+Transitions\+::exposed\+\_\+transitions (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{\hyperlink{classInfection}{Infection} \&}]{infection,  }\item[{const double}]{time,  }\item[{const double}]{dt,  }\item[{std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces,  }\item[{std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&}]{retirement\+\_\+homes,  }\item[{const std\+::map$<$ std\+::string, double $>$ \&}]{infection\+\_\+parameters,  }\item[{const \hyperlink{classTesting}{Testing} \&}]{testing }\end{DoxyParamCaption})}
+
+
+
+Implement transitions relevant to exposed. 
+
+Return 1 if recovered without symptoms \mbox{\Hypertarget{classRegularTransitions_a56dfcdad1824424a61177af9cfc71774}\label{classRegularTransitions_a56dfcdad1824424a61177af9cfc71774}} 
+\index{Regular\+Transitions@{Regular\+Transitions}!set\+\_\+testing\+\_\+status@{set\+\_\+testing\+\_\+status}}
+\index{set\+\_\+testing\+\_\+status@{set\+\_\+testing\+\_\+status}!Regular\+Transitions@{Regular\+Transitions}}
+\subsubsection{\texorpdfstring{set\+\_\+testing\+\_\+status()}{set\_testing\_status()}}
+{\footnotesize\ttfamily bool Regular\+Transitions\+::set\+\_\+testing\+\_\+status (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{\hyperlink{classInfection}{Infection} \&}]{infection,  }\item[{const double}]{time,  }\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces,  }\item[{std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&}]{retirement\+\_\+homes,  }\item[{const std\+::map$<$ std\+::string, double $>$ \&}]{infection\+\_\+parameters,  }\item[{const \hyperlink{classTesting}{Testing} \&}]{testing }\end{DoxyParamCaption})}
+
+
+
+Determine any testing related properties. 
+
+\mbox{\Hypertarget{classRegularTransitions_a81fdcd87f0c66b867eefb351484a6852}\label{classRegularTransitions_a81fdcd87f0c66b867eefb351484a6852}} 
+\index{Regular\+Transitions@{Regular\+Transitions}!susceptible\+\_\+transitions@{susceptible\+\_\+transitions}}
+\index{susceptible\+\_\+transitions@{susceptible\+\_\+transitions}!Regular\+Transitions@{Regular\+Transitions}}
+\subsubsection{\texorpdfstring{susceptible\+\_\+transitions()}{susceptible\_transitions()}}
+{\footnotesize\ttfamily int Regular\+Transitions\+::susceptible\+\_\+transitions (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const double}]{time,  }\item[{\hyperlink{classInfection}{Infection} \&}]{infection,  }\item[{std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces,  }\item[{std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&}]{retirement\+\_\+homes,  }\item[{const std\+::map$<$ std\+::string, double $>$ \&}]{infection\+\_\+parameters,  }\item[{std\+::vector$<$ \hyperlink{classAgent}{Agent} $>$ \&}]{agents,  }\item[{\hyperlink{classFlu}{Flu} \&}]{flu,  }\item[{const \hyperlink{classTesting}{Testing} \&}]{testing }\end{DoxyParamCaption})}
+
+
+
+Implement transitions relevant to susceptible. 
+
+Returns 1 if the agent got infected \mbox{\Hypertarget{classRegularTransitions_ae207e3f62417ace774bd2f8e043a14de}\label{classRegularTransitions_ae207e3f62417ace774bd2f8e043a14de}} 
+\index{Regular\+Transitions@{Regular\+Transitions}!symptomatic\+\_\+transitions@{symptomatic\+\_\+transitions}}
+\index{symptomatic\+\_\+transitions@{symptomatic\+\_\+transitions}!Regular\+Transitions@{Regular\+Transitions}}
+\subsubsection{\texorpdfstring{symptomatic\+\_\+transitions()}{symptomatic\_transitions()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Regular\+Transitions\+::symptomatic\+\_\+transitions (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const double}]{time,  }\item[{const double}]{dt,  }\item[{\hyperlink{classInfection}{Infection} \&}]{infection,  }\item[{std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces,  }\item[{std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&}]{retirement\+\_\+homes,  }\item[{const std\+::map$<$ std\+::string, double $>$ \&}]{infection\+\_\+parameters }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classTransitions}{Transitions} of a symptomatic agent. 
+
+\begin{DoxyReturn}{Returns}
+Vector where first entry is one if agent recovered, second if agent died 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRegularTransitions_aaa59782e3ac59d84006dc32ac783824c}\label{classRegularTransitions_aaa59782e3ac59d84006dc32ac783824c}} 
+\index{Regular\+Transitions@{Regular\+Transitions}!testing\+\_\+results\+\_\+transitions@{testing\+\_\+results\+\_\+transitions}}
+\index{testing\+\_\+results\+\_\+transitions@{testing\+\_\+results\+\_\+transitions}!Regular\+Transitions@{Regular\+Transitions}}
+\subsubsection{\texorpdfstring{testing\+\_\+results\+\_\+transitions()}{testing\_results\_transitions()}}
+{\footnotesize\ttfamily int Regular\+Transitions\+::testing\+\_\+results\+\_\+transitions (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const double}]{time,  }\item[{const double}]{dt,  }\item[{\hyperlink{classInfection}{Infection} \&}]{infection,  }\item[{std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces,  }\item[{std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&}]{retirement\+\_\+homes,  }\item[{const std\+::map$<$ std\+::string, double $>$ \&}]{infection\+\_\+parameters }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classAgent}{Agent} transitions upon receiving test results. 
+
+\mbox{\Hypertarget{classRegularTransitions_a509724bc00971b19a8ac9569cbc84de2}\label{classRegularTransitions_a509724bc00971b19a8ac9569cbc84de2}} 
+\index{Regular\+Transitions@{Regular\+Transitions}!testing\+\_\+transitions@{testing\+\_\+transitions}}
+\index{testing\+\_\+transitions@{testing\+\_\+transitions}!Regular\+Transitions@{Regular\+Transitions}}
+\subsubsection{\texorpdfstring{testing\+\_\+transitions()}{testing\_transitions()}}
+{\footnotesize\ttfamily void Regular\+Transitions\+::testing\+\_\+transitions (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const double}]{time,  }\item[{const std\+::map$<$ std\+::string, double $>$ \&}]{infection\+\_\+parameters }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classAgent}{Agent} transitions related to testing time. 
+
+\mbox{\Hypertarget{classRegularTransitions_a6e0b4dd6c6fa8b9e252951f794d46302}\label{classRegularTransitions_a6e0b4dd6c6fa8b9e252951f794d46302}} 
+\index{Regular\+Transitions@{Regular\+Transitions}!treatment\+\_\+transitions@{treatment\+\_\+transitions}}
+\index{treatment\+\_\+transitions@{treatment\+\_\+transitions}!Regular\+Transitions@{Regular\+Transitions}}
+\subsubsection{\texorpdfstring{treatment\+\_\+transitions()}{treatment\_transitions()}}
+{\footnotesize\ttfamily void Regular\+Transitions\+::treatment\+\_\+transitions (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{const double}]{time,  }\item[{const double}]{dt,  }\item[{\hyperlink{classInfection}{Infection} \&}]{infection,  }\item[{std\+::vector$<$ \hyperlink{classHousehold}{Household} $>$ \&}]{households,  }\item[{std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals,  }\item[{std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&}]{retirement\+\_\+homes,  }\item[{const std\+::map$<$ std\+::string, double $>$ \&}]{infection\+\_\+parameters }\end{DoxyParamCaption})}
+
+
+
+Determine treatment changes. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/transitions/\hyperlink{regular__transitions_8h}{regular\+\_\+transitions.\+h}\item 
+src/transitions/\hyperlink{regular__transitions_8cpp}{regular\+\_\+transitions.\+cpp}\end{DoxyCompactItemize}

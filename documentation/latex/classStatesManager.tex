@@ -1,0 +1,257 @@
+\hypertarget{classStatesManager}{}\section{States\+Manager Class Reference}
+\label{classStatesManager}\index{States\+Manager@{States\+Manager}}
+
+
+{\ttfamily \#include $<$states\+\_\+manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStatesManager_a9aa295a6122b9501a24e3ef4449c660f}{States\+Manager} ()=default
+\item 
+void \hyperlink{classStatesManager_a3b2001cf1da5e448c7d2f08bba30d05b}{set\+\_\+susceptible\+\_\+to\+\_\+exposed} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from susceptible to exposed. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a1d6cbcb237b03565c83f4f618da08cbe}{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from susceptible to exposed that will never become symptomatic. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a70153bfe33b4fde44c950a0d6eac5191}{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set exposed that never developed symptoms to removed. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a675b30619c98f0c4743d08aba0567dad}{set\+\_\+exposed\+\_\+to\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from exposed to general symptomatic. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_adcd6bc8a8f260efcf7cf43dcebe0334e}{set\+\_\+dying\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states relevant to agent that will die. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a01294a7aead97c9d002f202093051b81}{set\+\_\+recovering\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states relevant to agent that will recover. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_ac3900f6b45182c5ba0103bb524df769a}{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set testing in hospital, initial state. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a280373c96ad5df8a9044235be2351556}{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set testing in a car, initial state. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_aaf0cfd7137a490fc716af5ff5dbb4bcd}{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for just tested. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_ad6f9193dcf05f4f37e71a94d58315481}{set\+\_\+tested\+\_\+false\+\_\+negative} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from tested to false negative. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a2044045b6b2adc1a94b5d02f72272cb7}{set\+\_\+icu\+\_\+dying} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for hospitalized, I\+CU -\/ dying. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a4c182f0f50b7f9355ef5799a5623a5d0}{set\+\_\+icu\+\_\+recovering} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for hospitalized, I\+CU -\/ recovering. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a266757d7944ac2a13ec122e563fcfd0d}{set\+\_\+hospitalized} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for hospitalized. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a5660eb874c13cabb0af244f8c6768685}{set\+\_\+home\+\_\+isolation} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for isolated at home. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_af64b9d50a965045094e39fb4a6e25864}{set\+\_\+any\+\_\+to\+\_\+removed} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all removed related states. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_ad9059714401d4aaa66b88af987904e78}{set\+\_\+former\+\_\+flu} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Reset all flu related flags to false. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a6e3d21c4b60718d9d0c0ef6b43e6786e}{set\+\_\+tested\+\_\+false\+\_\+positive} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for false positive, isolated at home. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a96264539e58617292fe8c94f7716ec8b}{set\+\_\+tested\+\_\+negative} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for negative. \end{DoxyCompactList}\item 
+void \hyperlink{classStatesManager_a8f95740774b07cd67d64119cfbadae6a}{reset\+\_\+returning\+\_\+flu} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Reset flags for flu that is back to susceptible from IH. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStatesManager_a9aa295a6122b9501a24e3ef4449c660f}\label{classStatesManager_a9aa295a6122b9501a24e3ef4449c660f}} 
+\index{States\+Manager@{States\+Manager}!States\+Manager@{States\+Manager}}
+\index{States\+Manager@{States\+Manager}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{States\+Manager()}{StatesManager()}}
+{\footnotesize\ttfamily States\+Manager\+::\+States\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classStatesManager_a8f95740774b07cd67d64119cfbadae6a}\label{classStatesManager_a8f95740774b07cd67d64119cfbadae6a}} 
+\index{States\+Manager@{States\+Manager}!reset\+\_\+returning\+\_\+flu@{reset\+\_\+returning\+\_\+flu}}
+\index{reset\+\_\+returning\+\_\+flu@{reset\+\_\+returning\+\_\+flu}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{reset\+\_\+returning\+\_\+flu()}{reset\_returning\_flu()}}
+{\footnotesize\ttfamily void States\+Manager\+::reset\+\_\+returning\+\_\+flu (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Reset flags for flu that is back to susceptible from IH. 
+
+\mbox{\Hypertarget{classStatesManager_af64b9d50a965045094e39fb4a6e25864}\label{classStatesManager_af64b9d50a965045094e39fb4a6e25864}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+any\+\_\+to\+\_\+removed@{set\+\_\+any\+\_\+to\+\_\+removed}}
+\index{set\+\_\+any\+\_\+to\+\_\+removed@{set\+\_\+any\+\_\+to\+\_\+removed}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+any\+\_\+to\+\_\+removed()}{set\_any\_to\_removed()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+any\+\_\+to\+\_\+removed (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all removed related states. 
+
+\mbox{\Hypertarget{classStatesManager_adcd6bc8a8f260efcf7cf43dcebe0334e}\label{classStatesManager_adcd6bc8a8f260efcf7cf43dcebe0334e}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+dying\+\_\+symptomatic@{set\+\_\+dying\+\_\+symptomatic}}
+\index{set\+\_\+dying\+\_\+symptomatic@{set\+\_\+dying\+\_\+symptomatic}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+dying\+\_\+symptomatic()}{set\_dying\_symptomatic()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+dying\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states relevant to agent that will die. 
+
+\mbox{\Hypertarget{classStatesManager_a70153bfe33b4fde44c950a0d6eac5191}\label{classStatesManager_a70153bfe33b4fde44c950a0d6eac5191}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed@{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed}}
+\index{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed@{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed()}{set\_exposed\_never\_symptomatic\_to\_removed()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set exposed that never developed symptoms to removed. 
+
+\mbox{\Hypertarget{classStatesManager_a675b30619c98f0c4743d08aba0567dad}\label{classStatesManager_a675b30619c98f0c4743d08aba0567dad}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+exposed\+\_\+to\+\_\+symptomatic@{set\+\_\+exposed\+\_\+to\+\_\+symptomatic}}
+\index{set\+\_\+exposed\+\_\+to\+\_\+symptomatic@{set\+\_\+exposed\+\_\+to\+\_\+symptomatic}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+exposed\+\_\+to\+\_\+symptomatic()}{set\_exposed\_to\_symptomatic()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+exposed\+\_\+to\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from exposed to general symptomatic. 
+
+\mbox{\Hypertarget{classStatesManager_ad9059714401d4aaa66b88af987904e78}\label{classStatesManager_ad9059714401d4aaa66b88af987904e78}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+former\+\_\+flu@{set\+\_\+former\+\_\+flu}}
+\index{set\+\_\+former\+\_\+flu@{set\+\_\+former\+\_\+flu}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+former\+\_\+flu()}{set\_former\_flu()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+former\+\_\+flu (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Reset all flu related flags to false. 
+
+\mbox{\Hypertarget{classStatesManager_a5660eb874c13cabb0af244f8c6768685}\label{classStatesManager_a5660eb874c13cabb0af244f8c6768685}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+home\+\_\+isolation@{set\+\_\+home\+\_\+isolation}}
+\index{set\+\_\+home\+\_\+isolation@{set\+\_\+home\+\_\+isolation}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+home\+\_\+isolation()}{set\_home\_isolation()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+home\+\_\+isolation (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for isolated at home. 
+
+\mbox{\Hypertarget{classStatesManager_a266757d7944ac2a13ec122e563fcfd0d}\label{classStatesManager_a266757d7944ac2a13ec122e563fcfd0d}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+hospitalized@{set\+\_\+hospitalized}}
+\index{set\+\_\+hospitalized@{set\+\_\+hospitalized}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+hospitalized()}{set\_hospitalized()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+hospitalized (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for hospitalized. 
+
+\mbox{\Hypertarget{classStatesManager_a2044045b6b2adc1a94b5d02f72272cb7}\label{classStatesManager_a2044045b6b2adc1a94b5d02f72272cb7}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+icu\+\_\+dying@{set\+\_\+icu\+\_\+dying}}
+\index{set\+\_\+icu\+\_\+dying@{set\+\_\+icu\+\_\+dying}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+icu\+\_\+dying()}{set\_icu\_dying()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+icu\+\_\+dying (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for hospitalized, I\+CU -\/ dying. 
+
+\mbox{\Hypertarget{classStatesManager_a4c182f0f50b7f9355ef5799a5623a5d0}\label{classStatesManager_a4c182f0f50b7f9355ef5799a5623a5d0}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+icu\+\_\+recovering@{set\+\_\+icu\+\_\+recovering}}
+\index{set\+\_\+icu\+\_\+recovering@{set\+\_\+icu\+\_\+recovering}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+icu\+\_\+recovering()}{set\_icu\_recovering()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+icu\+\_\+recovering (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for hospitalized, I\+CU -\/ recovering. 
+
+\mbox{\Hypertarget{classStatesManager_a01294a7aead97c9d002f202093051b81}\label{classStatesManager_a01294a7aead97c9d002f202093051b81}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+recovering\+\_\+symptomatic@{set\+\_\+recovering\+\_\+symptomatic}}
+\index{set\+\_\+recovering\+\_\+symptomatic@{set\+\_\+recovering\+\_\+symptomatic}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+recovering\+\_\+symptomatic()}{set\_recovering\_symptomatic()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+recovering\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states relevant to agent that will recover. 
+
+\mbox{\Hypertarget{classStatesManager_a3b2001cf1da5e448c7d2f08bba30d05b}\label{classStatesManager_a3b2001cf1da5e448c7d2f08bba30d05b}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+susceptible\+\_\+to\+\_\+exposed@{set\+\_\+susceptible\+\_\+to\+\_\+exposed}}
+\index{set\+\_\+susceptible\+\_\+to\+\_\+exposed@{set\+\_\+susceptible\+\_\+to\+\_\+exposed}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+susceptible\+\_\+to\+\_\+exposed()}{set\_susceptible\_to\_exposed()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+susceptible\+\_\+to\+\_\+exposed (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from susceptible to exposed. 
+
+\mbox{\Hypertarget{classStatesManager_a1d6cbcb237b03565c83f4f618da08cbe}\label{classStatesManager_a1d6cbcb237b03565c83f4f618da08cbe}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic@{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic}}
+\index{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic@{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic()}{set\_susceptible\_to\_exposed\_never\_symptomatic()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from susceptible to exposed that will never become symptomatic. 
+
+\mbox{\Hypertarget{classStatesManager_ad6f9193dcf05f4f37e71a94d58315481}\label{classStatesManager_ad6f9193dcf05f4f37e71a94d58315481}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+tested\+\_\+false\+\_\+negative@{set\+\_\+tested\+\_\+false\+\_\+negative}}
+\index{set\+\_\+tested\+\_\+false\+\_\+negative@{set\+\_\+tested\+\_\+false\+\_\+negative}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+false\+\_\+negative()}{set\_tested\_false\_negative()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+tested\+\_\+false\+\_\+negative (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from tested to false negative. 
+
+\mbox{\Hypertarget{classStatesManager_a6e3d21c4b60718d9d0c0ef6b43e6786e}\label{classStatesManager_a6e3d21c4b60718d9d0c0ef6b43e6786e}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+tested\+\_\+false\+\_\+positive@{set\+\_\+tested\+\_\+false\+\_\+positive}}
+\index{set\+\_\+tested\+\_\+false\+\_\+positive@{set\+\_\+tested\+\_\+false\+\_\+positive}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+false\+\_\+positive()}{set\_tested\_false\_positive()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+tested\+\_\+false\+\_\+positive (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for false positive, isolated at home. 
+
+\mbox{\Hypertarget{classStatesManager_a96264539e58617292fe8c94f7716ec8b}\label{classStatesManager_a96264539e58617292fe8c94f7716ec8b}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+tested\+\_\+negative@{set\+\_\+tested\+\_\+negative}}
+\index{set\+\_\+tested\+\_\+negative@{set\+\_\+tested\+\_\+negative}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+negative()}{set\_tested\_negative()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+tested\+\_\+negative (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for negative. 
+
+\mbox{\Hypertarget{classStatesManager_aaf0cfd7137a490fc716af5ff5dbb4bcd}\label{classStatesManager_aaf0cfd7137a490fc716af5ff5dbb4bcd}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results@{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results}}
+\index{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results@{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results()}{set\_tested\_to\_awaiting\_results()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for just tested. 
+
+\mbox{\Hypertarget{classStatesManager_a280373c96ad5df8a9044235be2351556}\label{classStatesManager_a280373c96ad5df8a9044235be2351556}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car@{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car}}
+\index{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car@{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car()}{set\_waiting\_for\_test\_in\_car()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+car (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set testing in a car, initial state. 
+
+\mbox{\Hypertarget{classStatesManager_ac3900f6b45182c5ba0103bb524df769a}\label{classStatesManager_ac3900f6b45182c5ba0103bb524df769a}} 
+\index{States\+Manager@{States\+Manager}!set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital@{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital}}
+\index{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital@{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital}!States\+Manager@{States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital()}{set\_waiting\_for\_test\_in\_hospital()}}
+{\footnotesize\ttfamily void States\+Manager\+::set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set testing in hospital, initial state. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/states\+\_\+manager/\hyperlink{states__manager_8h}{states\+\_\+manager.\+h}\item 
+src/states\+\_\+manager/\hyperlink{states__manager_8cpp}{states\+\_\+manager.\+cpp}\end{DoxyCompactItemize}

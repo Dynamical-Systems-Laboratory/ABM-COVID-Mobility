@@ -1,0 +1,382 @@
+\hypertarget{classPlace}{}\section{Place Class Reference}
+\label{classPlace}\index{Place@{Place}}
+
+
+{\ttfamily \#include $<$place.\+h$>$}
+
+Inheritance diagram for Place\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPlace}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlace_ad90eb4021d4c3431e062b3425ed3f05c}{Place} ()=default
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classPlace}{Place} object with default attributes. \end{DoxyCompactList}\item 
+\hyperlink{classPlace_a4a2f79e0414591c81a2161e055a24ec6}{Place} (const int place\+\_\+\+ID, const double xi, const double yi, const double severity\+\_\+cor, const double beta)
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classPlace}{Place} object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlace_a96444ff0aa08a921598d0afb9c00cec8}{add\+\_\+exposed} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include exposed contribution in the sum. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlace_a5216539c8589d41aad430513740fa15c}{add\+\_\+symptomatic} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include symptomatic contribution in the sum. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlace_aeb4c561e8bc4e1ae7186baed6ef1aa47}{compute\+\_\+infected\+\_\+contribution} ()
+\begin{DoxyCompactList}\small\item\em Calculates and stores fraction of infected agents if any. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlace_abc1e560ef8aaaad565ccceb9540e5bd8}{reset\+\_\+contributions} ()
+\begin{DoxyCompactList}\small\item\em Reset the lambda sum of a place after transmission step. \end{DoxyCompactList}\item 
+void \hyperlink{classPlace_a59594ed1acf114ba3a123bd99d874b65}{change\+\_\+transmission\+\_\+rate} (const double new\+\_\+beta)
+\item 
+int \hyperlink{classPlace_aec0a7e93c669c5e1f72435e2f9052011}{get\+\_\+\+ID} () const
+\begin{DoxyCompactList}\small\item\em Return place ID. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ int $>$ \hyperlink{classPlace_a2f6dbc1e8937c6563b04bbf7dde7e00f}{get\+\_\+agent\+\_\+\+I\+Ds} () const
+\begin{DoxyCompactList}\small\item\em Return I\+Ds of agents registered in this place. \end{DoxyCompactList}\item 
+int \hyperlink{classPlace_a0f1e45a13137205dd65f6e33a0a110a6}{get\+\_\+total\+\_\+infected} () const
+\begin{DoxyCompactList}\small\item\em Return total number of infected agents. \end{DoxyCompactList}\item 
+double \hyperlink{classPlace_a8a3cc52898c24655efc92f51512a81ce}{get\+\_\+infected\+\_\+contribution} () const
+\begin{DoxyCompactList}\small\item\em Return probability contribution of infected agents. \end{DoxyCompactList}\item 
+double \hyperlink{classPlace_a024b5b993c0f566135090a4c3336c24c}{get\+\_\+transmission\+\_\+rate} () const
+\begin{DoxyCompactList}\small\item\em Transmission rate. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlace_a9aa7649e0b91c5f61a5f71e9ca808fe1}{print\+\_\+basic} (std\+::ostream \&where) const
+\begin{DoxyCompactList}\small\item\em Save information about a \hyperlink{classPlace}{Place} object. \end{DoxyCompactList}\item 
+void \hyperlink{classPlace_a2e46294c2fd0e871740e3ddab1095296}{register\+\_\+agent} (const int agent\+\_\+\+ID, const bool is\+\_\+infected)
+\begin{DoxyCompactList}\small\item\em Assign agent to a given place indicating if infected. \end{DoxyCompactList}\item 
+void \hyperlink{classPlace_a42d0f8ea98161eb76ebebb4f0946b474}{add\+\_\+agent} (const int index)
+\begin{DoxyCompactList}\small\item\em Add a new agent to this place. \end{DoxyCompactList}\item 
+void \hyperlink{classPlace_aee19c9f59dcaeb02ac3b1e9c8adaa784}{remove\+\_\+agent} (const int index)
+\begin{DoxyCompactList}\small\item\em Remove an agent from this place. \end{DoxyCompactList}\item 
+virtual \hyperlink{classPlace_a5dedf984133a4a33a95419da61b54157}{$\sim$\+Place} ()=default
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classPlace_ab8c3da5a85a1901600134ee86f8ab903}{ID} = -\/1
+\item 
+double \hyperlink{classPlace_ac6d563401f03901268237a3eac6c5a91}{x} = 0.\+0
+\item 
+double \hyperlink{classPlace_aa2db7a2794804023e6e4b239d2583e26}{y} = 0.\+0
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classPlace_ace9be66da17210f0d5f0900a7eca9583}{agent\+\_\+\+I\+Ds}
+\item 
+int \hyperlink{classPlace_a203a593f2d9b7f075936b0dab6aa019f}{num\+\_\+tot} = 0
+\item 
+int \hyperlink{classPlace_aad8ac414868590db5def58a25266ee7d}{num\+\_\+infected} = 0
+\item 
+double \hyperlink{classPlace_a8eaee99e4b5cb44399fc331e1555409d}{lambda\+\_\+sum} = 0.\+0
+\item 
+double \hyperlink{classPlace_a404f9bbc4565b6243ff4efd16e614dfd}{lambda\+\_\+tot} = 0.\+0
+\item 
+double \hyperlink{classPlace_ac69380b31bba06704bf55945187f1d45}{ck} = 0.\+0
+\item 
+double \hyperlink{classPlace_a458182cfe5057a826792d65000477f12}{beta\+\_\+j} = 0.\+0
+\item 
+double \hyperlink{classPlace_af6d1304a203b14b9646ae477841d3073}{inf\+\_\+ratio} = 0.\+0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlace_ad90eb4021d4c3431e062b3425ed3f05c}\label{classPlace_ad90eb4021d4c3431e062b3425ed3f05c}} 
+\index{Place@{Place}!Place@{Place}}
+\index{Place@{Place}!Place@{Place}}
+\subsubsection{\texorpdfstring{Place()}{Place()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Place\+::\+Place (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates a \hyperlink{classPlace}{Place} object with default attributes. 
+
+\mbox{\Hypertarget{classPlace_a4a2f79e0414591c81a2161e055a24ec6}\label{classPlace_a4a2f79e0414591c81a2161e055a24ec6}} 
+\index{Place@{Place}!Place@{Place}}
+\index{Place@{Place}!Place@{Place}}
+\subsubsection{\texorpdfstring{Place()}{Place()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Place\+::\+Place (\begin{DoxyParamCaption}\item[{const int}]{place\+\_\+\+ID,  }\item[{const double}]{xi,  }\item[{const double}]{yi,  }\item[{const double}]{severity\+\_\+cor,  }\item[{const double}]{beta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \hyperlink{classPlace}{Place} object. 
+
+\hyperlink{classPlace}{Place} with custom ID, location, and infection parameters during creation of agents 
+\begin{DoxyParams}{Parameters}
+{\em place\+\_\+\+ID} & -\/ ID of the place \\
+\hline
+{\em xi} & -\/ x coordinate of the place \\
+\hline
+{\em yi} & -\/ y coordinate of the place \\
+\hline
+{\em severity\+\_\+cor} & -\/ severity correction for symptomatic \\
+\hline
+{\em beta} & -\/ infection transmission rate, 1/time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlace_a5dedf984133a4a33a95419da61b54157}\label{classPlace_a5dedf984133a4a33a95419da61b54157}} 
+\index{Place@{Place}!````~Place@{$\sim$\+Place}}
+\index{````~Place@{$\sim$\+Place}!Place@{Place}}
+\subsubsection{\texorpdfstring{$\sim$\+Place()}{~Place()}}
+{\footnotesize\ttfamily virtual Place\+::$\sim$\+Place (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlace_a42d0f8ea98161eb76ebebb4f0946b474}\label{classPlace_a42d0f8ea98161eb76ebebb4f0946b474}} 
+\index{Place@{Place}!add\+\_\+agent@{add\+\_\+agent}}
+\index{add\+\_\+agent@{add\+\_\+agent}!Place@{Place}}
+\subsubsection{\texorpdfstring{add\+\_\+agent()}{add\_agent()}}
+{\footnotesize\ttfamily void Place\+::add\+\_\+agent (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new agent to this place. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ agent ID (starts with 1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlace_a96444ff0aa08a921598d0afb9c00cec8}\label{classPlace_a96444ff0aa08a921598d0afb9c00cec8}} 
+\index{Place@{Place}!add\+\_\+exposed@{add\+\_\+exposed}}
+\index{add\+\_\+exposed@{add\+\_\+exposed}!Place@{Place}}
+\subsubsection{\texorpdfstring{add\+\_\+exposed()}{add\_exposed()}}
+{\footnotesize\ttfamily virtual void Place\+::add\+\_\+exposed (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Include exposed contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classHospital_a55c2f778b4aeb0f775bb1b45c147c7b8}{Hospital}.
+
+\mbox{\Hypertarget{classPlace_a5216539c8589d41aad430513740fa15c}\label{classPlace_a5216539c8589d41aad430513740fa15c}} 
+\index{Place@{Place}!add\+\_\+symptomatic@{add\+\_\+symptomatic}}
+\index{add\+\_\+symptomatic@{add\+\_\+symptomatic}!Place@{Place}}
+\subsubsection{\texorpdfstring{add\+\_\+symptomatic()}{add\_symptomatic()}}
+{\footnotesize\ttfamily virtual void Place\+::add\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Include symptomatic contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classWorkplace_a48ef6cf8af0753240063ea8c00f4cc63}{Workplace}.
+
+\mbox{\Hypertarget{classPlace_a59594ed1acf114ba3a123bd99d874b65}\label{classPlace_a59594ed1acf114ba3a123bd99d874b65}} 
+\index{Place@{Place}!change\+\_\+transmission\+\_\+rate@{change\+\_\+transmission\+\_\+rate}}
+\index{change\+\_\+transmission\+\_\+rate@{change\+\_\+transmission\+\_\+rate}!Place@{Place}}
+\subsubsection{\texorpdfstring{change\+\_\+transmission\+\_\+rate()}{change\_transmission\_rate()}}
+{\footnotesize\ttfamily void Place\+::change\+\_\+transmission\+\_\+rate (\begin{DoxyParamCaption}\item[{const double}]{new\+\_\+beta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classPlace_aeb4c561e8bc4e1ae7186baed6ef1aa47}\label{classPlace_aeb4c561e8bc4e1ae7186baed6ef1aa47}} 
+\index{Place@{Place}!compute\+\_\+infected\+\_\+contribution@{compute\+\_\+infected\+\_\+contribution}}
+\index{compute\+\_\+infected\+\_\+contribution@{compute\+\_\+infected\+\_\+contribution}!Place@{Place}}
+\subsubsection{\texorpdfstring{compute\+\_\+infected\+\_\+contribution()}{compute\_infected\_contribution()}}
+{\footnotesize\ttfamily void Place\+::compute\+\_\+infected\+\_\+contribution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculates and stores fraction of infected agents if any. 
+
+
+
+Reimplemented in \hyperlink{classHospital_ad87fc4a53e50a35489c9024892a7c9d6}{Hospital}, and \hyperlink{classHousehold_ae063737d06a7a50aa9b780d7066c1c88}{Household}.
+
+\mbox{\Hypertarget{classPlace_a2f6dbc1e8937c6563b04bbf7dde7e00f}\label{classPlace_a2f6dbc1e8937c6563b04bbf7dde7e00f}} 
+\index{Place@{Place}!get\+\_\+agent\+\_\+\+I\+Ds@{get\+\_\+agent\+\_\+\+I\+Ds}}
+\index{get\+\_\+agent\+\_\+\+I\+Ds@{get\+\_\+agent\+\_\+\+I\+Ds}!Place@{Place}}
+\subsubsection{\texorpdfstring{get\+\_\+agent\+\_\+\+I\+Ds()}{get\_agent\_IDs()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$int$>$ Place\+::get\+\_\+agent\+\_\+\+I\+Ds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return I\+Ds of agents registered in this place. 
+
+\mbox{\Hypertarget{classPlace_aec0a7e93c669c5e1f72435e2f9052011}\label{classPlace_aec0a7e93c669c5e1f72435e2f9052011}} 
+\index{Place@{Place}!get\+\_\+\+ID@{get\+\_\+\+ID}}
+\index{get\+\_\+\+ID@{get\+\_\+\+ID}!Place@{Place}}
+\subsubsection{\texorpdfstring{get\+\_\+\+I\+D()}{get\_ID()}}
+{\footnotesize\ttfamily int Place\+::get\+\_\+\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return place ID. 
+
+\mbox{\Hypertarget{classPlace_a8a3cc52898c24655efc92f51512a81ce}\label{classPlace_a8a3cc52898c24655efc92f51512a81ce}} 
+\index{Place@{Place}!get\+\_\+infected\+\_\+contribution@{get\+\_\+infected\+\_\+contribution}}
+\index{get\+\_\+infected\+\_\+contribution@{get\+\_\+infected\+\_\+contribution}!Place@{Place}}
+\subsubsection{\texorpdfstring{get\+\_\+infected\+\_\+contribution()}{get\_infected\_contribution()}}
+{\footnotesize\ttfamily double Place\+::get\+\_\+infected\+\_\+contribution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return probability contribution of infected agents. 
+
+\mbox{\Hypertarget{classPlace_a0f1e45a13137205dd65f6e33a0a110a6}\label{classPlace_a0f1e45a13137205dd65f6e33a0a110a6}} 
+\index{Place@{Place}!get\+\_\+total\+\_\+infected@{get\+\_\+total\+\_\+infected}}
+\index{get\+\_\+total\+\_\+infected@{get\+\_\+total\+\_\+infected}!Place@{Place}}
+\subsubsection{\texorpdfstring{get\+\_\+total\+\_\+infected()}{get\_total\_infected()}}
+{\footnotesize\ttfamily int Place\+::get\+\_\+total\+\_\+infected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return total number of infected agents. 
+
+\mbox{\Hypertarget{classPlace_a024b5b993c0f566135090a4c3336c24c}\label{classPlace_a024b5b993c0f566135090a4c3336c24c}} 
+\index{Place@{Place}!get\+\_\+transmission\+\_\+rate@{get\+\_\+transmission\+\_\+rate}}
+\index{get\+\_\+transmission\+\_\+rate@{get\+\_\+transmission\+\_\+rate}!Place@{Place}}
+\subsubsection{\texorpdfstring{get\+\_\+transmission\+\_\+rate()}{get\_transmission\_rate()}}
+{\footnotesize\ttfamily double Place\+::get\+\_\+transmission\+\_\+rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transmission rate. 
+
+\mbox{\Hypertarget{classPlace_a9aa7649e0b91c5f61a5f71e9ca808fe1}\label{classPlace_a9aa7649e0b91c5f61a5f71e9ca808fe1}} 
+\index{Place@{Place}!print\+\_\+basic@{print\+\_\+basic}}
+\index{print\+\_\+basic@{print\+\_\+basic}!Place@{Place}}
+\subsubsection{\texorpdfstring{print\+\_\+basic()}{print\_basic()}}
+{\footnotesize\ttfamily void Place\+::print\+\_\+basic (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{where }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Save information about a \hyperlink{classPlace}{Place} object. 
+
+Saves to a file, everything but detailed agent information; order is ID $\vert$ x $\vert$ y $\vert$ number of agents $\vert$ number of infected agents Delimiter is a space. 
+\begin{DoxyParams}{Parameters}
+{\em where} & -\/ output stream \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classHospital_a3a1963886a9974663c2a3e82817f1a2b}{Hospital}, \hyperlink{classSchool_ade1610f7c072eb041f6d8b0e157e1cc8}{School}, \hyperlink{classRetirementHome_aafab41675600b03fdffcf11db1a07ec7}{Retirement\+Home}, \hyperlink{classWorkplace_af4fcc642e32e174bab45def56b7c6f05}{Workplace}, and \hyperlink{classHousehold_a9bf27cca25dea519945c8740b9793ff6}{Household}.
+
+\mbox{\Hypertarget{classPlace_a2e46294c2fd0e871740e3ddab1095296}\label{classPlace_a2e46294c2fd0e871740e3ddab1095296}} 
+\index{Place@{Place}!register\+\_\+agent@{register\+\_\+agent}}
+\index{register\+\_\+agent@{register\+\_\+agent}!Place@{Place}}
+\subsubsection{\texorpdfstring{register\+\_\+agent()}{register\_agent()}}
+{\footnotesize\ttfamily void Place\+::register\+\_\+agent (\begin{DoxyParamCaption}\item[{const int}]{agent\+\_\+\+ID,  }\item[{const bool}]{is\+\_\+infected }\end{DoxyParamCaption})}
+
+
+
+Assign agent to a given place indicating if infected. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent\+\_\+\+ID} & -\/ global ID of the agent \\
+\hline
+{\em is\+\_\+infected} & -\/ true if agent is infected \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlace_aee19c9f59dcaeb02ac3b1e9c8adaa784}\label{classPlace_aee19c9f59dcaeb02ac3b1e9c8adaa784}} 
+\index{Place@{Place}!remove\+\_\+agent@{remove\+\_\+agent}}
+\index{remove\+\_\+agent@{remove\+\_\+agent}!Place@{Place}}
+\subsubsection{\texorpdfstring{remove\+\_\+agent()}{remove\_agent()}}
+{\footnotesize\ttfamily void Place\+::remove\+\_\+agent (\begin{DoxyParamCaption}\item[{const int}]{index }\end{DoxyParamCaption})}
+
+
+
+Remove an agent from this place. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ agent ID (starts with 1) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlace_abc1e560ef8aaaad565ccceb9540e5bd8}\label{classPlace_abc1e560ef8aaaad565ccceb9540e5bd8}} 
+\index{Place@{Place}!reset\+\_\+contributions@{reset\+\_\+contributions}}
+\index{reset\+\_\+contributions@{reset\+\_\+contributions}!Place@{Place}}
+\subsubsection{\texorpdfstring{reset\+\_\+contributions()}{reset\_contributions()}}
+{\footnotesize\ttfamily virtual void Place\+::reset\+\_\+contributions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reset the lambda sum of a place after transmission step. 
+
+
+
+Reimplemented in \hyperlink{classHospital_a928d185dde78d0bce3034b7a138b472d}{Hospital}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classPlace_ace9be66da17210f0d5f0900a7eca9583}\label{classPlace_ace9be66da17210f0d5f0900a7eca9583}} 
+\index{Place@{Place}!agent\+\_\+\+I\+Ds@{agent\+\_\+\+I\+Ds}}
+\index{agent\+\_\+\+I\+Ds@{agent\+\_\+\+I\+Ds}!Place@{Place}}
+\subsubsection{\texorpdfstring{agent\+\_\+\+I\+Ds}{agent\_IDs}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Place\+::agent\+\_\+\+I\+Ds\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPlace_a458182cfe5057a826792d65000477f12}\label{classPlace_a458182cfe5057a826792d65000477f12}} 
+\index{Place@{Place}!beta\+\_\+j@{beta\+\_\+j}}
+\index{beta\+\_\+j@{beta\+\_\+j}!Place@{Place}}
+\subsubsection{\texorpdfstring{beta\+\_\+j}{beta\_j}}
+{\footnotesize\ttfamily double Place\+::beta\+\_\+j = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPlace_ac69380b31bba06704bf55945187f1d45}\label{classPlace_ac69380b31bba06704bf55945187f1d45}} 
+\index{Place@{Place}!ck@{ck}}
+\index{ck@{ck}!Place@{Place}}
+\subsubsection{\texorpdfstring{ck}{ck}}
+{\footnotesize\ttfamily double Place\+::ck = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPlace_ab8c3da5a85a1901600134ee86f8ab903}\label{classPlace_ab8c3da5a85a1901600134ee86f8ab903}} 
+\index{Place@{Place}!ID@{ID}}
+\index{ID@{ID}!Place@{Place}}
+\subsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily int Place\+::\+ID = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPlace_af6d1304a203b14b9646ae477841d3073}\label{classPlace_af6d1304a203b14b9646ae477841d3073}} 
+\index{Place@{Place}!inf\+\_\+ratio@{inf\+\_\+ratio}}
+\index{inf\+\_\+ratio@{inf\+\_\+ratio}!Place@{Place}}
+\subsubsection{\texorpdfstring{inf\+\_\+ratio}{inf\_ratio}}
+{\footnotesize\ttfamily double Place\+::inf\+\_\+ratio = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPlace_a8eaee99e4b5cb44399fc331e1555409d}\label{classPlace_a8eaee99e4b5cb44399fc331e1555409d}} 
+\index{Place@{Place}!lambda\+\_\+sum@{lambda\+\_\+sum}}
+\index{lambda\+\_\+sum@{lambda\+\_\+sum}!Place@{Place}}
+\subsubsection{\texorpdfstring{lambda\+\_\+sum}{lambda\_sum}}
+{\footnotesize\ttfamily double Place\+::lambda\+\_\+sum = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPlace_a404f9bbc4565b6243ff4efd16e614dfd}\label{classPlace_a404f9bbc4565b6243ff4efd16e614dfd}} 
+\index{Place@{Place}!lambda\+\_\+tot@{lambda\+\_\+tot}}
+\index{lambda\+\_\+tot@{lambda\+\_\+tot}!Place@{Place}}
+\subsubsection{\texorpdfstring{lambda\+\_\+tot}{lambda\_tot}}
+{\footnotesize\ttfamily double Place\+::lambda\+\_\+tot = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPlace_aad8ac414868590db5def58a25266ee7d}\label{classPlace_aad8ac414868590db5def58a25266ee7d}} 
+\index{Place@{Place}!num\+\_\+infected@{num\+\_\+infected}}
+\index{num\+\_\+infected@{num\+\_\+infected}!Place@{Place}}
+\subsubsection{\texorpdfstring{num\+\_\+infected}{num\_infected}}
+{\footnotesize\ttfamily int Place\+::num\+\_\+infected = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPlace_a203a593f2d9b7f075936b0dab6aa019f}\label{classPlace_a203a593f2d9b7f075936b0dab6aa019f}} 
+\index{Place@{Place}!num\+\_\+tot@{num\+\_\+tot}}
+\index{num\+\_\+tot@{num\+\_\+tot}!Place@{Place}}
+\subsubsection{\texorpdfstring{num\+\_\+tot}{num\_tot}}
+{\footnotesize\ttfamily int Place\+::num\+\_\+tot = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPlace_ac6d563401f03901268237a3eac6c5a91}\label{classPlace_ac6d563401f03901268237a3eac6c5a91}} 
+\index{Place@{Place}!x@{x}}
+\index{x@{x}!Place@{Place}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily double Place\+::x = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classPlace_aa2db7a2794804023e6e4b239d2583e26}\label{classPlace_aa2db7a2794804023e6e4b239d2583e26}} 
+\index{Place@{Place}!y@{y}}
+\index{y@{y}!Place@{Place}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily double Place\+::y = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/places/\hyperlink{place_8h}{place.\+h}\item 
+src/places/\hyperlink{place_8cpp}{place.\+cpp}\end{DoxyCompactItemize}

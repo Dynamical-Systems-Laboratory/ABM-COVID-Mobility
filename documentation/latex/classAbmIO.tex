@@ -1,0 +1,133 @@
+\hypertarget{classAbmIO}{}\section{Abm\+IO Class Reference}
+\label{classAbmIO}\index{Abm\+IO@{Abm\+IO}}
+
+
+{\ttfamily \#include $<$abm\+\_\+io.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAbmIO_abe7ea84f8ad3a29b664a03343b058dde}{Abm\+IO} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor -\/ sets file names and writing mode to single file. \end{DoxyCompactList}\item 
+\hyperlink{classAbmIO_a2aa3f0c48d1d213d9b6e615f5664ff3e}{Abm\+IO} (const std\+::string name, const std\+::string delim, const bool sflag, const std\+::vector$<$ size\+\_\+t $>$ dims)
+\begin{DoxyCompactList}\small\item\em Creates an \hyperlink{classAbmIO}{Abm\+IO} object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ std\+::vector$<$ T $>$ $>$ \hyperlink{classAbmIO_aab72a672f5e932cd46443672fc9cdfd8}{read\+\_\+vector} () const
+\begin{DoxyCompactList}\small\item\em Read whitespace separated data from a file. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classAbmIO_a18d9fb3dfa9b074943e1c9e708dfe56d}{write\+\_\+object} (const T \&object) const
+\begin{DoxyCompactList}\small\item\em Write object information to a file. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classAbmIO_a0cd34d6379af33faca512b82f8743a19}{write\+\_\+vector} (const std\+::vector$<$ T $>$ \&data) const
+\begin{DoxyCompactList}\small\item\em Write a 1D vector to a file, each entry in a new line. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classAbmIO_a3d630a2352e1e9e0337c419637f16060}{write\+\_\+vector} (const std\+::vector$<$ std\+::vector$<$ T $>$$>$ \&data) const
+\begin{DoxyCompactList}\small\item\em Write a 2D vector to a file with delimiter delim. \end{DoxyCompactList}\item 
+\hyperlink{classAbmIO_a134869d45f88440b1aa7580c8604a3d3}{$\sim$\+Abm\+IO} ()=default
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAbmIO_abe7ea84f8ad3a29b664a03343b058dde}\label{classAbmIO_abe7ea84f8ad3a29b664a03343b058dde}} 
+\index{Abm\+IO@{Abm\+IO}!Abm\+IO@{Abm\+IO}}
+\index{Abm\+IO@{Abm\+IO}!Abm\+IO@{Abm\+IO}}
+\subsubsection{\texorpdfstring{Abm\+I\+O()}{AbmIO()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Abm\+I\+O\+::\+Abm\+IO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor -\/ sets file names and writing mode to single file. 
+
+File will be located in the current working directory \mbox{\Hypertarget{classAbmIO_a2aa3f0c48d1d213d9b6e615f5664ff3e}\label{classAbmIO_a2aa3f0c48d1d213d9b6e615f5664ff3e}} 
+\index{Abm\+IO@{Abm\+IO}!Abm\+IO@{Abm\+IO}}
+\index{Abm\+IO@{Abm\+IO}!Abm\+IO@{Abm\+IO}}
+\subsubsection{\texorpdfstring{Abm\+I\+O()}{AbmIO()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Abm\+I\+O\+::\+Abm\+IO (\begin{DoxyParamCaption}\item[{const std\+::string}]{name,  }\item[{const std\+::string}]{delim,  }\item[{const bool}]{sflag,  }\item[{const std\+::vector$<$ size\+\_\+t $>$}]{dims }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an \hyperlink{classAbmIO}{Abm\+IO} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ name of the file or begining of the file names for file sequences \\
+\hline
+{\em delim} & -\/ data delimiter \\
+\hline
+{\em sflag} & -\/ true if IO to/from a single file (not a file sequence) \\
+\hline
+{\em dims} & -\/ vector with \#rows $\vert$ \# columns $\vert$ \#any higher dimensions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAbmIO_a134869d45f88440b1aa7580c8604a3d3}\label{classAbmIO_a134869d45f88440b1aa7580c8604a3d3}} 
+\index{Abm\+IO@{Abm\+IO}!````~Abm\+IO@{$\sim$\+Abm\+IO}}
+\index{````~Abm\+IO@{$\sim$\+Abm\+IO}!Abm\+IO@{Abm\+IO}}
+\subsubsection{\texorpdfstring{$\sim$\+Abm\+I\+O()}{~AbmIO()}}
+{\footnotesize\ttfamily Abm\+I\+O\+::$\sim$\+Abm\+IO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAbmIO_aab72a672f5e932cd46443672fc9cdfd8}\label{classAbmIO_aab72a672f5e932cd46443672fc9cdfd8}} 
+\index{Abm\+IO@{Abm\+IO}!read\+\_\+vector@{read\+\_\+vector}}
+\index{read\+\_\+vector@{read\+\_\+vector}!Abm\+IO@{Abm\+IO}}
+\subsubsection{\texorpdfstring{read\+\_\+vector()}{read\_vector()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$ std\+::vector$<$ T $>$ $>$ Abm\+I\+O\+::read\+\_\+vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Read whitespace separated data from a file. 
+
+Currently data in a line needs to be separated by whitespace (tab, blank, ...) \begin{DoxyReturn}{Returns}
+std\+::vector of vectors of type T with the data in each vector being one line of the file with elements as extracted baed on whitespace 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAbmIO_a18d9fb3dfa9b074943e1c9e708dfe56d}\label{classAbmIO_a18d9fb3dfa9b074943e1c9e708dfe56d}} 
+\index{Abm\+IO@{Abm\+IO}!write\+\_\+object@{write\+\_\+object}}
+\index{write\+\_\+object@{write\+\_\+object}!Abm\+IO@{Abm\+IO}}
+\subsubsection{\texorpdfstring{write\+\_\+object()}{write\_object()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Abm\+I\+O\+::write\+\_\+object (\begin{DoxyParamCaption}\item[{const T \&}]{object }\end{DoxyParamCaption}) const}
+
+
+
+Write object information to a file. 
+
+Object information as defined by the overloaded $<$$<$ operator. Truncates if the file exists. 
+\begin{DoxyParams}{Parameters}
+{\em object} & -\/ instance of object of type T \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAbmIO_a0cd34d6379af33faca512b82f8743a19}\label{classAbmIO_a0cd34d6379af33faca512b82f8743a19}} 
+\index{Abm\+IO@{Abm\+IO}!write\+\_\+vector@{write\+\_\+vector}}
+\index{write\+\_\+vector@{write\+\_\+vector}!Abm\+IO@{Abm\+IO}}
+\subsubsection{\texorpdfstring{write\+\_\+vector()}{write\_vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Abm\+I\+O\+::write\+\_\+vector (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption}) const}
+
+
+
+Write a 1D vector to a file, each entry in a new line. 
+
+Truncates if the file exists. 
+\begin{DoxyParams}{Parameters}
+{\em data} & -\/ vector of type T \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAbmIO_a3d630a2352e1e9e0337c419637f16060}\label{classAbmIO_a3d630a2352e1e9e0337c419637f16060}} 
+\index{Abm\+IO@{Abm\+IO}!write\+\_\+vector@{write\+\_\+vector}}
+\index{write\+\_\+vector@{write\+\_\+vector}!Abm\+IO@{Abm\+IO}}
+\subsubsection{\texorpdfstring{write\+\_\+vector()}{write\_vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Abm\+I\+O\+::write\+\_\+vector (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ T $>$$>$ \&}]{data }\end{DoxyParamCaption}) const}
+
+
+
+Write a 2D vector to a file with delimiter delim. 
+
+Truncates if the file exists. 
+\begin{DoxyParams}{Parameters}
+{\em data} & -\/ nested vector of type T with dimensions dims\mbox{[}0\mbox{]} x dims\mbox{[}1\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/io\+\_\+operations/\hyperlink{abm__io_8h}{abm\+\_\+io.\+h}\end{DoxyCompactItemize}

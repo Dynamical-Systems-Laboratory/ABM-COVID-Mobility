@@ -1,0 +1,192 @@
+\hypertarget{abm__io__tests_8cpp}{}\section{tests/misc\+\_\+cpp\+\_\+tests/abm\+\_\+io\+\_\+tests.cpp File Reference}
+\label{abm__io__tests_8cpp}\index{tests/misc\+\_\+cpp\+\_\+tests/abm\+\_\+io\+\_\+tests.\+cpp@{tests/misc\+\_\+cpp\+\_\+tests/abm\+\_\+io\+\_\+tests.\+cpp}}
+{\ttfamily \#include \char`\"{}../common/test\+\_\+utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include \char`\"{}../../include/io\+\_\+operations/abm\+\_\+io.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structTestStruct}{Test\+Struct}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\using \hyperlink{abm__io__tests_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D} = std\+::vector$<$ std\+::vector$<$ T $>$$>$
+\item 
+{\footnotesize template$<$typename T $>$ }\\using \hyperlink{abm__io__tests_8cpp_a1df0973ed8c9486be063b449dbaa2419}{vec1D} = std\+::vector$<$ T $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{abm__io__tests_8cpp_aeba874ce815ac2a531e78202c07adc5c}{read\+\_\+test} (const \hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$ expected, const std\+::string fname, const std\+::function$<$ bool(\hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$, \hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$)$>$ is\+\_\+equal)
+\begin{DoxyCompactList}\small\item\em Tests reading a 2D vector of type T. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{abm__io__tests_8cpp_ad05a5e2041113851e31417d19dd6aad6}{write\+\_\+read\+\_\+test} (const \hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$ orig\+\_\+vec, const \hyperlink{classAbmIO}{Abm\+IO} \&io\+\_\+obj, const std\+::function$<$ bool(\hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$, \hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$)$>$ is\+\_\+equal)
+\begin{DoxyCompactList}\small\item\em Checks writing and reading under different \hyperlink{classAbmIO}{Abm\+IO} settings. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{abm__io__tests_8cpp_a40bfcc46dec7cffdc17945fc8f6f166a}{write\+\_\+read\+\_\+test} (const \hyperlink{abm__io__tests_8cpp_a1df0973ed8c9486be063b449dbaa2419}{vec1D}$<$ T $>$ orig\+\_\+vec, const \hyperlink{classAbmIO}{Abm\+IO} \&io\+\_\+obj, const std\+::function$<$ bool(\hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$, \hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$)$>$ is\+\_\+equal)
+\begin{DoxyCompactList}\small\item\em Checks writing and reading under different \hyperlink{classAbmIO}{Abm\+IO} settings -\/ 1D version. \end{DoxyCompactList}\item 
+std\+::ostream \& \hyperlink{abm__io__tests_8cpp_aa4cb1a404b9118bfe3334ca8747d0851}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{structTestStruct}{Test\+Struct} \&test)
+\item 
+bool \hyperlink{abm__io__tests_8cpp_af9b648609b23a0a9c5fdac9cc3c818fd}{read\+\_\+test\+\_\+suite} ()
+\begin{DoxyCompactList}\small\item\em Series of read tests with various data types. \end{DoxyCompactList}\item 
+bool \hyperlink{abm__io__tests_8cpp_a38ae832ff70a801aff4c07fe72430094}{custom\+\_\+test\+\_\+suite} ()
+\begin{DoxyCompactList}\small\item\em Tests writing and reading 2D vector. \end{DoxyCompactList}\item 
+bool \hyperlink{abm__io__tests_8cpp_a1939fbe2fad20ca309a3492b5129f266}{default\+\_\+test\+\_\+suite} ()
+\begin{DoxyCompactList}\small\item\em Tests default constructor settings and behavior. \end{DoxyCompactList}\item 
+bool \hyperlink{abm__io__tests_8cpp_ae8f6462fdccc261d69963479f1c8a4e7}{write\+\_\+1\+D\+\_\+vector\+\_\+test\+\_\+suite} ()
+\begin{DoxyCompactList}\small\item\em Tests writing and reading 1D vector. \end{DoxyCompactList}\item 
+bool \hyperlink{abm__io__tests_8cpp_a1a9badd14c17db6a55bd8e932ff02c8e}{write\+\_\+object\+\_\+test\+\_\+suite} ()
+\begin{DoxyCompactList}\small\item\em Uses object\textquotesingle{}s overloaded ostream operator to write, then reads, and checks. \end{DoxyCompactList}\item 
+int \hyperlink{abm__io__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{abm__io__tests_8cpp_a1df0973ed8c9486be063b449dbaa2419}\label{abm__io__tests_8cpp_a1df0973ed8c9486be063b449dbaa2419}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!vec1D@{vec1D}}
+\index{vec1D@{vec1D}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{vec1D}{vec1D}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \hyperlink{abm__io__tests_8cpp_a1df0973ed8c9486be063b449dbaa2419}{vec1D} =  std\+::vector$<$T$>$}
+
+\mbox{\Hypertarget{abm__io__tests_8cpp_a1d49112dedf5e19fe86808324c7ba918}\label{abm__io__tests_8cpp_a1d49112dedf5e19fe86808324c7ba918}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!vec2D@{vec2D}}
+\index{vec2D@{vec2D}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{vec2D}{vec2D}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D} =  std\+::vector$<$std\+::vector$<$T$>$$>$}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{abm__io__tests_8cpp_a38ae832ff70a801aff4c07fe72430094}\label{abm__io__tests_8cpp_a38ae832ff70a801aff4c07fe72430094}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!custom\+\_\+test\+\_\+suite@{custom\+\_\+test\+\_\+suite}}
+\index{custom\+\_\+test\+\_\+suite@{custom\+\_\+test\+\_\+suite}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{custom\+\_\+test\+\_\+suite()}{custom\_test\_suite()}}
+{\footnotesize\ttfamily bool custom\+\_\+test\+\_\+suite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests writing and reading 2D vector. 
+
+Writes and then reads from file, compares the read vector to expected (written) \mbox{\Hypertarget{abm__io__tests_8cpp_a1939fbe2fad20ca309a3492b5129f266}\label{abm__io__tests_8cpp_a1939fbe2fad20ca309a3492b5129f266}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!default\+\_\+test\+\_\+suite@{default\+\_\+test\+\_\+suite}}
+\index{default\+\_\+test\+\_\+suite@{default\+\_\+test\+\_\+suite}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{default\+\_\+test\+\_\+suite()}{default\_test\_suite()}}
+{\footnotesize\ttfamily bool default\+\_\+test\+\_\+suite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests default constructor settings and behavior. 
+
+\mbox{\Hypertarget{abm__io__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{abm__io__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!main@{main}}
+\index{main@{main}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{abm__io__tests_8cpp_aa4cb1a404b9118bfe3334ca8747d0851}\label{abm__io__tests_8cpp_aa4cb1a404b9118bfe3334ca8747d0851}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{structTestStruct}{Test\+Struct} \&}]{test }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{abm__io__tests_8cpp_aeba874ce815ac2a531e78202c07adc5c}\label{abm__io__tests_8cpp_aeba874ce815ac2a531e78202c07adc5c}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!read\+\_\+test@{read\+\_\+test}}
+\index{read\+\_\+test@{read\+\_\+test}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{read\+\_\+test()}{read\_test()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool read\+\_\+test (\begin{DoxyParamCaption}\item[{const \hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$}]{expected,  }\item[{const std\+::string}]{fname,  }\item[{const std\+::function$<$ bool(\hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$, \hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$)$>$}]{is\+\_\+equal }\end{DoxyParamCaption})}
+
+
+
+Tests reading a 2D vector of type T. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expected} & -\/ 2D vector of expected values, each inner vector is a single line of file \\
+\hline
+{\em fname} & -\/ name of the file to read from \\
+\hline
+{\em is\+\_\+equal} & -\/ function object for comparing expected with read values of 2D vectors of type T -\/ needs complete comparison of the 2D vector; returns true if equal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if is\+\_\+equal returned true, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{abm__io__tests_8cpp_af9b648609b23a0a9c5fdac9cc3c818fd}\label{abm__io__tests_8cpp_af9b648609b23a0a9c5fdac9cc3c818fd}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!read\+\_\+test\+\_\+suite@{read\+\_\+test\+\_\+suite}}
+\index{read\+\_\+test\+\_\+suite@{read\+\_\+test\+\_\+suite}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{read\+\_\+test\+\_\+suite()}{read\_test\_suite()}}
+{\footnotesize\ttfamily bool read\+\_\+test\+\_\+suite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Series of read tests with various data types. 
+
+\mbox{\Hypertarget{abm__io__tests_8cpp_ae8f6462fdccc261d69963479f1c8a4e7}\label{abm__io__tests_8cpp_ae8f6462fdccc261d69963479f1c8a4e7}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!write\+\_\+1\+D\+\_\+vector\+\_\+test\+\_\+suite@{write\+\_\+1\+D\+\_\+vector\+\_\+test\+\_\+suite}}
+\index{write\+\_\+1\+D\+\_\+vector\+\_\+test\+\_\+suite@{write\+\_\+1\+D\+\_\+vector\+\_\+test\+\_\+suite}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{write\+\_\+1\+D\+\_\+vector\+\_\+test\+\_\+suite()}{write\_1D\_vector\_test\_suite()}}
+{\footnotesize\ttfamily bool write\+\_\+1\+D\+\_\+vector\+\_\+test\+\_\+suite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests writing and reading 1D vector. 
+
+Writes and then reads from file, compares the read vector to expected (written) \mbox{\Hypertarget{abm__io__tests_8cpp_a1a9badd14c17db6a55bd8e932ff02c8e}\label{abm__io__tests_8cpp_a1a9badd14c17db6a55bd8e932ff02c8e}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!write\+\_\+object\+\_\+test\+\_\+suite@{write\+\_\+object\+\_\+test\+\_\+suite}}
+\index{write\+\_\+object\+\_\+test\+\_\+suite@{write\+\_\+object\+\_\+test\+\_\+suite}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{write\+\_\+object\+\_\+test\+\_\+suite()}{write\_object\_test\_suite()}}
+{\footnotesize\ttfamily bool write\+\_\+object\+\_\+test\+\_\+suite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Uses object\textquotesingle{}s overloaded ostream operator to write, then reads, and checks. 
+
+\mbox{\Hypertarget{abm__io__tests_8cpp_ad05a5e2041113851e31417d19dd6aad6}\label{abm__io__tests_8cpp_ad05a5e2041113851e31417d19dd6aad6}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!write\+\_\+read\+\_\+test@{write\+\_\+read\+\_\+test}}
+\index{write\+\_\+read\+\_\+test@{write\+\_\+read\+\_\+test}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{write\+\_\+read\+\_\+test()}{write\_read\_test()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool write\+\_\+read\+\_\+test (\begin{DoxyParamCaption}\item[{const \hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$}]{orig\+\_\+vec,  }\item[{const \hyperlink{classAbmIO}{Abm\+IO} \&}]{io\+\_\+obj,  }\item[{const std\+::function$<$ bool(\hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$, \hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$)$>$}]{is\+\_\+equal }\end{DoxyParamCaption})}
+
+
+
+Checks writing and reading under different \hyperlink{classAbmIO}{Abm\+IO} settings. 
+
+Writes to and then reads from the same file, compares the read 2D vector of type T to expected 
+\begin{DoxyParams}{Parameters}
+{\em orig} & -\/ 2D vector of expected values, each inner vector is a single line of file \\
+\hline
+{\em io\+\_\+obj} & -\/ \hyperlink{classAbmIO}{Abm\+IO} object \\
+\hline
+{\em is\+\_\+equal} & -\/ function object for comparing expected with read values of 2D vectors of type T -\/ needs complete comparison of the 2D vector; returns true if equal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if is\+\_\+equal returned true, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{abm__io__tests_8cpp_a40bfcc46dec7cffdc17945fc8f6f166a}\label{abm__io__tests_8cpp_a40bfcc46dec7cffdc17945fc8f6f166a}} 
+\index{abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}!write\+\_\+read\+\_\+test@{write\+\_\+read\+\_\+test}}
+\index{write\+\_\+read\+\_\+test@{write\+\_\+read\+\_\+test}!abm\+\_\+io\+\_\+tests.\+cpp@{abm\+\_\+io\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{write\+\_\+read\+\_\+test()}{write\_read\_test()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool write\+\_\+read\+\_\+test (\begin{DoxyParamCaption}\item[{const \hyperlink{abm__io__tests_8cpp_a1df0973ed8c9486be063b449dbaa2419}{vec1D}$<$ T $>$}]{orig\+\_\+vec,  }\item[{const \hyperlink{classAbmIO}{Abm\+IO} \&}]{io\+\_\+obj,  }\item[{const std\+::function$<$ bool(\hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$, \hyperlink{test__utils__test_8cpp_a1d49112dedf5e19fe86808324c7ba918}{vec2D}$<$ T $>$)$>$}]{is\+\_\+equal }\end{DoxyParamCaption})}
+
+
+
+Checks writing and reading under different \hyperlink{classAbmIO}{Abm\+IO} settings -\/ 1D version. 
+
+Writes to and then reads from the same file, compares the read 2D vector of type T to expected 
+\begin{DoxyParams}{Parameters}
+{\em orig} & -\/ 1D vector of expected values, each element is a single line of file \\
+\hline
+{\em io\+\_\+obj} & -\/ \hyperlink{classAbmIO}{Abm\+IO} object \\
+\hline
+{\em is\+\_\+equal} & -\/ function object for comparing expected with read values of 2D vectors of type T -\/ needs complete comparison of the 2D vector; returns true if equal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if is\+\_\+equal returned true, false otherwise 
+\end{DoxyReturn}

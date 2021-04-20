@@ -1,0 +1,127 @@
+\hypertarget{classWorkplace}{}\section{Workplace Class Reference}
+\label{classWorkplace}\index{Workplace@{Workplace}}
+
+
+{\ttfamily \#include $<$workplace.\+h$>$}
+
+Inheritance diagram for Workplace\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWorkplace}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWorkplace_af182fb46622e45e1c45cec7ab5c3a3c1}{Workplace} ()=default
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classWorkplace}{Workplace} object with default attributes. \end{DoxyCompactList}\item 
+\hyperlink{classWorkplace_a0d116e1103d53e5417c295eebcfc7f39}{Workplace} (const int work\+\_\+\+ID, const double xi, const double yi, const double severity\+\_\+cor, const double psi, const double beta)
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classWorkplace}{Workplace} object. \end{DoxyCompactList}\item 
+void \hyperlink{classWorkplace_a48ef6cf8af0753240063ea8c00f4cc63}{add\+\_\+symptomatic} (double inf\+\_\+var) override
+\begin{DoxyCompactList}\small\item\em Include symptomatic contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classWorkplace_a0d601f969c1403a8c51e1e940a9ed6c8}{change\+\_\+absenteeism\+\_\+correction} (const double val)
+\item 
+double \hyperlink{classWorkplace_a8ea81599e58cc96e4cf7c1e536e3b9d7}{get\+\_\+absenteeism\+\_\+correction} () const
+\item 
+void \hyperlink{classWorkplace_af4fcc642e32e174bab45def56b7c6f05}{print\+\_\+basic} (std\+::ostream \&where) const override
+\begin{DoxyCompactList}\small\item\em Save information about a \hyperlink{classWorkplace}{Workplace} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWorkplace_af182fb46622e45e1c45cec7ab5c3a3c1}\label{classWorkplace_af182fb46622e45e1c45cec7ab5c3a3c1}} 
+\index{Workplace@{Workplace}!Workplace@{Workplace}}
+\index{Workplace@{Workplace}!Workplace@{Workplace}}
+\subsubsection{\texorpdfstring{Workplace()}{Workplace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Workplace\+::\+Workplace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates a \hyperlink{classWorkplace}{Workplace} object with default attributes. 
+
+\mbox{\Hypertarget{classWorkplace_a0d116e1103d53e5417c295eebcfc7f39}\label{classWorkplace_a0d116e1103d53e5417c295eebcfc7f39}} 
+\index{Workplace@{Workplace}!Workplace@{Workplace}}
+\index{Workplace@{Workplace}!Workplace@{Workplace}}
+\subsubsection{\texorpdfstring{Workplace()}{Workplace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Workplace\+::\+Workplace (\begin{DoxyParamCaption}\item[{const int}]{work\+\_\+\+ID,  }\item[{const double}]{xi,  }\item[{const double}]{yi,  }\item[{const double}]{severity\+\_\+cor,  }\item[{const double}]{psi,  }\item[{const double}]{beta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \hyperlink{classWorkplace}{Workplace} object. 
+
+\hyperlink{classHospital}{Hospital} with custom ID, location, and infection parameters
+
+
+\begin{DoxyParams}{Parameters}
+{\em work\+\_\+\+ID} & -\/ ID of the workplace \\
+\hline
+{\em xi} & -\/ x coordinate of the workplace \\
+\hline
+{\em yi} & -\/ y coordinate of the workplace \\
+\hline
+{\em severity\+\_\+cor} & -\/ severity correction for symptomatic \\
+\hline
+{\em psi} & -\/ absenteeism correction \\
+\hline
+{\em beta} & -\/ infection transmission rate, 1/time \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWorkplace_a48ef6cf8af0753240063ea8c00f4cc63}\label{classWorkplace_a48ef6cf8af0753240063ea8c00f4cc63}} 
+\index{Workplace@{Workplace}!add\+\_\+symptomatic@{add\+\_\+symptomatic}}
+\index{add\+\_\+symptomatic@{add\+\_\+symptomatic}!Workplace@{Workplace}}
+\subsubsection{\texorpdfstring{add\+\_\+symptomatic()}{add\_symptomatic()}}
+{\footnotesize\ttfamily void Workplace\+::add\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Include symptomatic contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classPlace_a5216539c8589d41aad430513740fa15c}{Place}.
+
+\mbox{\Hypertarget{classWorkplace_a0d601f969c1403a8c51e1e940a9ed6c8}\label{classWorkplace_a0d601f969c1403a8c51e1e940a9ed6c8}} 
+\index{Workplace@{Workplace}!change\+\_\+absenteeism\+\_\+correction@{change\+\_\+absenteeism\+\_\+correction}}
+\index{change\+\_\+absenteeism\+\_\+correction@{change\+\_\+absenteeism\+\_\+correction}!Workplace@{Workplace}}
+\subsubsection{\texorpdfstring{change\+\_\+absenteeism\+\_\+correction()}{change\_absenteeism\_correction()}}
+{\footnotesize\ttfamily void Workplace\+::change\+\_\+absenteeism\+\_\+correction (\begin{DoxyParamCaption}\item[{const double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWorkplace_a8ea81599e58cc96e4cf7c1e536e3b9d7}\label{classWorkplace_a8ea81599e58cc96e4cf7c1e536e3b9d7}} 
+\index{Workplace@{Workplace}!get\+\_\+absenteeism\+\_\+correction@{get\+\_\+absenteeism\+\_\+correction}}
+\index{get\+\_\+absenteeism\+\_\+correction@{get\+\_\+absenteeism\+\_\+correction}!Workplace@{Workplace}}
+\subsubsection{\texorpdfstring{get\+\_\+absenteeism\+\_\+correction()}{get\_absenteeism\_correction()}}
+{\footnotesize\ttfamily double Workplace\+::get\+\_\+absenteeism\+\_\+correction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWorkplace_af4fcc642e32e174bab45def56b7c6f05}\label{classWorkplace_af4fcc642e32e174bab45def56b7c6f05}} 
+\index{Workplace@{Workplace}!print\+\_\+basic@{print\+\_\+basic}}
+\index{print\+\_\+basic@{print\+\_\+basic}!Workplace@{Workplace}}
+\subsubsection{\texorpdfstring{print\+\_\+basic()}{print\_basic()}}
+{\footnotesize\ttfamily void Workplace\+::print\+\_\+basic (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{where }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Save information about a \hyperlink{classWorkplace}{Workplace} object. 
+
+Saves to a file, everything but detailed agent information; order is ID $\vert$ x $\vert$ y $\vert$ number of agents $\vert$ number of infected agents $\vert$ ck $\vert$ beta\+\_\+j $\vert$ psi\+\_\+j Delimiter is a space. 
+\begin{DoxyParams}{Parameters}
+{\em where} & -\/ output stream \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classPlace_a9aa7649e0b91c5f61a5f71e9ca808fe1}{Place}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/places/\hyperlink{workplace_8h}{workplace.\+h}\item 
+src/places/\hyperlink{workplace_8cpp}{workplace.\+cpp}\end{DoxyCompactItemize}

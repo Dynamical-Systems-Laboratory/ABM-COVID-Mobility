@@ -1,0 +1,73 @@
+\hypertarget{contributions__tests_8cpp}{}\section{tests/contributions/contributions\+\_\+tests.cpp File Reference}
+\label{contributions__tests_8cpp}\index{tests/contributions/contributions\+\_\+tests.\+cpp@{tests/contributions/contributions\+\_\+tests.\+cpp}}
+{\ttfamily \#include \char`\"{}contributions\+\_\+tests.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{contributions__tests_8cpp_a9f33d32d05d79dad6a2bbb88398afa4d}{contributions\+\_\+main\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Test for correct computing of infection contributions. \end{DoxyCompactList}\item 
+bool \hyperlink{contributions__tests_8cpp_a535218bc9fd4fa07f5179841a8130641}{contributions\+\_\+treatment\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Test for correct computing of infection contributions for treated agents. \end{DoxyCompactList}\item 
+bool \hyperlink{contributions__tests_8cpp_ab5dedca6446864506e28863776f0e9d8}{contributions\+\_\+misc\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Test for correct computing of infection contributions of various other types of agents. \end{DoxyCompactList}\item 
+bool \hyperlink{contributions__tests_8cpp_a9771ad49f18e31716aefd3c053eff17c}{check\+\_\+all\+\_\+places} (\hyperlink{classABM}{A\+BM} \&, const std\+::vector$<$ \hyperlink{classAgent}{Agent} $>$ \&)
+\item 
+void \hyperlink{contributions__tests_8cpp_a70b808a3973d44387a4df05499477525}{remove\+\_\+agent\+\_\+from\+\_\+public\+\_\+places} (\hyperlink{classAgent}{Agent} \&agent, std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&retirement\+\_\+homes, std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&schools, std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&workplaces, std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&hospitals)
+\begin{DoxyCompactList}\small\item\em Remove agent from all public places (hospital only if not hospitalized) \end{DoxyCompactList}\item 
+int \hyperlink{contributions__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{contributions__tests_8cpp_a9771ad49f18e31716aefd3c053eff17c}\label{contributions__tests_8cpp_a9771ad49f18e31716aefd3c053eff17c}} 
+\index{contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}!check\+\_\+all\+\_\+places@{check\+\_\+all\+\_\+places}}
+\index{check\+\_\+all\+\_\+places@{check\+\_\+all\+\_\+places}!contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+all\+\_\+places()}{check\_all\_places()}}
+{\footnotesize\ttfamily bool check\+\_\+all\+\_\+places (\begin{DoxyParamCaption}\item[{\hyperlink{classABM}{A\+BM} \&}]{abm,  }\item[{const std\+::vector$<$ \hyperlink{classAgent}{Agent} $>$ \&}]{agents }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{contributions__tests_8cpp_a9f33d32d05d79dad6a2bbb88398afa4d}\label{contributions__tests_8cpp_a9f33d32d05d79dad6a2bbb88398afa4d}} 
+\index{contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}!contributions\+\_\+main\+\_\+test@{contributions\+\_\+main\+\_\+test}}
+\index{contributions\+\_\+main\+\_\+test@{contributions\+\_\+main\+\_\+test}!contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{contributions\+\_\+main\+\_\+test()}{contributions\_main\_test()}}
+{\footnotesize\ttfamily bool contributions\+\_\+main\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test for correct computing of infection contributions. 
+
+\mbox{\Hypertarget{contributions__tests_8cpp_ab5dedca6446864506e28863776f0e9d8}\label{contributions__tests_8cpp_ab5dedca6446864506e28863776f0e9d8}} 
+\index{contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}!contributions\+\_\+misc\+\_\+test@{contributions\+\_\+misc\+\_\+test}}
+\index{contributions\+\_\+misc\+\_\+test@{contributions\+\_\+misc\+\_\+test}!contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{contributions\+\_\+misc\+\_\+test()}{contributions\_misc\_test()}}
+{\footnotesize\ttfamily bool contributions\+\_\+misc\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test for correct computing of infection contributions of various other types of agents. 
+
+\mbox{\Hypertarget{contributions__tests_8cpp_a535218bc9fd4fa07f5179841a8130641}\label{contributions__tests_8cpp_a535218bc9fd4fa07f5179841a8130641}} 
+\index{contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}!contributions\+\_\+treatment\+\_\+test@{contributions\+\_\+treatment\+\_\+test}}
+\index{contributions\+\_\+treatment\+\_\+test@{contributions\+\_\+treatment\+\_\+test}!contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{contributions\+\_\+treatment\+\_\+test()}{contributions\_treatment\_test()}}
+{\footnotesize\ttfamily bool contributions\+\_\+treatment\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test for correct computing of infection contributions for treated agents. 
+
+\mbox{\Hypertarget{contributions__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{contributions__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}!main@{main}}
+\index{main@{main}!contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{contributions__tests_8cpp_a70b808a3973d44387a4df05499477525}\label{contributions__tests_8cpp_a70b808a3973d44387a4df05499477525}} 
+\index{contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}!remove\+\_\+agent\+\_\+from\+\_\+public\+\_\+places@{remove\+\_\+agent\+\_\+from\+\_\+public\+\_\+places}}
+\index{remove\+\_\+agent\+\_\+from\+\_\+public\+\_\+places@{remove\+\_\+agent\+\_\+from\+\_\+public\+\_\+places}!contributions\+\_\+tests.\+cpp@{contributions\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{remove\+\_\+agent\+\_\+from\+\_\+public\+\_\+places()}{remove\_agent\_from\_public\_places()}}
+{\footnotesize\ttfamily void remove\+\_\+agent\+\_\+from\+\_\+public\+\_\+places (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent,  }\item[{std\+::vector$<$ \hyperlink{classRetirementHome}{Retirement\+Home} $>$ \&}]{retirement\+\_\+homes,  }\item[{std\+::vector$<$ \hyperlink{classSchool}{School} $>$ \&}]{schools,  }\item[{std\+::vector$<$ \hyperlink{classWorkplace}{Workplace} $>$ \&}]{workplaces,  }\item[{std\+::vector$<$ \hyperlink{classHospital}{Hospital} $>$ \&}]{hospitals }\end{DoxyParamCaption})}
+
+
+
+Remove agent from all public places (hospital only if not hospitalized) 
+

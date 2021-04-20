@@ -1,0 +1,101 @@
+\hypertarget{file__handler__tests_8cpp}{}\section{tests/misc\+\_\+cpp\+\_\+tests/file\+\_\+handler\+\_\+tests.cpp File Reference}
+\label{file__handler__tests_8cpp}\index{tests/misc\+\_\+cpp\+\_\+tests/file\+\_\+handler\+\_\+tests.\+cpp@{tests/misc\+\_\+cpp\+\_\+tests/file\+\_\+handler\+\_\+tests.\+cpp}}
+{\ttfamily \#include \char`\"{}../common/test\+\_\+utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}../../include/io\+\_\+operations/\+File\+Handler.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{file__handler__tests_8cpp_a3aaed647f12c6cfbf546f7f5b47c32f0}{check\+\_\+file\+\_\+content} (std\+::fstream \&in, std\+::vector$<$ std\+::string $>$ exp\+\_\+lines)
+\begin{DoxyCompactList}\small\item\em Performs tests on file content given a stream. \end{DoxyCompactList}\item 
+void \hyperlink{file__handler__tests_8cpp_a8bc5e2a3f4c2fa6c8260b665d91c2526}{open\+\_\+file} (const std\+::string fname, const std\+::ios\+\_\+base\+::openmode mode)
+\begin{DoxyCompactList}\small\item\em Just opens a file for accessibility testing purposes. \end{DoxyCompactList}\item 
+bool \hyperlink{file__handler__tests_8cpp_a64e90a2409417425e8159bc52e9d97b8}{default\+\_\+io\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classTesting}{Testing} correctness of \hyperlink{classFileHandler}{File\+Handler} default mode. \end{DoxyCompactList}\item 
+bool \hyperlink{file__handler__tests_8cpp_abcef675de99993e9d08ea79f241baa69}{custom\+\_\+io\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classTesting}{Testing} correctness of \hyperlink{classFileHandler}{File\+Handler} custom modes. \end{DoxyCompactList}\item 
+bool \hyperlink{file__handler__tests_8cpp_ae21195203d2e23ab46bbe7da943bc886}{fail\+\_\+to\+\_\+open\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Checks exception behavior when opening a non-\/existent file. \end{DoxyCompactList}\item 
+int \hyperlink{file__handler__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{file__handler__tests_8cpp_a3aaed647f12c6cfbf546f7f5b47c32f0}\label{file__handler__tests_8cpp_a3aaed647f12c6cfbf546f7f5b47c32f0}} 
+\index{file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}!check\+\_\+file\+\_\+content@{check\+\_\+file\+\_\+content}}
+\index{check\+\_\+file\+\_\+content@{check\+\_\+file\+\_\+content}!file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+file\+\_\+content()}{check\_file\_content()}}
+{\footnotesize\ttfamily bool check\+\_\+file\+\_\+content (\begin{DoxyParamCaption}\item[{std\+::fstream \&}]{in,  }\item[{std\+::vector$<$ std\+::string $>$}]{exp\+\_\+lines }\end{DoxyParamCaption})}
+
+
+
+Performs tests on file content given a stream. 
+
+Given stream, uses getline to fetch lines from the file. Compares the lines with contents of the vector which elements correspond to expected lines.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & \mbox{[}in\mbox{]} -\/ input file stream \\
+\hline
+{\em exp\+\_\+lines} & \mbox{[}in\mbox{]} -\/ vector of strings, each string representing one line of input without the newline character \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all lines match and vector size equal number of lines in the file. false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{file__handler__tests_8cpp_abcef675de99993e9d08ea79f241baa69}\label{file__handler__tests_8cpp_abcef675de99993e9d08ea79f241baa69}} 
+\index{file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}!custom\+\_\+io\+\_\+test@{custom\+\_\+io\+\_\+test}}
+\index{custom\+\_\+io\+\_\+test@{custom\+\_\+io\+\_\+test}!file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{custom\+\_\+io\+\_\+test()}{custom\_io\_test()}}
+{\footnotesize\ttfamily bool custom\+\_\+io\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classTesting}{Testing} correctness of \hyperlink{classFileHandler}{File\+Handler} custom modes. 
+
+Uses \hyperlink{classFileHandler}{File\+Handler} to write, read, append, and read again compares reads to expected strings, true if identical. Important -\/ ensure the test file is deleted before the test. \mbox{\Hypertarget{file__handler__tests_8cpp_a64e90a2409417425e8159bc52e9d97b8}\label{file__handler__tests_8cpp_a64e90a2409417425e8159bc52e9d97b8}} 
+\index{file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}!default\+\_\+io\+\_\+test@{default\+\_\+io\+\_\+test}}
+\index{default\+\_\+io\+\_\+test@{default\+\_\+io\+\_\+test}!file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{default\+\_\+io\+\_\+test()}{default\_io\_test()}}
+{\footnotesize\ttfamily bool default\+\_\+io\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classTesting}{Testing} correctness of \hyperlink{classFileHandler}{File\+Handler} default mode. 
+
+Uses \hyperlink{classFileHandler}{File\+Handler} to write and then read a line of text -\/ compares both, true if identical \mbox{\Hypertarget{file__handler__tests_8cpp_ae21195203d2e23ab46bbe7da943bc886}\label{file__handler__tests_8cpp_ae21195203d2e23ab46bbe7da943bc886}} 
+\index{file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}!fail\+\_\+to\+\_\+open\+\_\+test@{fail\+\_\+to\+\_\+open\+\_\+test}}
+\index{fail\+\_\+to\+\_\+open\+\_\+test@{fail\+\_\+to\+\_\+open\+\_\+test}!file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{fail\+\_\+to\+\_\+open\+\_\+test()}{fail\_to\_open\_test()}}
+{\footnotesize\ttfamily bool fail\+\_\+to\+\_\+open\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks exception behavior when opening a non-\/existent file. 
+
+Forces ios\+\_\+base\+::failure exception by trying to read from a file that doesn\textquotesingle{}t exist. \begin{DoxyReturn}{Returns}
+true if the program throws an ios\+\_\+base\+::failure exception, false for lack of exception or a different one. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{file__handler__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{file__handler__tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}!main@{main}}
+\index{main@{main}!file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file__handler__tests_8cpp_a8bc5e2a3f4c2fa6c8260b665d91c2526}\label{file__handler__tests_8cpp_a8bc5e2a3f4c2fa6c8260b665d91c2526}} 
+\index{file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}!open\+\_\+file@{open\+\_\+file}}
+\index{open\+\_\+file@{open\+\_\+file}!file\+\_\+handler\+\_\+tests.\+cpp@{file\+\_\+handler\+\_\+tests.\+cpp}}
+\subsubsection{\texorpdfstring{open\+\_\+file()}{open\_file()}}
+{\footnotesize\ttfamily void open\+\_\+file (\begin{DoxyParamCaption}\item[{const std\+::string}]{fname,  }\item[{const std\+::ios\+\_\+base\+::openmode}]{mode }\end{DoxyParamCaption})}
+
+
+
+Just opens a file for accessibility testing purposes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fname} & -\/ file name \\
+\hline
+{\em mode} & -\/ ios mode of opening \\
+\hline
+\end{DoxyParams}

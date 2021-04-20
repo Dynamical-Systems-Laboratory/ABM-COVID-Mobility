@@ -1,0 +1,135 @@
+\hypertarget{classRNG}{}\section{R\+NG Class Reference}
+\label{classRNG}\index{R\+NG@{R\+NG}}
+
+
+{\ttfamily \#include $<$rng.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRNG_a0028b717ff3d402a5829fc09ab1c5ed4}{R\+NG} ()
+\item 
+double \hyperlink{classRNG_a9c2ed7323632e3bade78543f3455d055}{get\+\_\+random} (const double dmin, const double dmax)
+\begin{DoxyCompactList}\small\item\em Random number sampled from uniform distribution. \end{DoxyCompactList}\item 
+int \hyperlink{classRNG_a9f4c1cb8ca99c2838de7077f2a0c48ef}{get\+\_\+random\+\_\+int} (const int dmin, const int dmax)
+\begin{DoxyCompactList}\small\item\em Random integer sampled from uniform distribution of ints. \end{DoxyCompactList}\item 
+double \hyperlink{classRNG_ad4c8f00da1722cad6c57873ecc45187d}{get\+\_\+random\+\_\+gamma} (const double k, const double theta)
+\begin{DoxyCompactList}\small\item\em Random number sampled from a gamma distribution. \end{DoxyCompactList}\item 
+double \hyperlink{classRNG_a45c08c830077f4ad9c9a41ec2ab36021}{get\+\_\+random\+\_\+lognormal} (const double m, const double s)
+\begin{DoxyCompactList}\small\item\em Random number sampled from a lognormal distribution. \end{DoxyCompactList}\item 
+double \hyperlink{classRNG_ae7be35e443ee86c915b32fdfc2595187}{get\+\_\+random\+\_\+weibull} (const double a, const double b)
+\begin{DoxyCompactList}\small\item\em Random number sampled from a Weibull distribution. \end{DoxyCompactList}\item 
+void \hyperlink{classRNG_ad1fb3455e12c12637e74c9673984496d}{vector\+\_\+shuffle} (std\+::vector$<$ int $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Performs in-\/place random shuffling of a vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRNG_a0028b717ff3d402a5829fc09ab1c5ed4}\label{classRNG_a0028b717ff3d402a5829fc09ab1c5ed4}} 
+\index{R\+NG@{R\+NG}!R\+NG@{R\+NG}}
+\index{R\+NG@{R\+NG}!R\+NG@{R\+NG}}
+\subsubsection{\texorpdfstring{R\+N\+G()}{RNG()}}
+{\footnotesize\ttfamily R\+N\+G\+::\+R\+NG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRNG_a9c2ed7323632e3bade78543f3455d055}\label{classRNG_a9c2ed7323632e3bade78543f3455d055}} 
+\index{R\+NG@{R\+NG}!get\+\_\+random@{get\+\_\+random}}
+\index{get\+\_\+random@{get\+\_\+random}!R\+NG@{R\+NG}}
+\subsubsection{\texorpdfstring{get\+\_\+random()}{get\_random()}}
+{\footnotesize\ttfamily double R\+N\+G\+::get\+\_\+random (\begin{DoxyParamCaption}\item[{const double}]{dmin,  }\item[{const double}]{dmax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Random number sampled from uniform distribution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dmin} & -\/ minimum, inclusive \\
+\hline
+{\em dmax} & -\/ maximum, exclusive \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRNG_ad4c8f00da1722cad6c57873ecc45187d}\label{classRNG_ad4c8f00da1722cad6c57873ecc45187d}} 
+\index{R\+NG@{R\+NG}!get\+\_\+random\+\_\+gamma@{get\+\_\+random\+\_\+gamma}}
+\index{get\+\_\+random\+\_\+gamma@{get\+\_\+random\+\_\+gamma}!R\+NG@{R\+NG}}
+\subsubsection{\texorpdfstring{get\+\_\+random\+\_\+gamma()}{get\_random\_gamma()}}
+{\footnotesize\ttfamily double R\+N\+G\+::get\+\_\+random\+\_\+gamma (\begin{DoxyParamCaption}\item[{const double}]{k,  }\item[{const double}]{theta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Random number sampled from a gamma distribution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & -\/ shape parameter \\
+\hline
+{\em theta} & -\/ scale parameter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRNG_a9f4c1cb8ca99c2838de7077f2a0c48ef}\label{classRNG_a9f4c1cb8ca99c2838de7077f2a0c48ef}} 
+\index{R\+NG@{R\+NG}!get\+\_\+random\+\_\+int@{get\+\_\+random\+\_\+int}}
+\index{get\+\_\+random\+\_\+int@{get\+\_\+random\+\_\+int}!R\+NG@{R\+NG}}
+\subsubsection{\texorpdfstring{get\+\_\+random\+\_\+int()}{get\_random\_int()}}
+{\footnotesize\ttfamily int R\+N\+G\+::get\+\_\+random\+\_\+int (\begin{DoxyParamCaption}\item[{const int}]{dmin,  }\item[{const int}]{dmax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Random integer sampled from uniform distribution of ints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dmin} & -\/ minimum, inclusive \\
+\hline
+{\em dmax} & -\/ maximum, inclusive \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRNG_a45c08c830077f4ad9c9a41ec2ab36021}\label{classRNG_a45c08c830077f4ad9c9a41ec2ab36021}} 
+\index{R\+NG@{R\+NG}!get\+\_\+random\+\_\+lognormal@{get\+\_\+random\+\_\+lognormal}}
+\index{get\+\_\+random\+\_\+lognormal@{get\+\_\+random\+\_\+lognormal}!R\+NG@{R\+NG}}
+\subsubsection{\texorpdfstring{get\+\_\+random\+\_\+lognormal()}{get\_random\_lognormal()}}
+{\footnotesize\ttfamily double R\+N\+G\+::get\+\_\+random\+\_\+lognormal (\begin{DoxyParamCaption}\item[{const double}]{m,  }\item[{const double}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Random number sampled from a lognormal distribution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ mean \\
+\hline
+{\em s} & -\/ standard deviation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRNG_ae7be35e443ee86c915b32fdfc2595187}\label{classRNG_ae7be35e443ee86c915b32fdfc2595187}} 
+\index{R\+NG@{R\+NG}!get\+\_\+random\+\_\+weibull@{get\+\_\+random\+\_\+weibull}}
+\index{get\+\_\+random\+\_\+weibull@{get\+\_\+random\+\_\+weibull}!R\+NG@{R\+NG}}
+\subsubsection{\texorpdfstring{get\+\_\+random\+\_\+weibull()}{get\_random\_weibull()}}
+{\footnotesize\ttfamily double R\+N\+G\+::get\+\_\+random\+\_\+weibull (\begin{DoxyParamCaption}\item[{const double}]{a,  }\item[{const double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Random number sampled from a Weibull distribution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ shape parameter \\
+\hline
+{\em b} & -\/ scale parameter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRNG_ad1fb3455e12c12637e74c9673984496d}\label{classRNG_ad1fb3455e12c12637e74c9673984496d}} 
+\index{R\+NG@{R\+NG}!vector\+\_\+shuffle@{vector\+\_\+shuffle}}
+\index{vector\+\_\+shuffle@{vector\+\_\+shuffle}!R\+NG@{R\+NG}}
+\subsubsection{\texorpdfstring{vector\+\_\+shuffle()}{vector\_shuffle()}}
+{\footnotesize\ttfamily void R\+N\+G\+::vector\+\_\+shuffle (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Performs in-\/place random shuffling of a vector. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{rng_8h}{rng.\+h}\end{DoxyCompactItemize}

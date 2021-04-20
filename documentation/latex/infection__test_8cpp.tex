@@ -1,0 +1,231 @@
+\hypertarget{infection__test_8cpp}{}\section{tests/infection/infection\+\_\+test.cpp File Reference}
+\label{infection__test_8cpp}\index{tests/infection/infection\+\_\+test.\+cpp@{tests/infection/infection\+\_\+test.\+cpp}}
+{\ttfamily \#include \char`\"{}infection\+\_\+tests.\+h\char`\"{}}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{infection__test_8cpp_af92b9a550482ce5355be9e3c6c8ee50b}{dist\+\_\+sampling} = double(Infection\+::$\ast$)()
+\item 
+using \hyperlink{infection__test_8cpp_a148171a60e6d52914d3ba8f2b3c1dcdf}{age\+\_\+rates\+\_\+setter} = void(Infection\+::$\ast$)(const std\+::map$<$ std\+::string, double $>$)
+\item 
+using \hyperlink{infection__test_8cpp_ab666ba3ba7031ac0bbcfc34cf7c6b372}{age\+\_\+rates\+\_\+getter} = const std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$$>$ \&(Infection\+::$\ast$)() const
+\item 
+using \hyperlink{infection__test_8cpp_a54b482f4a732ff9f59d1ce418f224439}{age\+\_\+rates\+\_\+caller} = bool(Infection\+::$\ast$)(int, bool)
+\item 
+using \hyperlink{infection__test_8cpp_a5f4acb9a0f99867081ab6ee708381a07}{age\+\_\+rates\+\_\+caller\+\_\+no\+\_\+bool} = bool(Infection\+::$\ast$)(int)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{infection__test_8cpp_a0afa8443781501d5dddb30fceb52e05b}{infection\+\_\+transmission\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Tests functionality related to infection transmission. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_ad35dacf39b0c92f038e2794fc4e609ea}{infection\+\_\+out\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Tests \hyperlink{classInfection}{Infection} ostream operator overload/print capabilities. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_a87ff113867a2266ee04b016ac6752c49}{infection\+\_\+misc\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Tests for various unclassified functionality. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_acc61de14aa26d769600677dbcc3cc562}{check\+\_\+mortality\+\_\+rates} (\hyperlink{classInfection}{Infection} \&infection)
+\begin{DoxyCompactList}\small\item\em Test if generated mortality rates correspond to actual. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_a40528e7b34136ed6571f7265c29e80bc}{check\+\_\+hospitalization\+\_\+rates} (\hyperlink{classInfection}{Infection} \&infection)
+\begin{DoxyCompactList}\small\item\em Test if generated hospitalization rates correspond to actual. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_a22326cc43f4c1b4e6f09468c1acfb946}{check\+\_\+\+I\+C\+U\+\_\+rates} (\hyperlink{classInfection}{Infection} \&infection)
+\begin{DoxyCompactList}\small\item\em Test if generated I\+CU rates correspond to actual. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_a6d0271a306910592b0c575fa5b11f69b}{check\+\_\+age\+\_\+dependent\+\_\+rates} (\hyperlink{infection__test_8cpp_a148171a60e6d52914d3ba8f2b3c1dcdf}{age\+\_\+rates\+\_\+setter} set\+\_\+rates, \hyperlink{infection__test_8cpp_ab666ba3ba7031ac0bbcfc34cf7c6b372}{age\+\_\+rates\+\_\+getter} get\+\_\+rates, \hyperlink{infection__test_8cpp_a54b482f4a732ff9f59d1ce418f224439}{age\+\_\+rates\+\_\+caller} call, \hyperlink{classInfection}{Infection} \&infection, std\+::map$<$ std\+::string, double $>$ raw\+\_\+rates, std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$$>$ expected\+\_\+rates)
+\begin{DoxyCompactList}\small\item\em Function for checking different types of age-\/dependent rates. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_a640ab15ca9929a4c459d45d5e2f8f7b3}{check\+\_\+age\+\_\+dependent\+\_\+rates} (\hyperlink{infection__test_8cpp_a148171a60e6d52914d3ba8f2b3c1dcdf}{age\+\_\+rates\+\_\+setter} set\+\_\+rates, \hyperlink{infection__test_8cpp_ab666ba3ba7031ac0bbcfc34cf7c6b372}{age\+\_\+rates\+\_\+getter} get\+\_\+rates, \hyperlink{infection__test_8cpp_a5f4acb9a0f99867081ab6ee708381a07}{age\+\_\+rates\+\_\+caller\+\_\+no\+\_\+bool} call, \hyperlink{classInfection}{Infection} \&infection, std\+::map$<$ std\+::string, double $>$ raw\+\_\+rates, std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$$>$ expected\+\_\+rates)
+\begin{DoxyCompactList}\small\item\em Function for checking different types of age-\/dependent rates. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_aa461104177f8d211776652ef435449b9}{check\+\_\+exposed\+\_\+never\+\_\+sy} (\hyperlink{classInfection}{Infection} \&infection)
+\begin{DoxyCompactList}\small\item\em Test if implementation of age-\/dependent exposed never symptomatic probabiity is correct. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_a587abc2aaa0f78671922a690e0ff17f7}{check\+\_\+non\+\_\+icu\+\_\+mortality} (\hyperlink{classInfection}{Infection} \&infection)
+\begin{DoxyCompactList}\small\item\em Tests for mortality. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_ad4c0a7ca1019ba8d1a81fe7768cd2eb7}{check\+\_\+distribution} (\hyperlink{infection__test_8cpp_af92b9a550482ce5355be9e3c6c8ee50b}{dist\+\_\+sampling} dist, \hyperlink{classInfection}{Infection} \&infection, double exp\+\_\+mean)
+\begin{DoxyCompactList}\small\item\em Test sampling of an infection distribution against expected mean. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_af9ac602a5c7bec39ebf6aacbd78f3ada}{check\+\_\+simple\+\_\+distributions} (\hyperlink{classInfection}{Infection} \&infection, std\+::vector$<$ double $>$ probabilities)
+\begin{DoxyCompactList}\small\item\em Verification for single number distributions. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_ae483562330ae9708b511d4cde00b299b}{check\+\_\+random\+\_\+\+ID} (\hyperlink{classInfection}{Infection} \&infection)
+\begin{DoxyCompactList}\small\item\em Verification of functionality for generating random I\+Ds. \end{DoxyCompactList}\item 
+bool \hyperlink{infection__test_8cpp_aab4decfdcdde2ae8f97a368623b9fef1}{check\+\_\+testing\+\_\+wait\+\_\+distribution} (\hyperlink{classInfection}{Infection} \&infection)
+\begin{DoxyCompactList}\small\item\em Verification of testing wait time functionality. \end{DoxyCompactList}\item 
+int \hyperlink{infection__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{infection__test_8cpp_a54b482f4a732ff9f59d1ce418f224439}\label{infection__test_8cpp_a54b482f4a732ff9f59d1ce418f224439}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!age\+\_\+rates\+\_\+caller@{age\+\_\+rates\+\_\+caller}}
+\index{age\+\_\+rates\+\_\+caller@{age\+\_\+rates\+\_\+caller}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{age\+\_\+rates\+\_\+caller}{age\_rates\_caller}}
+{\footnotesize\ttfamily using \hyperlink{infection__test_8cpp_a54b482f4a732ff9f59d1ce418f224439}{age\+\_\+rates\+\_\+caller} =  bool (Infection\+::$\ast$)(int, bool)}
+
+\mbox{\Hypertarget{infection__test_8cpp_a5f4acb9a0f99867081ab6ee708381a07}\label{infection__test_8cpp_a5f4acb9a0f99867081ab6ee708381a07}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!age\+\_\+rates\+\_\+caller\+\_\+no\+\_\+bool@{age\+\_\+rates\+\_\+caller\+\_\+no\+\_\+bool}}
+\index{age\+\_\+rates\+\_\+caller\+\_\+no\+\_\+bool@{age\+\_\+rates\+\_\+caller\+\_\+no\+\_\+bool}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{age\+\_\+rates\+\_\+caller\+\_\+no\+\_\+bool}{age\_rates\_caller\_no\_bool}}
+{\footnotesize\ttfamily using \hyperlink{infection__test_8cpp_a5f4acb9a0f99867081ab6ee708381a07}{age\+\_\+rates\+\_\+caller\+\_\+no\+\_\+bool} =  bool (Infection\+::$\ast$)(int)}
+
+\mbox{\Hypertarget{infection__test_8cpp_ab666ba3ba7031ac0bbcfc34cf7c6b372}\label{infection__test_8cpp_ab666ba3ba7031ac0bbcfc34cf7c6b372}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!age\+\_\+rates\+\_\+getter@{age\+\_\+rates\+\_\+getter}}
+\index{age\+\_\+rates\+\_\+getter@{age\+\_\+rates\+\_\+getter}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{age\+\_\+rates\+\_\+getter}{age\_rates\_getter}}
+{\footnotesize\ttfamily using \hyperlink{infection__test_8cpp_ab666ba3ba7031ac0bbcfc34cf7c6b372}{age\+\_\+rates\+\_\+getter} =  const std\+::map$<$std\+::string, std\+::tuple$<$int, int, double$>$$>$\& (Infection\+::$\ast$)() const}
+
+\mbox{\Hypertarget{infection__test_8cpp_a148171a60e6d52914d3ba8f2b3c1dcdf}\label{infection__test_8cpp_a148171a60e6d52914d3ba8f2b3c1dcdf}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!age\+\_\+rates\+\_\+setter@{age\+\_\+rates\+\_\+setter}}
+\index{age\+\_\+rates\+\_\+setter@{age\+\_\+rates\+\_\+setter}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{age\+\_\+rates\+\_\+setter}{age\_rates\_setter}}
+{\footnotesize\ttfamily using \hyperlink{infection__test_8cpp_a148171a60e6d52914d3ba8f2b3c1dcdf}{age\+\_\+rates\+\_\+setter} =  void (Infection\+::$\ast$)(const std\+::map$<$std\+::string, double$>$)}
+
+\mbox{\Hypertarget{infection__test_8cpp_af92b9a550482ce5355be9e3c6c8ee50b}\label{infection__test_8cpp_af92b9a550482ce5355be9e3c6c8ee50b}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!dist\+\_\+sampling@{dist\+\_\+sampling}}
+\index{dist\+\_\+sampling@{dist\+\_\+sampling}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{dist\+\_\+sampling}{dist\_sampling}}
+{\footnotesize\ttfamily using \hyperlink{infection__test_8cpp_af92b9a550482ce5355be9e3c6c8ee50b}{dist\+\_\+sampling} =  double (Infection\+::$\ast$)()}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{infection__test_8cpp_a6d0271a306910592b0c575fa5b11f69b}\label{infection__test_8cpp_a6d0271a306910592b0c575fa5b11f69b}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!check\+\_\+age\+\_\+dependent\+\_\+rates@{check\+\_\+age\+\_\+dependent\+\_\+rates}}
+\index{check\+\_\+age\+\_\+dependent\+\_\+rates@{check\+\_\+age\+\_\+dependent\+\_\+rates}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+age\+\_\+dependent\+\_\+rates()}{check\_age\_dependent\_rates()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool check\+\_\+age\+\_\+dependent\+\_\+rates (\begin{DoxyParamCaption}\item[{\hyperlink{infection__test_8cpp_a148171a60e6d52914d3ba8f2b3c1dcdf}{age\+\_\+rates\+\_\+setter}}]{set\+\_\+rates,  }\item[{\hyperlink{infection__test_8cpp_ab666ba3ba7031ac0bbcfc34cf7c6b372}{age\+\_\+rates\+\_\+getter}}]{get\+\_\+rates,  }\item[{\hyperlink{infection__test_8cpp_a54b482f4a732ff9f59d1ce418f224439}{age\+\_\+rates\+\_\+caller}}]{call,  }\item[{\hyperlink{classInfection}{Infection} \&}]{infection,  }\item[{std\+::map$<$ std\+::string, double $>$}]{raw\+\_\+rates,  }\item[{std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$$>$}]{expected\+\_\+rates }\end{DoxyParamCaption})}
+
+
+
+Function for checking different types of age-\/dependent rates. 
+
+\mbox{\Hypertarget{infection__test_8cpp_a640ab15ca9929a4c459d45d5e2f8f7b3}\label{infection__test_8cpp_a640ab15ca9929a4c459d45d5e2f8f7b3}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!check\+\_\+age\+\_\+dependent\+\_\+rates@{check\+\_\+age\+\_\+dependent\+\_\+rates}}
+\index{check\+\_\+age\+\_\+dependent\+\_\+rates@{check\+\_\+age\+\_\+dependent\+\_\+rates}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+age\+\_\+dependent\+\_\+rates()}{check\_age\_dependent\_rates()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool check\+\_\+age\+\_\+dependent\+\_\+rates (\begin{DoxyParamCaption}\item[{\hyperlink{infection__test_8cpp_a148171a60e6d52914d3ba8f2b3c1dcdf}{age\+\_\+rates\+\_\+setter}}]{set\+\_\+rates,  }\item[{\hyperlink{infection__test_8cpp_ab666ba3ba7031ac0bbcfc34cf7c6b372}{age\+\_\+rates\+\_\+getter}}]{get\+\_\+rates,  }\item[{\hyperlink{infection__test_8cpp_a5f4acb9a0f99867081ab6ee708381a07}{age\+\_\+rates\+\_\+caller\+\_\+no\+\_\+bool}}]{call,  }\item[{\hyperlink{classInfection}{Infection} \&}]{infection,  }\item[{std\+::map$<$ std\+::string, double $>$}]{raw\+\_\+rates,  }\item[{std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$$>$}]{expected\+\_\+rates }\end{DoxyParamCaption})}
+
+
+
+Function for checking different types of age-\/dependent rates. 
+
+\mbox{\Hypertarget{infection__test_8cpp_ad4c0a7ca1019ba8d1a81fe7768cd2eb7}\label{infection__test_8cpp_ad4c0a7ca1019ba8d1a81fe7768cd2eb7}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!check\+\_\+distribution@{check\+\_\+distribution}}
+\index{check\+\_\+distribution@{check\+\_\+distribution}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+distribution()}{check\_distribution()}}
+{\footnotesize\ttfamily bool check\+\_\+distribution (\begin{DoxyParamCaption}\item[{\hyperlink{infection__test_8cpp_af92b9a550482ce5355be9e3c6c8ee50b}{dist\+\_\+sampling}}]{dist,  }\item[{\hyperlink{classInfection}{Infection} \&}]{infection,  }\item[{double}]{exp\+\_\+mean }\end{DoxyParamCaption})}
+
+
+
+Test sampling of an infection distribution against expected mean. 
+
+\mbox{\Hypertarget{infection__test_8cpp_aa461104177f8d211776652ef435449b9}\label{infection__test_8cpp_aa461104177f8d211776652ef435449b9}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!check\+\_\+exposed\+\_\+never\+\_\+sy@{check\+\_\+exposed\+\_\+never\+\_\+sy}}
+\index{check\+\_\+exposed\+\_\+never\+\_\+sy@{check\+\_\+exposed\+\_\+never\+\_\+sy}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+exposed\+\_\+never\+\_\+sy()}{check\_exposed\_never\_sy()}}
+{\footnotesize\ttfamily bool check\+\_\+exposed\+\_\+never\+\_\+sy (\begin{DoxyParamCaption}\item[{\hyperlink{classInfection}{Infection} \&}]{infection }\end{DoxyParamCaption})}
+
+
+
+Test if implementation of age-\/dependent exposed never symptomatic probabiity is correct. 
+
+\mbox{\Hypertarget{infection__test_8cpp_a40528e7b34136ed6571f7265c29e80bc}\label{infection__test_8cpp_a40528e7b34136ed6571f7265c29e80bc}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!check\+\_\+hospitalization\+\_\+rates@{check\+\_\+hospitalization\+\_\+rates}}
+\index{check\+\_\+hospitalization\+\_\+rates@{check\+\_\+hospitalization\+\_\+rates}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+hospitalization\+\_\+rates()}{check\_hospitalization\_rates()}}
+{\footnotesize\ttfamily bool check\+\_\+hospitalization\+\_\+rates (\begin{DoxyParamCaption}\item[{\hyperlink{classInfection}{Infection} \&}]{infection }\end{DoxyParamCaption})}
+
+
+
+Test if generated hospitalization rates correspond to actual. 
+
+\mbox{\Hypertarget{infection__test_8cpp_a22326cc43f4c1b4e6f09468c1acfb946}\label{infection__test_8cpp_a22326cc43f4c1b4e6f09468c1acfb946}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!check\+\_\+\+I\+C\+U\+\_\+rates@{check\+\_\+\+I\+C\+U\+\_\+rates}}
+\index{check\+\_\+\+I\+C\+U\+\_\+rates@{check\+\_\+\+I\+C\+U\+\_\+rates}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+\+I\+C\+U\+\_\+rates()}{check\_ICU\_rates()}}
+{\footnotesize\ttfamily bool check\+\_\+\+I\+C\+U\+\_\+rates (\begin{DoxyParamCaption}\item[{\hyperlink{classInfection}{Infection} \&}]{infection }\end{DoxyParamCaption})}
+
+
+
+Test if generated I\+CU rates correspond to actual. 
+
+\mbox{\Hypertarget{infection__test_8cpp_acc61de14aa26d769600677dbcc3cc562}\label{infection__test_8cpp_acc61de14aa26d769600677dbcc3cc562}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!check\+\_\+mortality\+\_\+rates@{check\+\_\+mortality\+\_\+rates}}
+\index{check\+\_\+mortality\+\_\+rates@{check\+\_\+mortality\+\_\+rates}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+mortality\+\_\+rates()}{check\_mortality\_rates()}}
+{\footnotesize\ttfamily bool check\+\_\+mortality\+\_\+rates (\begin{DoxyParamCaption}\item[{\hyperlink{classInfection}{Infection} \&}]{infection }\end{DoxyParamCaption})}
+
+
+
+Test if generated mortality rates correspond to actual. 
+
+\mbox{\Hypertarget{infection__test_8cpp_a587abc2aaa0f78671922a690e0ff17f7}\label{infection__test_8cpp_a587abc2aaa0f78671922a690e0ff17f7}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!check\+\_\+non\+\_\+icu\+\_\+mortality@{check\+\_\+non\+\_\+icu\+\_\+mortality}}
+\index{check\+\_\+non\+\_\+icu\+\_\+mortality@{check\+\_\+non\+\_\+icu\+\_\+mortality}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+non\+\_\+icu\+\_\+mortality()}{check\_non\_icu\_mortality()}}
+{\footnotesize\ttfamily bool check\+\_\+non\+\_\+icu\+\_\+mortality (\begin{DoxyParamCaption}\item[{\hyperlink{classInfection}{Infection} \&}]{infection }\end{DoxyParamCaption})}
+
+
+
+Tests for mortality. 
+
+\mbox{\Hypertarget{infection__test_8cpp_ae483562330ae9708b511d4cde00b299b}\label{infection__test_8cpp_ae483562330ae9708b511d4cde00b299b}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!check\+\_\+random\+\_\+\+ID@{check\+\_\+random\+\_\+\+ID}}
+\index{check\+\_\+random\+\_\+\+ID@{check\+\_\+random\+\_\+\+ID}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+random\+\_\+\+I\+D()}{check\_random\_ID()}}
+{\footnotesize\ttfamily bool check\+\_\+random\+\_\+\+ID (\begin{DoxyParamCaption}\item[{\hyperlink{classInfection}{Infection} \&}]{infection }\end{DoxyParamCaption})}
+
+
+
+Verification of functionality for generating random I\+Ds. 
+
+\mbox{\Hypertarget{infection__test_8cpp_af9ac602a5c7bec39ebf6aacbd78f3ada}\label{infection__test_8cpp_af9ac602a5c7bec39ebf6aacbd78f3ada}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!check\+\_\+simple\+\_\+distributions@{check\+\_\+simple\+\_\+distributions}}
+\index{check\+\_\+simple\+\_\+distributions@{check\+\_\+simple\+\_\+distributions}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+simple\+\_\+distributions()}{check\_simple\_distributions()}}
+{\footnotesize\ttfamily bool check\+\_\+simple\+\_\+distributions (\begin{DoxyParamCaption}\item[{\hyperlink{classInfection}{Infection} \&}]{infection,  }\item[{std\+::vector$<$ double $>$}]{probabilities }\end{DoxyParamCaption})}
+
+
+
+Verification for single number distributions. 
+
+\mbox{\Hypertarget{infection__test_8cpp_aab4decfdcdde2ae8f97a368623b9fef1}\label{infection__test_8cpp_aab4decfdcdde2ae8f97a368623b9fef1}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!check\+\_\+testing\+\_\+wait\+\_\+distribution@{check\+\_\+testing\+\_\+wait\+\_\+distribution}}
+\index{check\+\_\+testing\+\_\+wait\+\_\+distribution@{check\+\_\+testing\+\_\+wait\+\_\+distribution}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+testing\+\_\+wait\+\_\+distribution()}{check\_testing\_wait\_distribution()}}
+{\footnotesize\ttfamily bool check\+\_\+testing\+\_\+wait\+\_\+distribution (\begin{DoxyParamCaption}\item[{\hyperlink{classInfection}{Infection} \&}]{infection }\end{DoxyParamCaption})}
+
+
+
+Verification of testing wait time functionality. 
+
+\mbox{\Hypertarget{infection__test_8cpp_a87ff113867a2266ee04b016ac6752c49}\label{infection__test_8cpp_a87ff113867a2266ee04b016ac6752c49}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!infection\+\_\+misc\+\_\+test@{infection\+\_\+misc\+\_\+test}}
+\index{infection\+\_\+misc\+\_\+test@{infection\+\_\+misc\+\_\+test}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{infection\+\_\+misc\+\_\+test()}{infection\_misc\_test()}}
+{\footnotesize\ttfamily bool infection\+\_\+misc\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests for various unclassified functionality. 
+
+\mbox{\Hypertarget{infection__test_8cpp_ad35dacf39b0c92f038e2794fc4e609ea}\label{infection__test_8cpp_ad35dacf39b0c92f038e2794fc4e609ea}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!infection\+\_\+out\+\_\+test@{infection\+\_\+out\+\_\+test}}
+\index{infection\+\_\+out\+\_\+test@{infection\+\_\+out\+\_\+test}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{infection\+\_\+out\+\_\+test()}{infection\_out\_test()}}
+{\footnotesize\ttfamily bool infection\+\_\+out\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests \hyperlink{classInfection}{Infection} ostream operator overload/print capabilities. 
+
+\mbox{\Hypertarget{infection__test_8cpp_a0afa8443781501d5dddb30fceb52e05b}\label{infection__test_8cpp_a0afa8443781501d5dddb30fceb52e05b}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!infection\+\_\+transmission\+\_\+test@{infection\+\_\+transmission\+\_\+test}}
+\index{infection\+\_\+transmission\+\_\+test@{infection\+\_\+transmission\+\_\+test}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{infection\+\_\+transmission\+\_\+test()}{infection\_transmission\_test()}}
+{\footnotesize\ttfamily bool infection\+\_\+transmission\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests functionality related to infection transmission. 
+
+\mbox{\Hypertarget{infection__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{infection__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}!main@{main}}
+\index{main@{main}!infection\+\_\+test.\+cpp@{infection\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

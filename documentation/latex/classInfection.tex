@@ -1,0 +1,681 @@
+\hypertarget{classInfection}{}\section{Infection Class Reference}
+\label{classInfection}\index{Infection@{Infection}}
+
+
+{\ttfamily \#include $<$infection.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classInfection_a5babe90927f5311c1186e3328bef6029}{Infection} ()=default
+\begin{DoxyCompactList}\small\item\em Creates an \hyperlink{classInfection}{Infection} object with default attributes. \end{DoxyCompactList}\item 
+\hyperlink{classInfection_a590c592f4bfbd74549ec8ba71ab5f52c}{Infection} (const double del\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Creates an \hyperlink{classInfection}{Infection} object with custom attributes. \end{DoxyCompactList}\item 
+bool \hyperlink{classInfection_a1fac8f0633f707e14fb10250f8ba6863}{infected} (const double lambda)
+\begin{DoxyCompactList}\small\item\em Compute if agent got infected. \end{DoxyCompactList}\item 
+double \hyperlink{classInfection_a12eea482720563e31b6af703c5a19e6d}{latency} ()
+\begin{DoxyCompactList}\small\item\em Get latency period from a distribution. \end{DoxyCompactList}\item 
+double \hyperlink{classInfection_a1fb9e4d8f90f0bece0b65f2cb2f9ef7e}{inf\+\_\+variability} ()
+\begin{DoxyCompactList}\small\item\em Get infection variability from a distribution. \end{DoxyCompactList}\item 
+bool \hyperlink{classInfection_a5600af48af334712c2d18cc7fadfe4a5}{recovering\+\_\+exposed} (const int age)
+\begin{DoxyCompactList}\small\item\em Determine if the exposed agent will recover without symptoms. \end{DoxyCompactList}\item 
+bool \hyperlink{classInfection_aa01e23dfc716651fccfeaa7ee254b767}{will\+\_\+die\+\_\+non\+\_\+icu} (const int age, const bool is\+\_\+hsp=false)
+\begin{DoxyCompactList}\small\item\em Determine if the agent will die based on agents age and total rate. \end{DoxyCompactList}\item 
+bool \hyperlink{classInfection_ae1c34ce8c8e545529c5a3178bd6c1362}{agent\+\_\+hospitalized} (const int age)
+\begin{DoxyCompactList}\small\item\em Determine if the agent will be hospitalized. \end{DoxyCompactList}\item 
+bool \hyperlink{classInfection_a876b380a5c807d6a904bcf6e293748b6}{agent\+\_\+hospitalized\+\_\+\+I\+CU} (const int age)
+\begin{DoxyCompactList}\small\item\em Determine if hospitalized in I\+CU. \end{DoxyCompactList}\item 
+bool \hyperlink{classInfection_adbedec09bbbb05f1734f34c4ec4e667d}{will\+\_\+die\+\_\+\+I\+CU} ()
+\begin{DoxyCompactList}\small\item\em Determine if the agent will die in I\+CU. \end{DoxyCompactList}\item 
+double \hyperlink{classInfection_a926eaa505c376d8823c510873d606d90}{time\+\_\+to\+\_\+death} ()
+\begin{DoxyCompactList}\small\item\em Returns randomly chosen time left for agent to live. \end{DoxyCompactList}\item 
+bool \hyperlink{classInfection_a7bffd45c44c33bbd62d2dcf4c2db380c}{will\+\_\+be\+\_\+tested} (const double prob)
+\begin{DoxyCompactList}\small\item\em Determines if the agent will get tested based on probability prob. \end{DoxyCompactList}\item 
+bool \hyperlink{classInfection_a138e3f760822833a0358537e86ea5836}{tested\+\_\+in\+\_\+hospital} (const double prob)
+\begin{DoxyCompactList}\small\item\em Determines if the agent will get tested in a hospital based on probability prob. \end{DoxyCompactList}\item 
+bool \hyperlink{classInfection_adedba0ccbb05007fb07d4a7f08a3c538}{false\+\_\+negative\+\_\+test\+\_\+result} (const double)
+\begin{DoxyCompactList}\small\item\em True if the test is false negative. \end{DoxyCompactList}\item 
+bool \hyperlink{classInfection_af19ee6eae6168a5028dd4c261a6e109a}{false\+\_\+positive\+\_\+test\+\_\+result} (const double)
+\begin{DoxyCompactList}\small\item\em True if the test is false positive. \end{DoxyCompactList}\item 
+double \hyperlink{classInfection_a46986a1c5d2f73142033a18b3821f9c9}{get\+\_\+onset\+\_\+to\+\_\+hospitalization} ()
+\begin{DoxyCompactList}\small\item\em Returns time from symptomatic to hospitalization. \end{DoxyCompactList}\item 
+double \hyperlink{classInfection_ab0b519435d45c41e37b39dd45f87078d}{get\+\_\+hospitalization\+\_\+to\+\_\+death} ()
+\begin{DoxyCompactList}\small\item\em Returns time from hospitalization to death. \end{DoxyCompactList}\item 
+int \hyperlink{classInfection_ac6ccfd575ad5f6db803edfd7431aab25}{get\+\_\+random\+\_\+hospital\+\_\+\+ID} (const int n\+\_\+hsp)
+\begin{DoxyCompactList}\small\item\em Returns random hospital ID. \end{DoxyCompactList}\item 
+int \hyperlink{classInfection_a4108bce6ea152f84adc3495188ce55a8}{get\+\_\+random\+\_\+household\+\_\+\+ID} (const int n\+\_\+hs)
+\begin{DoxyCompactList}\small\item\em Returns random house ID. \end{DoxyCompactList}\item 
+int \hyperlink{classInfection_a2e1f72e35d3364f51f37a3dd485153ae}{get\+\_\+random\+\_\+agent\+\_\+\+ID} (const int n\+\_\+ag)
+\begin{DoxyCompactList}\small\item\em Returns random agent ID. \end{DoxyCompactList}\item 
+double \hyperlink{classInfection_a9047e5efaf7f6582e857d63df5813f8f}{wait\+\_\+time\+\_\+for\+\_\+test} (double t\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Period before the test, drawn from lognormal. \end{DoxyCompactList}\item 
+void \hyperlink{classInfection_a30cb53ab87d26e8822aa5b8c6f7fc559}{vector\+\_\+shuffle} (std\+::vector$<$ int $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Randomly shuffles a vector of ints. \end{DoxyCompactList}\item 
+void \hyperlink{classInfection_a005677b5642cfca109812569c0e36e51}{set\+\_\+latency\+\_\+distribution} (const double mean, const double std)
+\item 
+void \hyperlink{classInfection_acf663b8dd4e7befb65b02221b7bdf037}{set\+\_\+inf\+\_\+variability\+\_\+distribution} (const double k, const double theta)
+\item 
+void \hyperlink{classInfection_acff99a62401e4d7f5a74502adcd8ae18}{set\+\_\+onset\+\_\+to\+\_\+death\+\_\+distribution} (const double mean, const double std)
+\item 
+void \hyperlink{classInfection_a06f93f2417379896f598b792e9af83a5}{set\+\_\+onset\+\_\+to\+\_\+hospitalization\+\_\+distribution} (const double k, const double theta)
+\item 
+void \hyperlink{classInfection_a9550693cb076ce6ccd4335177bbbdbc8}{set\+\_\+hospitalization\+\_\+to\+\_\+death\+\_\+distribution} (const double k, const double theta)
+\item 
+void \hyperlink{classInfection_a5515c6bbd87c7a3f5d0845e5454aa3fe}{set\+\_\+other\+\_\+probabilities} (const double fr\+\_\+sy\+\_\+tested, const double pr\+\_\+dth\+\_\+icu, const double fr\+\_\+death\+\_\+not\+\_\+icu)
+\begin{DoxyCompactList}\small\item\em Assigning various single number probabilities. \end{DoxyCompactList}\item 
+void \hyperlink{classInfection_a34eefa18fbef918bca0077814ae76077}{set\+\_\+exp\+N2sy\+\_\+fractions} (const std\+::map$<$ std\+::string, double $>$ raw\+\_\+rates)
+\begin{DoxyCompactList}\small\item\em Process and store the age-\/dependent exposed to symptomatic fractions. \end{DoxyCompactList}\item 
+void \hyperlink{classInfection_a9fa94be47902e58b63d64fbae66bca91}{set\+\_\+mortality\+\_\+rates} (const std\+::map$<$ std\+::string, double $>$ raw\+\_\+rates)
+\begin{DoxyCompactList}\small\item\em Process and store the age-\/dependent mortality rate distribution. \end{DoxyCompactList}\item 
+void \hyperlink{classInfection_ae5a3f5e20e0f22d3dede73c9c0325dbc}{set\+\_\+hospitalized\+\_\+fractions} (const std\+::map$<$ std\+::string, double $>$ raw\+\_\+rates)
+\begin{DoxyCompactList}\small\item\em Process and store the age-\/dependent hospitalization fraction distribution. \end{DoxyCompactList}\item 
+void \hyperlink{classInfection_a2f502305ea9c698d01e7d572fd304a88}{set\+\_\+hospitalized\+\_\+\+I\+C\+U\+\_\+fractions} (const std\+::map$<$ std\+::string, double $>$ raw\+\_\+rates)
+\begin{DoxyCompactList}\small\item\em Process and store the age-\/dependent I\+CU hospitalization fraction distribution. \end{DoxyCompactList}\item 
+const std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$ $>$ \& \hyperlink{classInfection_a8244b3faf60b743632dddd50f866dae9}{get\+\_\+mortality\+\_\+rates} () const
+\begin{DoxyCompactList}\small\item\em Return map with mortality rates. \end{DoxyCompactList}\item 
+const std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$ $>$ \& \hyperlink{classInfection_aa6c5bd4852e85ab81319df5dd85526bf}{get\+\_\+hospitalization\+\_\+rates} () const
+\begin{DoxyCompactList}\small\item\em Return map with hospitalization rates. \end{DoxyCompactList}\item 
+const std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$ $>$ \& \hyperlink{classInfection_adcee70238be54e9dad57cfebb2c32034}{get\+\_\+\+I\+C\+U\+\_\+rates} () const
+\begin{DoxyCompactList}\small\item\em Return map with I\+CU rates. \end{DoxyCompactList}\item 
+const std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$ $>$ \& \hyperlink{classInfection_ab7245d95e87c6f7721770506218b93fe}{get\+\_\+exp2nsy\+\_\+fractions} () const
+\begin{DoxyCompactList}\small\item\em Return map with I\+CU rates. \end{DoxyCompactList}\item 
+void \hyperlink{classInfection_a706afb6867ac7e8ed917087363e30b30}{print\+\_\+basic} (std\+::ostream \&where) const
+\begin{DoxyCompactList}\small\item\em Print infection parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classInfection_aff2f19e5e147904023c0f7597f09c6ed}{parse\+\_\+age\+\_\+group} (const std\+::string group\+\_\+range)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classInfection_a63da4cdd4a61a3dfd683b9bdb4bd349f}{dt} = 1.\+0
+\item 
+double \hyperlink{classInfection_ae449cd434a9d7f733c68479aec82220c}{ln\+\_\+mean\+\_\+lat} = 0.\+0
+\item 
+double \hyperlink{classInfection_ac5fdf055075ad79087962316d6159b54}{ln\+\_\+std\+\_\+lat} = 0.\+0
+\item 
+double \hyperlink{classInfection_a9f0349a023149c77cded0aaa16acbe9a}{inf\+\_\+var\+\_\+k} = 0.\+0
+\item 
+double \hyperlink{classInfection_aeefba628b7e0c52c681278913d2e93d9}{inf\+\_\+var\+\_\+theta} = 0.\+0
+\item 
+double \hyperlink{classInfection_ad54183621f0ec00d7cfdbfc5894f8851}{otd\+\_\+mean} = 0.\+0
+\item 
+double \hyperlink{classInfection_aff153254edc238db5c597f83888a1cc0}{otd\+\_\+std} = 0.\+0
+\item 
+double \hyperlink{classInfection_af1c916b3c3c695d3eb6ce4ac7fc5ea5a}{oth\+\_\+k} = 0.\+0
+\item 
+double \hyperlink{classInfection_a2ff9fb76061e4256492075600c37908b}{oth\+\_\+theta} = 0.\+0
+\item 
+double \hyperlink{classInfection_ae1cf283dc6ab0a72433e7c05e85d21f3}{htd\+\_\+k} = 0.\+0
+\item 
+double \hyperlink{classInfection_afa6f7f026abed10b1617ecb93e902197}{htd\+\_\+theta} = 0.\+0
+\item 
+double \hyperlink{classInfection_acdbf7c2f72b0ab0938bec8de1ca4e24c}{prob\+\_\+sy\+\_\+tested} = 0.\+0
+\item 
+double \hyperlink{classInfection_a6e3b8effa79cb442b32e0e0bc186b999}{prob\+\_\+death\+\_\+icu} = 0.\+0
+\item 
+double \hyperlink{classInfection_a2214fd2ee8e17f049ccb15fc8f9635db}{prob\+\_\+death\+\_\+not\+\_\+admitted} = 0.\+0
+\item 
+\hyperlink{classRNG}{R\+NG} \hyperlink{classInfection_af3737374c3cf12f7d0e78bdd8d95a7d5}{rng}
+\item 
+std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$ $>$ \hyperlink{classInfection_a07fc3fe0299522acd9b017d297e63bbc}{exp\+N2sy\+\_\+fractions}
+\item 
+std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$ $>$ \hyperlink{classInfection_a0450bef9ca4de3f11b29ed1a34af9c8d}{mortality\+\_\+rates}
+\item 
+std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$ $>$ \hyperlink{classInfection_a792a83867418c7ce251b30a5fe6493fd}{hospitalization\+\_\+rates}
+\item 
+std\+::map$<$ std\+::string, std\+::tuple$<$ int, int, double $>$ $>$ \hyperlink{classInfection_ac1caeca6e2801b1d56ab26f8842625b0}{I\+C\+U\+\_\+rates}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInfection_a5babe90927f5311c1186e3328bef6029}\label{classInfection_a5babe90927f5311c1186e3328bef6029}} 
+\index{Infection@{Infection}!Infection@{Infection}}
+\index{Infection@{Infection}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{Infection()}{Infection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Infection\+::\+Infection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates an \hyperlink{classInfection}{Infection} object with default attributes. 
+
+\mbox{\Hypertarget{classInfection_a590c592f4bfbd74549ec8ba71ab5f52c}\label{classInfection_a590c592f4bfbd74549ec8ba71ab5f52c}} 
+\index{Infection@{Infection}!Infection@{Infection}}
+\index{Infection@{Infection}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{Infection()}{Infection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Infection\+::\+Infection (\begin{DoxyParamCaption}\item[{const double}]{del\+\_\+t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates an \hyperlink{classInfection}{Infection} object with custom attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em del\+\_\+t} & -\/ time step \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classInfection_ae1c34ce8c8e545529c5a3178bd6c1362}\label{classInfection_ae1c34ce8c8e545529c5a3178bd6c1362}} 
+\index{Infection@{Infection}!agent\+\_\+hospitalized@{agent\+\_\+hospitalized}}
+\index{agent\+\_\+hospitalized@{agent\+\_\+hospitalized}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{agent\+\_\+hospitalized()}{agent\_hospitalized()}}
+{\footnotesize\ttfamily bool Infection\+::agent\+\_\+hospitalized (\begin{DoxyParamCaption}\item[{const int}]{age }\end{DoxyParamCaption})}
+
+
+
+Determine if the agent will be hospitalized. 
+
+\mbox{\Hypertarget{classInfection_a876b380a5c807d6a904bcf6e293748b6}\label{classInfection_a876b380a5c807d6a904bcf6e293748b6}} 
+\index{Infection@{Infection}!agent\+\_\+hospitalized\+\_\+\+I\+CU@{agent\+\_\+hospitalized\+\_\+\+I\+CU}}
+\index{agent\+\_\+hospitalized\+\_\+\+I\+CU@{agent\+\_\+hospitalized\+\_\+\+I\+CU}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{agent\+\_\+hospitalized\+\_\+\+I\+C\+U()}{agent\_hospitalized\_ICU()}}
+{\footnotesize\ttfamily bool Infection\+::agent\+\_\+hospitalized\+\_\+\+I\+CU (\begin{DoxyParamCaption}\item[{const int}]{age }\end{DoxyParamCaption})}
+
+
+
+Determine if hospitalized in I\+CU. 
+
+\mbox{\Hypertarget{classInfection_adedba0ccbb05007fb07d4a7f08a3c538}\label{classInfection_adedba0ccbb05007fb07d4a7f08a3c538}} 
+\index{Infection@{Infection}!false\+\_\+negative\+\_\+test\+\_\+result@{false\+\_\+negative\+\_\+test\+\_\+result}}
+\index{false\+\_\+negative\+\_\+test\+\_\+result@{false\+\_\+negative\+\_\+test\+\_\+result}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{false\+\_\+negative\+\_\+test\+\_\+result()}{false\_negative\_test\_result()}}
+{\footnotesize\ttfamily bool Infection\+::false\+\_\+negative\+\_\+test\+\_\+result (\begin{DoxyParamCaption}\item[{const double}]{prob }\end{DoxyParamCaption})}
+
+
+
+True if the test is false negative. 
+
+\mbox{\Hypertarget{classInfection_af19ee6eae6168a5028dd4c261a6e109a}\label{classInfection_af19ee6eae6168a5028dd4c261a6e109a}} 
+\index{Infection@{Infection}!false\+\_\+positive\+\_\+test\+\_\+result@{false\+\_\+positive\+\_\+test\+\_\+result}}
+\index{false\+\_\+positive\+\_\+test\+\_\+result@{false\+\_\+positive\+\_\+test\+\_\+result}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{false\+\_\+positive\+\_\+test\+\_\+result()}{false\_positive\_test\_result()}}
+{\footnotesize\ttfamily bool Infection\+::false\+\_\+positive\+\_\+test\+\_\+result (\begin{DoxyParamCaption}\item[{const double}]{prob }\end{DoxyParamCaption})}
+
+
+
+True if the test is false positive. 
+
+\mbox{\Hypertarget{classInfection_ab7245d95e87c6f7721770506218b93fe}\label{classInfection_ab7245d95e87c6f7721770506218b93fe}} 
+\index{Infection@{Infection}!get\+\_\+exp2nsy\+\_\+fractions@{get\+\_\+exp2nsy\+\_\+fractions}}
+\index{get\+\_\+exp2nsy\+\_\+fractions@{get\+\_\+exp2nsy\+\_\+fractions}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{get\+\_\+exp2nsy\+\_\+fractions()}{get\_exp2nsy\_fractions()}}
+{\footnotesize\ttfamily const std\+::map$<$std\+::string, std\+::tuple$<$int, int, double$>$ $>$\& Infection\+::get\+\_\+exp2nsy\+\_\+fractions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return map with I\+CU rates. 
+
+\mbox{\Hypertarget{classInfection_aa6c5bd4852e85ab81319df5dd85526bf}\label{classInfection_aa6c5bd4852e85ab81319df5dd85526bf}} 
+\index{Infection@{Infection}!get\+\_\+hospitalization\+\_\+rates@{get\+\_\+hospitalization\+\_\+rates}}
+\index{get\+\_\+hospitalization\+\_\+rates@{get\+\_\+hospitalization\+\_\+rates}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{get\+\_\+hospitalization\+\_\+rates()}{get\_hospitalization\_rates()}}
+{\footnotesize\ttfamily const std\+::map$<$std\+::string, std\+::tuple$<$int, int, double$>$ $>$\& Infection\+::get\+\_\+hospitalization\+\_\+rates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return map with hospitalization rates. 
+
+\mbox{\Hypertarget{classInfection_ab0b519435d45c41e37b39dd45f87078d}\label{classInfection_ab0b519435d45c41e37b39dd45f87078d}} 
+\index{Infection@{Infection}!get\+\_\+hospitalization\+\_\+to\+\_\+death@{get\+\_\+hospitalization\+\_\+to\+\_\+death}}
+\index{get\+\_\+hospitalization\+\_\+to\+\_\+death@{get\+\_\+hospitalization\+\_\+to\+\_\+death}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{get\+\_\+hospitalization\+\_\+to\+\_\+death()}{get\_hospitalization\_to\_death()}}
+{\footnotesize\ttfamily double Infection\+::get\+\_\+hospitalization\+\_\+to\+\_\+death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns time from hospitalization to death. 
+
+\mbox{\Hypertarget{classInfection_adcee70238be54e9dad57cfebb2c32034}\label{classInfection_adcee70238be54e9dad57cfebb2c32034}} 
+\index{Infection@{Infection}!get\+\_\+\+I\+C\+U\+\_\+rates@{get\+\_\+\+I\+C\+U\+\_\+rates}}
+\index{get\+\_\+\+I\+C\+U\+\_\+rates@{get\+\_\+\+I\+C\+U\+\_\+rates}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{get\+\_\+\+I\+C\+U\+\_\+rates()}{get\_ICU\_rates()}}
+{\footnotesize\ttfamily const std\+::map$<$std\+::string, std\+::tuple$<$int, int, double$>$ $>$\& Infection\+::get\+\_\+\+I\+C\+U\+\_\+rates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return map with I\+CU rates. 
+
+\mbox{\Hypertarget{classInfection_a8244b3faf60b743632dddd50f866dae9}\label{classInfection_a8244b3faf60b743632dddd50f866dae9}} 
+\index{Infection@{Infection}!get\+\_\+mortality\+\_\+rates@{get\+\_\+mortality\+\_\+rates}}
+\index{get\+\_\+mortality\+\_\+rates@{get\+\_\+mortality\+\_\+rates}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{get\+\_\+mortality\+\_\+rates()}{get\_mortality\_rates()}}
+{\footnotesize\ttfamily const std\+::map$<$std\+::string, std\+::tuple$<$int, int, double$>$ $>$\& Infection\+::get\+\_\+mortality\+\_\+rates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return map with mortality rates. 
+
+\mbox{\Hypertarget{classInfection_a46986a1c5d2f73142033a18b3821f9c9}\label{classInfection_a46986a1c5d2f73142033a18b3821f9c9}} 
+\index{Infection@{Infection}!get\+\_\+onset\+\_\+to\+\_\+hospitalization@{get\+\_\+onset\+\_\+to\+\_\+hospitalization}}
+\index{get\+\_\+onset\+\_\+to\+\_\+hospitalization@{get\+\_\+onset\+\_\+to\+\_\+hospitalization}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{get\+\_\+onset\+\_\+to\+\_\+hospitalization()}{get\_onset\_to\_hospitalization()}}
+{\footnotesize\ttfamily double Infection\+::get\+\_\+onset\+\_\+to\+\_\+hospitalization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns time from symptomatic to hospitalization. 
+
+\mbox{\Hypertarget{classInfection_a2e1f72e35d3364f51f37a3dd485153ae}\label{classInfection_a2e1f72e35d3364f51f37a3dd485153ae}} 
+\index{Infection@{Infection}!get\+\_\+random\+\_\+agent\+\_\+\+ID@{get\+\_\+random\+\_\+agent\+\_\+\+ID}}
+\index{get\+\_\+random\+\_\+agent\+\_\+\+ID@{get\+\_\+random\+\_\+agent\+\_\+\+ID}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{get\+\_\+random\+\_\+agent\+\_\+\+I\+D()}{get\_random\_agent\_ID()}}
+{\footnotesize\ttfamily int Infection\+::get\+\_\+random\+\_\+agent\+\_\+\+ID (\begin{DoxyParamCaption}\item[{const int}]{n\+\_\+ag }\end{DoxyParamCaption})}
+
+
+
+Returns random agent ID. 
+
+\mbox{\Hypertarget{classInfection_ac6ccfd575ad5f6db803edfd7431aab25}\label{classInfection_ac6ccfd575ad5f6db803edfd7431aab25}} 
+\index{Infection@{Infection}!get\+\_\+random\+\_\+hospital\+\_\+\+ID@{get\+\_\+random\+\_\+hospital\+\_\+\+ID}}
+\index{get\+\_\+random\+\_\+hospital\+\_\+\+ID@{get\+\_\+random\+\_\+hospital\+\_\+\+ID}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{get\+\_\+random\+\_\+hospital\+\_\+\+I\+D()}{get\_random\_hospital\_ID()}}
+{\footnotesize\ttfamily int Infection\+::get\+\_\+random\+\_\+hospital\+\_\+\+ID (\begin{DoxyParamCaption}\item[{const int}]{n\+\_\+hsp }\end{DoxyParamCaption})}
+
+
+
+Returns random hospital ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+hsp} & -\/ total number of hospitals \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfection_a4108bce6ea152f84adc3495188ce55a8}\label{classInfection_a4108bce6ea152f84adc3495188ce55a8}} 
+\index{Infection@{Infection}!get\+\_\+random\+\_\+household\+\_\+\+ID@{get\+\_\+random\+\_\+household\+\_\+\+ID}}
+\index{get\+\_\+random\+\_\+household\+\_\+\+ID@{get\+\_\+random\+\_\+household\+\_\+\+ID}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{get\+\_\+random\+\_\+household\+\_\+\+I\+D()}{get\_random\_household\_ID()}}
+{\footnotesize\ttfamily int Infection\+::get\+\_\+random\+\_\+household\+\_\+\+ID (\begin{DoxyParamCaption}\item[{const int}]{n\+\_\+hs }\end{DoxyParamCaption})}
+
+
+
+Returns random house ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+hs} & -\/ total number of households \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfection_a1fb9e4d8f90f0bece0b65f2cb2f9ef7e}\label{classInfection_a1fb9e4d8f90f0bece0b65f2cb2f9ef7e}} 
+\index{Infection@{Infection}!inf\+\_\+variability@{inf\+\_\+variability}}
+\index{inf\+\_\+variability@{inf\+\_\+variability}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{inf\+\_\+variability()}{inf\_variability()}}
+{\footnotesize\ttfamily double Infection\+::inf\+\_\+variability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get infection variability from a distribution. 
+
+\mbox{\Hypertarget{classInfection_a1fac8f0633f707e14fb10250f8ba6863}\label{classInfection_a1fac8f0633f707e14fb10250f8ba6863}} 
+\index{Infection@{Infection}!infected@{infected}}
+\index{infected@{infected}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{infected()}{infected()}}
+{\footnotesize\ttfamily bool Infection\+::infected (\begin{DoxyParamCaption}\item[{const double}]{lambda }\end{DoxyParamCaption})}
+
+
+
+Compute if agent got infected. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lambda} & -\/ probability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfection_a12eea482720563e31b6af703c5a19e6d}\label{classInfection_a12eea482720563e31b6af703c5a19e6d}} 
+\index{Infection@{Infection}!latency@{latency}}
+\index{latency@{latency}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{latency()}{latency()}}
+{\footnotesize\ttfamily double Infection\+::latency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get latency period from a distribution. 
+
+\mbox{\Hypertarget{classInfection_aff2f19e5e147904023c0f7597f09c6ed}\label{classInfection_aff2f19e5e147904023c0f7597f09c6ed}} 
+\index{Infection@{Infection}!parse\+\_\+age\+\_\+group@{parse\+\_\+age\+\_\+group}}
+\index{parse\+\_\+age\+\_\+group@{parse\+\_\+age\+\_\+group}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{parse\+\_\+age\+\_\+group()}{parse\_age\_group()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Infection\+::parse\+\_\+age\+\_\+group (\begin{DoxyParamCaption}\item[{const std\+::string}]{group\+\_\+range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_a706afb6867ac7e8ed917087363e30b30}\label{classInfection_a706afb6867ac7e8ed917087363e30b30}} 
+\index{Infection@{Infection}!print\+\_\+basic@{print\+\_\+basic}}
+\index{print\+\_\+basic@{print\+\_\+basic}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{print\+\_\+basic()}{print\_basic()}}
+{\footnotesize\ttfamily void Infection\+::print\+\_\+basic (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{where }\end{DoxyParamCaption}) const}
+
+
+
+Print infection parameters. 
+
+The parameters are in the same order as in the constructor It prints recovery time in days, not the mu\+\_\+rec which is its\textquotesingle{} inverse 
+\begin{DoxyParams}{Parameters}
+{\em where} & -\/ output stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfection_a5600af48af334712c2d18cc7fadfe4a5}\label{classInfection_a5600af48af334712c2d18cc7fadfe4a5}} 
+\index{Infection@{Infection}!recovering\+\_\+exposed@{recovering\+\_\+exposed}}
+\index{recovering\+\_\+exposed@{recovering\+\_\+exposed}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{recovering\+\_\+exposed()}{recovering\_exposed()}}
+{\footnotesize\ttfamily bool Infection\+::recovering\+\_\+exposed (\begin{DoxyParamCaption}\item[{const int}]{age }\end{DoxyParamCaption})}
+
+
+
+Determine if the exposed agent will recover without symptoms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em age} & -\/ agent\textquotesingle{}s age \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfection_a34eefa18fbef918bca0077814ae76077}\label{classInfection_a34eefa18fbef918bca0077814ae76077}} 
+\index{Infection@{Infection}!set\+\_\+exp\+N2sy\+\_\+fractions@{set\+\_\+exp\+N2sy\+\_\+fractions}}
+\index{set\+\_\+exp\+N2sy\+\_\+fractions@{set\+\_\+exp\+N2sy\+\_\+fractions}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{set\+\_\+exp\+N2sy\+\_\+fractions()}{set\_expN2sy\_fractions()}}
+{\footnotesize\ttfamily void Infection\+::set\+\_\+exp\+N2sy\+\_\+fractions (\begin{DoxyParamCaption}\item[{const std\+::map$<$ std\+::string, double $>$}]{raw\+\_\+rates }\end{DoxyParamCaption})}
+
+
+
+Process and store the age-\/dependent exposed to symptomatic fractions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+\_\+rates} & -\/ map with string of age range (inclusive) to probability \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfection_a9550693cb076ce6ccd4335177bbbdbc8}\label{classInfection_a9550693cb076ce6ccd4335177bbbdbc8}} 
+\index{Infection@{Infection}!set\+\_\+hospitalization\+\_\+to\+\_\+death\+\_\+distribution@{set\+\_\+hospitalization\+\_\+to\+\_\+death\+\_\+distribution}}
+\index{set\+\_\+hospitalization\+\_\+to\+\_\+death\+\_\+distribution@{set\+\_\+hospitalization\+\_\+to\+\_\+death\+\_\+distribution}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{set\+\_\+hospitalization\+\_\+to\+\_\+death\+\_\+distribution()}{set\_hospitalization\_to\_death\_distribution()}}
+{\footnotesize\ttfamily void Infection\+::set\+\_\+hospitalization\+\_\+to\+\_\+death\+\_\+distribution (\begin{DoxyParamCaption}\item[{const double}]{k,  }\item[{const double}]{theta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInfection_ae5a3f5e20e0f22d3dede73c9c0325dbc}\label{classInfection_ae5a3f5e20e0f22d3dede73c9c0325dbc}} 
+\index{Infection@{Infection}!set\+\_\+hospitalized\+\_\+fractions@{set\+\_\+hospitalized\+\_\+fractions}}
+\index{set\+\_\+hospitalized\+\_\+fractions@{set\+\_\+hospitalized\+\_\+fractions}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{set\+\_\+hospitalized\+\_\+fractions()}{set\_hospitalized\_fractions()}}
+{\footnotesize\ttfamily void Infection\+::set\+\_\+hospitalized\+\_\+fractions (\begin{DoxyParamCaption}\item[{const std\+::map$<$ std\+::string, double $>$}]{raw\+\_\+rates }\end{DoxyParamCaption})}
+
+
+
+Process and store the age-\/dependent hospitalization fraction distribution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+\_\+rates} & -\/ map with string of age range (inclusive) to probability \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfection_a2f502305ea9c698d01e7d572fd304a88}\label{classInfection_a2f502305ea9c698d01e7d572fd304a88}} 
+\index{Infection@{Infection}!set\+\_\+hospitalized\+\_\+\+I\+C\+U\+\_\+fractions@{set\+\_\+hospitalized\+\_\+\+I\+C\+U\+\_\+fractions}}
+\index{set\+\_\+hospitalized\+\_\+\+I\+C\+U\+\_\+fractions@{set\+\_\+hospitalized\+\_\+\+I\+C\+U\+\_\+fractions}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{set\+\_\+hospitalized\+\_\+\+I\+C\+U\+\_\+fractions()}{set\_hospitalized\_ICU\_fractions()}}
+{\footnotesize\ttfamily void Infection\+::set\+\_\+hospitalized\+\_\+\+I\+C\+U\+\_\+fractions (\begin{DoxyParamCaption}\item[{const std\+::map$<$ std\+::string, double $>$}]{raw\+\_\+rates }\end{DoxyParamCaption})}
+
+
+
+Process and store the age-\/dependent I\+CU hospitalization fraction distribution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+\_\+rates} & -\/ map with string of age range (inclusive) to probability \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfection_acf663b8dd4e7befb65b02221b7bdf037}\label{classInfection_acf663b8dd4e7befb65b02221b7bdf037}} 
+\index{Infection@{Infection}!set\+\_\+inf\+\_\+variability\+\_\+distribution@{set\+\_\+inf\+\_\+variability\+\_\+distribution}}
+\index{set\+\_\+inf\+\_\+variability\+\_\+distribution@{set\+\_\+inf\+\_\+variability\+\_\+distribution}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{set\+\_\+inf\+\_\+variability\+\_\+distribution()}{set\_inf\_variability\_distribution()}}
+{\footnotesize\ttfamily void Infection\+::set\+\_\+inf\+\_\+variability\+\_\+distribution (\begin{DoxyParamCaption}\item[{const double}]{k,  }\item[{const double}]{theta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInfection_a005677b5642cfca109812569c0e36e51}\label{classInfection_a005677b5642cfca109812569c0e36e51}} 
+\index{Infection@{Infection}!set\+\_\+latency\+\_\+distribution@{set\+\_\+latency\+\_\+distribution}}
+\index{set\+\_\+latency\+\_\+distribution@{set\+\_\+latency\+\_\+distribution}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{set\+\_\+latency\+\_\+distribution()}{set\_latency\_distribution()}}
+{\footnotesize\ttfamily void Infection\+::set\+\_\+latency\+\_\+distribution (\begin{DoxyParamCaption}\item[{const double}]{mean,  }\item[{const double}]{std }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInfection_a9fa94be47902e58b63d64fbae66bca91}\label{classInfection_a9fa94be47902e58b63d64fbae66bca91}} 
+\index{Infection@{Infection}!set\+\_\+mortality\+\_\+rates@{set\+\_\+mortality\+\_\+rates}}
+\index{set\+\_\+mortality\+\_\+rates@{set\+\_\+mortality\+\_\+rates}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{set\+\_\+mortality\+\_\+rates()}{set\_mortality\_rates()}}
+{\footnotesize\ttfamily void Infection\+::set\+\_\+mortality\+\_\+rates (\begin{DoxyParamCaption}\item[{const std\+::map$<$ std\+::string, double $>$}]{raw\+\_\+rates }\end{DoxyParamCaption})}
+
+
+
+Process and store the age-\/dependent mortality rate distribution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+\_\+rates} & -\/ map with string of age range (inclusive) to probability \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfection_acff99a62401e4d7f5a74502adcd8ae18}\label{classInfection_acff99a62401e4d7f5a74502adcd8ae18}} 
+\index{Infection@{Infection}!set\+\_\+onset\+\_\+to\+\_\+death\+\_\+distribution@{set\+\_\+onset\+\_\+to\+\_\+death\+\_\+distribution}}
+\index{set\+\_\+onset\+\_\+to\+\_\+death\+\_\+distribution@{set\+\_\+onset\+\_\+to\+\_\+death\+\_\+distribution}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{set\+\_\+onset\+\_\+to\+\_\+death\+\_\+distribution()}{set\_onset\_to\_death\_distribution()}}
+{\footnotesize\ttfamily void Infection\+::set\+\_\+onset\+\_\+to\+\_\+death\+\_\+distribution (\begin{DoxyParamCaption}\item[{const double}]{mean,  }\item[{const double}]{std }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInfection_a06f93f2417379896f598b792e9af83a5}\label{classInfection_a06f93f2417379896f598b792e9af83a5}} 
+\index{Infection@{Infection}!set\+\_\+onset\+\_\+to\+\_\+hospitalization\+\_\+distribution@{set\+\_\+onset\+\_\+to\+\_\+hospitalization\+\_\+distribution}}
+\index{set\+\_\+onset\+\_\+to\+\_\+hospitalization\+\_\+distribution@{set\+\_\+onset\+\_\+to\+\_\+hospitalization\+\_\+distribution}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{set\+\_\+onset\+\_\+to\+\_\+hospitalization\+\_\+distribution()}{set\_onset\_to\_hospitalization\_distribution()}}
+{\footnotesize\ttfamily void Infection\+::set\+\_\+onset\+\_\+to\+\_\+hospitalization\+\_\+distribution (\begin{DoxyParamCaption}\item[{const double}]{k,  }\item[{const double}]{theta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInfection_a5515c6bbd87c7a3f5d0845e5454aa3fe}\label{classInfection_a5515c6bbd87c7a3f5d0845e5454aa3fe}} 
+\index{Infection@{Infection}!set\+\_\+other\+\_\+probabilities@{set\+\_\+other\+\_\+probabilities}}
+\index{set\+\_\+other\+\_\+probabilities@{set\+\_\+other\+\_\+probabilities}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{set\+\_\+other\+\_\+probabilities()}{set\_other\_probabilities()}}
+{\footnotesize\ttfamily void Infection\+::set\+\_\+other\+\_\+probabilities (\begin{DoxyParamCaption}\item[{const double}]{fr\+\_\+sy\+\_\+tested,  }\item[{const double}]{pr\+\_\+dth\+\_\+icu,  }\item[{const double}]{fr\+\_\+death\+\_\+not\+\_\+icu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assigning various single number probabilities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pr\+\_\+dth\+\_\+icu} & -\/ probability of death in I\+CU \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfection_a138e3f760822833a0358537e86ea5836}\label{classInfection_a138e3f760822833a0358537e86ea5836}} 
+\index{Infection@{Infection}!tested\+\_\+in\+\_\+hospital@{tested\+\_\+in\+\_\+hospital}}
+\index{tested\+\_\+in\+\_\+hospital@{tested\+\_\+in\+\_\+hospital}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{tested\+\_\+in\+\_\+hospital()}{tested\_in\_hospital()}}
+{\footnotesize\ttfamily bool Infection\+::tested\+\_\+in\+\_\+hospital (\begin{DoxyParamCaption}\item[{const double}]{prob }\end{DoxyParamCaption})}
+
+
+
+Determines if the agent will get tested in a hospital based on probability prob. 
+
+\mbox{\Hypertarget{classInfection_a926eaa505c376d8823c510873d606d90}\label{classInfection_a926eaa505c376d8823c510873d606d90}} 
+\index{Infection@{Infection}!time\+\_\+to\+\_\+death@{time\+\_\+to\+\_\+death}}
+\index{time\+\_\+to\+\_\+death@{time\+\_\+to\+\_\+death}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{time\+\_\+to\+\_\+death()}{time\_to\_death()}}
+{\footnotesize\ttfamily double Infection\+::time\+\_\+to\+\_\+death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns randomly chosen time left for agent to live. 
+
+\mbox{\Hypertarget{classInfection_a30cb53ab87d26e8822aa5b8c6f7fc559}\label{classInfection_a30cb53ab87d26e8822aa5b8c6f7fc559}} 
+\index{Infection@{Infection}!vector\+\_\+shuffle@{vector\+\_\+shuffle}}
+\index{vector\+\_\+shuffle@{vector\+\_\+shuffle}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{vector\+\_\+shuffle()}{vector\_shuffle()}}
+{\footnotesize\ttfamily void Infection\+::vector\+\_\+shuffle (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Randomly shuffles a vector of ints. 
+
+\mbox{\Hypertarget{classInfection_a9047e5efaf7f6582e857d63df5813f8f}\label{classInfection_a9047e5efaf7f6582e857d63df5813f8f}} 
+\index{Infection@{Infection}!wait\+\_\+time\+\_\+for\+\_\+test@{wait\+\_\+time\+\_\+for\+\_\+test}}
+\index{wait\+\_\+time\+\_\+for\+\_\+test@{wait\+\_\+time\+\_\+for\+\_\+test}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{wait\+\_\+time\+\_\+for\+\_\+test()}{wait\_time\_for\_test()}}
+{\footnotesize\ttfamily double Infection\+::wait\+\_\+time\+\_\+for\+\_\+test (\begin{DoxyParamCaption}\item[{double}]{t\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Period before the test, drawn from lognormal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+max} & -\/ maximum length of the period \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInfection_a7bffd45c44c33bbd62d2dcf4c2db380c}\label{classInfection_a7bffd45c44c33bbd62d2dcf4c2db380c}} 
+\index{Infection@{Infection}!will\+\_\+be\+\_\+tested@{will\+\_\+be\+\_\+tested}}
+\index{will\+\_\+be\+\_\+tested@{will\+\_\+be\+\_\+tested}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{will\+\_\+be\+\_\+tested()}{will\_be\_tested()}}
+{\footnotesize\ttfamily bool Infection\+::will\+\_\+be\+\_\+tested (\begin{DoxyParamCaption}\item[{const double}]{prob }\end{DoxyParamCaption})}
+
+
+
+Determines if the agent will get tested based on probability prob. 
+
+\mbox{\Hypertarget{classInfection_adbedec09bbbb05f1734f34c4ec4e667d}\label{classInfection_adbedec09bbbb05f1734f34c4ec4e667d}} 
+\index{Infection@{Infection}!will\+\_\+die\+\_\+\+I\+CU@{will\+\_\+die\+\_\+\+I\+CU}}
+\index{will\+\_\+die\+\_\+\+I\+CU@{will\+\_\+die\+\_\+\+I\+CU}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{will\+\_\+die\+\_\+\+I\+C\+U()}{will\_die\_ICU()}}
+{\footnotesize\ttfamily bool Infection\+::will\+\_\+die\+\_\+\+I\+CU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determine if the agent will die in I\+CU. 
+
+\mbox{\Hypertarget{classInfection_aa01e23dfc716651fccfeaa7ee254b767}\label{classInfection_aa01e23dfc716651fccfeaa7ee254b767}} 
+\index{Infection@{Infection}!will\+\_\+die\+\_\+non\+\_\+icu@{will\+\_\+die\+\_\+non\+\_\+icu}}
+\index{will\+\_\+die\+\_\+non\+\_\+icu@{will\+\_\+die\+\_\+non\+\_\+icu}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{will\+\_\+die\+\_\+non\+\_\+icu()}{will\_die\_non\_icu()}}
+{\footnotesize\ttfamily bool Infection\+::will\+\_\+die\+\_\+non\+\_\+icu (\begin{DoxyParamCaption}\item[{const int}]{age,  }\item[{const bool}]{is\+\_\+hsp = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Determine if the agent will die based on agents age and total rate. 
+
+Computes probability from total rate and probability of dying in I\+CU 
+\begin{DoxyParams}{Parameters}
+{\em age} & -\/ agents age \\
+\hline
+{\em is\+\_\+hsp} & -\/ true if an agent is a hospital employee or a former non-\/\+C\+O\+V\+I\+D-\/19 patient \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classInfection_a63da4cdd4a61a3dfd683b9bdb4bd349f}\label{classInfection_a63da4cdd4a61a3dfd683b9bdb4bd349f}} 
+\index{Infection@{Infection}!dt@{dt}}
+\index{dt@{dt}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{dt}{dt}}
+{\footnotesize\ttfamily double Infection\+::dt = 1.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_a07fc3fe0299522acd9b017d297e63bbc}\label{classInfection_a07fc3fe0299522acd9b017d297e63bbc}} 
+\index{Infection@{Infection}!exp\+N2sy\+\_\+fractions@{exp\+N2sy\+\_\+fractions}}
+\index{exp\+N2sy\+\_\+fractions@{exp\+N2sy\+\_\+fractions}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{exp\+N2sy\+\_\+fractions}{expN2sy\_fractions}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::tuple$<$int, int, double$>$ $>$ Infection\+::exp\+N2sy\+\_\+fractions\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_a792a83867418c7ce251b30a5fe6493fd}\label{classInfection_a792a83867418c7ce251b30a5fe6493fd}} 
+\index{Infection@{Infection}!hospitalization\+\_\+rates@{hospitalization\+\_\+rates}}
+\index{hospitalization\+\_\+rates@{hospitalization\+\_\+rates}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{hospitalization\+\_\+rates}{hospitalization\_rates}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::tuple$<$int, int, double$>$ $>$ Infection\+::hospitalization\+\_\+rates\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_ae1cf283dc6ab0a72433e7c05e85d21f3}\label{classInfection_ae1cf283dc6ab0a72433e7c05e85d21f3}} 
+\index{Infection@{Infection}!htd\+\_\+k@{htd\+\_\+k}}
+\index{htd\+\_\+k@{htd\+\_\+k}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{htd\+\_\+k}{htd\_k}}
+{\footnotesize\ttfamily double Infection\+::htd\+\_\+k = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_afa6f7f026abed10b1617ecb93e902197}\label{classInfection_afa6f7f026abed10b1617ecb93e902197}} 
+\index{Infection@{Infection}!htd\+\_\+theta@{htd\+\_\+theta}}
+\index{htd\+\_\+theta@{htd\+\_\+theta}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{htd\+\_\+theta}{htd\_theta}}
+{\footnotesize\ttfamily double Infection\+::htd\+\_\+theta = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_ac1caeca6e2801b1d56ab26f8842625b0}\label{classInfection_ac1caeca6e2801b1d56ab26f8842625b0}} 
+\index{Infection@{Infection}!I\+C\+U\+\_\+rates@{I\+C\+U\+\_\+rates}}
+\index{I\+C\+U\+\_\+rates@{I\+C\+U\+\_\+rates}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{I\+C\+U\+\_\+rates}{ICU\_rates}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::tuple$<$int, int, double$>$ $>$ Infection\+::\+I\+C\+U\+\_\+rates\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_a9f0349a023149c77cded0aaa16acbe9a}\label{classInfection_a9f0349a023149c77cded0aaa16acbe9a}} 
+\index{Infection@{Infection}!inf\+\_\+var\+\_\+k@{inf\+\_\+var\+\_\+k}}
+\index{inf\+\_\+var\+\_\+k@{inf\+\_\+var\+\_\+k}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{inf\+\_\+var\+\_\+k}{inf\_var\_k}}
+{\footnotesize\ttfamily double Infection\+::inf\+\_\+var\+\_\+k = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_aeefba628b7e0c52c681278913d2e93d9}\label{classInfection_aeefba628b7e0c52c681278913d2e93d9}} 
+\index{Infection@{Infection}!inf\+\_\+var\+\_\+theta@{inf\+\_\+var\+\_\+theta}}
+\index{inf\+\_\+var\+\_\+theta@{inf\+\_\+var\+\_\+theta}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{inf\+\_\+var\+\_\+theta}{inf\_var\_theta}}
+{\footnotesize\ttfamily double Infection\+::inf\+\_\+var\+\_\+theta = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_ae449cd434a9d7f733c68479aec82220c}\label{classInfection_ae449cd434a9d7f733c68479aec82220c}} 
+\index{Infection@{Infection}!ln\+\_\+mean\+\_\+lat@{ln\+\_\+mean\+\_\+lat}}
+\index{ln\+\_\+mean\+\_\+lat@{ln\+\_\+mean\+\_\+lat}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{ln\+\_\+mean\+\_\+lat}{ln\_mean\_lat}}
+{\footnotesize\ttfamily double Infection\+::ln\+\_\+mean\+\_\+lat = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_ac5fdf055075ad79087962316d6159b54}\label{classInfection_ac5fdf055075ad79087962316d6159b54}} 
+\index{Infection@{Infection}!ln\+\_\+std\+\_\+lat@{ln\+\_\+std\+\_\+lat}}
+\index{ln\+\_\+std\+\_\+lat@{ln\+\_\+std\+\_\+lat}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{ln\+\_\+std\+\_\+lat}{ln\_std\_lat}}
+{\footnotesize\ttfamily double Infection\+::ln\+\_\+std\+\_\+lat = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_a0450bef9ca4de3f11b29ed1a34af9c8d}\label{classInfection_a0450bef9ca4de3f11b29ed1a34af9c8d}} 
+\index{Infection@{Infection}!mortality\+\_\+rates@{mortality\+\_\+rates}}
+\index{mortality\+\_\+rates@{mortality\+\_\+rates}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{mortality\+\_\+rates}{mortality\_rates}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::tuple$<$int, int, double$>$ $>$ Infection\+::mortality\+\_\+rates\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_ad54183621f0ec00d7cfdbfc5894f8851}\label{classInfection_ad54183621f0ec00d7cfdbfc5894f8851}} 
+\index{Infection@{Infection}!otd\+\_\+mean@{otd\+\_\+mean}}
+\index{otd\+\_\+mean@{otd\+\_\+mean}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{otd\+\_\+mean}{otd\_mean}}
+{\footnotesize\ttfamily double Infection\+::otd\+\_\+mean = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_aff153254edc238db5c597f83888a1cc0}\label{classInfection_aff153254edc238db5c597f83888a1cc0}} 
+\index{Infection@{Infection}!otd\+\_\+std@{otd\+\_\+std}}
+\index{otd\+\_\+std@{otd\+\_\+std}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{otd\+\_\+std}{otd\_std}}
+{\footnotesize\ttfamily double Infection\+::otd\+\_\+std = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_af1c916b3c3c695d3eb6ce4ac7fc5ea5a}\label{classInfection_af1c916b3c3c695d3eb6ce4ac7fc5ea5a}} 
+\index{Infection@{Infection}!oth\+\_\+k@{oth\+\_\+k}}
+\index{oth\+\_\+k@{oth\+\_\+k}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{oth\+\_\+k}{oth\_k}}
+{\footnotesize\ttfamily double Infection\+::oth\+\_\+k = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_a2ff9fb76061e4256492075600c37908b}\label{classInfection_a2ff9fb76061e4256492075600c37908b}} 
+\index{Infection@{Infection}!oth\+\_\+theta@{oth\+\_\+theta}}
+\index{oth\+\_\+theta@{oth\+\_\+theta}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{oth\+\_\+theta}{oth\_theta}}
+{\footnotesize\ttfamily double Infection\+::oth\+\_\+theta = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_a6e3b8effa79cb442b32e0e0bc186b999}\label{classInfection_a6e3b8effa79cb442b32e0e0bc186b999}} 
+\index{Infection@{Infection}!prob\+\_\+death\+\_\+icu@{prob\+\_\+death\+\_\+icu}}
+\index{prob\+\_\+death\+\_\+icu@{prob\+\_\+death\+\_\+icu}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{prob\+\_\+death\+\_\+icu}{prob\_death\_icu}}
+{\footnotesize\ttfamily double Infection\+::prob\+\_\+death\+\_\+icu = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_a2214fd2ee8e17f049ccb15fc8f9635db}\label{classInfection_a2214fd2ee8e17f049ccb15fc8f9635db}} 
+\index{Infection@{Infection}!prob\+\_\+death\+\_\+not\+\_\+admitted@{prob\+\_\+death\+\_\+not\+\_\+admitted}}
+\index{prob\+\_\+death\+\_\+not\+\_\+admitted@{prob\+\_\+death\+\_\+not\+\_\+admitted}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{prob\+\_\+death\+\_\+not\+\_\+admitted}{prob\_death\_not\_admitted}}
+{\footnotesize\ttfamily double Infection\+::prob\+\_\+death\+\_\+not\+\_\+admitted = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_acdbf7c2f72b0ab0938bec8de1ca4e24c}\label{classInfection_acdbf7c2f72b0ab0938bec8de1ca4e24c}} 
+\index{Infection@{Infection}!prob\+\_\+sy\+\_\+tested@{prob\+\_\+sy\+\_\+tested}}
+\index{prob\+\_\+sy\+\_\+tested@{prob\+\_\+sy\+\_\+tested}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{prob\+\_\+sy\+\_\+tested}{prob\_sy\_tested}}
+{\footnotesize\ttfamily double Infection\+::prob\+\_\+sy\+\_\+tested = 0.\+0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInfection_af3737374c3cf12f7d0e78bdd8d95a7d5}\label{classInfection_af3737374c3cf12f7d0e78bdd8d95a7d5}} 
+\index{Infection@{Infection}!rng@{rng}}
+\index{rng@{rng}!Infection@{Infection}}
+\subsubsection{\texorpdfstring{rng}{rng}}
+{\footnotesize\ttfamily \hyperlink{classRNG}{R\+NG} Infection\+::rng\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{infection_8h}{infection.\+h}\item 
+src/\hyperlink{infection_8cpp}{infection.\+cpp}\end{DoxyCompactItemize}

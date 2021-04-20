@@ -1,0 +1,53 @@
+\hypertarget{utils_8h}{}\section{include/utils.h File Reference}
+\label{utils_8h}\index{include/utils.\+h@{include/utils.\+h}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{utils_8h_a3dc8e1f0b48dced7ac485497d3b04ced}{str\+\_\+to\+\_\+lower} (std\+::string s)
+\begin{DoxyCompactList}\small\item\em Convert a string to all lower case. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{utils_8h_a38660b404ed851d15fc3ce865fa47311}{equal\+\_\+floats} (T, T, T)
+\begin{DoxyCompactList}\small\item\em Compare num1 and num2 as inexact values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{utils_8h_a38660b404ed851d15fc3ce865fa47311}\label{utils_8h_a38660b404ed851d15fc3ce865fa47311}} 
+\index{utils.\+h@{utils.\+h}!equal\+\_\+floats@{equal\+\_\+floats}}
+\index{equal\+\_\+floats@{equal\+\_\+floats}!utils.\+h@{utils.\+h}}
+\subsubsection{\texorpdfstring{equal\+\_\+floats()}{equal\_floats()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool equal\+\_\+floats (\begin{DoxyParamCaption}\item[{T}]{num1,  }\item[{T}]{num2,  }\item[{T}]{tol }\end{DoxyParamCaption})}
+
+
+
+Compare num1 and num2 as inexact values. 
+
+For floating point compoarisons, i.\+e. floats, doubles Current version based on \href{https://stackoverflow.com/a/15012792/2763915}{\tt https\+://stackoverflow.\+com/a/15012792/2763915} 
+\begin{DoxyParams}{Parameters}
+{\em num1} & -\/ first number \\
+\hline
+{\em num2} & -\/ second number \\
+\hline
+{\em tol} & -\/ relative tolerance for comparison \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal within the tolerance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utils_8h_a3dc8e1f0b48dced7ac485497d3b04ced}\label{utils_8h_a3dc8e1f0b48dced7ac485497d3b04ced}} 
+\index{utils.\+h@{utils.\+h}!str\+\_\+to\+\_\+lower@{str\+\_\+to\+\_\+lower}}
+\index{str\+\_\+to\+\_\+lower@{str\+\_\+to\+\_\+lower}!utils.\+h@{utils.\+h}}
+\subsubsection{\texorpdfstring{str\+\_\+to\+\_\+lower()}{str\_to\_lower()}}
+{\footnotesize\ttfamily std\+::string str\+\_\+to\+\_\+lower (\begin{DoxyParamCaption}\item[{std\+::string}]{s }\end{DoxyParamCaption})}
+
+
+
+Convert a string to all lower case. 
+
+From \href{https://en.cppreference.com/w/cpp/string/byte/tolower}{\tt https\+://en.\+cppreference.\+com/w/cpp/string/byte/tolower}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & -\/ string which will be converted to all lower case \\
+\hline
+\end{DoxyParams}

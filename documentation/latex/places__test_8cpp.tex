@@ -1,0 +1,239 @@
+\hypertarget{places__test_8cpp}{}\section{tests/places/places\+\_\+test.cpp File Reference}
+\label{places__test_8cpp}\index{tests/places/places\+\_\+test.\+cpp@{tests/places/places\+\_\+test.\+cpp}}
+{\ttfamily \#include \char`\"{}places\+\_\+tests.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{places__test_8cpp_a47f3cd7523a506351ea86fa9fd7b983c}{place\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Tests all public functions from the \hyperlink{classPlace}{Place} class. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_a1d16bad2202c426594d66451dd8f0ab8}{school\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Tests all public functions from the \hyperlink{classSchool}{School} class. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_a8bfa98dbcd9760fd278860246f235d42}{retirement\+\_\+home\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Tests all public functions from the \hyperlink{classRetirementHome}{Retirement\+Home} class. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_a78d9645283b5a202eac72eb5ff25db1b}{workplace\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Tests all public functions from the \hyperlink{classWorkplace}{Workplace} class. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_a3d11efd4dfd4ade30734258edd67646b}{household\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Tests all public functions from the \hyperlink{classHousehold}{Household} class. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_acf52e09bdfb0ff22ff851a6f4ec70892}{hospital\+\_\+test} ()
+\begin{DoxyCompactList}\small\item\em Tests all public functions from the \hyperlink{classHospital}{Hospital} class. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_a95209a23f92406144f83a0b74cc1f295}{school\+\_\+and\+\_\+workplace\+\_\+transmission\+\_\+changes} ()
+\begin{DoxyCompactList}\small\item\em Tests if transmission parameters are properly modified. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_a987c9782bf421f20cc6a07772063fd6b}{contribution\+\_\+test\+\_\+hospitals} ()
+\begin{DoxyCompactList}\small\item\em Test computation of probability contribution in hospitals. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_a70ae84a432b3ef39d2cab693c74998b6}{contribution\+\_\+test\+\_\+general\+\_\+place} ()
+\begin{DoxyCompactList}\small\item\em Test contribution computation. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_ac27fa6dfff8cd3160b354683085f6448}{contribution\+\_\+test\+\_\+workplace} ()
+\begin{DoxyCompactList}\small\item\em Test contribution computation. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_a223ca2b6e8336328d7baa0506c3e5ff0}{contribution\+\_\+test\+\_\+school} ()
+\begin{DoxyCompactList}\small\item\em Test contribution computation. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_acd617a27117a439e578a1fd50c27fc7d}{contribution\+\_\+test\+\_\+household} ()
+\begin{DoxyCompactList}\small\item\em Test household infection contribution computation. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_a52b39afc980ce5cd3aa440233a5d4b73}{contribution\+\_\+test\+\_\+retirement\+\_\+home} ()
+\begin{DoxyCompactList}\small\item\em Test retirement home contribution computation. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_aca57ceb696f78ac8b38c3810971651a4}{general\+\_\+place\+\_\+test} (\hyperlink{classPlace}{Place} \&place, const int p\+ID, const double xi, const double yi, const double ck, const double beta, const double alpha, const double beta\+\_\+ih, const double psi, std\+::map$<$ const std\+::string, const double $>$ hospital\+\_\+betas, std\+::map$<$ const std\+::string, const double $>$ rh\+\_\+betas)
+\begin{DoxyCompactList}\small\item\em Test for most classes derived from \hyperlink{classPlace}{Place} including itself. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_a57a873cbba1dec32c51562061f4333c1}{general\+\_\+contribution\+\_\+test} (\hyperlink{classPlace}{Place} \&place, double inf\+\_\+var, int n\+\_\+exp, int n\+\_\+sym, int n\+\_\+tot, double exp\+\_\+lambda)
+\begin{DoxyCompactList}\small\item\em Test for general contribution to infection probability. \end{DoxyCompactList}\item 
+bool \hyperlink{places__test_8cpp_a4f28d5548be15b8f2b3fbb13aa2a2088}{household\+\_\+contribution\+\_\+test} (\hyperlink{classHousehold}{Household} \&household, double inf\+\_\+var, int n\+\_\+exp, int n\+\_\+sym, int n\+\_\+tot, double exp\+\_\+lambda)
+\begin{DoxyCompactList}\small\item\em Test for household contribution to infection probability. \end{DoxyCompactList}\item 
+int \hyperlink{places__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{places__test_8cpp_a70ae84a432b3ef39d2cab693c74998b6}\label{places__test_8cpp_a70ae84a432b3ef39d2cab693c74998b6}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!contribution\+\_\+test\+\_\+general\+\_\+place@{contribution\+\_\+test\+\_\+general\+\_\+place}}
+\index{contribution\+\_\+test\+\_\+general\+\_\+place@{contribution\+\_\+test\+\_\+general\+\_\+place}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{contribution\+\_\+test\+\_\+general\+\_\+place()}{contribution\_test\_general\_place()}}
+{\footnotesize\ttfamily bool contribution\+\_\+test\+\_\+general\+\_\+place (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test contribution computation. 
+
+\mbox{\Hypertarget{places__test_8cpp_a987c9782bf421f20cc6a07772063fd6b}\label{places__test_8cpp_a987c9782bf421f20cc6a07772063fd6b}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!contribution\+\_\+test\+\_\+hospitals@{contribution\+\_\+test\+\_\+hospitals}}
+\index{contribution\+\_\+test\+\_\+hospitals@{contribution\+\_\+test\+\_\+hospitals}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{contribution\+\_\+test\+\_\+hospitals()}{contribution\_test\_hospitals()}}
+{\footnotesize\ttfamily bool contribution\+\_\+test\+\_\+hospitals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test computation of probability contribution in hospitals. 
+
+\mbox{\Hypertarget{places__test_8cpp_acd617a27117a439e578a1fd50c27fc7d}\label{places__test_8cpp_acd617a27117a439e578a1fd50c27fc7d}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!contribution\+\_\+test\+\_\+household@{contribution\+\_\+test\+\_\+household}}
+\index{contribution\+\_\+test\+\_\+household@{contribution\+\_\+test\+\_\+household}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{contribution\+\_\+test\+\_\+household()}{contribution\_test\_household()}}
+{\footnotesize\ttfamily bool contribution\+\_\+test\+\_\+household (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test household infection contribution computation. 
+
+\mbox{\Hypertarget{places__test_8cpp_a52b39afc980ce5cd3aa440233a5d4b73}\label{places__test_8cpp_a52b39afc980ce5cd3aa440233a5d4b73}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!contribution\+\_\+test\+\_\+retirement\+\_\+home@{contribution\+\_\+test\+\_\+retirement\+\_\+home}}
+\index{contribution\+\_\+test\+\_\+retirement\+\_\+home@{contribution\+\_\+test\+\_\+retirement\+\_\+home}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{contribution\+\_\+test\+\_\+retirement\+\_\+home()}{contribution\_test\_retirement\_home()}}
+{\footnotesize\ttfamily bool contribution\+\_\+test\+\_\+retirement\+\_\+home (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test retirement home contribution computation. 
+
+\mbox{\Hypertarget{places__test_8cpp_a223ca2b6e8336328d7baa0506c3e5ff0}\label{places__test_8cpp_a223ca2b6e8336328d7baa0506c3e5ff0}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!contribution\+\_\+test\+\_\+school@{contribution\+\_\+test\+\_\+school}}
+\index{contribution\+\_\+test\+\_\+school@{contribution\+\_\+test\+\_\+school}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{contribution\+\_\+test\+\_\+school()}{contribution\_test\_school()}}
+{\footnotesize\ttfamily bool contribution\+\_\+test\+\_\+school (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test contribution computation. 
+
+\mbox{\Hypertarget{places__test_8cpp_ac27fa6dfff8cd3160b354683085f6448}\label{places__test_8cpp_ac27fa6dfff8cd3160b354683085f6448}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!contribution\+\_\+test\+\_\+workplace@{contribution\+\_\+test\+\_\+workplace}}
+\index{contribution\+\_\+test\+\_\+workplace@{contribution\+\_\+test\+\_\+workplace}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{contribution\+\_\+test\+\_\+workplace()}{contribution\_test\_workplace()}}
+{\footnotesize\ttfamily bool contribution\+\_\+test\+\_\+workplace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test contribution computation. 
+
+\mbox{\Hypertarget{places__test_8cpp_a57a873cbba1dec32c51562061f4333c1}\label{places__test_8cpp_a57a873cbba1dec32c51562061f4333c1}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!general\+\_\+contribution\+\_\+test@{general\+\_\+contribution\+\_\+test}}
+\index{general\+\_\+contribution\+\_\+test@{general\+\_\+contribution\+\_\+test}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{general\+\_\+contribution\+\_\+test()}{general\_contribution\_test()}}
+{\footnotesize\ttfamily bool general\+\_\+contribution\+\_\+test (\begin{DoxyParamCaption}\item[{\hyperlink{classPlace}{Place} \&}]{place,  }\item[{double}]{inf\+\_\+var,  }\item[{int}]{n\+\_\+exp,  }\item[{int}]{n\+\_\+sym,  }\item[{int}]{n\+\_\+tot,  }\item[{double}]{exp\+\_\+lambda }\end{DoxyParamCaption})}
+
+
+
+Test for general contribution to infection probability. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em place} & -\/ place object \\
+\hline
+{\em inf\+\_\+var} & -\/ infection variability \\
+\hline
+{\em n\+\_\+exp} & -\/ number of exposed \\
+\hline
+{\em n\+\_\+sym} & -\/ number of symptomatic \\
+\hline
+{\em n\+\_\+tot} & -\/ total number of agents \\
+\hline
+{\em exp\+\_\+lambda} & -\/ expected lambda \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{places__test_8cpp_aca57ceb696f78ac8b38c3810971651a4}\label{places__test_8cpp_aca57ceb696f78ac8b38c3810971651a4}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!general\+\_\+place\+\_\+test@{general\+\_\+place\+\_\+test}}
+\index{general\+\_\+place\+\_\+test@{general\+\_\+place\+\_\+test}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{general\+\_\+place\+\_\+test()}{general\_place\_test()}}
+{\footnotesize\ttfamily bool general\+\_\+place\+\_\+test (\begin{DoxyParamCaption}\item[{\hyperlink{classPlace}{Place} \&}]{place,  }\item[{const int}]{p\+ID,  }\item[{const double}]{xi,  }\item[{const double}]{yi,  }\item[{const double}]{ck,  }\item[{const double}]{beta,  }\item[{const double}]{alpha = {\ttfamily -\/0.1},  }\item[{const double}]{beta\+\_\+ih = {\ttfamily -\/0.1},  }\item[{const double}]{psi = {\ttfamily -\/0.1},  }\item[{std\+::map$<$ const std\+::string, const double $>$}]{hospital\+\_\+betas = {\ttfamily \{\}},  }\item[{std\+::map$<$ const std\+::string, const double $>$}]{rh\+\_\+betas = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+
+
+Test for most classes derived from \hyperlink{classPlace}{Place} including itself. 
+
+\mbox{\Hypertarget{places__test_8cpp_acf52e09bdfb0ff22ff851a6f4ec70892}\label{places__test_8cpp_acf52e09bdfb0ff22ff851a6f4ec70892}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!hospital\+\_\+test@{hospital\+\_\+test}}
+\index{hospital\+\_\+test@{hospital\+\_\+test}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{hospital\+\_\+test()}{hospital\_test()}}
+{\footnotesize\ttfamily bool hospital\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests all public functions from the \hyperlink{classHospital}{Hospital} class. 
+
+\mbox{\Hypertarget{places__test_8cpp_a4f28d5548be15b8f2b3fbb13aa2a2088}\label{places__test_8cpp_a4f28d5548be15b8f2b3fbb13aa2a2088}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!household\+\_\+contribution\+\_\+test@{household\+\_\+contribution\+\_\+test}}
+\index{household\+\_\+contribution\+\_\+test@{household\+\_\+contribution\+\_\+test}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{household\+\_\+contribution\+\_\+test()}{household\_contribution\_test()}}
+{\footnotesize\ttfamily bool household\+\_\+contribution\+\_\+test (\begin{DoxyParamCaption}\item[{\hyperlink{classHousehold}{Household} \&}]{household,  }\item[{double}]{inf\+\_\+var,  }\item[{int}]{n\+\_\+exp,  }\item[{int}]{n\+\_\+sym,  }\item[{int}]{n\+\_\+tot,  }\item[{double}]{exp\+\_\+lambda }\end{DoxyParamCaption})}
+
+
+
+Test for household contribution to infection probability. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em household} & -\/ household object \\
+\hline
+{\em inf\+\_\+var} & -\/ infection variability \\
+\hline
+{\em n\+\_\+exp} & -\/ number of exposed \\
+\hline
+{\em n\+\_\+sym} & -\/ number of symptomatic \\
+\hline
+{\em n\+\_\+tot} & -\/ total number of agents \\
+\hline
+{\em exp\+\_\+lambda} & -\/ expected lambda \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{places__test_8cpp_a3d11efd4dfd4ade30734258edd67646b}\label{places__test_8cpp_a3d11efd4dfd4ade30734258edd67646b}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!household\+\_\+test@{household\+\_\+test}}
+\index{household\+\_\+test@{household\+\_\+test}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{household\+\_\+test()}{household\_test()}}
+{\footnotesize\ttfamily bool household\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests all public functions from the \hyperlink{classHousehold}{Household} class. 
+
+\mbox{\Hypertarget{places__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{places__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!main@{main}}
+\index{main@{main}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{places__test_8cpp_a47f3cd7523a506351ea86fa9fd7b983c}\label{places__test_8cpp_a47f3cd7523a506351ea86fa9fd7b983c}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!place\+\_\+test@{place\+\_\+test}}
+\index{place\+\_\+test@{place\+\_\+test}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{place\+\_\+test()}{place\_test()}}
+{\footnotesize\ttfamily bool place\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests all public functions from the \hyperlink{classPlace}{Place} class. 
+
+\mbox{\Hypertarget{places__test_8cpp_a8bfa98dbcd9760fd278860246f235d42}\label{places__test_8cpp_a8bfa98dbcd9760fd278860246f235d42}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!retirement\+\_\+home\+\_\+test@{retirement\+\_\+home\+\_\+test}}
+\index{retirement\+\_\+home\+\_\+test@{retirement\+\_\+home\+\_\+test}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{retirement\+\_\+home\+\_\+test()}{retirement\_home\_test()}}
+{\footnotesize\ttfamily bool retirement\+\_\+home\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests all public functions from the \hyperlink{classRetirementHome}{Retirement\+Home} class. 
+
+\mbox{\Hypertarget{places__test_8cpp_a95209a23f92406144f83a0b74cc1f295}\label{places__test_8cpp_a95209a23f92406144f83a0b74cc1f295}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!school\+\_\+and\+\_\+workplace\+\_\+transmission\+\_\+changes@{school\+\_\+and\+\_\+workplace\+\_\+transmission\+\_\+changes}}
+\index{school\+\_\+and\+\_\+workplace\+\_\+transmission\+\_\+changes@{school\+\_\+and\+\_\+workplace\+\_\+transmission\+\_\+changes}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{school\+\_\+and\+\_\+workplace\+\_\+transmission\+\_\+changes()}{school\_and\_workplace\_transmission\_changes()}}
+{\footnotesize\ttfamily bool school\+\_\+and\+\_\+workplace\+\_\+transmission\+\_\+changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests if transmission parameters are properly modified. 
+
+\mbox{\Hypertarget{places__test_8cpp_a1d16bad2202c426594d66451dd8f0ab8}\label{places__test_8cpp_a1d16bad2202c426594d66451dd8f0ab8}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!school\+\_\+test@{school\+\_\+test}}
+\index{school\+\_\+test@{school\+\_\+test}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{school\+\_\+test()}{school\_test()}}
+{\footnotesize\ttfamily bool school\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests all public functions from the \hyperlink{classSchool}{School} class. 
+
+\mbox{\Hypertarget{places__test_8cpp_a78d9645283b5a202eac72eb5ff25db1b}\label{places__test_8cpp_a78d9645283b5a202eac72eb5ff25db1b}} 
+\index{places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}!workplace\+\_\+test@{workplace\+\_\+test}}
+\index{workplace\+\_\+test@{workplace\+\_\+test}!places\+\_\+test.\+cpp@{places\+\_\+test.\+cpp}}
+\subsubsection{\texorpdfstring{workplace\+\_\+test()}{workplace\_test()}}
+{\footnotesize\ttfamily bool workplace\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests all public functions from the \hyperlink{classWorkplace}{Workplace} class. 
+

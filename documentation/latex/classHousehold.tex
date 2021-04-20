@@ -1,0 +1,149 @@
+\hypertarget{classHousehold}{}\section{Household Class Reference}
+\label{classHousehold}\index{Household@{Household}}
+
+
+{\ttfamily \#include $<$household.\+h$>$}
+
+Inheritance diagram for Household\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHousehold}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHousehold_a806512a49b82de676b263b47c7717391}{Household} ()=default
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classHousehold}{Household} object with default attributes. \end{DoxyCompactList}\item 
+\hyperlink{classHousehold_a0f96ac02e6cb0ecc7fd7a291af93c05e}{Household} (int house\+\_\+\+ID, double xi, double yi, const double alpha\+\_\+exp, const double severity\+\_\+cor, const double beta, const double betaih)
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classHousehold}{Household} object. \end{DoxyCompactList}\item 
+void \hyperlink{classHousehold_a9bf27cca25dea519945c8740b9793ff6}{print\+\_\+basic} (std\+::ostream \&where) const override
+\begin{DoxyCompactList}\small\item\em Save information about a \hyperlink{classHousehold}{Household} object. \end{DoxyCompactList}\item 
+void \hyperlink{classHousehold_ae063737d06a7a50aa9b780d7066c1c88}{compute\+\_\+infected\+\_\+contribution} () override
+\begin{DoxyCompactList}\small\item\em Calculates and stores probability contribution of infected agents if any. \end{DoxyCompactList}\item 
+void \hyperlink{classHousehold_ac2e5bde05d678a9ba853ddb9cf00ce3d}{add\+\_\+symptomatic\+\_\+home\+\_\+isolated} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include contribution of a symptomatic, home isolated agent in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classHousehold_a28b12a90e592c6d3b1e9ac333e3d54d8}{add\+\_\+exposed\+\_\+home\+\_\+isolated} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include contribution of an exposed , home isolated agent in the sum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHousehold_a806512a49b82de676b263b47c7717391}\label{classHousehold_a806512a49b82de676b263b47c7717391}} 
+\index{Household@{Household}!Household@{Household}}
+\index{Household@{Household}!Household@{Household}}
+\subsubsection{\texorpdfstring{Household()}{Household()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Household\+::\+Household (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates a \hyperlink{classHousehold}{Household} object with default attributes. 
+
+\mbox{\Hypertarget{classHousehold_a0f96ac02e6cb0ecc7fd7a291af93c05e}\label{classHousehold_a0f96ac02e6cb0ecc7fd7a291af93c05e}} 
+\index{Household@{Household}!Household@{Household}}
+\index{Household@{Household}!Household@{Household}}
+\subsubsection{\texorpdfstring{Household()}{Household()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Household\+::\+Household (\begin{DoxyParamCaption}\item[{int}]{house\+\_\+\+ID,  }\item[{double}]{xi,  }\item[{double}]{yi,  }\item[{const double}]{alpha\+\_\+exp,  }\item[{const double}]{severity\+\_\+cor,  }\item[{const double}]{beta,  }\item[{const double}]{betaih }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \hyperlink{classHousehold}{Household} object. 
+
+\hyperlink{classHousehold}{Household} with custom ID, location, and infection parameters
+
+
+\begin{DoxyParams}{Parameters}
+{\em house\+\_\+\+ID} & -\/ ID of the household \\
+\hline
+{\em xi} & -\/ x coordinate of the household \\
+\hline
+{\em yi} & -\/ y coordinate of the household \\
+\hline
+{\em alpha\+\_\+exp} & -\/ household size correction \\
+\hline
+{\em severity\+\_\+cor} & -\/ severity correction for symptomatic \\
+\hline
+{\em beta} & -\/ infection transmission rate, 1/time \\
+\hline
+{\em betaih} & -\/ infection transmission rate for home isolated, 1/time \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classHousehold_a28b12a90e592c6d3b1e9ac333e3d54d8}\label{classHousehold_a28b12a90e592c6d3b1e9ac333e3d54d8}} 
+\index{Household@{Household}!add\+\_\+exposed\+\_\+home\+\_\+isolated@{add\+\_\+exposed\+\_\+home\+\_\+isolated}}
+\index{add\+\_\+exposed\+\_\+home\+\_\+isolated@{add\+\_\+exposed\+\_\+home\+\_\+isolated}!Household@{Household}}
+\subsubsection{\texorpdfstring{add\+\_\+exposed\+\_\+home\+\_\+isolated()}{add\_exposed\_home\_isolated()}}
+{\footnotesize\ttfamily void Household\+::add\+\_\+exposed\+\_\+home\+\_\+isolated (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include contribution of an exposed , home isolated agent in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHousehold_ac2e5bde05d678a9ba853ddb9cf00ce3d}\label{classHousehold_ac2e5bde05d678a9ba853ddb9cf00ce3d}} 
+\index{Household@{Household}!add\+\_\+symptomatic\+\_\+home\+\_\+isolated@{add\+\_\+symptomatic\+\_\+home\+\_\+isolated}}
+\index{add\+\_\+symptomatic\+\_\+home\+\_\+isolated@{add\+\_\+symptomatic\+\_\+home\+\_\+isolated}!Household@{Household}}
+\subsubsection{\texorpdfstring{add\+\_\+symptomatic\+\_\+home\+\_\+isolated()}{add\_symptomatic\_home\_isolated()}}
+{\footnotesize\ttfamily void Household\+::add\+\_\+symptomatic\+\_\+home\+\_\+isolated (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include contribution of a symptomatic, home isolated agent in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHousehold_ae063737d06a7a50aa9b780d7066c1c88}\label{classHousehold_ae063737d06a7a50aa9b780d7066c1c88}} 
+\index{Household@{Household}!compute\+\_\+infected\+\_\+contribution@{compute\+\_\+infected\+\_\+contribution}}
+\index{compute\+\_\+infected\+\_\+contribution@{compute\+\_\+infected\+\_\+contribution}!Household@{Household}}
+\subsubsection{\texorpdfstring{compute\+\_\+infected\+\_\+contribution()}{compute\_infected\_contribution()}}
+{\footnotesize\ttfamily void Household\+::compute\+\_\+infected\+\_\+contribution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates and stores probability contribution of infected agents if any. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em infection} & -\/ infection object class instance \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classPlace_aeb4c561e8bc4e1ae7186baed6ef1aa47}{Place}.
+
+\mbox{\Hypertarget{classHousehold_a9bf27cca25dea519945c8740b9793ff6}\label{classHousehold_a9bf27cca25dea519945c8740b9793ff6}} 
+\index{Household@{Household}!print\+\_\+basic@{print\+\_\+basic}}
+\index{print\+\_\+basic@{print\+\_\+basic}!Household@{Household}}
+\subsubsection{\texorpdfstring{print\+\_\+basic()}{print\_basic()}}
+{\footnotesize\ttfamily void Household\+::print\+\_\+basic (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{where }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Save information about a \hyperlink{classHousehold}{Household} object. 
+
+Saves to a file, everything but detailed agent information; order is ID $\vert$ x $\vert$ y $\vert$ number of agents $\vert$ number of infected agents $\vert$ ck $\vert$ beta\+\_\+j $\vert$ alpha Delimiter is a space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em where} & -\/ output stream \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classPlace_a9aa7649e0b91c5f61a5f71e9ca808fe1}{Place}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/places/\hyperlink{household_8h}{household.\+h}\item 
+src/places/\hyperlink{household_8cpp}{household.\+cpp}\end{DoxyCompactItemize}

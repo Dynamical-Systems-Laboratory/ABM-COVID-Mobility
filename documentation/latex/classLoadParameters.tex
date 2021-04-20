@@ -1,0 +1,67 @@
+\hypertarget{classLoadParameters}{}\section{Load\+Parameters Class Reference}
+\label{classLoadParameters}\index{Load\+Parameters@{Load\+Parameters}}
+
+
+{\ttfamily \#include $<$load\+\_\+parameters.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLoadParameters_adf91d21ff44d619da32bb63b273f74c9}{Load\+Parameters} ()=default
+\item 
+std\+::map$<$ std\+::string, double $>$ \hyperlink{classLoadParameters_a1cdde96a8ca3874ef93e1c1a8970a06a}{load\+\_\+parameter\+\_\+map} (const std\+::string infile)
+\begin{DoxyCompactList}\small\item\em Read parameters from file, store the as a map. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, double $>$ \hyperlink{classLoadParameters_a682b13d074ff70340bbc782d31ccd10b}{load\+\_\+age\+\_\+dependent} (const std\+::string infile)
+\begin{DoxyCompactList}\small\item\em Read age-\/dependent distributions as map, store the as a map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLoadParameters_adf91d21ff44d619da32bb63b273f74c9}\label{classLoadParameters_adf91d21ff44d619da32bb63b273f74c9}} 
+\index{Load\+Parameters@{Load\+Parameters}!Load\+Parameters@{Load\+Parameters}}
+\index{Load\+Parameters@{Load\+Parameters}!Load\+Parameters@{Load\+Parameters}}
+\subsubsection{\texorpdfstring{Load\+Parameters()}{LoadParameters()}}
+{\footnotesize\ttfamily Load\+Parameters\+::\+Load\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoadParameters_a682b13d074ff70340bbc782d31ccd10b}\label{classLoadParameters_a682b13d074ff70340bbc782d31ccd10b}} 
+\index{Load\+Parameters@{Load\+Parameters}!load\+\_\+age\+\_\+dependent@{load\+\_\+age\+\_\+dependent}}
+\index{load\+\_\+age\+\_\+dependent@{load\+\_\+age\+\_\+dependent}!Load\+Parameters@{Load\+Parameters}}
+\subsubsection{\texorpdfstring{load\+\_\+age\+\_\+dependent()}{load\_age\_dependent()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, double $>$ Load\+Parameters\+::load\+\_\+age\+\_\+dependent (\begin{DoxyParamCaption}\item[{const std\+::string}]{infile }\end{DoxyParamCaption})}
+
+
+
+Read age-\/dependent distributions as map, store the as a map. 
+
+Keys are age ranges as strings, in a specific form like \char`\"{}40-\/43\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em infile} & -\/ input file with parameters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLoadParameters_a1cdde96a8ca3874ef93e1c1a8970a06a}\label{classLoadParameters_a1cdde96a8ca3874ef93e1c1a8970a06a}} 
+\index{Load\+Parameters@{Load\+Parameters}!load\+\_\+parameter\+\_\+map@{load\+\_\+parameter\+\_\+map}}
+\index{load\+\_\+parameter\+\_\+map@{load\+\_\+parameter\+\_\+map}!Load\+Parameters@{Load\+Parameters}}
+\subsubsection{\texorpdfstring{load\+\_\+parameter\+\_\+map()}{load\_parameter\_map()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, double $>$ Load\+Parameters\+::load\+\_\+parameter\+\_\+map (\begin{DoxyParamCaption}\item[{const std\+::string}]{infile }\end{DoxyParamCaption})}
+
+
+
+Read parameters from file, store the as a map. 
+
+In the file parameter name can be multiple words but it needs to be in a separate line with a // comment type as the first element of the line; it is followed by a numeric value in the next line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em infile} & -\/ input file with parameters \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/io\+\_\+operations/\hyperlink{load__parameters_8h}{load\+\_\+parameters.\+h}\item 
+src/io\+\_\+operations/\hyperlink{load__parameters_8cpp}{load\+\_\+parameters.\+cpp}\end{DoxyCompactItemize}

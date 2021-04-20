@@ -1,0 +1,177 @@
+\hypertarget{test__utils_8h}{}\section{tests/common/test\+\_\+utils.h File Reference}
+\label{test__utils_8h}\index{tests/common/test\+\_\+utils.\+h@{tests/common/test\+\_\+utils.\+h}}
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include \char`\"{}../../include/common.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{test__utils_8h_afd810ace9c905a07cfc321c0580c663b}{test\+\_\+pass} (const bool val, const std\+::string msg)
+\begin{DoxyCompactList}\small\item\em Print if the test passed or failed. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Functor , typename... Args$>$ }\\bool \hyperlink{test__utils_8h_a6cef42383aec200c7940f5ff11c3941c}{exception\+\_\+test} (bool verbose, const std\+::exception $\ast$expected, Functor fun, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Wrapper for testing if a function correctly raises exceptions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Functor , typename... Args$>$ }\\void \hyperlink{test__utils_8h_a19ec96025ae32e4c02985aca9f6efce6}{exception\+\_\+test\+\_\+helper} (std\+::false\+\_\+type, Functor fun, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename Functor , typename Arg0 , typename... Args$>$ }\\void \hyperlink{test__utils_8h_a550e20e1c0e8824261caed261156f88f}{exception\+\_\+test\+\_\+helper} (std\+::true\+\_\+type, Functor fun, Arg0 \&\&arg0, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{test__utils_8h_a20afc16590fee943a71b270aa0b89d7f}{is\+\_\+equal\+\_\+exact} (const std\+::vector$<$ std\+::vector$<$ T $>$$>$, const std\+::vector$<$ std\+::vector$<$ T $>$$>$)
+\begin{DoxyCompactList}\small\item\em Compares two 2D vectors of type appropriate for identical comparison. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{test__utils_8h_ad7d29d04a3449aa556f2b5c0d5b33ea6}{is\+\_\+equal\+\_\+floats} (const std\+::vector$<$ std\+::vector$<$ T $>$$>$, const std\+::vector$<$ std\+::vector$<$ T $>$$>$, const T)
+\begin{DoxyCompactList}\small\item\em Compares two 2D vectors of type not appropriate for identical comparison. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{test__utils_8h_acffe62725c97ef40d052d0600fc9b1e5}{float\+\_\+equality} (T, T, T)
+\begin{DoxyCompactList}\small\item\em Compare num1 and num2 as inexact values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const auto \hyperlink{test__utils_8h_a168484a9c8eab13ae9cc4eb3a6440cef}{print\+\_\+msg}
+\begin{DoxyCompactList}\small\item\em Print a message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{test__utils_8h_a6cef42383aec200c7940f5ff11c3941c}\label{test__utils_8h_a6cef42383aec200c7940f5ff11c3941c}} 
+\index{test\+\_\+utils.\+h@{test\+\_\+utils.\+h}!exception\+\_\+test@{exception\+\_\+test}}
+\index{exception\+\_\+test@{exception\+\_\+test}!test\+\_\+utils.\+h@{test\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{exception\+\_\+test()}{exception\_test()}}
+{\footnotesize\ttfamily template$<$typename Functor , typename... Args$>$ \\
+bool exception\+\_\+test (\begin{DoxyParamCaption}\item[{bool}]{verbose,  }\item[{const std\+::exception $\ast$}]{expected,  }\item[{Functor}]{fun,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+
+
+Wrapper for testing if a function correctly raises exceptions. 
+
+Executes given functions and returns true if the target exception happened and false if a different exception occurred. If nullptr specified instead of exception object, no exception will return true and exception will return false. All exceptions are handled. 
+\begin{DoxyParams}{Parameters}
+{\em verbose} & \mbox{[}in\mbox{]} -\/ prints exception messages \\
+\hline
+{\em expected} & \mbox{[}in\mbox{]} -\/ expected exception type or nullptr for no exception \\
+\hline
+{\em fun} & \mbox{[}in\mbox{]} -\/ function object (pointer, lambda) to be called by the wrapper \\
+\hline
+{\em args} & \mbox{[}in\mbox{]} -\/ arguments to the function as a parameter pack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True or false if test passed/failed under given conditions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{test__utils_8h_a19ec96025ae32e4c02985aca9f6efce6}\label{test__utils_8h_a19ec96025ae32e4c02985aca9f6efce6}} 
+\index{test\+\_\+utils.\+h@{test\+\_\+utils.\+h}!exception\+\_\+test\+\_\+helper@{exception\+\_\+test\+\_\+helper}}
+\index{exception\+\_\+test\+\_\+helper@{exception\+\_\+test\+\_\+helper}!test\+\_\+utils.\+h@{test\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{exception\+\_\+test\+\_\+helper()}{exception\_test\_helper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Functor , typename... Args$>$ \\
+void exception\+\_\+test\+\_\+helper (\begin{DoxyParamCaption}\item[{std\+::false\+\_\+type}]{,  }\item[{Functor}]{fun,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+Overload for free functions and lambdas This is used just for the calling part \mbox{\Hypertarget{test__utils_8h_a550e20e1c0e8824261caed261156f88f}\label{test__utils_8h_a550e20e1c0e8824261caed261156f88f}} 
+\index{test\+\_\+utils.\+h@{test\+\_\+utils.\+h}!exception\+\_\+test\+\_\+helper@{exception\+\_\+test\+\_\+helper}}
+\index{exception\+\_\+test\+\_\+helper@{exception\+\_\+test\+\_\+helper}!test\+\_\+utils.\+h@{test\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{exception\+\_\+test\+\_\+helper()}{exception\_test\_helper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Functor , typename Arg0 , typename... Args$>$ \\
+void exception\+\_\+test\+\_\+helper (\begin{DoxyParamCaption}\item[{std\+::true\+\_\+type}]{,  }\item[{Functor}]{fun,  }\item[{Arg0 \&\&}]{arg0,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+Overload for member functions More here\+: \href{https://stackoverflow.com/a/22972231}{\tt https\+://stackoverflow.\+com/a/22972231} \mbox{\Hypertarget{test__utils_8h_acffe62725c97ef40d052d0600fc9b1e5}\label{test__utils_8h_acffe62725c97ef40d052d0600fc9b1e5}} 
+\index{test\+\_\+utils.\+h@{test\+\_\+utils.\+h}!float\+\_\+equality@{float\+\_\+equality}}
+\index{float\+\_\+equality@{float\+\_\+equality}!test\+\_\+utils.\+h@{test\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{float\+\_\+equality()}{float\_equality()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool float\+\_\+equality (\begin{DoxyParamCaption}\item[{T}]{num1,  }\item[{T}]{num2,  }\item[{T}]{tol }\end{DoxyParamCaption})}
+
+
+
+Compare num1 and num2 as inexact values. 
+
+For floating point compoarisons, i.\+e. floats, doubles Current version based on \href{https://stackoverflow.com/a/15012792/2763915}{\tt https\+://stackoverflow.\+com/a/15012792/2763915} 
+\begin{DoxyParams}{Parameters}
+{\em num1} & -\/ first number \\
+\hline
+{\em num2} & -\/ second number \\
+\hline
+{\em tol} & -\/ relative tolerance for comparison \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal within the tolerance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{test__utils_8h_a20afc16590fee943a71b270aa0b89d7f}\label{test__utils_8h_a20afc16590fee943a71b270aa0b89d7f}} 
+\index{test\+\_\+utils.\+h@{test\+\_\+utils.\+h}!is\+\_\+equal\+\_\+exact@{is\+\_\+equal\+\_\+exact}}
+\index{is\+\_\+equal\+\_\+exact@{is\+\_\+equal\+\_\+exact}!test\+\_\+utils.\+h@{test\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+equal\+\_\+exact()}{is\_equal\_exact()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool is\+\_\+equal\+\_\+exact (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ T $>$$>$}]{vec1,  }\item[{const std\+::vector$<$ std\+::vector$<$ T $>$$>$}]{vec2 }\end{DoxyParamCaption})}
+
+
+
+Compares two 2D vectors of type appropriate for identical comparison. 
+
+Suitable types include int, bool, std\+::string; will not work on float or double 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vec\+\_\+1} & -\/ first vector \\
+\hline
+\mbox{\tt in}  & {\em vec\+\_\+2} & -\/ second vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all inner vectors are identical and the outer vectors are the same size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{test__utils_8h_ad7d29d04a3449aa556f2b5c0d5b33ea6}\label{test__utils_8h_ad7d29d04a3449aa556f2b5c0d5b33ea6}} 
+\index{test\+\_\+utils.\+h@{test\+\_\+utils.\+h}!is\+\_\+equal\+\_\+floats@{is\+\_\+equal\+\_\+floats}}
+\index{is\+\_\+equal\+\_\+floats@{is\+\_\+equal\+\_\+floats}!test\+\_\+utils.\+h@{test\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+equal\+\_\+floats()}{is\_equal\_floats()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool is\+\_\+equal\+\_\+floats (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ T $>$$>$}]{vec1,  }\item[{const std\+::vector$<$ std\+::vector$<$ T $>$$>$}]{vec2,  }\item[{const T}]{tol }\end{DoxyParamCaption})}
+
+
+
+Compares two 2D vectors of type not appropriate for identical comparison. 
+
+Suitable types include float and double; will work on other types too but when possible better use its exact counterpart 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em vec\+\_\+1} & -\/ first vector \\
+\hline
+\mbox{\tt in}  & {\em vec\+\_\+2} & -\/ second vector \\
+\hline
+\mbox{\tt in}  & {\em tol} & -\/ tolerance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all inner vectors are identical and the outer vectors are the same size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{test__utils_8h_afd810ace9c905a07cfc321c0580c663b}\label{test__utils_8h_afd810ace9c905a07cfc321c0580c663b}} 
+\index{test\+\_\+utils.\+h@{test\+\_\+utils.\+h}!test\+\_\+pass@{test\+\_\+pass}}
+\index{test\+\_\+pass@{test\+\_\+pass}!test\+\_\+utils.\+h@{test\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{test\+\_\+pass()}{test\_pass()}}
+{\footnotesize\ttfamily void test\+\_\+pass (\begin{DoxyParamCaption}\item[{const bool}]{val,  }\item[{const std\+::string}]{msg }\end{DoxyParamCaption})}
+
+
+
+Print if the test passed or failed. 
+
+Hardcoded color scheme, depending on val it will print a pass/fail notification following the test name 
+\begin{DoxyParams}{Parameters}
+{\em val} & \mbox{[}in\mbox{]} -\/ test outcome \\
+\hline
+{\em tname} & \mbox{[}in\mbox{]} -\/ test name \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{test__utils_8h_a168484a9c8eab13ae9cc4eb3a6440cef}\label{test__utils_8h_a168484a9c8eab13ae9cc4eb3a6440cef}} 
+\index{test\+\_\+utils.\+h@{test\+\_\+utils.\+h}!print\+\_\+msg@{print\+\_\+msg}}
+\index{print\+\_\+msg@{print\+\_\+msg}!test\+\_\+utils.\+h@{test\+\_\+utils.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+msg}{print\_msg}}
+{\footnotesize\ttfamily const auto print\+\_\+msg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [](\textcolor{keyword}{const} std::string msg)
+                            \{ std::cout << msg << std::endl; \}
+\end{DoxyCode}
+
+
+Print a message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em msg} & -\/ content to print \\
+\hline
+\end{DoxyParams}

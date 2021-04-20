@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['random_5fshuffle_5ftest',['random_shuffle_test',['../rng__tests_8cpp.html#a953257cf2e2fcd0d3cdf7973ddb6a7ba',1,'rng_tests.cpp']]],
+  ['read_5fage_5fdependent_5fdistribution_5ftest',['read_age_dependent_distribution_test',['../load__parameters__tests_8cpp.html#a8b3a7ba355a3f0bb23462d0d66294ea7',1,'load_parameters_tests.cpp']]],
+  ['read_5fparameters_5ftest',['read_parameters_test',['../load__parameters__tests_8cpp.html#a0530b5ce99019062173578bd2a485aad',1,'load_parameters_tests.cpp']]],
+  ['read_5ftest',['read_test',['../abm__io__tests_8cpp.html#aeba874ce815ac2a531e78202c07adc5c',1,'abm_io_tests.cpp']]],
+  ['read_5ftest_5fsuite',['read_test_suite',['../abm__io__tests_8cpp.html#af9b648609b23a0a9c5fdac9cc3c818fd',1,'abm_io_tests.cpp']]],
+  ['read_5fvector',['read_vector',['../classAbmIO.html#aab72a672f5e932cd46443672fc9cdfd8',1,'AbmIO']]],
+  ['recovering',['recovering',['../classAgent.html#adbe591f0156d55ec1eca37a7d9f75fe4',1,'Agent']]],
+  ['recovering_5fexposed',['recovering_exposed',['../classAgent.html#a221f1afb3791e0f0fa9eaccaea2d00cb',1,'Agent::recovering_exposed()'],['../classInfection.html#a5600af48af334712c2d18cc7fadfe4a5',1,'Infection::recovering_exposed()']]],
+  ['register_5fagent',['register_agent',['../classPlace.html#a2e46294c2fd0e871740e3ddab1095296',1,'Place']]],
+  ['regularstatesmanager',['RegularStatesManager',['../classRegularStatesManager.html#a05c6533bf5e460afef3e89d75413a510',1,'RegularStatesManager']]],
+  ['regulartransitions',['RegularTransitions',['../classRegularTransitions.html#aa9908666aa96fd2ddcbe787da091dd7c',1,'RegularTransitions']]],
+  ['remove_5fagent',['remove_agent',['../classPlace.html#aee19c9f59dcaeb02ac3b1e9c8adaa784',1,'Place']]],
+  ['remove_5fagent_5ffrom_5fpublic_5fplaces',['remove_agent_from_public_places',['../contributions__tests_8cpp.html#a70b808a3973d44387a4df05499477525',1,'contributions_tests.cpp']]],
+  ['remove_5fflu_5fagent',['remove_flu_agent',['../classFlu.html#a0106ecf7ba7e6db8f2b3cd5b5715537f',1,'Flu']]],
+  ['remove_5fsusceptible_5fagent',['remove_susceptible_agent',['../classFlu.html#ace749e39454ab8afd3fda5de94b9ff98',1,'Flu']]],
+  ['removed',['removed',['../classAgent.html#ab04af1e2f506d5b9b050dc132c474065',1,'Agent']]],
+  ['reset_5fcontributions',['reset_contributions',['../classABM.html#aa379d58dc83b31ad00ec57a1756fefd5',1,'ABM::reset_contributions()'],['../classHospital.html#a928d185dde78d0bce3034b7a138b472d',1,'Hospital::reset_contributions()'],['../classPlace.html#abc1e560ef8aaaad565ccceb9540e5bd8',1,'Place::reset_contributions()']]],
+  ['reset_5finput_5fstream',['reset_input_stream',['../classFileHandler.html#a44807c8185a65201a5e183b634aacc6c',1,'FileHandler']]],
+  ['reset_5freturning_5fflu',['reset_returning_flu',['../classHspEmployeeStatesManager.html#a8a648a456fb00140b8362201e034a05a',1,'HspEmployeeStatesManager::reset_returning_flu()'],['../classRegularStatesManager.html#ab225ce7069cd51e2c451ac8fbd28c3e3',1,'RegularStatesManager::reset_returning_flu()'],['../classStatesManager.html#a8f95740774b07cd67d64119cfbadae6a',1,'StatesManager::reset_returning_flu()']]],
+  ['reset_5fsums',['reset_sums',['../classContributions.html#a3910b40d45a0d57fc8d082a2158ee2aa',1,'Contributions']]],
+  ['retirement_5fhome_5femployee',['retirement_home_employee',['../classAgent.html#a6283111c121ebf8985810b69a51eb951',1,'Agent']]],
+  ['retirement_5fhome_5fresident',['retirement_home_resident',['../classAgent.html#aa38f589ea0afe69b5079c559862bff19',1,'Agent']]],
+  ['retirement_5fhome_5ftest',['retirement_home_test',['../places__test_8cpp.html#a8bfa98dbcd9760fd278860246f235d42',1,'places_test.cpp']]],
+  ['retirementhome',['RetirementHome',['../classRetirementHome.html#a9161850a079e6f54e129eeceb5fedf37',1,'RetirementHome::RetirementHome()=default'],['../classRetirementHome.html#a31e01ecb1d6a99468939ed75090803ef',1,'RetirementHome::RetirementHome(const int rh_ID, const double xi, const double yi, const double severity_cor, const double psi_e, const double beta_e, const double beta_r, const double betaih)']]],
+  ['rng',['RNG',['../classRNG.html#a0028b717ff3d402a5829fc09ab1c5ed4',1,'RNG']]]
+];

@@ -1,0 +1,279 @@
+\hypertarget{classHospital}{}\section{Hospital Class Reference}
+\label{classHospital}\index{Hospital@{Hospital}}
+
+
+{\ttfamily \#include $<$hospital.\+h$>$}
+
+Inheritance diagram for Hospital\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHospital}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHospital_ae76395fdb36d01f526cb962a13784fbd}{Hospital} ()=default
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classHospital}{Hospital} object with default attributes. \end{DoxyCompactList}\item 
+\hyperlink{classHospital_a9f0f34e37e3877d717e10e7e41af21f7}{Hospital} (const int hospital\+\_\+\+ID, const double xi, const double yi, const double severity\+\_\+cor, const std\+::map$<$ const std\+::string, const double $>$ betas)
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classHospital}{Hospital} object. \end{DoxyCompactList}\item 
+void \hyperlink{classHospital_a55c2f778b4aeb0f775bb1b45c147c7b8}{add\+\_\+exposed} (double inf\+\_\+var) override
+\begin{DoxyCompactList}\small\item\em Include exposed employee contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classHospital_a68dc4af05fc1fbca3d5c48c835e8eb72}{add\+\_\+exposed\+\_\+patient} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include exposed contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classHospital_aa33d0902fa7c16cb04e0652cadfcd946}{add\+\_\+symptomatic\+\_\+patient} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include symptomatic contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classHospital_a501b5ff208e5cb612966f9200c6f359e}{add\+\_\+hospital\+\_\+tested} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include tested at hospital contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classHospital_a278812e4a6436ab49badb9e26a81be3f}{add\+\_\+exposed\+\_\+hospital\+\_\+tested} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include tested at hospital contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classHospital_a568e499510d128da61f39f3983fa20a8}{add\+\_\+hospitalized} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include hospitalized contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classHospital_a5a59a3e88cd740b32c8829f31a51f47c}{add\+\_\+hospitalized\+\_\+\+I\+CU} (double inf\+\_\+var)
+\begin{DoxyCompactList}\small\item\em Include hospitalized in I\+CU contribution in the sum. \end{DoxyCompactList}\item 
+void \hyperlink{classHospital_a2661ef21ce8561a28849d1be40e2ee50}{increase\+\_\+total\+\_\+tested} ()
+\begin{DoxyCompactList}\small\item\em Increase number of tested at that time step. \end{DoxyCompactList}\item 
+void \hyperlink{classHospital_a928d185dde78d0bce3034b7a138b472d}{reset\+\_\+contributions} () override
+\begin{DoxyCompactList}\small\item\em Reset select variables of a place after transmission step. \end{DoxyCompactList}\item 
+void \hyperlink{classHospital_ad87fc4a53e50a35489c9024892a7c9d6}{compute\+\_\+infected\+\_\+contribution} () override
+\begin{DoxyCompactList}\small\item\em Contribution takes into account agents tested at current step. \end{DoxyCompactList}\item 
+int \hyperlink{classHospital_ab7c68212de4e44986c8de732af160221}{get\+\_\+n\+\_\+tested} () const
+\begin{DoxyCompactList}\small\item\em Returns number of \hyperlink{classFlu}{Flu} agents being tested in a hospital at that step. \end{DoxyCompactList}\item 
+double \hyperlink{classHospital_a640cbef59ed726254579948f399d0e8e}{get\+\_\+lambda\+\_\+sum} () const
+\begin{DoxyCompactList}\small\item\em Returns number of \hyperlink{classFlu}{Flu} agents being tested in a hospital at that step. \end{DoxyCompactList}\item 
+void \hyperlink{classHospital_a3a1963886a9974663c2a3e82817f1a2b}{print\+\_\+basic} (std\+::ostream \&where) const override
+\begin{DoxyCompactList}\small\item\em Save information about a \hyperlink{classHospital}{Hospital} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHospital_ae76395fdb36d01f526cb962a13784fbd}\label{classHospital_ae76395fdb36d01f526cb962a13784fbd}} 
+\index{Hospital@{Hospital}!Hospital@{Hospital}}
+\index{Hospital@{Hospital}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{Hospital()}{Hospital()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Hospital\+::\+Hospital (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates a \hyperlink{classHospital}{Hospital} object with default attributes. 
+
+\mbox{\Hypertarget{classHospital_a9f0f34e37e3877d717e10e7e41af21f7}\label{classHospital_a9f0f34e37e3877d717e10e7e41af21f7}} 
+\index{Hospital@{Hospital}!Hospital@{Hospital}}
+\index{Hospital@{Hospital}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{Hospital()}{Hospital()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Hospital\+::\+Hospital (\begin{DoxyParamCaption}\item[{const int}]{hospital\+\_\+\+ID,  }\item[{const double}]{xi,  }\item[{const double}]{yi,  }\item[{const double}]{severity\+\_\+cor,  }\item[{const std\+::map$<$ const std\+::string, const double $>$}]{betas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \hyperlink{classHospital}{Hospital} object. 
+
+\hyperlink{classHospital}{Hospital} with custom ID, location, and infection parameters
+
+
+\begin{DoxyParams}{Parameters}
+{\em hospital\+\_\+\+ID} & -\/ ID of the hospital \\
+\hline
+{\em xi} & -\/ x coordinate of the hospital \\
+\hline
+{\em yi} & -\/ y coordinate of the hospital \\
+\hline
+{\em severity\+\_\+cor} & -\/ severity correction for symptomatic \\
+\hline
+{\em betas} & -\/ map of infection transmission rates, 1/time; name \+: value \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classHospital_a55c2f778b4aeb0f775bb1b45c147c7b8}\label{classHospital_a55c2f778b4aeb0f775bb1b45c147c7b8}} 
+\index{Hospital@{Hospital}!add\+\_\+exposed@{add\+\_\+exposed}}
+\index{add\+\_\+exposed@{add\+\_\+exposed}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{add\+\_\+exposed()}{add\_exposed()}}
+{\footnotesize\ttfamily void Hospital\+::add\+\_\+exposed (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Include exposed employee contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classPlace_a96444ff0aa08a921598d0afb9c00cec8}{Place}.
+
+\mbox{\Hypertarget{classHospital_a278812e4a6436ab49badb9e26a81be3f}\label{classHospital_a278812e4a6436ab49badb9e26a81be3f}} 
+\index{Hospital@{Hospital}!add\+\_\+exposed\+\_\+hospital\+\_\+tested@{add\+\_\+exposed\+\_\+hospital\+\_\+tested}}
+\index{add\+\_\+exposed\+\_\+hospital\+\_\+tested@{add\+\_\+exposed\+\_\+hospital\+\_\+tested}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{add\+\_\+exposed\+\_\+hospital\+\_\+tested()}{add\_exposed\_hospital\_tested()}}
+{\footnotesize\ttfamily void Hospital\+::add\+\_\+exposed\+\_\+hospital\+\_\+tested (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include tested at hospital contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHospital_a68dc4af05fc1fbca3d5c48c835e8eb72}\label{classHospital_a68dc4af05fc1fbca3d5c48c835e8eb72}} 
+\index{Hospital@{Hospital}!add\+\_\+exposed\+\_\+patient@{add\+\_\+exposed\+\_\+patient}}
+\index{add\+\_\+exposed\+\_\+patient@{add\+\_\+exposed\+\_\+patient}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{add\+\_\+exposed\+\_\+patient()}{add\_exposed\_patient()}}
+{\footnotesize\ttfamily void Hospital\+::add\+\_\+exposed\+\_\+patient (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include exposed contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHospital_a501b5ff208e5cb612966f9200c6f359e}\label{classHospital_a501b5ff208e5cb612966f9200c6f359e}} 
+\index{Hospital@{Hospital}!add\+\_\+hospital\+\_\+tested@{add\+\_\+hospital\+\_\+tested}}
+\index{add\+\_\+hospital\+\_\+tested@{add\+\_\+hospital\+\_\+tested}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{add\+\_\+hospital\+\_\+tested()}{add\_hospital\_tested()}}
+{\footnotesize\ttfamily void Hospital\+::add\+\_\+hospital\+\_\+tested (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include tested at hospital contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHospital_a568e499510d128da61f39f3983fa20a8}\label{classHospital_a568e499510d128da61f39f3983fa20a8}} 
+\index{Hospital@{Hospital}!add\+\_\+hospitalized@{add\+\_\+hospitalized}}
+\index{add\+\_\+hospitalized@{add\+\_\+hospitalized}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{add\+\_\+hospitalized()}{add\_hospitalized()}}
+{\footnotesize\ttfamily void Hospital\+::add\+\_\+hospitalized (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include hospitalized contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHospital_a5a59a3e88cd740b32c8829f31a51f47c}\label{classHospital_a5a59a3e88cd740b32c8829f31a51f47c}} 
+\index{Hospital@{Hospital}!add\+\_\+hospitalized\+\_\+\+I\+CU@{add\+\_\+hospitalized\+\_\+\+I\+CU}}
+\index{add\+\_\+hospitalized\+\_\+\+I\+CU@{add\+\_\+hospitalized\+\_\+\+I\+CU}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{add\+\_\+hospitalized\+\_\+\+I\+C\+U()}{add\_hospitalized\_ICU()}}
+{\footnotesize\ttfamily void Hospital\+::add\+\_\+hospitalized\+\_\+\+I\+CU (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include hospitalized in I\+CU contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHospital_aa33d0902fa7c16cb04e0652cadfcd946}\label{classHospital_aa33d0902fa7c16cb04e0652cadfcd946}} 
+\index{Hospital@{Hospital}!add\+\_\+symptomatic\+\_\+patient@{add\+\_\+symptomatic\+\_\+patient}}
+\index{add\+\_\+symptomatic\+\_\+patient@{add\+\_\+symptomatic\+\_\+patient}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{add\+\_\+symptomatic\+\_\+patient()}{add\_symptomatic\_patient()}}
+{\footnotesize\ttfamily void Hospital\+::add\+\_\+symptomatic\+\_\+patient (\begin{DoxyParamCaption}\item[{double}]{inf\+\_\+var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Include symptomatic contribution in the sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+var} & -\/ agent infectiousness variability factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHospital_ad87fc4a53e50a35489c9024892a7c9d6}\label{classHospital_ad87fc4a53e50a35489c9024892a7c9d6}} 
+\index{Hospital@{Hospital}!compute\+\_\+infected\+\_\+contribution@{compute\+\_\+infected\+\_\+contribution}}
+\index{compute\+\_\+infected\+\_\+contribution@{compute\+\_\+infected\+\_\+contribution}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{compute\+\_\+infected\+\_\+contribution()}{compute\_infected\_contribution()}}
+{\footnotesize\ttfamily void Hospital\+::compute\+\_\+infected\+\_\+contribution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Contribution takes into account agents tested at current step. 
+
+
+
+Reimplemented from \hyperlink{classPlace_aeb4c561e8bc4e1ae7186baed6ef1aa47}{Place}.
+
+\mbox{\Hypertarget{classHospital_a640cbef59ed726254579948f399d0e8e}\label{classHospital_a640cbef59ed726254579948f399d0e8e}} 
+\index{Hospital@{Hospital}!get\+\_\+lambda\+\_\+sum@{get\+\_\+lambda\+\_\+sum}}
+\index{get\+\_\+lambda\+\_\+sum@{get\+\_\+lambda\+\_\+sum}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{get\+\_\+lambda\+\_\+sum()}{get\_lambda\_sum()}}
+{\footnotesize\ttfamily double Hospital\+::get\+\_\+lambda\+\_\+sum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns number of \hyperlink{classFlu}{Flu} agents being tested in a hospital at that step. 
+
+\mbox{\Hypertarget{classHospital_ab7c68212de4e44986c8de732af160221}\label{classHospital_ab7c68212de4e44986c8de732af160221}} 
+\index{Hospital@{Hospital}!get\+\_\+n\+\_\+tested@{get\+\_\+n\+\_\+tested}}
+\index{get\+\_\+n\+\_\+tested@{get\+\_\+n\+\_\+tested}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{get\+\_\+n\+\_\+tested()}{get\_n\_tested()}}
+{\footnotesize\ttfamily int Hospital\+::get\+\_\+n\+\_\+tested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns number of \hyperlink{classFlu}{Flu} agents being tested in a hospital at that step. 
+
+\mbox{\Hypertarget{classHospital_a2661ef21ce8561a28849d1be40e2ee50}\label{classHospital_a2661ef21ce8561a28849d1be40e2ee50}} 
+\index{Hospital@{Hospital}!increase\+\_\+total\+\_\+tested@{increase\+\_\+total\+\_\+tested}}
+\index{increase\+\_\+total\+\_\+tested@{increase\+\_\+total\+\_\+tested}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{increase\+\_\+total\+\_\+tested()}{increase\_total\_tested()}}
+{\footnotesize\ttfamily void Hospital\+::increase\+\_\+total\+\_\+tested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Increase number of tested at that time step. 
+
+\mbox{\Hypertarget{classHospital_a3a1963886a9974663c2a3e82817f1a2b}\label{classHospital_a3a1963886a9974663c2a3e82817f1a2b}} 
+\index{Hospital@{Hospital}!print\+\_\+basic@{print\+\_\+basic}}
+\index{print\+\_\+basic@{print\+\_\+basic}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{print\+\_\+basic()}{print\_basic()}}
+{\footnotesize\ttfamily void Hospital\+::print\+\_\+basic (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{where }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Save information about a \hyperlink{classHospital}{Hospital} object. 
+
+Saves to a file, everything but detailed agent information; order is ID $\vert$ x $\vert$ y $\vert$ number of agents $\vert$ number of infected agents $\vert$ ck $\vert$ beta\+\_\+1, 2, and 3 Delimiter is a space. 
+\begin{DoxyParams}{Parameters}
+{\em where} & -\/ output stream \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classPlace_a9aa7649e0b91c5f61a5f71e9ca808fe1}{Place}.
+
+\mbox{\Hypertarget{classHospital_a928d185dde78d0bce3034b7a138b472d}\label{classHospital_a928d185dde78d0bce3034b7a138b472d}} 
+\index{Hospital@{Hospital}!reset\+\_\+contributions@{reset\+\_\+contributions}}
+\index{reset\+\_\+contributions@{reset\+\_\+contributions}!Hospital@{Hospital}}
+\subsubsection{\texorpdfstring{reset\+\_\+contributions()}{reset\_contributions()}}
+{\footnotesize\ttfamily void Hospital\+::reset\+\_\+contributions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reset select variables of a place after transmission step. 
+
+
+
+Reimplemented from \hyperlink{classPlace_abc1e560ef8aaaad565ccceb9540e5bd8}{Place}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/places/\hyperlink{hospital_8h}{hospital.\+h}\item 
+src/places/\hyperlink{hospital_8cpp}{hospital.\+cpp}\end{DoxyCompactItemize}

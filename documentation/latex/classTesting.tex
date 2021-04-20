@@ -1,0 +1,140 @@
+\hypertarget{classTesting}{}\section{Testing Class Reference}
+\label{classTesting}\index{Testing@{Testing}}
+
+
+{\ttfamily \#include $<$testing.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTesting_aeeb2ffdd21714053d03aeddc1209649c}{Testing} ()=default
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classTesting}{Testing} object with default attributes. \end{DoxyCompactList}\item 
+void \hyperlink{classTesting_ad618be281d4c48922f30287d8c8f4379}{initialize\+\_\+testing} (const double tst, const double neg, const double fneg, const double fpos, const double sy\+\_\+ini, const double exp\+\_\+ini)
+\begin{DoxyCompactList}\small\item\em Sets initial testing attributes. \end{DoxyCompactList}\item 
+void \hyperlink{classTesting_a38e9c00e44647bcb952ed4b1d5c712c8}{set\+\_\+time\+\_\+varying} (const std\+::vector$<$ std\+::vector$<$ double $>$$>$ time\+\_\+vec)
+\begin{DoxyCompactList}\small\item\em Sets the vector of times vs. testing fractions. \end{DoxyCompactList}\item 
+bool \hyperlink{classTesting_a1bbf23d75941e99cca81e6e17fb3317c}{started} (const double time) const
+\begin{DoxyCompactList}\small\item\em True if period of testing has started. \end{DoxyCompactList}\item 
+bool \hyperlink{classTesting_a4d34e310ca89cab5515d6dde01e8183a}{check\+\_\+switch\+\_\+time} (const double time)
+\begin{DoxyCompactList}\small\item\em Check if time to change values and change them if yes. \end{DoxyCompactList}\item 
+double \hyperlink{classTesting_aa8c8052e8179abde17276c0ad78fd247}{get\+\_\+sy\+\_\+tested\+\_\+prob} () const
+\begin{DoxyCompactList}\small\item\em Probability symptomatic gets tested. \end{DoxyCompactList}\item 
+double \hyperlink{classTesting_aa46e6228c0ab63baea9a9453c79fa5f9}{get\+\_\+exp\+\_\+tested\+\_\+prob} () const
+\begin{DoxyCompactList}\small\item\em Probability exposed gets tested. \end{DoxyCompactList}\item 
+double \hyperlink{classTesting_a0d44f5f729d3725422a748155454a062}{get\+\_\+prob\+\_\+flu\+\_\+tested} () const
+\begin{DoxyCompactList}\small\item\em Probability flu (non-\/covid symptomatic) gets tested. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTesting_aeeb2ffdd21714053d03aeddc1209649c}\label{classTesting_aeeb2ffdd21714053d03aeddc1209649c}} 
+\index{Testing@{Testing}!Testing@{Testing}}
+\index{Testing@{Testing}!Testing@{Testing}}
+\subsubsection{\texorpdfstring{Testing()}{Testing()}}
+{\footnotesize\ttfamily Testing\+::\+Testing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates a \hyperlink{classTesting}{Testing} object with default attributes. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTesting_a4d34e310ca89cab5515d6dde01e8183a}\label{classTesting_a4d34e310ca89cab5515d6dde01e8183a}} 
+\index{Testing@{Testing}!check\+\_\+switch\+\_\+time@{check\+\_\+switch\+\_\+time}}
+\index{check\+\_\+switch\+\_\+time@{check\+\_\+switch\+\_\+time}!Testing@{Testing}}
+\subsubsection{\texorpdfstring{check\+\_\+switch\+\_\+time()}{check\_switch\_time()}}
+{\footnotesize\ttfamily bool Testing\+::check\+\_\+switch\+\_\+time (\begin{DoxyParamCaption}\item[{const double}]{time }\end{DoxyParamCaption})}
+
+
+
+Check if time to change values and change them if yes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ current simulation time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if values were changed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTesting_aa46e6228c0ab63baea9a9453c79fa5f9}\label{classTesting_aa46e6228c0ab63baea9a9453c79fa5f9}} 
+\index{Testing@{Testing}!get\+\_\+exp\+\_\+tested\+\_\+prob@{get\+\_\+exp\+\_\+tested\+\_\+prob}}
+\index{get\+\_\+exp\+\_\+tested\+\_\+prob@{get\+\_\+exp\+\_\+tested\+\_\+prob}!Testing@{Testing}}
+\subsubsection{\texorpdfstring{get\+\_\+exp\+\_\+tested\+\_\+prob()}{get\_exp\_tested\_prob()}}
+{\footnotesize\ttfamily double Testing\+::get\+\_\+exp\+\_\+tested\+\_\+prob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Probability exposed gets tested. 
+
+\mbox{\Hypertarget{classTesting_a0d44f5f729d3725422a748155454a062}\label{classTesting_a0d44f5f729d3725422a748155454a062}} 
+\index{Testing@{Testing}!get\+\_\+prob\+\_\+flu\+\_\+tested@{get\+\_\+prob\+\_\+flu\+\_\+tested}}
+\index{get\+\_\+prob\+\_\+flu\+\_\+tested@{get\+\_\+prob\+\_\+flu\+\_\+tested}!Testing@{Testing}}
+\subsubsection{\texorpdfstring{get\+\_\+prob\+\_\+flu\+\_\+tested()}{get\_prob\_flu\_tested()}}
+{\footnotesize\ttfamily double Testing\+::get\+\_\+prob\+\_\+flu\+\_\+tested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Probability flu (non-\/covid symptomatic) gets tested. 
+
+\mbox{\Hypertarget{classTesting_aa8c8052e8179abde17276c0ad78fd247}\label{classTesting_aa8c8052e8179abde17276c0ad78fd247}} 
+\index{Testing@{Testing}!get\+\_\+sy\+\_\+tested\+\_\+prob@{get\+\_\+sy\+\_\+tested\+\_\+prob}}
+\index{get\+\_\+sy\+\_\+tested\+\_\+prob@{get\+\_\+sy\+\_\+tested\+\_\+prob}!Testing@{Testing}}
+\subsubsection{\texorpdfstring{get\+\_\+sy\+\_\+tested\+\_\+prob()}{get\_sy\_tested\_prob()}}
+{\footnotesize\ttfamily double Testing\+::get\+\_\+sy\+\_\+tested\+\_\+prob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Probability symptomatic gets tested. 
+
+\mbox{\Hypertarget{classTesting_ad618be281d4c48922f30287d8c8f4379}\label{classTesting_ad618be281d4c48922f30287d8c8f4379}} 
+\index{Testing@{Testing}!initialize\+\_\+testing@{initialize\+\_\+testing}}
+\index{initialize\+\_\+testing@{initialize\+\_\+testing}!Testing@{Testing}}
+\subsubsection{\texorpdfstring{initialize\+\_\+testing()}{initialize\_testing()}}
+{\footnotesize\ttfamily void Testing\+::initialize\+\_\+testing (\begin{DoxyParamCaption}\item[{const double}]{tst,  }\item[{const double}]{neg,  }\item[{const double}]{fneg,  }\item[{const double}]{fpos,  }\item[{const double}]{sy\+\_\+ini,  }\item[{const double}]{exp\+\_\+ini }\end{DoxyParamCaption})}
+
+
+
+Sets initial testing attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tst} & -\/ time when testing starts \\
+\hline
+{\em neg} & -\/ fraction of negative tests \\
+\hline
+{\em fneg} & -\/ fraction of false negative tests \\
+\hline
+{\em fpos} & -\/ fraction of false positive tests \\
+\hline
+{\em sy\+\_\+ini} & -\/ initial fraction of symptomatic agents to test \\
+\hline
+{\em exp\+\_\+ini} & -\/ initial fraction of exposed agents to test \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTesting_a38e9c00e44647bcb952ed4b1d5c712c8}\label{classTesting_a38e9c00e44647bcb952ed4b1d5c712c8}} 
+\index{Testing@{Testing}!set\+\_\+time\+\_\+varying@{set\+\_\+time\+\_\+varying}}
+\index{set\+\_\+time\+\_\+varying@{set\+\_\+time\+\_\+varying}!Testing@{Testing}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+varying()}{set\_time\_varying()}}
+{\footnotesize\ttfamily void Testing\+::set\+\_\+time\+\_\+varying (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ double $>$$>$}]{time\+\_\+vec }\end{DoxyParamCaption})}
+
+
+
+Sets the vector of times vs. testing fractions. 
+
+\mbox{\Hypertarget{classTesting_a1bbf23d75941e99cca81e6e17fb3317c}\label{classTesting_a1bbf23d75941e99cca81e6e17fb3317c}} 
+\index{Testing@{Testing}!started@{started}}
+\index{started@{started}!Testing@{Testing}}
+\subsubsection{\texorpdfstring{started()}{started()}}
+{\footnotesize\ttfamily bool Testing\+::started (\begin{DoxyParamCaption}\item[{const double}]{time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+True if period of testing has started. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{testing_8h}{testing.\+h}\item 
+src/\hyperlink{testing_8cpp}{testing.\+cpp}\end{DoxyCompactItemize}

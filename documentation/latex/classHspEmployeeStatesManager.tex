@@ -1,0 +1,233 @@
+\hypertarget{classHspEmployeeStatesManager}{}\section{Hsp\+Employee\+States\+Manager Class Reference}
+\label{classHspEmployeeStatesManager}\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+
+
+{\ttfamily \#include $<$hsp\+\_\+employee\+\_\+states\+\_\+manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHspEmployeeStatesManager_a76b1f4aa0c3bc03c072878c5678ea420}{Hsp\+Employee\+States\+Manager} ()=default
+\item 
+void \hyperlink{classHspEmployeeStatesManager_a4fea72f10a69fe01212a847b43969f3e}{set\+\_\+susceptible\+\_\+to\+\_\+exposed} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from susceptible to exposed. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_aa745324359627d4497c255be7b9615e1}{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from susceptible to exposed that will never become symptomatic. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_a7f53c872e0297fae9a9f8ef78d861682}{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set exposed that never developed symptoms to removed. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_a0d0d4d403644011774c738435a226ea2}{set\+\_\+exposed\+\_\+to\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from exposed to general symptomatic. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_a8496e09c1ad539dcfc4b9fc64ba86fbf}{set\+\_\+dying\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states relevant to agent that will die. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_a3ed9fedc4e2b32d21d472463af5d3df5}{set\+\_\+recovering\+\_\+symptomatic} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states relevant to agent that will recover. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_a76dfcc6cd9c617f881bc44984a673174}{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set testing in hospital, initial state. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_aca27d50807561a44dd4a96eba69dc2bf}{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set testing in hospital for exposed, initial state. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_a4b0f847d5e9ce5e1b48813ba506cfe36}{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for just tested. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_aaefccb28d50be6a89b20255779275520}{set\+\_\+tested\+\_\+false\+\_\+negative} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all states for transition from tested to false negative. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_aa5f8881bc33d8b92965d828295cc5251}{set\+\_\+icu\+\_\+dying} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for hospitalized, I\+CU -\/ dying. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_acb3bbc5680fafac83634f93975d6f684}{set\+\_\+icu\+\_\+recovering} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for hospitalized, I\+CU -\/ recovering. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_a33035540117578d7a090458c89a7cf33}{set\+\_\+hospitalized} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for hospitalized. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_ab41695ae171267f0aac57a1d7ddfe154}{set\+\_\+home\+\_\+isolation} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for isolated at home. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_a81c114346fa3ca81ed104ba2c5db9b49}{set\+\_\+any\+\_\+to\+\_\+removed} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Set all removed related states. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_a3b9a2c2ac3b20777c5c7d75dc6f9c002}{set\+\_\+tested\+\_\+negative} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em States for negative. \end{DoxyCompactList}\item 
+void \hyperlink{classHspEmployeeStatesManager_a8a648a456fb00140b8362201e034a05a}{reset\+\_\+returning\+\_\+flu} (\hyperlink{classAgent}{Agent} \&agent)
+\begin{DoxyCompactList}\small\item\em Reset flags for flu that is back to susceptible from IH. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a76b1f4aa0c3bc03c072878c5678ea420}\label{classHspEmployeeStatesManager_a76b1f4aa0c3bc03c072878c5678ea420}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{Hsp\+Employee\+States\+Manager()}{HspEmployeeStatesManager()}}
+{\footnotesize\ttfamily Hsp\+Employee\+States\+Manager\+::\+Hsp\+Employee\+States\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a8a648a456fb00140b8362201e034a05a}\label{classHspEmployeeStatesManager_a8a648a456fb00140b8362201e034a05a}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!reset\+\_\+returning\+\_\+flu@{reset\+\_\+returning\+\_\+flu}}
+\index{reset\+\_\+returning\+\_\+flu@{reset\+\_\+returning\+\_\+flu}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{reset\+\_\+returning\+\_\+flu()}{reset\_returning\_flu()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::reset\+\_\+returning\+\_\+flu (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Reset flags for flu that is back to susceptible from IH. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a81c114346fa3ca81ed104ba2c5db9b49}\label{classHspEmployeeStatesManager_a81c114346fa3ca81ed104ba2c5db9b49}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+any\+\_\+to\+\_\+removed@{set\+\_\+any\+\_\+to\+\_\+removed}}
+\index{set\+\_\+any\+\_\+to\+\_\+removed@{set\+\_\+any\+\_\+to\+\_\+removed}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+any\+\_\+to\+\_\+removed()}{set\_any\_to\_removed()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+any\+\_\+to\+\_\+removed (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all removed related states. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a8496e09c1ad539dcfc4b9fc64ba86fbf}\label{classHspEmployeeStatesManager_a8496e09c1ad539dcfc4b9fc64ba86fbf}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+dying\+\_\+symptomatic@{set\+\_\+dying\+\_\+symptomatic}}
+\index{set\+\_\+dying\+\_\+symptomatic@{set\+\_\+dying\+\_\+symptomatic}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+dying\+\_\+symptomatic()}{set\_dying\_symptomatic()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+dying\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states relevant to agent that will die. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a7f53c872e0297fae9a9f8ef78d861682}\label{classHspEmployeeStatesManager_a7f53c872e0297fae9a9f8ef78d861682}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed@{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed}}
+\index{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed@{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed()}{set\_exposed\_never\_symptomatic\_to\_removed()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+exposed\+\_\+never\+\_\+symptomatic\+\_\+to\+\_\+removed (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set exposed that never developed symptoms to removed. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a0d0d4d403644011774c738435a226ea2}\label{classHspEmployeeStatesManager_a0d0d4d403644011774c738435a226ea2}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+exposed\+\_\+to\+\_\+symptomatic@{set\+\_\+exposed\+\_\+to\+\_\+symptomatic}}
+\index{set\+\_\+exposed\+\_\+to\+\_\+symptomatic@{set\+\_\+exposed\+\_\+to\+\_\+symptomatic}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+exposed\+\_\+to\+\_\+symptomatic()}{set\_exposed\_to\_symptomatic()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+exposed\+\_\+to\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from exposed to general symptomatic. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_aca27d50807561a44dd4a96eba69dc2bf}\label{classHspEmployeeStatesManager_aca27d50807561a44dd4a96eba69dc2bf}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital@{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital}}
+\index{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital@{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital()}{set\_exposed\_waiting\_for\_test\_in\_hospital()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+exposed\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set testing in hospital for exposed, initial state. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_ab41695ae171267f0aac57a1d7ddfe154}\label{classHspEmployeeStatesManager_ab41695ae171267f0aac57a1d7ddfe154}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+home\+\_\+isolation@{set\+\_\+home\+\_\+isolation}}
+\index{set\+\_\+home\+\_\+isolation@{set\+\_\+home\+\_\+isolation}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+home\+\_\+isolation()}{set\_home\_isolation()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+home\+\_\+isolation (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for isolated at home. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a33035540117578d7a090458c89a7cf33}\label{classHspEmployeeStatesManager_a33035540117578d7a090458c89a7cf33}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+hospitalized@{set\+\_\+hospitalized}}
+\index{set\+\_\+hospitalized@{set\+\_\+hospitalized}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+hospitalized()}{set\_hospitalized()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+hospitalized (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for hospitalized. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_aa5f8881bc33d8b92965d828295cc5251}\label{classHspEmployeeStatesManager_aa5f8881bc33d8b92965d828295cc5251}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+icu\+\_\+dying@{set\+\_\+icu\+\_\+dying}}
+\index{set\+\_\+icu\+\_\+dying@{set\+\_\+icu\+\_\+dying}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+icu\+\_\+dying()}{set\_icu\_dying()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+icu\+\_\+dying (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for hospitalized, I\+CU -\/ dying. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_acb3bbc5680fafac83634f93975d6f684}\label{classHspEmployeeStatesManager_acb3bbc5680fafac83634f93975d6f684}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+icu\+\_\+recovering@{set\+\_\+icu\+\_\+recovering}}
+\index{set\+\_\+icu\+\_\+recovering@{set\+\_\+icu\+\_\+recovering}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+icu\+\_\+recovering()}{set\_icu\_recovering()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+icu\+\_\+recovering (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for hospitalized, I\+CU -\/ recovering. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a3ed9fedc4e2b32d21d472463af5d3df5}\label{classHspEmployeeStatesManager_a3ed9fedc4e2b32d21d472463af5d3df5}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+recovering\+\_\+symptomatic@{set\+\_\+recovering\+\_\+symptomatic}}
+\index{set\+\_\+recovering\+\_\+symptomatic@{set\+\_\+recovering\+\_\+symptomatic}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+recovering\+\_\+symptomatic()}{set\_recovering\_symptomatic()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+recovering\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states relevant to agent that will recover. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a4fea72f10a69fe01212a847b43969f3e}\label{classHspEmployeeStatesManager_a4fea72f10a69fe01212a847b43969f3e}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+susceptible\+\_\+to\+\_\+exposed@{set\+\_\+susceptible\+\_\+to\+\_\+exposed}}
+\index{set\+\_\+susceptible\+\_\+to\+\_\+exposed@{set\+\_\+susceptible\+\_\+to\+\_\+exposed}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+susceptible\+\_\+to\+\_\+exposed()}{set\_susceptible\_to\_exposed()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+susceptible\+\_\+to\+\_\+exposed (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from susceptible to exposed. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_aa745324359627d4497c255be7b9615e1}\label{classHspEmployeeStatesManager_aa745324359627d4497c255be7b9615e1}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic@{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic}}
+\index{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic@{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic()}{set\_susceptible\_to\_exposed\_never\_symptomatic()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+susceptible\+\_\+to\+\_\+exposed\+\_\+never\+\_\+symptomatic (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from susceptible to exposed that will never become symptomatic. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_aaefccb28d50be6a89b20255779275520}\label{classHspEmployeeStatesManager_aaefccb28d50be6a89b20255779275520}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+tested\+\_\+false\+\_\+negative@{set\+\_\+tested\+\_\+false\+\_\+negative}}
+\index{set\+\_\+tested\+\_\+false\+\_\+negative@{set\+\_\+tested\+\_\+false\+\_\+negative}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+false\+\_\+negative()}{set\_tested\_false\_negative()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+tested\+\_\+false\+\_\+negative (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for transition from tested to false negative. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a3b9a2c2ac3b20777c5c7d75dc6f9c002}\label{classHspEmployeeStatesManager_a3b9a2c2ac3b20777c5c7d75dc6f9c002}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+tested\+\_\+negative@{set\+\_\+tested\+\_\+negative}}
+\index{set\+\_\+tested\+\_\+negative@{set\+\_\+tested\+\_\+negative}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+negative()}{set\_tested\_negative()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+tested\+\_\+negative (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+States for negative. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a4b0f847d5e9ce5e1b48813ba506cfe36}\label{classHspEmployeeStatesManager_a4b0f847d5e9ce5e1b48813ba506cfe36}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results@{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results}}
+\index{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results@{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results()}{set\_tested\_to\_awaiting\_results()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+tested\+\_\+to\+\_\+awaiting\+\_\+results (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set all states for just tested. 
+
+\mbox{\Hypertarget{classHspEmployeeStatesManager_a76dfcc6cd9c617f881bc44984a673174}\label{classHspEmployeeStatesManager_a76dfcc6cd9c617f881bc44984a673174}} 
+\index{Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}!set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital@{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital}}
+\index{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital@{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital}!Hsp\+Employee\+States\+Manager@{Hsp\+Employee\+States\+Manager}}
+\subsubsection{\texorpdfstring{set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital()}{set\_waiting\_for\_test\_in\_hospital()}}
+{\footnotesize\ttfamily void Hsp\+Employee\+States\+Manager\+::set\+\_\+waiting\+\_\+for\+\_\+test\+\_\+in\+\_\+hospital (\begin{DoxyParamCaption}\item[{\hyperlink{classAgent}{Agent} \&}]{agent }\end{DoxyParamCaption})}
+
+
+
+Set testing in hospital, initial state. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/states\+\_\+manager/\hyperlink{hsp__employee__states__manager_8h}{hsp\+\_\+employee\+\_\+states\+\_\+manager.\+h}\item 
+src/states\+\_\+manager/\hyperlink{hsp__employee__states__manager_8cpp}{hsp\+\_\+employee\+\_\+states\+\_\+manager.\+cpp}\end{DoxyCompactItemize}
