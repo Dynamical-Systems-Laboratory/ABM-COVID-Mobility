@@ -706,6 +706,8 @@ void ABM::process_initial_symptomatic(Agent& agent)
 	// Flags
  	agent.set_infected(true);
 	agent.set_symptomatic(true);
+	// Agent characteristics
+	agent.set_inf_variability_factor(infection.inf_variability());
 	// Remove from potential flu population if a regular agent
 	if (!agent.hospital_employee() && !agent.hospital_non_covid_patient()) {
 		flu.remove_susceptible_agent(agent.get_ID());
